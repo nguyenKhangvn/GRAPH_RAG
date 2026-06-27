@@ -1,0 +1,20 @@
+[
+  {
+    "entity": "Restaurant",
+    "fields": "enriched_rating, google_rating, serpapi_rating, opening_hours",
+    "updated": 132,
+    "time": "2026-06-10T13:28:06Z"
+  },
+  {
+    "entity": "Accommodation",
+    "fields": "enriched_rating, google_rating, serpapi_rating",
+    "updated": 361,
+    "time": "2026-06-10T13:28:07Z"
+  },
+  {
+    "entity": "TouristAttraction",
+    "fields": "enriched_rating, google_rating, serpapi_rating, opening_hours",
+    "updated": 198,
+    "time": "2026-06-10T13:28:07Z"
+  }
+]

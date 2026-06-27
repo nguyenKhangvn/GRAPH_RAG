@@ -1,0 +1,167 @@
+{
+  "_metadata": {
+    "description": "Schema metadata for schema-guided relation selection. Each relation/node has semantic role, description, and evidence type mappings.",
+    "version": "2.0",
+    "domain": "tourism_gia_lai_quynhon",
+    "last_verified": "2026-06-13",
+    "source": "Direct Neo4j query"
+  },
+
+  "node_types": {
+    "TouristAttraction": {
+      "description": "A place of interest for visitors, including natural landscapes, cultural sites, and entertainment venues.",
+      "semantic_role": "destination",
+      "default_attributes": ["name", "address", "description", "category", "ticket_price", "opening_hours", "phone", "enriched_rating"],
+      "supports_intents": ["DISCOVERY_SEARCH", "TOUR_PLAN", "ENTITY_FACT_QUERY", "TOURISM_RECOMMENDATION"],
+      "location_type": "WGS84Point"
+    },
+    "Restaurant": {
+      "description": "A food service establishment where users can eat meals.",
+      "semantic_role": "service_provider",
+      "default_attributes": ["name", "address", "type", "tags", "opening_hours", "phone", "enriched_rating"],
+      "supports_intents": ["FOOD_RECOMMENDATION", "TOUR_PLAN"],
+      "location_type": "WGS84Point"
+    },
+    "Dish": {
+      "description": "A specific food item or cuisine available at restaurants.",
+      "semantic_role": "product_offering",
+      "default_attributes": ["name", "description", "category"],
+      "supports_intents": ["FOOD_RECOMMENDATION"],
+      "location_type": "String"
+    },
+    "Specialty": {
+      "description": "A regional specialty or signature dish of a province.",
+      "semantic_role": "regional_product",
+      "default_attributes": ["name", "description", "category"],
+      "supports_intents": ["FOOD_RECOMMENDATION"],
+      "location_type": "String"
+    },
+    "Accommodation": {
+      "description": "A lodging facility for overnight stays such as hotels, homestays, resorts.",
+      "semantic_role": "service_provider",
+      "default_attributes": ["name", "address", "description", "type", "price_range", "phone", "amenities", "capacity", "enriched_rating"],
+      "supports_intents": ["ACCOMMODATION_RECOMMENDATION", "TOUR_PLAN"],
+      "location_type": "WGS84Point"
+    },
+    "Event": {
+      "description": "A scheduled activity, festival, or cultural event.",
+      "semantic_role": "temporal_activity",
+      "default_attributes": ["name", "address", "category", "month", "activities"],
+      "supports_intents": ["EVENT_RECOMMENDATION"],
+      "location_type": "None",
+      "location_filter": "WHERE e.address CONTAINS $region"
+    },
+    "Tour": {
+      "description": "A planned travel itinerary or route offered by a travel agency.",
+      "semantic_role": "itinerary",
+      "default_attributes": ["name", "description", "price", "duration", "start_location"],
+      "supports_intents": ["TOUR_PLAN"],
+      "location_type": "None"
+    },
+    "TravelAgency": {
+      "description": "A company that organizes and sells tours.",
+      "semantic_role": "service_provider",
+      "default_attributes": ["name", "address", "phone", "email", "website"],
+      "supports_intents": ["TOUR_PLAN"],
+      "location_type": "None"
+    },
+    "TravelInfo": {
+      "description": "Travel information such as transport, emergency, weather, budget tips.",
+      "semantic_role": "information",
+      "default_attributes": ["name", "description", "topic", "location", "province"],
+      "supports_intents": ["TRAVEL_INFO", "EMERGENCY", "WEATHER"],
+      "location_type": "String",
+      "location_filter": "WHERE t.location CONTAINS $region OR t.province CONTAINS $region"
+    },
+    "Location": {
+      "description": "An administrative or geographic region. Supports current/legacy admin hierarchy for post-2025 merger.",
+      "semantic_role": "spatial_anchor",
+      "default_attributes": ["name", "region_group", "admin_level", "admin_status", "legacy_district"],
+      "supports_intents": ["DISCOVERY_SEARCH", "DISTANCE_QUERY"],
+      "location_type": "None"
+    },
+    "Category": {
+      "description": "A classification type for tourist attractions.",
+      "semantic_role": "classification",
+      "default_attributes": ["name"],
+      "supports_intents": ["TOURISM_RECOMMENDATION", "ENTITY_FACT_QUERY"],
+      "location_type": "None"
+    }
+  },
+
+  "relations": {
+    "NEAR": {
+      "description": "Connects two places that are geographically close to each other, within walkable or short driving distance.",
+      "semantic_role": "spatial_proximity",
+      "domain": ["Restaurant", "Accommodation"],
+      "range": ["TouristAttraction"],
+      "supports_evidence_types": ["proximity", "nearby_recommendation", "spatial_context"],
+      "confidence_prior": 0.75,
+      "display_vi": "nằm gần"
+    },
+    "HAS": {
+      "description": "Connects a restaurant to a dish it serves on its menu.",
+      "semantic_role": "product_offering",
+      "domain": ["Restaurant"],
+      "range": ["Dish", "Specialty"],
+      "supports_evidence_types": ["product_availability", "menu_item", "cuisine_match"],
+      "confidence_prior": 0.90,
+      "display_vi": "phục vụ"
+    },
+    "LOCATED_IN": {
+      "description": "Indicates the administrative or geographic region where a place is situated.",
+      "semantic_role": "administrative_containment",
+      "domain": ["Restaurant", "Accommodation", "TouristAttraction"],
+      "range": ["Location"],
+      "supports_evidence_types": ["location_context", "region_filter", "address_lookup"],
+      "confidence_prior": 1.0,
+      "display_vi": "nằm tại",
+      "_note": "Chỉ áp dụng cho Restaurant/Accommodation/TouristAttraction. Event location qua HELD_AT→LOCATED_IN chain. TravelInfo dùng Guide_for."
+    },
+    "BELONGS_TO": {
+      "description": "Connects a place to its category or type classification.",
+      "semantic_role": "category_membership",
+      "domain": ["TouristAttraction"],
+      "range": ["Category"],
+      "supports_evidence_types": ["type_filter", "category_match", "classification"],
+      "confidence_prior": 0.95,
+      "display_vi": "thuộc loại"
+    },
+    "INCLUDES": {
+      "description": "Connects a tour or itinerary to a destination or stop that is part of it.",
+      "semantic_role": "itinerary_membership",
+      "domain": ["Tour"],
+      "range": ["TouristAttraction"],
+      "supports_evidence_types": ["itinerary_stop", "tour_composition"],
+      "confidence_prior": 0.85,
+      "display_vi": "bao gồm điểm đến"
+    },
+    "OFFERS": {
+      "description": "Connects a travel agency to a specific tour it provides.",
+      "semantic_role": "service_offering",
+      "domain": ["TravelAgency"],
+      "range": ["Tour"],
+      "supports_evidence_types": ["service_availability", "tour_offering"],
+      "confidence_prior": 0.80,
+      "display_vi": "cung cấp tour"
+    },
+    "HELD_AT": {
+      "description": "Connects an event to the venue where it takes place.",
+      "semantic_role": "event_venue",
+      "domain": ["Event"],
+      "range": ["TouristAttraction"],
+      "supports_evidence_types": ["event_location"],
+      "confidence_prior": 0.90,
+      "display_vi": "tổ chức tại"
+    },
+    "Guide_for": {
+      "description": "Connects TravelInfo to the Location it provides guidance about.",
+      "semantic_role": "informational_guidance",
+      "domain": ["TravelInfo"],
+      "range": ["Location"],
+      "supports_evidence_types": ["location_guidance", "travel_info_relevance"],
+      "confidence_prior": 1.0,
+      "display_vi": "hướng dẫn cho"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+- Use CONTAINS for Vietnamese text matching (not exact match)
+- IMPORTANT: Neo4j 5.x EXISTS syntax — use EXISTS { MATCH ... WHERE ... }, NOT EXISTS((pattern) WHERE ...):
+  Correct: WHERE EXISTS { MATCH (r)-[:LOCATED_IN]->(l:Location) WHERE l.name CONTAINS 'Gia Lai' }
+  Wrong:   WHERE EXISTS((r)-[:LOCATED_IN]->(:Location) WHERE l.name CONTAINS 'Gia Lai')
+  Always bind variables explicitly: (l:Location) not (:Location)
+- PRESERVE Vietnamese diacritics in search terms (e.g., 'Đại ngàn' not 'Dai ngan')
+- Do NOT use toLower() on search terms (it breaks Vietnamese diacritics)
+- Split long search phrases into individual words and use OR conditions
+  Example: "Lễ hội Tinh hoa Đại ngàn" →
+  WHERE e.name CONTAINS 'Tinh hoa' OR e.name CONTAINS 'Đại ngàn'
+- Always add LIMIT to prevent large result sets
+- Use OPTIONAL MATCH when relationships may not exist
+- For province-level queries: do NOT add narrow keyword filters (e.g., CONTAINS 'làng') on attraction names — this misses most results. Only use keyword filters when the user specifically asks for a category (e.g., "làng văn hóa" → filter by name/description)
+- IMPORTANT: Category là NODE RIÊNG, KHÔNG phải property. Để lọc theo category, dùng:
+  MATCH (ta:TouristAttraction)-[:BELONGS_TO]->(c:Category) WHERE c.name CONTAINS 'Thắng cảnh thiên nhiên'
+  KHÔNG dùng ta.category (không tồn tại)
+- Category names thực tế trong graph (dùng CONTAINS để match):
+  * "Thắng cảnh thiên nhiên" — địa danh tự nhiên, núi, thác, hồ, rừng
+  * "Danh lam thắng cảnh" — danh lam, thắng cảnh nổi tiếng
+  * "Di tích lịch sử - Văn hóa" / "Di tích lịch sử - văn hóa" — di tích lịch sử (LƯ Ý: viết hoa khác nhau)
+  * "Làng văn hóa" — làng văn hóa dân tộc
+  * "Làng nghề truyền thống" / "Làng nghề - Văn hóa" / "Làng nghề - Nông nghiệp" — làng nghề
+  * "Điểm tham quan" / "Điểm check-in" — điểm tham quan chung
+- IMPORTANT: Specialty là node RIÊNG, KHÔNG có address/location. Specialty kết nối qua:
+  * (Restaurant)-[:HAS]->(Specialty) — quán phục vụ đặc sản
+  KHÔNG dùng Specialty.address hoặc Specialty-[:LOCATED_IN] (không tồn tại).
+  Dùng s.location, s.province properties để filter theo vùng.
+- IMPORTANT: Dish có thể thiếu id/category/location (chỉ ~32% có). Khi query Dish, dùng OPTIONAL MATCH cho properties.
+- Accommodation KHÔNG có email property trong DB (0% coverage).
+- Restaurant.email chỉ có 25%, phone chỉ 27% — không nên rely vào.
+- IMPORTANT: Khi dùng UNION giữa nhiều label KHÁC NHAU, TẤT CẢ sub-query PHẢI có RETURN clause với CÙNG tên cột (dùng AS alias).
+  Nếu label KHÔNG có property nào đó, dùng '' AS alias hoặc NULL AS alias. KHÔNG được đổi tên cột giữa các sub-query.
+  Ví dụ ĐÚNG:
+    MATCH (d:Dish) WHERE d.name CONTAINS 'x'
+    RETURN d.name AS name, d.description AS description, d.location AS location, d.province AS province, labels(d) AS labels
+    UNION
+    MATCH (r:Restaurant)-[:HAS]->(d:Dish) WHERE d.name CONTAINS 'x'
+    RETURN r.name AS name, '' AS description, r.address AS location, r.province AS province, labels(r) AS labels
+  Ví dụ SAI (KHÔNG được làm):
+    RETURN r.name AS name, r.address AS address, d.name AS dish_name, labels(r) AS labels  ← tên cột khác với sub-query trên!

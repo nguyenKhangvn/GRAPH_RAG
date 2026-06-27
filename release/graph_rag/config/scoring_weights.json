@@ -1,0 +1,104 @@
+{
+  "_metadata": {
+    "description": "Scoring weights for context ranking, reranking, fusion, and MMR. Tunable via grid search on validation set.",
+    "version": "1.0",
+    "note": "Initial values from manual tuning. Override by running grid_search.py."
+  },
+
+  "context_organizer": {
+    "lexical_score": 0.40,
+    "retrieval_rank_score": 0.20,
+    "intent_label_match": 0.15,
+    "entity_extraction_match": 0.25,
+    "positional_decay": [1.0, 0.70, 0.50, 0.35, 0.25, 0.18, 0.12, 0.08]
+  },
+
+  "fact_reranker": {
+    "anchor_mention_bonus": 40,
+    "seed_mention_bonus": 30,
+    "relation_priority_bonus": 20,
+    "category_match_bonus": 35,
+    "belongs_to_bonus": 15,
+    "region_match_bonus": 20,
+    "region_mismatch_penalty": -40,
+    "generic_marker_penalty": -10
+  },
+
+  "hybrid_fusion": {
+    "vector_weight": 1.0,
+    "keyword_weight": 1.5,
+    "rrf_k": 60
+  },
+
+  "mmr": {
+    "lambda_param": 0.7
+  },
+
+  "community_summary": {
+    "keyword_overlap": 0.55,
+    "seed_keyword_overlap": 0.25,
+    "region_match": 0.12,
+    "topic_intent_match": 0.08,
+    "min_score": 0.18
+  },
+
+  "relationship_confidence": {
+    "LOCATED_IN": 1.0,
+    "Guide_for": 1.0,
+    "BELONGS_TO": 0.95,
+    "HAS": 0.90,
+    "HELD_AT": 0.90,
+    "INCLUDES": 0.85,
+    "OFFERS": 0.80,
+    "NEAR": 0.75,
+    "DEFAULT": 0.60
+  },
+
+  "path_score_threshold": 0.65,
+
+  "grounded_node_priority": {
+    "label_hit_bonus": 100,
+    "coordinate_bonus": 10
+  },
+
+  "grounded_topk_by_intent": {
+    "TOUR_PLAN": 12,
+    "DISCOVERY_SEARCH": 10,
+    "FOOD_RECOMMENDATION": 10,
+    "ACCOMMODATION_RECOMMENDATION": 8,
+    "TOURISM_RECOMMENDATION": 10,
+    "EVENT_RECOMMENDATION": 8,
+    "ENTITY_FACT_QUERY": 8,
+    "DISTANCE_QUERY": 6
+  },
+
+  "relation_priority_by_intent": {
+    "FOOD_RECOMMENDATION": ["HAS", "NEAR", "LOCATED_IN"],
+    "ACCOMMODATION_RECOMMENDATION": ["NEAR", "LOCATED_IN", "BELONGS_TO"],
+    "TOURISM_RECOMMENDATION": ["LOCATED_IN", "BELONGS_TO", "NEAR"],
+    "EVENT_RECOMMENDATION": ["HELD_AT", "LOCATED_IN"],
+    "TOUR_PLAN": ["INCLUDES", "NEAR", "LOCATED_IN", "OFFERS"],
+    "ENTITY_FACT_QUERY": ["LOCATED_IN", "BELONGS_TO"],
+    "DISCOVERY_SEARCH": ["NEAR", "HAS", "LOCATED_IN", "BELONGS_TO"],
+    "DISTANCE_QUERY": ["LOCATED_IN", "NEAR"]
+  },
+
+  "structural_budget_by_intent": {
+    "TOUR_PLAN": 20,
+    "DISCOVERY_SEARCH": 15,
+    "FOOD_RECOMMENDATION": 12,
+    "ACCOMMODATION_RECOMMENDATION": 12,
+    "TOURISM_RECOMMENDATION": 12,
+    "EVENT_RECOMMENDATION": 10,
+    "ENTITY_FACT_QUERY": 8,
+    "DISTANCE_QUERY": 8
+  },
+
+  "context_organizer_thresholds": {
+    "main_entity_confidence": 0.60,
+    "hard_keep_confidence": 0.60,
+    "single_entity_seed_ratio": 0.85,
+    "multi_seed_ratio": 0.60,
+    "unresolved_filter_score": 20
+  }
+}

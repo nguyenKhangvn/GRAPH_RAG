@@ -1,0 +1,27 @@
+{
+  "_metadata": {
+    "description": "Domain-specific business rules externalized from Python source code.",
+    "version": "1.0",
+    "domain": "tourism_gia_lai_quynhon"
+  },
+
+  "system_facts": "THÔNG TIN HÀNH CHÍNH (dùng khi liên quan, KHÔNG giảng dài):\n1. Quy Nhơn nay thuộc tỉnh Gia Lai (mới) sau sáp nhập 2025. Khu vực bao gồm cả vùng biển (Quy Nhơn, Kỳ Co, Eo Gió, Nhơn Lý, Phù Cát) và vùng núi (Pleiku, Chư Sê...).\n2. Khi người dùng hỏi về địa điểm ở Quy Nhơn/Bình Định cũ, chỉ cần nói tự nhiên 'khu vực Quy Nhơn' — KHÔNG cần giải thích chi tiết về sáp nhập hành chính người dùng hỏi trực tiếp.\n3. Gia Lai có biển — nếu người dùng hỏi, hướng dẫn về cụm Quy Nhơn/Nhơn Lý/Phù Cát.",
+
+  "region_aliases": {
+    "coastal_quy_nhon": ["quy nhon", "binh dinh", "ky co", "eo gio", "nhon ly"],
+    "inland_gia_lai": ["pleiku", "gia lai", "chu se", "ia grai", "duc co"]
+  },
+
+  "location_display_names": {
+    "quy nhon": "Quy Nhơn",
+    "binh dinh": "Quy Nhơn",
+    "gia lai": "Gia Lai",
+    "pleiku": "Gia Lai"
+  },
+
+  "restaurant_exclude_names": ["tiec cuoi", "wedding", "hoi nghi", "event center"],
+
+  "tour_cost_template": "Chi phí tham khảo (tùy mùa và dịch vụ): vé tham quan + di chuyển + ăn uống. Tổng chi phí tự túc thường thấp hơn tour trọn gói.",
+
+  "few_shot_examples": "FEW-SHOT EXAMPLES (MUST FOLLOW STYLE & FACTS):\nExample 1:\n- User: \"Gia Lai có biển không?\"\n- Assistant (good): \"Có. Theo dữ liệu hệ thống hiện tại, Gia Lai (mới) bao gồm cả vùng biển Quy Nhơn, Nhơn Lý, Phù Cát. Nếu bạn muốn đi biển, mình có thể gợi ý lịch trình theo cụm ven biển này.\"\n\nExample 2:\n- User: \"Gợi ý điểm du lịch biển ở Gia Lai\"\n- Assistant (good): \"Bạn có thể ưu tiên cụm Quy Nhơn - Nhơn Lý - Phù Cát như Kỳ Co, Eo Gió, bãi biển Quy Nhơn. Mình sẽ sắp xếp lịch trình theo khoảng cách để di chuyển thuận tiện.\"\n\nExample 3 (FORMAT MẪU - tour có danh sách):\n- User: \"Tour Cù Lao Xanh 1 ngày có những hoạt động gì?\"\n- Assistant (good): \"Hiện hệ thống chưa có tour Cù Lao Xanh 1 ngày cụ thể. Tuy nhiên, mình gợi ý một số lựa chọn liên quan:\\n\\n🗺️ Tour tương tự:\\n• Tour 2 đảo Hòn Khô – Cù Lao Xanh 1 ngày\\n• Tour 3 đảo Quy Nhơn 2 ngày 1 đêm\\n\\n📍 Điểm đến trên Cù Lao Xanh:\\n• Hải đăng Phước Mai\\n• Khu dã ngoại Cù Lao Xanh\\n• Bãi San Hô Hòn Khô\\n\\nBạn muốn mình xem chi tiết tour nào không?\"\n\nExample 4 (FORMAT MẪU - tour INCLUDES):\n- User: \"Tour 2 đảo Hòn Khô – Cù Lao Xanh 1 ngày có những hoạt động gì?\"\n- Assistant (good): \"🗺️ **Tour 2 đảo Hòn Khô – Cù Lao Xanh 1 ngày: Ngắm hoàng hôn tại Eo Gió**\\n\\n**Lộ trình tour:**\\n• 🏝️ Hòn Khô — đảo cách Quy Nhơn ~16km\\n• 🏝️ Cù Lao Xanh — điểm đến chính\\n• 📍 Hải đăng Phước Mai\\n• 📍 Khu dã ngoại Cù Lao Xanh\\n• 📍 Bãi San Hô Hòn Khô\\n• 📍 Hải đăng Cù Lao Xanh\\n• 📍 Tịnh xá Ngọc Hòa\\n\\n💰 **Giá tour:** 1.045.000đ/người\\n\\n⚠️ Thông tin chi tiết về hoạt động cụ thể (lặn ngắm san hô, chèo kayak...) hiện chưa cập nhật trong hệ thống.\""
+}

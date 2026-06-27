@@ -1,0 +1,12 @@
+{
+  "Dish": ["id", "name", "description", "category", "location", "region_group", "province"],
+  "Restaurant": ["id", "name", "address", "location", "phone", "type", "tags", "opening_hours", "province", "email", "enriched_rating", "enriched_rating_source"],
+  "Specialty": ["id", "name", "description", "category", "location", "region_group", "province"],
+  "TouristAttraction": ["id", "name", "description", "address", "location", "category", "ticket_price", "opening_hours", "phone", "province", "enriched_rating", "enriched_rating_source"],
+  "Accommodation": ["id", "name", "description", "address", "location", "phone", "type", "price_range", "amenities", "capacity", "villa_segment", "province", "enriched_rating", "enriched_rating_source"],
+  "Event": ["id", "name", "address", "category", "month", "activities", "province", "description", "image", "year"],
+  "Tour": ["id", "name", "description", "price", "duration", "start_location"],
+  "Location": ["id", "name", "region_group", "admin_level", "admin_status", "legacy_district", "current_province", "old_units", "aliases"],
+  "TravelAgency": ["id", "name", "address", "phone", "email", "website"],
+  "TravelInfo": ["id", "name", "description", "topic", "location", "province"]
+}

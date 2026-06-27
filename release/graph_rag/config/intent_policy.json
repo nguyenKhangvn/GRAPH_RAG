@@ -1,0 +1,217 @@
+{
+  "_metadata": {
+    "description": "Intent taxonomy, evidence types, and traversal policies. Schema-guided: intents map to evidence types, not directly to relation names.",
+    "version": "1.0",
+    "domain": "tourism_gia_lai_quynhon"
+  },
+
+  "intents": {
+    "ACCOMMODATION_RECOMMENDATION": {
+      "label_vi": "Gợi ý lưu trú",
+      "description": "User asks for accommodation recommendations.",
+      "evidence_types": ["spatial_proximity", "category_match"],
+      "required_node_types": ["Accommodation"],
+      "optional_node_types": [],
+      "default_topk": 8,
+      "group": "recommendation"
+    },
+    "FOOD_RECOMMENDATION": {
+      "label_vi": "Gợi ý ăn uống",
+      "description": "User asks for food/restaurant recommendations.",
+      "evidence_types": ["product_availability", "spatial_proximity", "cuisine_match", "location_context"],
+      "required_node_types": ["Restaurant"],
+      "optional_node_types": ["Dish"],
+      "default_topk": 10,
+      "group": "recommendation"
+    },
+    "TOURISM_RECOMMENDATION": {
+      "label_vi": "Gợi ý tham quan",
+      "description": "User asks for tourist attraction recommendations.",
+      "evidence_types": ["spatial_proximity", "category_match", "itinerary_membership"],
+      "required_node_types": ["TouristAttraction"],
+      "optional_node_types": [],
+      "default_topk": 10,
+      "group": "recommendation"
+    },
+    "EVENT_RECOMMENDATION": {
+      "label_vi": "Tìm sự kiện",
+      "description": "User asks about events or festivals.",
+      "evidence_types": ["event_location", "location_context"],
+      "required_node_types": ["Event"],
+      "optional_node_types": [],
+      "default_topk": 8,
+      "group": "recommendation"
+    },
+    "TOUR_PLAN": {
+      "label_vi": "Lập lịch trình",
+      "description": "User asks for a multi-day travel itinerary.",
+      "evidence_types": ["itinerary_membership", "spatial_proximity", "product_availability"],
+      "required_node_types": ["TouristAttraction", "Restaurant", "Accommodation"],
+      "optional_node_types": ["Dish", "Event", "Tour"],
+      "default_topk": 12,
+      "group": "search"
+    },
+    "ENTITY_FACT_QUERY": {
+      "label_vi": "Thông tin chi tiết",
+      "description": "User asks for specific facts about a place.",
+      "evidence_types": ["location_context", "category_match"],
+      "required_node_types": [],
+      "optional_node_types": ["TouristAttraction", "Restaurant", "Accommodation"],
+      "default_topk": 8,
+      "group": "search"
+    },
+    "DISCOVERY_SEARCH": {
+      "label_vi": "Khám phá tổng hợp",
+      "description": "User asks open-ended questions about the area.",
+      "evidence_types": ["spatial_proximity", "product_availability", "category_match"],
+      "required_node_types": [],
+      "optional_node_types": ["TouristAttraction", "Restaurant", "Accommodation", "Event"],
+      "default_topk": 10,
+      "group": "search"
+    },
+    "DISTANCE_QUERY": {
+      "label_vi": "Khoảng cách",
+      "description": "User asks about distance or directions between places.",
+      "evidence_types": ["location_context", "spatial_proximity"],
+      "required_node_types": [],
+      "optional_node_types": ["TouristAttraction", "Restaurant", "Accommodation"],
+      "default_topk": 6,
+      "group": "search"
+    },
+    "TRAVEL_ADVICE": {
+      "label_vi": "Tư vấn du lịch",
+      "description": "User asks for travel tips, advice, or practical guidance (not specific recommendations or bookings).",
+      "evidence_types": ["location_context", "category_match"],
+      "required_node_types": ["TravelInfo"],
+      "optional_node_types": ["Accommodation"],
+      "default_topk": 5,
+      "group": "search"
+    },
+    "TRANSPORT_INFO": {
+      "label_vi": "Thông tin giao thông",
+      "description": "User asks about transport hubs, flight routes, airports or directions.",
+      "evidence_types": ["location_context"],
+      "required_node_types": ["TravelInfo"],
+      "optional_node_types": ["Location"],
+      "default_topk": 5,
+      "group": "search"
+    },
+    "EMERGENCY_SUPPORT": {
+      "label_vi": "Hỗ trợ khẩn cấp",
+      "description": "User asks for emergency support, hotlines, or medical services.",
+      "evidence_types": ["location_context"],
+      "required_node_types": ["TravelInfo"],
+      "optional_node_types": [],
+      "default_topk": 5,
+      "group": "search"
+    },
+    "CASHLESS_PAYMENT": {
+      "label_vi": "Thanh toán không tiền mặt",
+      "description": "User asks about cashless payment methods, banking, or ATMs.",
+      "evidence_types": ["location_context"],
+      "required_node_types": ["TravelInfo"],
+      "optional_node_types": [],
+      "default_topk": 5,
+      "group": "search"
+    },
+    "WEATHER_ADVICE": {
+      "label_vi": "Tư vấn thời tiết",
+      "description": "User asks about weather, climate, temperature, or seasonal conditions for travel.",
+      "evidence_types": ["location_context"],
+      "required_node_types": ["TravelInfo"],
+      "optional_node_types": [],
+      "default_topk": 5,
+      "group": "search"
+    }
+  },
+
+  "modes": {
+    "SINGLE_ANCHOR": {
+      "description": "Query references one specific place as anchor.",
+      "value": "single_anchor"
+    },
+    "COMPARISON": {
+      "description": "Query compares multiple options.",
+      "value": "comparison"
+    },
+    "CONSTRAINT_MATCHING": {
+      "description": "Query has specific filter criteria.",
+      "value": "constraint_matching"
+    },
+    "MULTI_ENTITY_NEARBY": {
+      "description": "Query asks about multiple nearby entities.",
+      "value": "multi_entity_nearby"
+    },
+    "DISH_TO_RESTAURANT": {
+      "description": "Query asks for restaurants serving a specific dish.",
+      "value": "dish_to_restaurant"
+    },
+    "TOUR_PLAN": {
+      "description": "Query asks for an itinerary.",
+      "value": "tour_plan"
+    },
+    "NEGATIVE": {
+      "description": "Query asks about something not in the database.",
+      "value": "negative"
+    }
+  },
+
+  "intent_groups": {
+    "recommendation": ["ACCOMMODATION_RECOMMENDATION", "FOOD_RECOMMENDATION", "TOURISM_RECOMMENDATION", "EVENT_RECOMMENDATION"],
+    "search": ["TOUR_PLAN", "ENTITY_FACT_QUERY", "DISCOVERY_SEARCH", "DISTANCE_QUERY", "TRAVEL_ADVICE", "TRANSPORT_INFO", "EMERGENCY_SUPPORT", "CASHLESS_PAYMENT", "WEATHER_ADVICE"]
+  },
+
+  "traversal_whitelist": ["LOCATED_IN", "NEAR", "HAS", "BELONGS_TO", "OFFERS", "HELD_AT", "INCLUDES"],
+
+  "forbidden_fallbacks": {
+    "FOOD_RECOMMENDATION": ["TouristAttraction", "Location"],
+    "ACCOMMODATION_RECOMMENDATION": ["TouristAttraction", "Event", "Dish"],
+    "EVENT_RECOMMENDATION": ["Restaurant", "Dish", "Accommodation", "Tour"],
+    "ENTITY_FACT_QUERY": [],
+    "TOURISM_RECOMMENDATION": [],
+    "TOUR_PLAN": [],
+    "DISCOVERY_SEARCH": [],
+    "DISTANCE_QUERY": [],
+    "TRAVEL_ADVICE": ["Dish", "Restaurant", "Event", "Tour"],
+    "WEATHER_ADVICE": ["Dish", "Restaurant", "Event", "Tour", "Accommodation"]
+  },
+
+  "required_evidence": {
+    "FOOD_RECOMMENDATION": ["restaurant_name", "dish_name", "address"],
+    "ACCOMMODATION_RECOMMENDATION": ["hotel_name", "address", "price_range"],
+    "ENTITY_FACT_QUERY": ["ticket_price", "opening_hours", "phone"],
+    "EVENT_RECOMMENDATION": ["name", "month", "activities"],
+    "TRAVEL_ADVICE": ["topic", "description", "tips"]
+  },
+
+  "attribute_policy": {
+    "ENTITY_FACT_QUERY": [
+      {"property": "price", "display": "Giá vé/Chi phí"},
+      {"property": "ticket_price", "display": "Giá vé"},
+      {"property": "opening_hours", "display": "Giờ mở cửa"},
+      {"property": "phone", "display": "Số điện thoại"}
+    ],
+    "FOOD_RECOMMENDATION": [
+      {"property": "phone", "display": "Số điện thoại"}
+    ],
+    "EVENT_RECOMMENDATION": [
+      {"property": "month", "display": "Tháng tổ chức"},
+      {"property": "year", "display": "Năm tổ chức"},
+      {"property": "activities", "display": "Hoạt động"},
+      {"property": "description", "display": "Mô tả"}
+    ],
+    "ACCOMMODATION_RECOMMENDATION": [
+      {"property": "price_range", "display": "Mức giá"},
+      {"property": "phone", "display": "Số điện thoại"}
+    ],
+    "TOUR_PLAN": [
+      {"property": "ticket_price", "display": "Giá vé"},
+      {"property": "opening_hours", "display": "Giờ mở cửa"},
+      {"property": "phone", "display": "Số điện thoại"}
+    ],
+    "TRAVEL_ADVICE": [
+      {"property": "description", "display": "Thông tin"},
+      {"property": "contact", "display": "Liên hệ"}
+    ]
+  }
+}

@@ -1,0 +1,419 @@
+[
+  {
+    "id": "tour-flc-quy-nhon-3-ngay-2-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Chùa Thiên Hưng", "activity": "Tham quan, chiêm bái Ngọc Xá Lợi"},
+      {"day": 1, "order": 2, "place": "Tháp Đôi", "activity": "Tham quan kiến trúc tháp Chăm"},
+      {"day": 1, "order": 3, "place": "Ghềnh Ráng Tiên Sa", "activity": "Viếng mộ Hàn Mặc Tử, ngắm Bãi tắm Hoàng Hậu"},
+      {"day": 1, "order": 4, "place": "FLC Quy Nhơn", "activity": "Tắm biển, chơi golf, Safari Zoo, thể thao nước"},
+      {"day": 2, "order": 1, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, check-in cầu tình yêu, xem xiếc hải cẩu"},
+      {"day": 2, "order": 2, "place": "Bãi Dứa (Bãi San Hô)", "activity": "Lặn ngắm san hô"},
+      {"day": 2, "order": 3, "place": "Làng chài Nhơn Lý", "activity": "Chụp SUP Flycam (miễn phí)"},
+      {"day": 2, "order": 4, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 2, "order": 5, "place": "Eo Gió", "activity": "Ngắm hoàng hôn"},
+      {"day": 2, "order": 6, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh thành phố và Tháp Thầy Bói"},
+      {"day": 2, "order": 7, "place": "Phố ẩm thực Quy Nhơn", "activity": "Thưởng thức ẩm thực, cafe bãi biển, chơi Bài Chòi"},
+      {"day": 3, "order": 1, "place": "FLC Quy Nhơn", "activity": "Ăn sáng buffet, cafe view biển"},
+      {"day": 3, "order": 2, "place": "Mua sắm đặc sản", "activity": "Mua quà lưu niệm"}
+    ]
+  },
+  {
+    "id": "tour-ky-co-eo-gio-1-ngay-trai-nghiem-bien-dao-quy-nhon-hung-vi",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in"},
+      {"day": 1, "order": 3, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, xem xiếc hải cẩu, check-in cầu tình yêu"},
+      {"day": 1, "order": 4, "place": "Bãi Dứa", "activity": "Lặn ngắm san hô"},
+      {"day": 1, "order": 5, "place": "Làng chài Nhơn Lý", "activity": "Chụp SUP Flycam (miễn phí)"},
+      {"day": 1, "order": 6, "place": "Eo Gió", "activity": "Ngắm hoàng hôn"},
+      {"day": 1, "order": 7, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 1, "order": 8, "place": "Con đường Đá Xanh Nhơn Lý", "activity": "Check-in, ngắm cảnh"},
+      {"day": 1, "order": 9, "place": "Mua sắm đặc sản", "activity": "Mua bánh hồng, bánh ít lá gai, nem chợ huyện"}
+    ]
+  },
+  {
+    "id": "tour-nghi-duong-ky-co-resort-2-ngay-1-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe kể lịch sử"},
+      {"day": 1, "order": 2, "place": "Kỳ Co Resort", "activity": "Nhận phòng, tắm biển, ngắm hoàng hôn"},
+      {"day": 2, "order": 1, "place": "Kỳ Co Resort", "activity": "Tắm biển, check-in cầu tình yêu"},
+      {"day": 2, "order": 2, "place": "Bãi Dứa", "activity": "Lặn ngắm san hô"},
+      {"day": 2, "order": 3, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 2, "order": 4, "place": "Eo Gió", "activity": "Ngắm cảnh biển hùng vĩ"},
+      {"day": 2, "order": 5, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in"},
+      {"day": 2, "order": 6, "place": "Khu biệt thự Đại Phú Gia", "activity": "Check-in tượng Thần Biển, mua đặc sản"}
+    ]
+  },
+  {
+    "id": "tour-3-dao-quy-nhon-2-ngay-1-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Hải đăng Phước Mai", "activity": "Ngắm cảnh từ biển"},
+      {"day": 1, "order": 2, "place": "Hải đăng Cù Lao Xanh", "activity": "Check-in, ngắm cảnh"},
+      {"day": 1, "order": 3, "place": "Cột cờ Tổ Quốc (Cù Lao Xanh)", "activity": "Tham quan"},
+      {"day": 1, "order": 4, "place": "Bãi đá Thảo Nguyên", "activity": "Check-in, chụp ảnh"},
+      {"day": 1, "order": 5, "place": "Khu dã ngoại Cù Lao Xanh", "activity": "Tham quan, chụp ảnh"},
+      {"day": 1, "order": 6, "place": "Bãi Nhỏ (Cù Lao Xanh)", "activity": "Lặn ngắm san hô"},
+      {"day": 1, "order": 7, "place": "Bãi Nam Cù Lao Xanh", "activity": "Ngắm hoàng hôn"},
+      {"day": 1, "order": 8, "place": "Cầu tàu Cù Lao Xanh", "activity": "Trải nghiệm câu mực đêm"},
+      {"day": 1, "order": 9, "place": "Khu vực lửa trại", "activity": "Đốt lửa trại, chơi team building"},
+      {"day": 2, "order": 1, "place": "Mũi Đông Cù Lao Xanh", "activity": "Ngắm bình minh"},
+      {"day": 2, "order": 2, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 2, "order": 3, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, check-in cầu tình yêu"},
+      {"day": 2, "order": 4, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 2, "order": 5, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô"},
+      {"day": 2, "order": 6, "place": "Eo Gió", "activity": "Ngắm cảnh biển hùng vĩ"},
+      {"day": 2, "order": 7, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 2, "order": 8, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in"}
+    ]
+  },
+  {
+    "id": "tour-quy-nhon-tay-son-1-ngay-ve-mien-tam-kiet-hao-hung",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Đàn Tế Trời Đất", "activity": "Tham quan di tích lịch sử"},
+      {"day": 1, "order": 2, "place": "Bảo tàng Quang Trung", "activity": "Tham quan điện Tây Sơn, xem show võ, trống trận"},
+      {"day": 1, "order": 3, "place": "Khu du lịch sinh thái Hầm Hô", "activity": "Đi thuyền trên sông Kút, chèo kayak, câu cá"},
+      {"day": 1, "order": 4, "place": "Chùa Thiên Hưng", "activity": "Tham quan, chiêm bái Ngọc Xá Lợi"},
+      {"day": 1, "order": 5, "place": "Tháp Đôi", "activity": "Tham quan kiến trúc tháp Chăm"},
+      {"day": 1, "order": 6, "place": "Mua sắm đặc sản", "activity": "Mua nem chợ huyện, tré, rượu Bàu Đá"}
+    ]
+  },
+
+  {
+    "id": "city-tour-quy-nhon-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Tháp Đôi", "activity": "Tham quan kiến trúc tháp Chăm"},
+      {"day": 1, "order": 2, "place": "Ghềnh Ráng Tiên Sa", "activity": "Viếng mộ Hàn Mặc Tử, ngắm Bãi tắm Hoàng Hậu"},
+      {"day": 1, "order": 3, "place": "Làng Phong Quy Hoà", "activity": "Dạo vườn tượng danh y, tắm biển"},
+      {"day": 1, "order": 4, "place": "Tượng đài Nguyễn Sinh Sắc – Nguyễn Tất Thành", "activity": "Tham quan, chụp ảnh"},
+      {"day": 1, "order": 5, "place": "Mua sắm đặc sản", "activity": "Mua quà lưu niệm"}
+    ]
+  },
+  {
+    "id": "tour-hon-kho-hai-giang-merry-land-quy-nhon-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 3, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 4, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô"},
+      {"day": 1, "order": 5, "place": "Hải Giang Merry Land", "activity": "Khám phá khu vui chơi, bến du thuyền"},
+      {"day": 1, "order": 6, "place": "Cáp treo Hải Giang", "activity": "Ngắm toàn cảnh Quy Nhơn từ trên cao"}
+    ]
+  },
+  {
+    "id": "tour-2-dao-quy-nhon-1-ngay-hon-kho-ky-co-eo-gio",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, xem xiếc hải cẩu, check-in cầu tình yêu"},
+      {"day": 1, "order": 3, "place": "Bãi Dứa", "activity": "Lặn ngắm san hô"},
+      {"day": 1, "order": 4, "place": "Làng chài Nhơn Lý", "activity": "Chụp SUP Flycam (miễn phí)"},
+      {"day": 1, "order": 5, "place": "Eo Gió", "activity": "Ngắm hoàng hôn"},
+      {"day": 1, "order": 6, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 1, "order": 7, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 8, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 9, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in"},
+      {"day": 1, "order": 10, "place": "Khu biệt thự Đại Phú Gia", "activity": "Check-in tượng Thần Biển, mua đặc sản"}
+    ]
+  },
+  {
+    "id": "tour-cu-lao-xanh-2-ngay-1-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Hải đăng Phước Mai", "activity": "Ngắm cảnh từ biển"},
+      {"day": 1, "order": 2, "place": "Bãi Nhỏ (Cù Lao Xanh)", "activity": "Lặn ngắm san hô, chụp ảnh phao bơi"},
+      {"day": 1, "order": 3, "place": "Hải đăng Cù Lao Xanh", "activity": "Check-in, ngắm cảnh"},
+      {"day": 1, "order": 4, "place": "Cột cờ Tổ Quốc (Cù Lao Xanh)", "activity": "Tham quan"},
+      {"day": 1, "order": 5, "place": "Bãi đá Thảo Nguyên", "activity": "Check-in, chụp ảnh"},
+      {"day": 1, "order": 6, "place": "Bãi Nam Cù Lao Xanh", "activity": "Ngắm hoàng hôn, chụp ảnh"},
+      {"day": 1, "order": 7, "place": "Cầu Cảng, Mũi Hoàn Bằng", "activity": "Tham quan, chụp ảnh"},
+      {"day": 1, "order": 8, "place": "Khu vực BBQ", "activity": "Thưởng thức hải sản nướng"},
+      {"day": 1, "order": 9, "place": "Khu vực sinh hoạt tối", "activity": "Hát karaoke, nghe nhạc"},
+      {"day": 2, "order": 1, "place": "Mũi Đông Cù Lao Xanh", "activity": "Ngắm bình minh"},
+      {"day": 2, "order": 2, "place": "Chợ cá sáng", "activity": "Xem ngư dân thu hoạch hải sản"}
+    ]
+  },
+  {
+    "id": "tour-cu-lao-xanh-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Hải đăng Phước Mai", "activity": "Ngắm cảnh từ biển"},
+      {"day": 1, "order": 2, "place": "Hải đăng Cù Lao Xanh", "activity": "Check-in, ngắm cảnh"},
+      {"day": 1, "order": 3, "place": "Cột cờ Tổ Quốc (Cù Lao Xanh)", "activity": "Tham quan"},
+      {"day": 1, "order": 4, "place": "Bãi đá Thảo Nguyên", "activity": "Check-in, chụp ảnh"},
+      {"day": 1, "order": 5, "place": "Bãi Nhỏ (Cù Lao Xanh)", "activity": "Lặn ngắm san hô"},
+      {"day": 1, "order": 6, "place": "Coral Beach Cù Lao Xanh", "activity": "Check-in cổng trời, giường lưới, võng biển"},
+      {"day": 1, "order": 7, "place": "Cầu Cảng, Mũi Hoàn Bằng", "activity": "Tham quan, chụp ảnh"}
+    ]
+  },
+  {
+    "id": "tour-di-bo-duoi-day-bien-quy-nhon-lan-ngam-san-ho-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in (theo yêu cầu)"},
+      {"day": 1, "order": 3, "place": "Làng chài Nhơn Lý", "activity": "Check-in biển báo, tường người lớn, cổng trời"},
+      {"day": 1, "order": 4, "place": "Bãi Dứa", "activity": "Đi bộ dưới đáy biển / lặn bình khí ngắm san hô"},
+      {"day": 1, "order": 5, "place": "Bãi biển Nhơn Lý", "activity": "Tắm biển, chụp SUP Flycam (miễn phí)"}
+    ]
+  },
+  {
+    "id": "tour-lang-nghe-binh-dinh-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Làng nón ngựa Phú Gia", "activity": "Tham quan nghề làm nón truyền thống"},
+      {"day": 1, "order": 2, "place": "Làng rèn Tây Phương Danh", "activity": "Trải nghiệm làng nghề rèn"},
+      {"day": 1, "order": 3, "place": "Làng tiện gỗ mỹ nghệ Nhơn Hậu", "activity": "Tham quan nghề tiện gỗ"},
+      {"day": 1, "order": 4, "place": "Làng bún An Thái", "activity": "Tìm hiểu nghề làm bún"},
+      {"day": 1, "order": 5, "place": "Làng rượu Bàu Đá", "activity": "Tham quan nghề nấu rượu truyền thống"},
+      {"day": 1, "order": 6, "place": "Thành cổ Đồ Bàn (Thành Hoàng Đế)", "activity": "Tham quan di tích kinh đô Chămpa"},
+      {"day": 1, "order": 7, "place": "Tháp Cánh Tiên", "activity": "Tham quan kiến trúc tháp Chăm"},
+      {"day": 1, "order": 8, "place": "Chùa Thập Tháp", "activity": "Tham quan chùa cổ, xem bản khắc gỗ kinh Di Đà"}
+    ]
+  },
+
+  {
+    "id": "tour-thap-cham-binh-dinh-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Tháp Dương Long", "activity": "Tham quan quần thể 3 tháp Chăm cao nhất Đông Nam Á"},
+      {"day": 1, "order": 2, "place": "Chùa Thập Tháp", "activity": "Tham quan chùa cổ, xem bản khắc gỗ kinh Di Đà"},
+      {"day": 1, "order": 3, "place": "Thành cổ Đồ Bàn (Thành Hoàng Đế)", "activity": "Tham quan di tích kinh đô Chămpa cổ"},
+      {"day": 1, "order": 4, "place": "Tháp Cánh Tiên", "activity": "Tham quan kiến trúc tháp Chăm độc đáo"},
+      {"day": 1, "order": 5, "place": "Tháp Bánh Ít (Tháp Bạc)", "activity": "Check-in tháp Chăm đẹp nhất Bình Định"},
+      {"day": 1, "order": 6, "place": "Tháp Đôi", "activity": "Tham quan tháp Chăm trong lòng thành phố Quy Nhơn"}
+    ]
+  },
+  {
+    "id": "tour-hon-kho-trung-luong-chua-ong-nui-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 3, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 4, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô tự nhiên"},
+      {"day": 1, "order": 5, "place": "Khu dã ngoại Trung Lương", "activity": "Check-in, ngắm cảnh núi non biển cả"},
+      {"day": 1, "order": 6, "place": "Chùa Ông Núi (Chùa Linh Phong)", "activity": "Check-in tượng Phật cao nhất Đông Nam Á"},
+      {"day": 1, "order": 7, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in"}
+    ]
+  }
+,
+  {
+    "id": "tour-hon-kho-eo-gio-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 3, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 4, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô tự nhiên"},
+      {"day": 1, "order": 5, "place": "Eo Gió", "activity": "Ngắm hoàng hôn"},
+      {"day": 1, "order": 6, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 1, "order": 7, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, check-in"}
+    ]
+  },
+  {
+    "id": "tour-con-chim-tieu-chung-vien-lang-song-vo-duong-chua-long-phuoc-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Tiểu chủng viện Làng Sông (Nhà thờ Làng Sông)", "activity": "Tham quan kiến trúc Gothic, tìm hiểu về chữ Quốc ngữ"},
+      {"day": 1, "order": 2, "place": "Võ đường Chùa Long Phước", "activity": "Trải nghiệm tập võ Bình Định"},
+      {"day": 1, "order": 3, "place": "Khu sinh thái Cồn Chim", "activity": "Đi thuyền ngắm đầm Thị Nại, xem chim"}
+    ]
+  },
+  {
+    "id": "tour-kham-pha-lang-chai-hai-minh-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Tượng đài Trần Hưng Đạo (Đức Thánh Trần)", "activity": "Check-in, ngắm toàn cảnh Quy Nhơn"},
+      {"day": 1, "order": 2, "place": "Hải đăng Phước Mai", "activity": "Tham quan hải đăng trăm năm"},
+      {"day": 1, "order": 3, "place": "Luỹ cổ Phương Mai", "activity": "Tham quan di tích quân sự"},
+      {"day": 1, "order": 4, "place": "Bãi Đá Đen, Hang Dơi", "activity": "Khám phá địa điểm bí ẩn"},
+      {"day": 1, "order": 5, "place": "Bãi Rạng", "activity": "Tắm biển"}
+    ]
+  },
+  {
+    "id": "tour-quy-nhon-suoi-ta-ma-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Khu Tưởng Niệm Nguyễn Sinh Sắc", "activity": "Tham quan đền thờ, nhà lưu niệm"},
+      {"day": 1, "order": 2, "place": "Suối Tà Má", "activity": "Ngắm hoa trang rừng, tắm suối, chụp ảnh"},
+      {"day": 1, "order": 3, "place": "Tượng đài khởi nghĩa Vĩnh Thạnh", "activity": "Tham quan di tích lịch sử"},
+      {"day": 1, "order": 4, "place": "Suối nước khoáng Vĩnh Thạnh", "activity": "Trải nghiệm luộc trứng nước khoáng"},
+      {"day": 1, "order": 5, "place": "Lò rượu nước nóng", "activity": "Tìm hiểu quy trình làm rượu truyền thống"}
+    ]
+  }
+,
+  {
+    "id": "tour-trai-nghiem-vo-co-truyen-binh-dinh-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Chùa Long Phước", "activity": "Đi dạo, chụp ảnh"},
+      {"day": 1, "order": 2, "place": "Võ đường Chùa Long Phước", "activity": "Xem show võ thuật, tập thế võ tự vệ"},
+      {"day": 1, "order": 3, "place": "Đầm Thị Nại", "activity": "Thưởng thức lẫu cua gạch"}
+    ]
+  },
+  {
+    "id": "tour-cau-muc-dem-quy-nhon",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe kể lịch sử"},
+      {"day": 1, "order": 2, "place": "Làng chài Nhơn Lý", "activity": "Tìm hiểu cuộc sống ngư dân"},
+      {"day": 1, "order": 3, "place": "Bè Câu mực", "activity": "Câu mực đêm, thưởng thức hải sản tại chỗ"}
+    ]
+  },
+  {
+    "id": "tour-trung-tam-kham-pha-khoa-hoc-quy-nhon-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "ExploraScience Quy Nhơn", "activity": "Tham quan các phòng triển lãm khoa học, xem trình diễn khoa học"}
+    ]
+  },
+  {
+    "id": "tour-du-lich-quy-nhon-3-ngay-2-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Chùa Thiên Hưng", "activity": "Tham quan kiến trúc, chiêm bái Ngọc Xá Lợi"},
+      {"day": 1, "order": 2, "place": "Bảo Tàng Quang Trung", "activity": "Tìm hiểu lịch sử, xem show võ và trống trận Tây Sơn"},
+      {"day": 1, "order": 3, "place": "Khu du lịch sinh thái Hầm Hô", "activity": "Đi thuyền, câu cá, tham gia hoạt động giải trí"},
+      {"day": 2, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh"},
+      {"day": 2, "order": 2, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, tham gia trò chơi, khám phá thác nước"},
+      {"day": 2, "order": 3, "place": "Bãi San Hô (Bãi Dứa)", "activity": "Lặn ngắm san hô"},
+      {"day": 2, "order": 4, "place": "Eo Gió", "activity": "Ngắm cảnh biển hùng vĩ"},
+      {"day": 2, "order": 5, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm ngưỡng tượng Phật Bà Quan Âm"},
+      {"day": 2, "order": 6, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, chụp ảnh"},
+      {"day": 3, "order": 1, "place": "Tượng đài Nguyễn Sinh Sắc – Nguyễn Tất Thành", "activity": "Chụp hình, tìm hiểu lịch sử"},
+      {"day": 3, "order": 2, "place": "Khu du lịch Ghềnh Ráng Tiên Sa", "activity": "Viếng mộ Hàn Mặc Tử, tham quan Bãi tắm Hoàng Hậu"},
+      {"day": 3, "order": 3, "place": "Trại Phong Quy Hòa", "activity": "Dạo biển, tắm biển"},
+      {"day": 3, "order": 4, "place": "Tháp Đôi", "activity": "Tham quan tháp Chăm cổ"}
+    ]
+  },
+  {
+    "id": "tour-con-chim-cheo-sup-quy-nhon-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Khu sinh thái Cồn Chim", "activity": "Ngắm cảnh, chụp ảnh, tìm hiểu hệ sinh thái"},
+      {"day": 1, "order": 2, "place": "Bè Cồn Chim", "activity": "Thưởng thức bữa trưa hải sản đặc sản"}
+    ]
+  },
+  {
+    "id": "tour-yuragi-chaya-quy-nhon-eo-gio-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh"},
+      {"day": 1, "order": 2, "place": "Yuragi Chaya Quy Nhơn", "activity": "Tham quan, trải nghiệm tắm Onsen kiểu Nhật"},
+      {"day": 1, "order": 3, "place": "Làng chài Nhơn Lý", "activity": "Check-in các điểm sống ảo"},
+      {"day": 1, "order": 4, "place": "Eo Gió", "activity": "Ngắm cảnh"},
+      {"day": 1, "order": 5, "place": "Tịnh xá Ngọc Hòa", "activity": "Tham quan"},
+      {"day": 1, "order": 6, "place": "Con đường Đá Xanh Nhơn Lý", "activity": "Khám phá, chụp ảnh"},
+      {"day": 1, "order": 7, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, chụp ảnh"}
+    ]
+  },
+  {
+    "id": "tour-du-thuyen-dam-thi-nai-nua-ngay-thap-thay-boi-cang-quy-nhon-con-chim",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Tháp Thầy Bói", "activity": "Check-in"},
+      {"day": 1, "order": 2, "place": "Cảng Quy Nhơn", "activity": "Ngắm cảnh từ xa"},
+      {"day": 1, "order": 3, "place": "Khu sinh thái Cồn Chim", "activity": "Khám phá hệ sinh thái"}
+    ]
+  },
+  {
+    "id": "tour-hon-kho-lan-ngam-san-ho-nua-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 3, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 4, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô tự nhiên"}
+    ]
+  },
+  {
+    "id": "tour-2-dao-hon-kho-cu-lao-xanh-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh, nghe thuyết minh lịch sử"},
+      {"day": 1, "order": 2, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 3, "place": "Cù Lao Xanh", "activity": "Khám phá Bãi đá Thảo Nguyên, tham quan Hải đăng, Cột cờ"},
+      {"day": 1, "order": 4, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 5, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô tự nhiên"},
+      {"day": 1, "order": 6, "place": "Eo Gió", "activity": "Ngắm hoàng hôn"}
+    ]
+  },
+  {
+    "id": "tour-du-lich-quy-nhon-2-ngay-1-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Chùa Thiên Hưng", "activity": "Tham quan, chiêm bái Ngọc Xá Lợi"},
+      {"day": 1, "order": 2, "place": "Tháp Đôi", "activity": "Tham quan tháp Chăm cổ"},
+      {"day": 1, "order": 3, "place": "Khu du lịch Ghềnh Ráng Tiên Sa", "activity": "Viếng mộ Hàn Mặc Tử, tham quan Bãi tắm Hoàng Hậu"},
+      {"day": 1, "order": 4, "place": "Quy Nhơn về đêm", "activity": "Ăn tối, khám phá cuộc sống đêm, thưởng thức cà phê Surf Bar"}
+    ]
+  },
+  {
+    "id": "tour-ky-co-eo-gio-trung-luong-2-ngay-1-dem",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Chụp ảnh"},
+      {"day": 1, "order": 2, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, check-in cây cầu tình yêu, xem show hải cẩu"},
+      {"day": 1, "order": 3, "place": "Bãi San Hô (Bãi Dứa)", "activity": "Lặn ngắm san hô"},
+      {"day": 1, "order": 4, "place": "Eo Gió", "activity": "Ngắm cảnh biển hùng vĩ"},
+      {"day": 1, "order": 5, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm ngưỡng tượng Phật Bà Quan Âm"},
+      {"day": 1, "order": 6, "place": "Tượng phật Chùa Ông Núi", "activity": "Check-in"},
+      {"day": 1, "order": 7, "place": "Khu dã ngoại Trung Lương", "activity": "Nhận lều, tham gia tiệc BBQ, đốt lửa trại"},
+      {"day": 2, "order": 1, "place": "Khu dã ngoại Trung Lương", "activity": "Ngắm bình minh, tắm biển tự do"}
+    ]
+  },
+  {
+    "id": "city-tour-quy-nhon-kham-pha-thanh-pho-quy-nhon-yen-binh",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Tượng đài Nguyễn Sinh Sắc – Nguyễn Tất Thành", "activity": "Chụp hình, tìm hiểu lịch sử"},
+      {"day": 1, "order": 2, "place": "Khu du lịch Ghềnh Ráng Tiên Sa", "activity": "Viếng mộ Hàn Mặc Tử, tham quan Bãi tắm Hoàng Hậu"},
+      {"day": 1, "order": 3, "place": "Làng Phong Quy Hòa", "activity": "Dạo biển, tắm biển"},
+      {"day": 1, "order": 4, "place": "Tháp Đôi", "activity": "Tham quan tháp Chăm cổ"},
+      {"day": 1, "order": 5, "place": "Chùa Long Khánh", "activity": "Thắp hương cầu an"},
+      {"day": 1, "order": 6, "place": "Nhà thờ Chánh Tòa (Nhà thờ Nhọn)", "activity": "Tham quan"}
+    ]
+  },
+  {
+    "id": "tour-hanh-huong-du-xuan-binh-dinh-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Chùa Long Khánh", "activity": "Thắp hương cầu an"},
+      {"day": 1, "order": 2, "place": "Chùa Hương Mai", "activity": "Tham quan"},
+      {"day": 1, "order": 3, "place": "Tịnh xá Ngọc Hòa", "activity": "Chiêm bái tượng Phật Quan Âm đôi"},
+      {"day": 1, "order": 4, "place": "Chùa Ông Núi (Chùa Linh Phong)", "activity": "Tham quan, check-in tượng Phật cao nhất Đông Nam Á"},
+      {"day": 1, "order": 5, "place": "Chùa Thập Tháp", "activity": "Tham quan ngôi chùa cổ, tìm hiểu về Hòn Đá Chém"},
+      {"day": 1, "order": 6, "place": "Chùa Thiên Hưng", "activity": "Tham quan kiến trúc độc đáo, chiêm bái Ngọc Xá Lợi"}
+    ]
+  },
+  {
+    "id": "tour-ky-co-bang-duong-bo-1-ngay-ngam-bien-dao-quy-nhon-tu-tren-cao",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh"},
+      {"day": 1, "order": 2, "place": "Đường bộ vào Kỳ Co", "activity": "Ngắm toàn cảnh làng chài Nhơn Lý, FLC Quy Nhơn từ trên cao, check-in đồi điện gió"},
+      {"day": 1, "order": 3, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, check-in cầu tình yêu, xem show hải cẩu"},
+      {"day": 1, "order": 4, "place": "Eo Gió", "activity": "Ngắm cảnh"},
+      {"day": 1, "order": 5, "place": "Tịnh xá Ngọc Hòa", "activity": "Tham quan"},
+      {"day": 1, "order": 6, "place": "Con đường Đá Xanh Nhơn Lý", "activity": "Khám phá, chụp ảnh"},
+      {"day": 1, "order": 7, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, chụp ảnh"},
+      {"day": 1, "order": 8, "place": "Khu biệt thự Đại Phú Gia", "activity": "Check-in Tượng Thần Biển Cả/Bến Du Thuyền, thưởng thức đặc sản"}
+    ]
+  },
+  {
+    "id": "tour-du-lich-phu-my-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Mũi Vi Rồng", "activity": "Lên thuyền tham quan, chụp hình"},
+      {"day": 1, "order": 2, "place": "Đảo Hòn Đụn (Hòn Nước)", "activity": "Lặn ngắm san hô, chụp hình Bãi Trứng"},
+      {"day": 1, "order": 3, "place": "Bãi Ngang", "activity": "Tắm biển"},
+      {"day": 1, "order": 4, "place": "Làng Bí Đao Khổng Lồ", "activity": "Tham quan vườn bí, thưởng thức nước và mứt bí đao"},
+      {"day": 1, "order": 5, "place": "Cầu Tre Bình Long", "activity": "Trải nghiệm đi qua cầu tre"},
+      {"day": 1, "order": 6, "place": "Khu du lịch sinh thái Đầm Trà Ổ", "activity": "Chèo ghe, thả lưới bắt cá, câu cá, hái dừa"}
+    ]
+  },
+  {
+    "id": "tour-hon-kho-ky-co-bang-duong-bo-eo-gio-1-ngay",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Cầu Thị Nại", "activity": "Ngắm cảnh"},
+      {"day": 1, "order": 2, "place": "Đường bộ vào Kỳ Co", "activity": "Ngắm toàn cảnh làng chài Nhơn Lý, FLC Quy Nhơn từ trên cao, check-in đồi điện gió"},
+      {"day": 1, "order": 3, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, check-in cầu tình yêu, xem show hải cẩu"},
+      {"day": 1, "order": 4, "place": "Eo Gió", "activity": "Ngắm cảnh"},
+      {"day": 1, "order": 5, "place": "Tịnh xá Ngọc Hòa", "activity": "Tham quan"},
+      {"day": 1, "order": 6, "place": "Làng chài Nhơn Hải", "activity": "Tham quan đời sống ngư dân"},
+      {"day": 1, "order": 7, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 8, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô tự nhiên"},
+      {"day": 1, "order": 9, "place": "Đồi Cát Phương Mai", "activity": "Trượt cát, chụp ảnh"},
+      {"day": 1, "order": 10, "place": "Khu biệt thự Đại Phú Gia", "activity": "Check-in Tượng Thần Biển Cả/Bến Du Thuyền, thưởng thức đặc sản"}
+    ]
+  },
+  {
+    "id": "tour-ky-co-lan-san-ho-bai-dua-nua-ngay-don-tai-nhon-ly",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Bãi tắm Kỳ Co", "activity": "Tắm biển, check-in cầu tình yêu"},
+      {"day": 1, "order": 2, "place": "Bãi San Hô (Bãi Dứa)", "activity": "Lặn ngắm san hô tự nhiên"}
+    ]
+  },
+  {
+    "id": "tour-hon-kho-lan-ngam-san-ho-nua-ngay-don-tai-nhon-hai",
+    "schedule": [
+      {"day": 1, "order": 1, "place": "Làng chài Nhơn Hải", "activity": "Tìm hiểu đời sống ngư dân"},
+      {"day": 1, "order": 2, "place": "Đảo Hòn Khô", "activity": "Check-in con đường giữa biển, cầu gỗ"},
+      {"day": 1, "order": 3, "place": "Bãi San Hô Hòn Khô", "activity": "Lặn ngắm san hô tự nhiên"}
+    ]
+  }
+]

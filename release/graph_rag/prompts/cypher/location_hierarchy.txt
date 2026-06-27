@@ -1,0 +1,18 @@
+### Location hierarchy:
+- Location nodes represent provinces/cities AND xã/phường với: name, admin_level (ward=83, province=3, area=3)
+- Location-[:SUPERSEDED_BY]->Location links old provinces to new ones (post-2025 merger)
+- Location.name chứa tên tỉnh/thành phố (ví dụ: 'Gia Lai', 'Pleiku', 'Quy Nhơn')
+- admin_status: current (50), merged (39)
+- region_group: gia_lai_core (40), binh_dinh_legacy (39)
+
+### Location filtering theo admin_level — QUAN TRỌNG:
+- Khi user hỏi về thành phố (Pleiku, Quy Nhơn, An Nhơn):
+  Location.name = tên thành phố (admin_level=ward)
+  → MATCH (n)-[:LOCATED_IN]->(l:Location) WHERE l.name CONTAINS 'Pleiku'
+  HOẶC nếu cần cả tỉnh: WHERE l.name CONTAINS 'Pleiku' OR l.current_province CONTAINS 'Gia Lai'
+- Khi user hỏi về tỉnh (Gia Lai, Bình Định):
+  Location.name = tên tỉnh (admin_level=province)
+  → MATCH (n)-[:LOCATED_IN]->(l:Location) WHERE l.name CONTAINS 'Gia Lai'
+  HOẶC dùng region_group: WHERE l.region_group = 'gia_lai_core'
+- KHÔNG dùng l.name CONTAINS 'Gia Lai' khi user nói 'Pleiku' — Pleiku là ward, KHÔNG phải province name
+- Nếu query trả 0 rows với Location.name, thử dùng n.address CONTAINS hoặc l.current_province CONTAINS

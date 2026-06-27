@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dat-phong-khach-san",
+    "topic": "booking",
+    "name": "Kinh nghiệm đặt phòng khách sạn",
+    "description": "Để có giá phòng tốt nhất, bạn nên đặt trước ít nhất 2-4 tuần, so sánh giá trên các ứng dụng như Booking.com, Agoda, Traveloka. Nên chọn các ngày trong tuần thay vì cuối tuần, và theo dõi các chương trình giảm giá. Nhiều khách sạn ở Pleiku và Quy Nhơn có giá ưu đãi vào mùa thấp điểm.",
+    "location": "Gia Lai - Bình Định",
+    "contact": ""
+  },
+  {
+    "id": "pleiku-mang-den",
+    "topic": "transport",
+    "name": "Di chuyển Pleiku - Măng Đen (Kon Tum)",
+    "description": "Từ trung tâm Pleiku, bạn có thể đi xe máy hoặc ô tô riêng lên Măng Đen với quãng đường khoảng 100km, mất chừng 2-2.5 tiếng. Đường đèo quanh co nhưng phong cảnh rất đẹp. Nếu không tự lái, bạn có thể bắt xe khách tuyến Pleiku - Kon Tum và xuống ngã ba Măng Đen.",
+    "location": "Gia Lai",
+    "contact": ""
+  },
+  {
+    "id": "cong-dong-du-lich",
+    "topic": "community",
+    "name": "Cộng đồng du lịch trực tuyến",
+    "description": "Bạn có thể tham gia các cộng đồng du lịch trên Facebook như 'Hội những người mê du lịch Gia Lai', 'Du lịch Quy Nhơn - Bình Định', hoặc các diễn đàn du lịch lớn như diễn đàn của Traveloka, TripAdvisor. Ngoài ra, Báo Gia Lai điện tử (baogialai.com.vn) cũng thường xuyên có các bài viết về du lịch địa phương.",
+    "location": "Gia Lai - Bình Định",
+    "contact": "baogialai.com.vn"
+  }
+]

@@ -1,0 +1,3084 @@
+[
+  {
+    "id": "135-coffee-pub",
+    "name": "135 Coffee & Pub",
+    "neo4j_address": "27 Biên Cương, Phường Bồng Sơn",
+    "enriched_rating": 4.3,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.3,
+    "serpapi_rating_count": 127,
+    "opening_hours": [
+      {
+        "thứ tư": "06:00–23:30"
+      },
+      {
+        "thứ năm": "06:00–23:30"
+      },
+      {
+        "thứ sáu": "06:00–23:30"
+      },
+      {
+        "thứ bảy": "06:00–23:30"
+      },
+      {
+        "chủ nhật": "06:00–23:30"
+      },
+      {
+        "thứ hai": "06:00–23:30"
+      },
+      {
+        "thứ ba": "06:00–23:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "adiuvat-coffee-roasters",
+    "name": "Adiuvat Coffee Roasters",
+    "neo4j_address": "57a Đường Nguyễn Huệ, Phường Quy Nhơn",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 580,
+    "opening_hours": [
+      {
+        "thứ tư": "07:30–21:30"
+      },
+      {
+        "thứ năm": "07:30–21:30"
+      },
+      {
+        "thứ sáu": "07:30–21:30"
+      },
+      {
+        "thứ bảy": "07:30–21:30"
+      },
+      {
+        "chủ nhật": "07:30–21:30"
+      },
+      {
+        "thứ hai": "07:30–21:30"
+      },
+      {
+        "thứ ba": "07:30–21:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bookafe",
+    "name": "Bookafe",
+    "neo4j_address": "86 Lê Duẩn, Phường Pleiku",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 413,
+    "opening_hours": [
+      "thứ tư: 06:00–22:00",
+      "thứ năm: 06:00–22:00",
+      "thứ sáu: 06:00–22:00",
+      "thứ bảy: 06:00–22:00",
+      "chủ nhật: 06:00–22:00",
+      "thứ hai: 06:00–22:00",
+      "thứ ba: 06:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "banh-choi-long-heo-pham-hong-thai",
+    "name": "Bánh hỏi cháo lòng Phạm Hồng Thái",
+    "neo4j_address": "Phạm Hồng Thái, Phường Quy Nhơn",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 336,
+    "opening_hours": [
+      "thứ tư: 06:00–10:30",
+      "thứ năm: 06:00–10:30",
+      "thứ sáu: 06:00–10:30",
+      "thứ bảy: 06:00–10:30",
+      "chủ nhật: 06:00–10:30",
+      "thứ hai: 06:00–10:30",
+      "thứ ba: 06:00–10:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "banh-xeo-ba-tam",
+    "name": "Bánh xèo Bà Tám",
+    "neo4j_address": "5 Trần Bình Trọng, Phường Diên Hồng",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 32,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–21:00"
+      },
+      {
+        "thứ năm": "10:00–21:00"
+      },
+      {
+        "thứ sáu": "08:00–21:00"
+      },
+      {
+        "thứ bảy": "10:00–21:00"
+      },
+      {
+        "chủ nhật": "10:00–21:00"
+      },
+      {
+        "thứ hai": "10:00–21:00"
+      },
+      {
+        "thứ ba": "10:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "banh-xeo-my-cang",
+    "name": "Bánh xèo Mỹ Cang",
+    "neo4j_address": "Xã Phước Hiệp, Xã Tuy Phước",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 474,
+    "opening_hours": [
+      "thứ tư: 06:30–10:00",
+      "thứ năm: 06:30–10:00",
+      "thứ sáu: 06:30–10:00",
+      "thứ bảy: 06:30–10:00",
+      "chủ nhật: 06:30–10:00",
+      "thứ hai: 06:30–10:00",
+      "thứ ba: 06:30–10:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "banh-xeo-gia-vy",
+    "name": "Bánh xèo tôm nhảy Gia Vỹ",
+    "neo4j_address": "14 Diên Hồng, Phường Quy Nhơn",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 2035,
+    "opening_hours": [
+      "thứ tư: 06:00–22:00",
+      "thứ năm: 06:00–22:00",
+      "thứ sáu: 06:00–22:00",
+      "thứ bảy: 06:00–22:00",
+      "chủ nhật: 06:00–22:00",
+      "thứ hai: 06:00–22:00",
+      "thứ ba: 06:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "be-thui-bong-lai",
+    "name": "Bê thui Bồng Lai",
+    "neo4j_address": "03 Triệu Quang Phục, Phường Pleiku",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 60,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–21:00"
+      },
+      {
+        "thứ năm": "08:00–21:00"
+      },
+      {
+        "thứ sáu": "08:00–21:00"
+      },
+      {
+        "thứ bảy": "08:00–21:00"
+      },
+      {
+        "chủ nhật": "08:00–21:00"
+      },
+      {
+        "thứ hai": "08:00–21:00"
+      },
+      {
+        "thứ ba": "08:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bo-ne-3-ngon-gia-lai",
+    "name": "Bò né 3 ngon Gia Lai",
+    "neo4j_address": "59 Nguyễn Thiện Thuật, Phường Diên Hồng",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 301,
+    "opening_hours": [
+      "thứ tư: 06:30–11:30, 15:30–21:00",
+      "thứ năm: 06:30–11:30, 15:30–21:00",
+      "thứ sáu: 06:30–11:30, 15:30–21:00",
+      "thứ bảy: 06:30–11:30, 15:30–21:00",
+      "chủ nhật: 06:30–11:30, 15:30–21:00",
+      "thứ hai: 06:30–11:30, 15:30–21:00",
+      "thứ ba: 06:30–11:30, 15:30–21:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bun-chi",
+    "name": "Bún Chi",
+    "neo4j_address": "11 Phùng Hưng, Phường Pleiku",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 475,
+    "opening_hours": [
+      "thứ tư: 11:00–19:00",
+      "thứ năm: 11:00–19:00",
+      "thứ sáu: 11:00–19:00",
+      "thứ bảy: 11:00–19:00",
+      "chủ nhật: 11:00–19:00",
+      "thứ hai: 11:00–19:00",
+      "thứ ba: 11:00–19:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bun-cua",
+    "name": "Bún Cua",
+    "neo4j_address": "19 Phùng Hưng, Phường Pleiku",
+    "enriched_rating": 4.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.4,
+    "serpapi_rating_count": 150,
+    "opening_hours": [
+      {
+        "thứ tư": "11:00–18:30"
+      },
+      {
+        "thứ năm": "11:00–18:30"
+      },
+      {
+        "thứ sáu": "11:00–18:30"
+      },
+      {
+        "thứ bảy": "11:00–18:30"
+      },
+      {
+        "chủ nhật": "11:00–18:30"
+      },
+      {
+        "thứ hai": "11:00–18:30"
+      },
+      {
+        "thứ ba": "11:00–18:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bun-bo-hue-ba-huong",
+    "name": "Bún bò Huế Bà Hường",
+    "neo4j_address": "57A Nguyễn Du, Phường Diên Hồng",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 377,
+    "opening_hours": [
+      "thứ tư: 06:00–22:30",
+      "thứ năm: 06:00–22:30",
+      "thứ sáu: 06:00–22:30",
+      "thứ bảy: 06:00–22:30",
+      "chủ nhật: 06:00–22:30",
+      "thứ hai: 06:00–22:30",
+      "thứ ba: 06:00–22:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bun-cha-ca-ngoc-lien",
+    "name": "Bún chả cá Ngọc Liên",
+    "neo4j_address": "24 Nguyễn Thị Minh Khai, Phường Quy Nhơn",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 3103,
+    "opening_hours": [
+      {
+        "thứ tư": "05:30–22:00"
+      },
+      {
+        "thứ năm": "05:30–22:00"
+      },
+      {
+        "thứ sáu": "05:30–22:00"
+      },
+      {
+        "thứ bảy": "05:30–22:00"
+      },
+      {
+        "chủ nhật": "05:30–22:00"
+      },
+      {
+        "thứ hai": "05:30–22:00"
+      },
+      {
+        "thứ ba": "05:30–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "bun-mam-cua-co-chi",
+    "name": "Bún mắm cua Cô Chi",
+    "neo4j_address": "02 Phùng Hưng, Phường Hội Thương",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 212,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "cascara-tea-coffee-house",
+    "name": "Cascara Tea & Coffee House",
+    "neo4j_address": "65A Hoàng Diệu, Phường Diên Hồng",
+    "enriched_rating": 3.8,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.8,
+    "serpapi_rating_count": 203,
+    "opening_hours": [
+      "thứ tư: 06:30–22:00",
+      "thứ năm: 06:30–22:00",
+      "thứ sáu: 06:30–22:00",
+      "thứ bảy: 06:30–22:00",
+      "chủ nhật: 06:30–22:00",
+      "thứ hai: 06:30–22:00",
+      "thứ ba: 06:30–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "circle-restaurant",
+    "name": "Circle Restaurant ",
+    "neo4j_address": "62 Wừu, Phường Diên Hồng",
+    "data_source": "mock"
+  },
+  {
+    "id": "coffee-khong-gian-xua",
+    "name": "Coffee Không Gian Xưa",
+    "neo4j_address": "Trần Đình Châu, Xã Hoài Ân",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 100,
+    "opening_hours": [
+      {
+        "thứ tư": "06:00–22:00"
+      },
+      {
+        "thứ năm": "06:00–22:00"
+      },
+      {
+        "thứ sáu": "06:00–22:00"
+      },
+      {
+        "thứ bảy": "06:00–22:00"
+      },
+      {
+        "chủ nhật": "06:00–22:00"
+      },
+      {
+        "thứ hai": "06:00–22:00"
+      },
+      {
+        "thứ ba": "06:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "cau-ca-bay-dung",
+    "name": "Câu cá Bảy Dũng",
+    "neo4j_address": "Hẻm Tạ Quang Bửu, Phường Pleiku",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 151,
+    "opening_hours": [
+      {
+        "thứ tư": "08:30–20:00"
+      },
+      {
+        "thứ năm": "08:30–20:00"
+      },
+      {
+        "thứ sáu": "08:30–20:00"
+      },
+      {
+        "thứ bảy": "08:30–20:00"
+      },
+      {
+        "chủ nhật": "08:30–20:00"
+      },
+      {
+        "thứ hai": "08:30–20:00"
+      },
+      {
+        "thứ ba": "08:30–20:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-lam-ga-nuong-ruou-can-iagui",
+    "name": "Cơm Lam - Gà Nướng – Rượu Cần IaGui",
+    "neo4j_address": "26 Phạm Ngọc Thạch, Phường Thống Nhất",
+    "data_source": "mock"
+  },
+  {
+    "id": "com-nieu-hoi-an-quy-nhon",
+    "name": "Cơm Niêu Hội An - Quy Nhơn",
+    "neo4j_address": "Đường Nguyễn Tất Thành (nối dài), Phường Pleiku",
+    "enriched_rating": 3.8,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.8,
+    "serpapi_rating_count": 1113,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–14:00, 16:00–22:00"
+      },
+      {
+        "thứ năm": "10:00–14:00, 16:00–22:00"
+      },
+      {
+        "thứ sáu": "10:00–14:00, 16:00–22:00"
+      },
+      {
+        "thứ bảy": "10:00–14:00, 16:00–22:00"
+      },
+      {
+        "chủ nhật": "10:00–14:00, 16:00–22:00"
+      },
+      {
+        "thứ hai": "10:00–14:00, 16:00–22:00"
+      },
+      {
+        "thứ ba": "10:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-chay-thanh-thao",
+    "name": "Cơm chay Thanh Thảo",
+    "neo4j_address": "32 Tăng Bạt Hổ, Phường Diên Hồng",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 401,
+    "opening_hours": [
+      {
+        "thứ tư": "06:00–21:00"
+      },
+      {
+        "thứ năm": "06:00–21:00"
+      },
+      {
+        "thứ sáu": "06:00–21:00"
+      },
+      {
+        "thứ bảy": "06:00–21:00"
+      },
+      {
+        "chủ nhật": "06:00–21:00"
+      },
+      {
+        "thứ hai": "06:00–21:00"
+      },
+      {
+        "thứ ba": "06:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-ga-hai-nam",
+    "name": "Cơm gà Hải Nam",
+    "neo4j_address": "73 Hai Bà Trưng, Phường Diên Hồng",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 908,
+    "opening_hours": [
+      {
+        "thứ tư": "06:15–21:00"
+      },
+      {
+        "thứ năm": "06:15–21:00"
+      },
+      {
+        "thứ sáu": "06:15–21:00"
+      },
+      {
+        "thứ bảy": "06:15–21:00"
+      },
+      {
+        "chủ nhật": "06:15–21:00"
+      },
+      {
+        "thứ hai": "06:30–20:30"
+      },
+      {
+        "thứ ba": "06:15–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-ga-my-tam-1",
+    "name": "Cơm gà Mỹ Tâm 1",
+    "neo4j_address": "03 Quang Trung, Phường Pleiku",
+    "enriched_rating": 3.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.4,
+    "serpapi_rating_count": 294,
+    "opening_hours": [
+      "thứ tư: 09:30–21:00",
+      "thứ năm: 09:30–21:00",
+      "thứ sáu: 09:30–21:00",
+      "thứ bảy: 09:30–21:00",
+      "chủ nhật: 09:30–21:00",
+      "thứ hai: 09:30–21:00",
+      "thứ ba: 09:30–21:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-ga-my-tam-2",
+    "name": "Cơm gà Mỹ Tâm 2",
+    "neo4j_address": "06 Quang Trung, Phường Pleiku",
+    "enriched_rating": 3.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.4,
+    "serpapi_rating_count": 167,
+    "opening_hours": [
+      "thứ tư: Mở cửa cả ngày",
+      "thứ năm: Mở cửa cả ngày",
+      "thứ sáu: Mở cửa cả ngày",
+      "thứ bảy: Mở cửa cả ngày",
+      "chủ nhật: Mở cửa cả ngày",
+      "thứ hai: Mở cửa cả ngày",
+      "thứ ba: Mở cửa cả ngày"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-lam-ga-nuong-ksor-hnhao",
+    "name": "Cơm lam Gà nướng Ksor Hnhao",
+    "neo4j_address": "Số 49/18 Trần Nguyên Hãn, Phường Thống Nhất",
+    "enriched_rating": 4.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.4,
+    "serpapi_rating_count": 935,
+    "opening_hours": [
+      "thứ tư: 09:00–21:30",
+      "thứ năm: 09:00–21:30",
+      "thứ sáu: 09:00–21:30",
+      "thứ bảy: 09:00–21:30",
+      "chủ nhật: 09:00–21:30",
+      "thứ hai: 09:00–22:00",
+      "thứ ba: 09:00–21:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "com-lam-ga-nuong-plit",
+    "name": "Cơm lam Gà nướng Plit",
+    "neo4j_address": "Hẻm 39 Đào Duy Từ, Phường Pleiku",
+    "enriched_rating": 4.3,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.3,
+    "serpapi_rating_count": 479,
+    "opening_hours": [
+      {
+        "thứ tư": "08:30–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:30–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "fanson-bakery-coffee",
+    "name": "FANSON Bakery & Coffee",
+    "neo4j_address": "Lô 01-H5 Nguyễn Thị Định, Phường Quy Nhơn Nam",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 137,
+    "opening_hours": [
+      {
+        "thứ tư": "06:30–22:30"
+      },
+      {
+        "thứ năm": "06:30–22:30"
+      },
+      {
+        "thứ sáu": "06:30–22:30"
+      },
+      {
+        "thứ bảy": "06:30–22:30"
+      },
+      {
+        "chủ nhật": "06:30–22:30"
+      },
+      {
+        "thứ hai": "06:30–22:30"
+      },
+      {
+        "thứ ba": "06:30–22:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "hoang-vu-plaza",
+    "name": "Hoàng Vũ Plaza",
+    "neo4j_address": "Khu Dân Cư Ngô Gia Tự, Phường Bình Định",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 71,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "hai-san-nha-le",
+    "name": "Hải sản Nhà Lê",
+    "neo4j_address": "44 An Dương Vương, Phường Quy Nhơn",
+    "enriched_rating": 4.8,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.8,
+    "serpapi_rating_count": 531,
+    "opening_hours": [
+      "thứ tư: 10:00–22:00",
+      "thứ năm: 10:00–22:00",
+      "thứ sáu: 10:00–22:00",
+      "thứ bảy: 10:00–22:00",
+      "chủ nhật: 10:00–22:00",
+      "thứ hai: 10:00–22:00",
+      "thứ ba: 10:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "hai-san-thien-an",
+    "name": "Hải sản Thiên An",
+    "neo4j_address": "42 Xuân Diệu, Phường Quy Nhơn",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 213,
+    "opening_hours": [
+      "thứ tư: 10:00–00:00",
+      "thứ năm: 10:00–00:00",
+      "thứ sáu: 10:00–00:00",
+      "thứ bảy: 10:00–00:00",
+      "chủ nhật: 10:00–00:00",
+      "thứ hai: 10:00–00:00",
+      "thứ ba: 10:00–00:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "khong-gian-viet-restaurant",
+    "name": "Không gian Việt Restaurant",
+    "neo4j_address": "144 Tô Vĩnh Diện, Phường Pleiku",
+    "enriched_rating": 4.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.4,
+    "serpapi_rating_count": 746,
+    "opening_hours": [
+      "thứ tư: 06:30–22:00",
+      "thứ năm: 06:30–22:00",
+      "thứ sáu: 06:30–22:00",
+      "thứ bảy: 06:30–22:00",
+      "chủ nhật: 06:30–22:00",
+      "thứ hai: 06:30–22:00",
+      "thứ ba: 06:30–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "lotteria",
+    "name": "Lotteria",
+    "neo4j_address": "01 Phan Bội Châu, Phường Pleiku",
+    "enriched_rating": 3.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.6,
+    "serpapi_rating_count": 376,
+    "opening_hours": [
+      {
+        "thứ tư": "09:00–22:00"
+      },
+      {
+        "thứ năm": "09:00–22:00"
+      },
+      {
+        "thứ sáu": "09:00–22:00"
+      },
+      {
+        "thứ bảy": "09:00–22:00"
+      },
+      {
+        "chủ nhật": "09:00–22:00"
+      },
+      {
+        "thứ hai": "09:00–22:00"
+      },
+      {
+        "thứ ba": "09:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "la-restaurant",
+    "name": "Lá Restaurant",
+    "neo4j_address": "248 Cách Mạng Tháng Tám, Phường Pleiku",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 212,
+    "opening_hours": [
+      "thứ tư: 15:00–22:00",
+      "thứ năm: 15:00–22:00",
+      "thứ sáu: 15:00–22:00",
+      "thứ bảy: 15:00–22:00",
+      "chủ nhật: 15:00–22:00",
+      "thứ hai: 15:00–22:00",
+      "thứ ba: 15:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "loc-vung-restaurant",
+    "name": "Lộc Vừng Restaurant",
+    "neo4j_address": "3 Bùi Dự, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 248,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "mi-quang-huong",
+    "name": "Mì quảng Hường",
+    "neo4j_address": "24 Nguyễn Du, Phường Diên Hồng",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 117,
+    "opening_hours": [
+      "thứ tư: 06:45–19:30",
+      "thứ năm: 06:45–19:30",
+      "thứ sáu: 06:45–19:30",
+      "thứ bảy: 06:45–19:30",
+      "chủ nhật: 06:45–19:30",
+      "thứ hai: 06:45–19:30",
+      "thứ ba: 06:45–19:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nem-cho-huyen-olala",
+    "name": "Nem Chợ Huyện Olala",
+    "neo4j_address": "thôn Hanh Quang, Xã Tuy Phước",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 256,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nem-cho-huyen-goc",
+    "name": "Nem Chợ Huyện gốc",
+    "neo4j_address": "Chợ Huyện, Xã Tuy Phước",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 23,
+    "opening_hours": [
+      "thứ tư: Mở cửa cả ngày",
+      "thứ năm: Mở cửa cả ngày",
+      "thứ sáu: Mở cửa cả ngày",
+      "thứ bảy: Đóng cửa",
+      "chủ nhật: Đóng cửa",
+      "thứ hai: Mở cửa cả ngày",
+      "thứ ba: Mở cửa cả ngày"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nem-ninh-hoa",
+    "name": "Nem Ninh Hòa",
+    "neo4j_address": "06 Cù Chính lan, Phường Diên Hồng",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 9,
+    "opening_hours": [
+      {
+        "thứ tư": "14:00–21:00"
+      },
+      {
+        "thứ năm": "14:00–21:00"
+      },
+      {
+        "thứ sáu": "14:00–21:00"
+      },
+      {
+        "thứ bảy": "14:00–21:00"
+      },
+      {
+        "chủ nhật": "14:00–21:00"
+      },
+      {
+        "thứ hai": "14:00–21:00"
+      },
+      {
+        "thứ ba": "14:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "ngoi-nau-restaurant",
+    "name": "Ngói Nâu Restaurant",
+    "neo4j_address": "120 Nguyễn Thái Học, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 306,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–22:00"
+      },
+      {
+        "thứ năm": "10:00–22:00"
+      },
+      {
+        "thứ sáu": "10:00–22:00"
+      },
+      {
+        "thứ bảy": "10:00–22:00"
+      },
+      {
+        "chủ nhật": "10:00–22:00"
+      },
+      {
+        "thứ hai": "10:00–22:00"
+      },
+      {
+        "thứ ba": "10:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-to-nung",
+    "name": "Nhà hàng Tơ Nưng",
+    "neo4j_address": "220 Tôn Đức Thắng, Xã Biển Hồ",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 615,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-dicila",
+    "name": "Nhà Hàng D'iCil'a",
+    "neo4j_address": "92-96 Nguyễn Thái Học, Phường Pleiku",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 25,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-711",
+    "name": "Nhà hàng 711",
+    "neo4j_address": "711 Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 46,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-anh-vu",
+    "name": "Nhà hàng Anh Vũ",
+    "neo4j_address": "Đường Võ Thị Sáu, Xã Kông Chro",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 40,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-bien-ho-xanh",
+    "name": "Nhà hàng Biển Hồ Xanh",
+    "neo4j_address": "662 Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 226,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–22:00"
+      },
+      {
+        "thứ năm": "07:30–22:00"
+      },
+      {
+        "thứ sáu": "07:00–22:00"
+      },
+      {
+        "thứ bảy": "07:00–22:00"
+      },
+      {
+        "chủ nhật": "07:00–22:00"
+      },
+      {
+        "thứ hai": "07:00–22:00"
+      },
+      {
+        "thứ ba": "07:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-cao-nguyen",
+    "name": "Nhà hàng Cao Nguyên",
+    "neo4j_address": "96 Phan Đình Phùng, Phường Diên Hồng",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 128,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-cao-nguyen-xanh",
+    "name": "Nhà hàng Cao Nguyên Xanh",
+    "neo4j_address": "Khu quy hoạch ven hồ, Xã Chư Prông",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 33,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-centery",
+    "name": "Nhà hàng Centery ",
+    "neo4j_address": "170-172 Wừu, Phường Diên Hồng",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 541,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–21:00"
+      },
+      {
+        "thứ năm": "07:00–21:00"
+      },
+      {
+        "thứ sáu": "07:00–21:00"
+      },
+      {
+        "thứ bảy": "07:00–21:00"
+      },
+      {
+        "chủ nhật": "07:00–21:00"
+      },
+      {
+        "thứ hai": "07:00–21:00"
+      },
+      {
+        "thứ ba": "07:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-cheo-reo",
+    "name": "Nhà hàng Cheo Reo",
+    "neo4j_address": "04 Hoàng Quốc Việt, Xã Chư Sê",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 388,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–21:00"
+      },
+      {
+        "thứ năm": "10:00–21:00"
+      },
+      {
+        "thứ sáu": "10:00–21:00"
+      },
+      {
+        "thứ bảy": "10:00–21:00"
+      },
+      {
+        "chủ nhật": "10:00–21:00"
+      },
+      {
+        "thứ hai": "10:00–21:00"
+      },
+      {
+        "thứ ba": "10:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-chi-thanh",
+    "name": "Nhà hàng Chí Thành ",
+    "neo4j_address": "299 Tôn Đức Thắng, Xã Biển Hồ",
+    "enriched_rating": 5.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 5.0,
+    "serpapi_rating_count": 2,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-confetti",
+    "name": "Nhà hàng Confetti",
+    "neo4j_address": "Cảng Hàng không Phù Cát, Xã Phù Cát",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 6,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-com-nieu-xq-hoa",
+    "name": "Nhà hàng Cơm niêu XQ Hoa",
+    "neo4j_address": "110-112 Nguyễn Tất Thành, Phường Pleiku",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 128,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-hoang-anh",
+    "name": "Nhà hàng Hoàng Ánh ",
+    "neo4j_address": "206/10 Phù Đổng, Phường Pleiku",
+    "enriched_rating": 3.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.6,
+    "serpapi_rating_count": 29,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-huong-viet",
+    "name": "Nhà hàng Hương Việt",
+    "neo4j_address": "122 Xuân Diệu, Phường Quy Nhơn",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 14,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-jolibi",
+    "name": "Nhà hàng Jolibi",
+    "neo4j_address": "101 Hai Bà Trưng, Phường Diên Hồng",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 732,
+    "opening_hours": [
+      "thứ tư: 09:00–21:00",
+      "thứ năm: 09:00–21:00",
+      "thứ sáu: 09:00–21:00",
+      "thứ bảy: 09:00–21:00",
+      "chủ nhật: 09:00–21:00",
+      "thứ hai: 09:00–21:00",
+      "thứ ba: 09:00–21:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-khach-san-khanh-linh",
+    "name": "Nhà hàng Khách sạn Khánh Linh",
+    "neo4j_address": "232 Nguyễn Tất Thành, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 814,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-kim-oanh",
+    "name": "Nhà hàng Kim Oanh",
+    "neo4j_address": "669 Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 4.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.9,
+    "serpapi_rating_count": 71,
+    "opening_hours": [
+      "thứ tư: 06:00–20:00",
+      "thứ năm: 06:00–20:00",
+      "thứ sáu: 06:00–20:00",
+      "thứ bảy: 06:00–20:00",
+      "chủ nhật: 06:00–20:00",
+      "thứ hai: 06:00–20:00",
+      "thứ ba: 06:00–20:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-la-xanh-cong-vien-dong-xanh",
+    "name": "Nhà hàng Lá Xanh (Công viên Đồng Xanh)",
+    "neo4j_address": "thôn 5, Phường An Phú, Gia Lai",
+    "enriched_rating": 3.8,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.8,
+    "serpapi_rating_count": 1029,
+    "opening_hours": [
+      "thứ tư: 07:30–19:30",
+      "thứ năm: 07:30–19:30",
+      "thứ sáu: 07:30–19:30",
+      "thứ bảy: 07:30–19:30",
+      "chủ nhật: 07:30–19:30",
+      "thứ hai: 07:30–19:30",
+      "thứ ba: 07:30–19:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-le-thanh",
+    "name": "Nhà hàng Lệ Thanh",
+    "neo4j_address": "Tổ 1, Xã Đức Cơ",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 105,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-minh-tuan",
+    "name": "Nhà hàng Minh Tuấn",
+    "neo4j_address": "930A Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 5.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 5.0,
+    "serpapi_rating_count": 1,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–22:00"
+      },
+      {
+        "thứ năm": "07:00–22:00"
+      },
+      {
+        "thứ sáu": "07:00–22:00"
+      },
+      {
+        "thứ bảy": "07:00–22:00"
+      },
+      {
+        "chủ nhật": "07:00–22:00"
+      },
+      {
+        "thứ hai": "07:00–22:00"
+      },
+      {
+        "thứ ba": "07:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-moc-vien",
+    "name": "Nhà hàng Mộc Viên",
+    "neo4j_address": "02 Võ Nguyên Giáp, Phường Quy Nhơn",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 491,
+    "opening_hours": [
+      {
+        "thứ tư": "06:00–22:00"
+      },
+      {
+        "thứ năm": "06:00–22:00"
+      },
+      {
+        "thứ sáu": "06:00–22:00"
+      },
+      {
+        "thứ bảy": "06:00–22:00"
+      },
+      {
+        "chủ nhật": "06:00–22:00"
+      },
+      {
+        "thứ hai": "06:00–22:00"
+      },
+      {
+        "thứ ba": "06:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-moc-viet",
+    "name": "Nhà hàng Mộc Việt",
+    "neo4j_address": "30 Chương Dương, Phường Quy Nhơn Nam",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 173,
+    "opening_hours": [
+      {
+        "thứ tư": "09:30–21:00"
+      },
+      {
+        "thứ năm": "09:30–21:00"
+      },
+      {
+        "thứ sáu": "09:30–21:00"
+      },
+      {
+        "thứ bảy": "09:30–21:00"
+      },
+      {
+        "chủ nhật": "09:30–21:00"
+      },
+      {
+        "thứ hai": "09:30–21:00"
+      },
+      {
+        "thứ ba": "09:30–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-my-hue",
+    "name": "Nhà hàng Mỹ Huệ",
+    "neo4j_address": "Xã Chư Prông",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 108,
+    "opening_hours": [
+      {
+        "thứ tư": "06:30–22:00"
+      },
+      {
+        "thứ năm": "06:30–22:00"
+      },
+      {
+        "thứ sáu": "06:30–22:00"
+      },
+      {
+        "thứ bảy": "06:30–22:00"
+      },
+      {
+        "chủ nhật": "06:30–22:00"
+      },
+      {
+        "thứ hai": "06:30–22:00"
+      },
+      {
+        "thứ ba": "06:30–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-ngoc-lam",
+    "name": "Nhà hàng Ngọc Lâm",
+    "neo4j_address": "297 Phan Đình Phùng, Phường Diên Hồng",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 1004,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-ngoc-toan",
+    "name": "Nhà hàng Ngọc Toàn",
+    "neo4j_address": "167 Trần Hưng Đạo, Xã Mang Yang",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 166,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–22:30"
+      },
+      {
+        "thứ năm": "07:00–22:30"
+      },
+      {
+        "thứ sáu": "07:00–22:30"
+      },
+      {
+        "thứ bảy": "07:00–22:30"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "07:00–22:30"
+      },
+      {
+        "thứ ba": "07:00–22:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-plei-cong-chieng",
+    "name": "Nhà hàng Plei Cồng chiêng",
+    "neo4j_address": "Làng Plei Ốp, Phường Hội Phú",
+    "enriched_rating": 4.3,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.3,
+    "serpapi_rating_count": 808,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-rok-ly",
+    "name": "Nhà hàng Rok Ly",
+    "neo4j_address": "Xã Ia Ly",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 64,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-sao-dem",
+    "name": "Nhà hàng Sao Đêm ",
+    "neo4j_address": "178 Sư Vạn Hạnh, Phường Hội Phú, Gia Lai",
+    "enriched_rating": 3.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.5,
+    "serpapi_rating_count": 19,
+    "opening_hours": [
+      {
+        "thứ tư": "07:30–22:00"
+      },
+      {
+        "thứ năm": "07:30–22:00"
+      },
+      {
+        "thứ sáu": "07:30–22:00"
+      },
+      {
+        "thứ bảy": "07:30–22:00"
+      },
+      {
+        "chủ nhật": "07:30–22:00"
+      },
+      {
+        "thứ hai": "07:30–22:00"
+      },
+      {
+        "thứ ba": "07:30–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-sau-cao-2",
+    "name": "Nhà hàng Sáu Cao 2",
+    "neo4j_address": "06 Võ Nguyên Giáp, Phường Quy Nhơn",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 598,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-thien-duong-xanh",
+    "name": "Nhà hàng Thiên Đường Xanh ",
+    "neo4j_address": "163 Thống Nhất, Phường Thống Nhất, Bình Định",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 20,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-thu-huong",
+    "name": "Nhà hàng Thu Hương",
+    "neo4j_address": "01 Trần Quốc Toản, Phường Ayun Pa",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 102,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–22:30"
+      },
+      {
+        "thứ năm": "07:00–22:30"
+      },
+      {
+        "thứ sáu": "07:00–22:30"
+      },
+      {
+        "thứ bảy": "07:00–22:30"
+      },
+      {
+        "chủ nhật": "07:00–22:30"
+      },
+      {
+        "thứ hai": "07:00–22:30"
+      },
+      {
+        "thứ ba": "07:00–22:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-thanh-tri",
+    "name": "Nhà hàng Thành Trí",
+    "neo4j_address": "Xã Bàu Cạn",
+    "enriched_rating": 5.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 5.0,
+    "serpapi_rating_count": 19,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-thanh-tam",
+    "name": "Nhà hàng Thành Tâm",
+    "neo4j_address": "20 Quang Trung, Phường Pleiku",
+    "enriched_rating": 3.3,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.3,
+    "serpapi_rating_count": 16,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–21:00"
+      },
+      {
+        "thứ năm": "07:00–21:00"
+      },
+      {
+        "thứ sáu": "07:00–21:00"
+      },
+      {
+        "thứ bảy": "07:00–21:00"
+      },
+      {
+        "chủ nhật": "07:00–21:00"
+      },
+      {
+        "thứ hai": "07:00–21:00"
+      },
+      {
+        "thứ ba": "07:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-trau-cau",
+    "name": "Nhà hàng Trầu Cau",
+    "neo4j_address": "548 Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 284,
+    "opening_hours": [
+      "thứ tư: 07:00–19:00",
+      "thứ năm: 07:00–19:00",
+      "thứ sáu: 07:00–19:00",
+      "thứ bảy: 07:00–19:00",
+      "chủ nhật: 07:00–19:00",
+      "thứ hai: 07:00–19:00",
+      "thứ ba: 07:00–19:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-xuan",
+    "name": "Nhà hàng Xuân",
+    "neo4j_address": "Lê Lợi, Xã Chư Păh",
+    "enriched_rating": 5.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 5.0,
+    "serpapi_rating_count": 4,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-xu-nghe",
+    "name": "Nhà hàng Xứ Nghệ",
+    "neo4j_address": "566 Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 28,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-com-nieu-pleiku",
+    "name": "Nhà hàng cơm niêu Pleiku",
+    "neo4j_address": "86 Nguyễn Văn Trỗi, Phường Pleiku",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 6,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-nam-chay",
+    "name": "Nhà hàng nấm chay ",
+    "neo4j_address": "26 Hoàng Văn Thụ, Phường Diên Hồng",
+    "enriched_rating": 4.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.4,
+    "serpapi_rating_count": 14,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-san-vuon-thien-thanh",
+    "name": "Nhà hàng sân vườn Thiên Thanh",
+    "neo4j_address": "Hẻm 58 Phạm Văn Đồng, Phường Thống Nhất",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 569,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–21:30"
+      },
+      {
+        "thứ năm": "10:00–21:30"
+      },
+      {
+        "thứ sáu": "10:00–21:30"
+      },
+      {
+        "thứ bảy": "10:00–21:30"
+      },
+      {
+        "chủ nhật": "10:00–21:30"
+      },
+      {
+        "thứ hai": "10:00–21:30"
+      },
+      {
+        "thứ ba": "10:00–21:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-cat-phuong",
+    "name": "Nhà hàng tiệc cưới Cát Phượng",
+    "neo4j_address": "54 Lê Quý Đôn, Xã Mang Yang",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 21,
+    "opening_hours": [
+      "thứ tư: Mở cửa cả ngày",
+      "thứ năm: Mở cửa cả ngày",
+      "thứ sáu: Mở cửa cả ngày",
+      "thứ bảy: Mở cửa cả ngày",
+      "chủ nhật: Mở cửa cả ngày",
+      "thứ hai: Mở cửa cả ngày",
+      "thứ ba: Mở cửa cả ngày"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-duy-nhat",
+    "name": "Nhà hàng tiệc cưới Duy Nhất",
+    "neo4j_address": "thôn Hợp Hoà, Xã Chư Prông",
+    "enriched_rating": 3.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.0,
+    "serpapi_rating_count": 2,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-galaxy",
+    "name": "Nhà hàng tiệc cưới Galaxy",
+    "neo4j_address": "02 Đồng Tiến, Phường Ayun Pa",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 122,
+    "opening_hours": [
+      "thứ tư: 06:00–09:00",
+      "thứ năm: 06:00–09:00",
+      "thứ sáu: 06:00–09:00",
+      "thứ bảy: 06:00–09:00",
+      "chủ nhật: 06:00–09:00",
+      "thứ hai: 06:00–09:00",
+      "thứ ba: 06:00–09:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-khanh-ly",
+    "name": "Nhà hàng tiệc cưới Khánh Ly",
+    "neo4j_address": "Xã Mang Yang",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 21,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-y-thiep",
+    "name": "Nhà hàng Ý Thiếp",
+    "neo4j_address": "218 Quyết Tiến, Phường Diên Hồng",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 148,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-dong-duong",
+    "name": "Nhà hàng Đông Dương",
+    "neo4j_address": "386 Phạm Văn Đồng, Phường Thống Nhất, Bình Định",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 289,
+    "opening_hours": [
+      "thứ tư: 10:00–22:00",
+      "thứ năm: 10:00–22:00",
+      "thứ sáu: 10:00–22:00",
+      "thứ bảy: 10:00–22:00",
+      "chủ nhật: 10:00–22:00",
+      "thứ hai: 10:00–22:00",
+      "thứ ba: 10:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-dai-phuc",
+    "name": "Nhà hàng Đại Phúc",
+    "neo4j_address": "Đường Trần Hưng Đạo, Xã Chư Prông, Gia Lai",
+    "enriched_rating": 4.3,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.3,
+    "serpapi_rating_count": 116,
+    "opening_hours": [
+      "thứ tư: 04:30–22:30",
+      "thứ năm: 04:30–22:30",
+      "thứ sáu: 04:30–22:30",
+      "thứ bảy: 04:30–22:30",
+      "chủ nhật: 04:30–22:30",
+      "thứ hai: 04:30–22:30",
+      "thứ ba: 04:30–22:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "nha-hang-duc-co",
+    "name": "Nhà hàng Đức Cơ",
+    "neo4j_address": "tổ 4, Xã Đức Cơ, Gia Lai",
+    "enriched_rating": 3.8,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.8,
+    "serpapi_rating_count": 25,
+    "opening_hours": [
+      "thứ tư: 08:00–22:00",
+      "thứ năm: 08:00–22:00",
+      "thứ sáu: 08:00–22:00",
+      "thứ bảy: 08:00–22:00",
+      "chủ nhật: 08:00–22:00",
+      "thứ hai: 08:00–22:00",
+      "thứ ba: 08:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "am-thuc-ko-nia",
+    "name": "Nhà hàng Ẩm thực Kơ Nia",
+    "neo4j_address": "Hẻm 151 Tôn Đức Thắng, Xã Biển Hồ",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 100,
+    "opening_hours": [
+      {
+        "thứ tư": "09:00–22:00"
+      },
+      {
+        "thứ năm": "09:00–22:00"
+      },
+      {
+        "thứ sáu": "09:00–22:00"
+      },
+      {
+        "thứ bảy": "09:00–22:00"
+      },
+      {
+        "chủ nhật": "09:00–22:00"
+      },
+      {
+        "thứ hai": "09:00–22:00"
+      },
+      {
+        "thứ ba": "09:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "paris-nha-hang-phap",
+    "name": "Paris - nhà hàng Pháp ",
+    "neo4j_address": "59 Wừu, Phường Diên Hồng",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 100,
+    "opening_hours": [
+      {
+        "thứ tư": "07:00–22:00"
+      },
+      {
+        "thứ năm": "07:00–22:00"
+      },
+      {
+        "thứ sáu": "07:00–22:00"
+      },
+      {
+        "thứ bảy": "07:00–22:00"
+      },
+      {
+        "chủ nhật": "07:00–22:00"
+      },
+      {
+        "thứ hai": "07:00–22:00"
+      },
+      {
+        "thứ ba": "07:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "phu-dong-quan",
+    "name": "Phù Đổng Quán ",
+    "neo4j_address": "123 Phù Đổng, Phường Pleiku",
+    "data_source": "mock"
+  },
+  {
+    "id": "pho-tau-ly",
+    "name": "Phở Tàu Lý",
+    "neo4j_address": "05 Đoàn Thị Điểm, Phường Diên Hồng",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 43,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–22:00"
+      },
+      {
+        "thứ năm": "08:00–22:00"
+      },
+      {
+        "thứ sáu": "08:00–22:00"
+      },
+      {
+        "thứ bảy": "08:00–22:00"
+      },
+      {
+        "chủ nhật": "08:00–22:00"
+      },
+      {
+        "thứ hai": "08:00–22:00"
+      },
+      {
+        "thứ ba": "08:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "pho-bo-vien-tau-ly",
+    "name": "Phở bò viên Tàu Lý",
+    "neo4j_address": "36 Trần Phú, Phường Diên Hồng",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 43,
+    "opening_hours": [
+      "thứ tư: 08:00–22:00",
+      "thứ năm: 08:00–22:00",
+      "thứ sáu: 08:00–22:00",
+      "thứ bảy: 08:00–22:00",
+      "chủ nhật: 08:00–22:00",
+      "thứ hai: 08:00–22:00",
+      "thứ ba: 08:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "pho-gia-truyen-nam-dinh",
+    "name": "Phở gia truyền Nam Định",
+    "neo4j_address": "131 Trần Phú, Phường Diên Hồng, Gia Lai",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 70,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "pho-kho-hong",
+    "name": "Phở khô Hồng",
+    "neo4j_address": "24 Nguyễn Văn Trỗi, Phường Pleiku",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 2424,
+    "opening_hours": [
+      {
+        "thứ tư": "05:00–14:00"
+      },
+      {
+        "thứ năm": "05:00–14:00"
+      },
+      {
+        "thứ sáu": "05:00–14:00"
+      },
+      {
+        "thứ bảy": "05:00–14:00"
+      },
+      {
+        "chủ nhật": "05:00–14:00"
+      },
+      {
+        "thứ hai": "05:00–14:00"
+      },
+      {
+        "thứ ba": "05:00–14:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "pho-kho-nu",
+    "name": "Phở khô Nữ",
+    "neo4j_address": "50 Nguyễn Du, Phường Diên Hồng",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 290,
+    "opening_hours": [
+      "thứ tư: 05:30–13:00",
+      "thứ năm: 05:30–13:00",
+      "thứ sáu: 05:30–13:00",
+      "thứ bảy: 05:30–13:00",
+      "chủ nhật: 05:30–13:00",
+      "thứ hai: 05:30–13:00",
+      "thứ ba: 05:30–13:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "pho-kho-ga-ngoc-linh",
+    "name": "Phở khô gà Ngọc Linh",
+    "neo4j_address": "46 Phan Bội Châu, Phường Pleiku",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 212,
+    "opening_hours": [
+      {
+        "thứ tư": "05:30–10:00"
+      },
+      {
+        "thứ năm": "05:30–10:00"
+      },
+      {
+        "thứ sáu": "05:30–10:00"
+      },
+      {
+        "thứ bảy": "05:30–10:00"
+      },
+      {
+        "chủ nhật": "05:30–10:00"
+      },
+      {
+        "thứ hai": "05:30–10:00"
+      },
+      {
+        "thứ ba": "05:30–10:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "pho-kho-ga-ngoc-son",
+    "name": "Phở khô gà Ngọc Sơn",
+    "neo4j_address": "15 Nguyễn Thái Học, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 785,
+    "opening_hours": [
+      {
+        "thứ tư": "06:00–22:00"
+      },
+      {
+        "thứ năm": "06:00–22:00"
+      },
+      {
+        "thứ sáu": "06:00–22:00"
+      },
+      {
+        "thứ bảy": "06:00–22:00"
+      },
+      {
+        "chủ nhật": "06:00–22:00"
+      },
+      {
+        "thứ hai": "06:00–22:00"
+      },
+      {
+        "thứ ba": "06:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-ngoi-nau",
+    "name": "Quán Ngói Nâu ",
+    "neo4j_address": "43 Nguyễn Thái Học, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 306,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–22:00"
+      },
+      {
+        "thứ năm": "10:00–22:00"
+      },
+      {
+        "thứ sáu": "10:00–22:00"
+      },
+      {
+        "thứ bảy": "10:00–22:00"
+      },
+      {
+        "chủ nhật": "10:00–22:00"
+      },
+      {
+        "thứ hai": "10:00–22:00"
+      },
+      {
+        "thứ ba": "10:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-thuan-chau-2",
+    "name": "Quán Thuận Châu 2",
+    "neo4j_address": "139 Phù Đổng, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 37,
+    "opening_hours": [
+      "thứ tư: 10:00–22:00",
+      "thứ năm: 10:00–22:00",
+      "thứ sáu: 10:00–22:00",
+      "thứ bảy: 10:00–22:00",
+      "chủ nhật: 10:00–22:00",
+      "thứ hai: 10:00–22:00",
+      "thứ ba: 10:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-360-do",
+    "name": "Quán 360 độ",
+    "neo4j_address": "Phan Đình Giót, Phường Hội Phú, Gia Lai",
+    "enriched_rating": 5.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 5.0,
+    "serpapi_rating_count": 2,
+    "opening_hours": [
+      {
+        "thứ tư": "06:00–22:30"
+      },
+      {
+        "thứ năm": "06:00–22:30"
+      },
+      {
+        "thứ sáu": "06:00–22:30"
+      },
+      {
+        "thứ bảy": "06:00–22:30"
+      },
+      {
+        "chủ nhật": "06:00–22:30"
+      },
+      {
+        "thứ hai": "06:00–22:30"
+      },
+      {
+        "thứ ba": "06:00–22:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-59-yen-do",
+    "name": "Quán 59 Yên Đỗ",
+    "neo4j_address": "59 Yên Đỗ, Phường Diên Hồng, Gia Lai",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-61-yen-do",
+    "name": "Quán 61 Yên Đỗ",
+    "neo4j_address": "61 Yên Đỗ, Phường Diên Hồng, Gia Lai",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 134,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–21:00"
+      },
+      {
+        "thứ năm": "08:00–21:00"
+      },
+      {
+        "thứ sáu": "08:00–21:00"
+      },
+      {
+        "thứ bảy": "08:00–21:00"
+      },
+      {
+        "chủ nhật": "08:00–21:00"
+      },
+      {
+        "thứ hai": "08:00–21:00"
+      },
+      {
+        "thứ ba": "08:00–21:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-63-phan-dinh-giot",
+    "name": "Quán 63 Phan Đình Giót",
+    "neo4j_address": "63 Phan Đình Giót, Phường Hội Phú, Gia Lai",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 425,
+    "opening_hours": [
+      "thứ tư: 09:00–22:00",
+      "thứ năm: 09:00–22:00",
+      "thứ sáu: 09:00–22:00",
+      "thứ bảy: 09:00–22:00",
+      "chủ nhật: 09:00–22:00",
+      "thứ hai: 09:00–22:00",
+      "thứ ba: 09:00–22:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-bazan",
+    "name": "Quán BaZan",
+    "neo4j_address": "480 Lê Duẩn, Phường An Phú",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 913,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–22:30"
+      },
+      {
+        "thứ năm": "10:00–22:30"
+      },
+      {
+        "thứ sáu": "10:00–22:30"
+      },
+      {
+        "thứ bảy": "10:00–22:30"
+      },
+      {
+        "chủ nhật": "10:00–22:30"
+      },
+      {
+        "thứ hai": "10:00–22:30"
+      },
+      {
+        "thứ ba": "10:00–22:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-be-thui-quyen",
+    "name": "Quán Bê thui Quyền",
+    "neo4j_address": "952 Lê Duẩn, Phường An Phú",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 119,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-be-thui-quang-ngai",
+    "name": "Quán Bê thui Quãng Ngãi",
+    "neo4j_address": "Hẻm Võ Văn Tần, Phường An Phú",
+    "enriched_rating": 4.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.7,
+    "serpapi_rating_count": 21,
+    "opening_hours": [
+      "thứ tư: Mở cửa cả ngày",
+      "thứ năm: Mở cửa cả ngày",
+      "thứ sáu: Mở cửa cả ngày",
+      "thứ bảy: Mở cửa cả ngày",
+      "chủ nhật: Mở cửa cả ngày",
+      "thứ hai: Mở cửa cả ngày",
+      "thứ ba: Mở cửa cả ngày"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-be-thui-que-huong",
+    "name": "Quán Bê thui Quê Hương",
+    "neo4j_address": "249A Cách Mạng Tháng 8, Phường Thống Nhất",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-chay-khai-tam",
+    "name": "Quán Chay Khai Tâm",
+    "neo4j_address": "29 Lý Tự Trọng, Phường Diên Hồng",
+    "enriched_rating": 4.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.9,
+    "serpapi_rating_count": 370,
+    "opening_hours": [
+      "thứ tư: 00:00–21:00",
+      "thứ năm: 06:00–21:00",
+      "thứ sáu: 06:00–21:00",
+      "thứ bảy: 06:00–21:00",
+      "chủ nhật: 06:00–21:00",
+      "thứ hai: 06:00–21:00",
+      "thứ ba: 00:30–21:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-cay-dua",
+    "name": "Quán Cây Dừa",
+    "neo4j_address": "thôn 3, Phường An Phú",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-cay-trung-ca",
+    "name": "Quán Cây Trứng Cá",
+    "neo4j_address": "thôn 3, Phường An Phú",
+    "enriched_rating": 4.3,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.3,
+    "serpapi_rating_count": 4,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-com-chay-an-binh",
+    "name": "Quán Cơm Chay An Bình",
+    "neo4j_address": "49 Tăng Bạt Hổ, Phường Diên Hồng",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 122,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-de-tuoi-cat-vang",
+    "name": "Quán Dê tươi cát Vàng ",
+    "neo4j_address": "77B Đồng Tiến, Phường Diên Hồng",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-hai-san-61-nguyen-dinh-chieu",
+    "name": "Quán Hải sản 61 Nguyễn Đình Chiểu",
+    "neo4j_address": "61 Nguyễn Đình Chiểu, Phường Thống Nhất, Bình Định",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 322,
+    "opening_hours": [
+      "thứ tư: 08:00–21:30",
+      "thứ năm: 08:00–21:30",
+      "thứ sáu: 08:00–21:30",
+      "thứ bảy: 08:00–21:30",
+      "chủ nhật: 08:00–21:30",
+      "thứ hai: 08:00–21:30",
+      "thứ ba: 08:00–21:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-ksor-hnao",
+    "name": "Quán Ksor Hnao",
+    "neo4j_address": "49 Trần Nguyên Hãn, Phường Thống Nhất",
+    "enriched_rating": 4.4,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.4,
+    "serpapi_rating_count": 935,
+    "opening_hours": [
+      {
+        "thứ tư": "09:00–21:30"
+      },
+      {
+        "thứ năm": "09:00–21:30"
+      },
+      {
+        "thứ sáu": "09:00–21:30"
+      },
+      {
+        "thứ bảy": "09:00–21:30"
+      },
+      {
+        "chủ nhật": "09:00–21:30"
+      },
+      {
+        "thứ hai": "09:00–22:00"
+      },
+      {
+        "thứ ba": "09:00–21:30"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-ly-son-dao",
+    "name": "Quán Lý Sơn Đảo ",
+    "neo4j_address": "47 Nguyễn Trãi, Phường Diên Hồng, Gia Lai",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 32,
+    "opening_hours": [
+      "thứ tư: Mở cửa cả ngày",
+      "thứ năm: Mở cửa cả ngày",
+      "thứ sáu: Mở cửa cả ngày",
+      "thứ bảy: Mở cửa cả ngày",
+      "chủ nhật: Mở cửa cả ngày",
+      "thứ hai: Mở cửa cả ngày",
+      "thứ ba: Mở cửa cả ngày"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-lua-pleiku",
+    "name": "Quán Lửa Pleiku",
+    "neo4j_address": "166 Huỳnh Thúc Kháng, Phường Pleiku",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 78,
+    "opening_hours": [
+      "thứ tư: 09:00–21:30",
+      "thứ năm: 09:00–21:30",
+      "thứ sáu: 09:00–21:30",
+      "thứ bảy: 09:00–21:30",
+      "chủ nhật: 09:00–21:30",
+      "thứ hai: 09:00–21:30",
+      "thứ ba: 09:00–21:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-ngon-3-mien",
+    "name": "Quán Ngon 3 Miền",
+    "neo4j_address": "158 Hai Bà Trưng, Phường Diên Hồng",
+    "enriched_rating": 4.2,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.2,
+    "serpapi_rating_count": 1136,
+    "opening_hours": [
+      {
+        "thứ tư": "09:00–22:00"
+      },
+      {
+        "thứ năm": "09:00–22:00"
+      },
+      {
+        "thứ sáu": "09:00–22:00"
+      },
+      {
+        "thứ bảy": "09:00–22:00"
+      },
+      {
+        "chủ nhật": "09:00–22:00"
+      },
+      {
+        "thứ hai": "09:00–22:00"
+      },
+      {
+        "thứ ba": "09:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-ngoc-huong",
+    "name": "Quán Ngọc Hương ",
+    "neo4j_address": "76,78 Hùng Vương, Phường Diên Hồng",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 4,
+    "opening_hours": [
+      "thứ tư: 08:00–21:00",
+      "thứ năm: 08:00–21:00",
+      "thứ sáu: 08:00–21:00",
+      "thứ bảy: 08:00–21:00",
+      "chủ nhật: 08:00–21:00",
+      "thứ hai: 08:00–21:00",
+      "thứ ba: 08:00–21:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-nha-toi",
+    "name": "Quán Nhà Tôi",
+    "neo4j_address": "439 Ngô Quyền, Phường Pleiku",
+    "enriched_rating": 4.1,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.1,
+    "serpapi_rating_count": 650,
+    "opening_hours": [
+      {
+        "thứ tư": "10:00–22:00"
+      },
+      {
+        "thứ năm": "10:00–22:00"
+      },
+      {
+        "thứ sáu": "10:00–22:00"
+      },
+      {
+        "thứ bảy": "10:00–22:00"
+      },
+      {
+        "chủ nhật": "10:00–22:00"
+      },
+      {
+        "thứ hai": "10:00–22:00"
+      },
+      {
+        "thứ ba": "10:00–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-nam-thao",
+    "name": "Quán Năm Thảo",
+    "neo4j_address": "127 Nguyễn Huệ, Phường Quy Nhơn",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-pleiku-xanh",
+    "name": "Quán Pleiku Xanh",
+    "neo4j_address": "tổ 12, hẻm Bùi Dự, Phường Pleiku",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 147,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-pleikus-ngon",
+    "name": "Quán Pleiku's ngon",
+    "neo4j_address": "33 Lê Hồng Phong, Phường Diên Hồng, Gia Lai",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 240,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-se-san-xanh",
+    "name": "Quán Sê San Xanh ",
+    "neo4j_address": "57 Lê Quý Đôn, Phường Thống Nhất",
+    "enriched_rating": 5.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 5.0,
+    "serpapi_rating_count": 1,
+    "opening_hours": [
+      {
+        "thứ tư": "Mở cửa cả ngày"
+      },
+      {
+        "thứ năm": "Mở cửa cả ngày"
+      },
+      {
+        "thứ sáu": "Mở cửa cả ngày"
+      },
+      {
+        "thứ bảy": "Mở cửa cả ngày"
+      },
+      {
+        "chủ nhật": "Mở cửa cả ngày"
+      },
+      {
+        "thứ hai": "Mở cửa cả ngày"
+      },
+      {
+        "thứ ba": "Mở cửa cả ngày"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-truc-vang",
+    "name": "Quán Trúc Vàng ",
+    "neo4j_address": "tổ 6, Phường Pleiku",
+    "enriched_rating": 4.0,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.0,
+    "serpapi_rating_count": 86,
+    "opening_hours": [
+      "thứ tư: 09:00–22:30",
+      "thứ năm: 09:00–22:30",
+      "thứ sáu: 09:00–22:30",
+      "thứ bảy: 09:00–22:30",
+      "chủ nhật: 09:00–22:30",
+      "thứ hai: 09:00–22:30",
+      "thứ ba: 09:00–22:30"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-vuon-mai",
+    "name": "Quán Vườn Mai",
+    "neo4j_address": "230 Nguyễn Viết Xuân, Phường Hội Phú",
+    "enriched_rating": 3.9,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.9,
+    "serpapi_rating_count": 245,
+    "opening_hours": [
+      {
+        "thứ tư": "07:30–22:00"
+      },
+      {
+        "thứ năm": "07:30–22:00"
+      },
+      {
+        "thứ sáu": "07:30–22:00"
+      },
+      {
+        "thứ bảy": "07:30–22:00"
+      },
+      {
+        "chủ nhật": "07:30–22:00"
+      },
+      {
+        "thứ hai": "07:30–22:00"
+      },
+      {
+        "thứ ba": "07:30–22:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-ca-lang",
+    "name": "Quán cá Lăng",
+    "neo4j_address": "72 Trường Chinh, Phường Pleiku",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-com-ngoc-huong",
+    "name": "Quán cơm Ngọc Hương",
+    "neo4j_address": "12A Cù Chính Lan, Phường Diên Hồng",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 96,
+    "opening_hours": [
+      "thứ tư: 15:00–05:00",
+      "thứ năm: 15:00–05:00",
+      "thứ sáu: 15:00–05:00",
+      "thứ bảy: 15:00–05:00",
+      "chủ nhật: 15:00–05:00",
+      "thứ hai: 15:00–05:00",
+      "thứ ba: 15:00–05:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "quan-de-krong-pa",
+    "name": "Quán dê Krông Pa",
+    "neo4j_address": "199 Wừu, Phường Thống Nhất",
+    "data_source": "mock"
+  },
+  {
+    "id": "quan-hai-san-a5",
+    "name": "Quán hải sản A5",
+    "neo4j_address": "53 Xuân Diệu, Phường Quy Nhơn",
+    "enriched_rating": 4.6,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.6,
+    "serpapi_rating_count": 213,
+    "opening_hours": [
+      "thứ tư: 10:00–00:00",
+      "thứ năm: 10:00–00:00",
+      "thứ sáu: 10:00–00:00",
+      "thứ bảy: 10:00–00:00",
+      "chủ nhật: 10:00–00:00",
+      "thứ hai: 10:00–00:00",
+      "thứ ba: 10:00–00:00"
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  },
+  {
+    "id": "ruou-bau-da-cu-lam",
+    "name": "Rượu Bàu Đá Cù Lâm",
+    "neo4j_address": "Thôn Cù Lâm, Xã An Nhơn Tây",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 8,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "sen-viet-restaurant",
+    "name": "Sen Việt Restaurant",
+    "neo4j_address": "138 Lê Duẩn, Phường Pleiku",
+    "enriched_rating": 3.7,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 3.7,
+    "serpapi_rating_count": 16,
+    "data_source": "serpapi"
+  },
+  {
+    "id": "thuy-moc-quan",
+    "name": "Thuỷ Mộc Quán",
+    "neo4j_address": "51 Vạn Kiếp, Phường Thống Nhất",
+    "data_source": "mock"
+  },
+  {
+    "id": "am-thuc-san-vuon-an-quyen",
+    "name": "Ẩm thực sân vườn An Quyên",
+    "neo4j_address": "Hẻm 45 Nguyễn Trung Trực, Phường Hội Phú",
+    "enriched_rating": 4.5,
+    "enriched_rating_source": "serpapi",
+    "serpapi_rating": 4.5,
+    "serpapi_rating_count": 173,
+    "opening_hours": [
+      {
+        "thứ tư": "08:00–18:00"
+      },
+      {
+        "thứ năm": "08:00–18:00"
+      },
+      {
+        "thứ sáu": "08:00–18:00"
+      },
+      {
+        "thứ bảy": "08:00–18:00"
+      },
+      {
+        "chủ nhật": "08:00–18:00"
+      },
+      {
+        "thứ hai": "08:00–18:00"
+      },
+      {
+        "thứ ba": "08:00–18:00"
+      }
+    ],
+    "opening_hours_source": "serpapi",
+    "data_source": "serpapi"
+  }
+]

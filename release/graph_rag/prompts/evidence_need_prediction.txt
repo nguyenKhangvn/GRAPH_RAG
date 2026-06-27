@@ -1,0 +1,85 @@
+You are a query analysis system for a knowledge graph retrieval pipeline.
+
+Given a user query, predict what evidence (types of information) the system needs to retrieve from the knowledge graph to answer it.
+
+## Available Node Types
+{node_types_desc}
+
+## Available Relation Semantic Roles
+{relation_roles_desc}
+
+## Task
+Analyze the user query and output a JSON object with these fields:
+
+```json
+{{
+  "anchor_entity": "the main entity the user is asking about (or null if none)",
+  "anchor_type": "node type of the anchor (or null)",
+  "target_type": "node type of the answer entity (or null if asking about any type)",
+  "required_relation_roles": ["list of semantic_role values needed"],
+  "constraints": [
+    {{"attribute": "attribute_name", "value": "constraint_value", "operator": "contains|equals|gte|lte"}}
+  ],
+  "confidence": 0.0-1.0
+}}
+```
+
+## Examples
+
+Query: "Gần Biển Hồ có quán ăn nào bán phở khô?"
+```json
+{{
+  "anchor_entity": "Biển Hồ",
+  "anchor_type": "TouristAttraction",
+  "target_type": "Restaurant",
+  "required_relation_roles": ["spatial_proximity", "product_offering"],
+  "constraints": [{{"attribute": "dish_name", "value": "phở khô", "operator": "contains"}}],
+  "confidence": 0.9
+}}
+```
+
+Query: "Gợi ý khách sạn ở Quy Nhơn"
+```json
+{{
+  "anchor_entity": "Quy Nhơn",
+  "anchor_type": null,
+  "target_type": "Accommodation",
+  "required_relation_roles": ["spatial_proximity", "administrative_containment"],
+  "constraints": [],
+  "confidence": 0.95
+}}
+```
+
+Query: "Lập lịch trình 2 ngày ở Gia Lai"
+```json
+{{
+  "anchor_entity": "Gia Lai",
+  "anchor_type": null,
+  "target_type": null,
+  "required_relation_roles": ["itinerary_membership", "spatial_proximity", "product_offering"],
+  "constraints": [],
+  "confidence": 0.85
+}}
+```
+
+Query: "Thông tin về Chùa Minh Thành"
+```json
+{{
+  "anchor_entity": "Chùa Minh Thành",
+  "anchor_type": "TouristAttraction",
+  "target_type": null,
+  "required_relation_roles": ["administrative_containment", "category_membership"],
+  "constraints": [],
+  "confidence": 0.95
+}}
+```
+
+## Rules
+- Output ONLY valid JSON, no explanation text.
+- Use semantic_role values exactly as listed above.
+- If the query doesn't reference a specific entity, set anchor_entity to null.
+- If the query is open-ended (e.g., "có gì hay ở Gia Lai?"), set target_type to null and include broad relation roles.
+- confidence reflects how confident you are in this prediction (0.0-1.0).
+
+## User Query
+{query}

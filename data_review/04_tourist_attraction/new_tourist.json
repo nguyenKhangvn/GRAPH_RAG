@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lang-plei-op",
+    "name": "Làng Plei Ốp",
+    "category": "Làng văn hóa",
+    "address": "Pleiku, Gia Lai",
+    "description": "Làng văn hóa dân tộc Jrai nằm ngay trung tâm thành phố Pleiku. Đây là nơi du khách có thể trải nghiệm văn hóa cồng chiêng Tây Nguyên, kiến trúc nhà rông truyền thống, dệt thổ cẩm và thưởng thức ẩm thực địa phương. Làng Plei Ốp là điểm đến tiêu biểu cho du lịch cộng đồng tại Gia Lai.",
+    "latitude": 13.9700,
+    "longitude": 108.0100,
+    "ticket_price": "Miễn phí",
+    "opening_hours": "Cả ngày",
+    "phone": ""
+  },
+  {
+    "id": "lang-kep-2",
+    "name": "Làng Kép 2",
+    "category": "Làng văn hóa",
+    "address": "Gia Lai",
+    "description": "Mô hình du lịch cộng đồng tiêu biểu của Gia Lai, nơi du khách tìm hiểu về đời sống và văn hóa của đồng bào Jrai, Bahnar. Tại đây có thể trải nghiệm cồng chiêng, dệt thổ cẩm, nấu rượu cần và thưởng thức các món ăn truyền thống như cơm lam, gà nướng.",
+    "latitude": 13.9500,
+    "longitude": 108.0200,
+    "ticket_price": "Miễn phí",
+    "opening_hours": "Cả ngày",
+    "phone": ""
+  },
+  {
+    "id": "cho-dam-quy-nhon",
+    "name": "Chợ Đầm Quy Nhơn",
+    "category": "Điểm tham quan",
+    "address": "Quy Nhơn, Bình Định",
+    "description": "Chợ hải sản lớn nhất Quy Nhơn, nơi du khách có thể mua hải sản tươi sống ngay sau khi tàu cập bến. Các loại cá, mực, tôm, ghẹ được bán với giá phải chăng. Du khách có thể nhờ chế biến tại chỗ hoặc mang về.",
+    "latitude": 13.7650,
+    "longitude": 109.2250,
+    "ticket_price": "Miễn phí",
+    "opening_hours": "5:00 - 18:00",
+    "phone": ""
+  }
+]

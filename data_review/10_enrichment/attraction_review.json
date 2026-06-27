@@ -1,0 +1,1190 @@
+[
+  {
+    "id": "bien-ho-ho-tnung",
+    "name": "Biển Hồ (Hồ T’Nưng)",
+    "neo4j_address": "Đường Tôn Đức Thắng, Phường Thống Nhất",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bien-ho-che",
+    "name": "Biển Hồ chè",
+    "neo4j_address": "Xã Biển Hồ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bien-ky-co",
+    "name": "Biển Kỳ Co",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bien-nhon-hai",
+    "name": "Biển Nhơn Hải",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bien-quy-hoa",
+    "name": "Biển Quy Hòa",
+    "neo4j_address": "Quy Hòa, Phường Quy Nhơn Nam",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bien-quy-nhon",
+    "name": "Biển Quy Nhơn",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bien-trung-luong-cat-tien",
+    "name": "Biển Trung Lương – Cát Tiến",
+    "neo4j_address": "Xã Cát Tiến",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-dua-bai-san-ho",
+    "name": "Bãi Dứa (Bãi San Hô)",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-ngang",
+    "name": "Bãi Ngang",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-nho-cu-lao-xanh",
+    "name": "Bãi Nhỏ (Cù Lao Xanh)",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-rang",
+    "name": "Bãi Rạng",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-san-ho-hon-kho",
+    "name": "Bãi San Hô Hòn Khô",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-bien-lo-dieu",
+    "name": "Bãi biển Lộ Diêu",
+    "neo4j_address": "Thôn Lộ Diêu, Phường Hoài Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-bien-nhon-ly",
+    "name": "Bãi biển Nhơn Lý",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-boi-lang-dang-song-po-co",
+    "name": "Bãi bồi làng Dăng (Sông Pô Cô)",
+    "neo4j_address": "Làng Dăng, Xã Ia O",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-da-den",
+    "name": "Bãi Đá Đen",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bai-da-thao-nguyen",
+    "name": "Bãi đá Thảo Nguyên",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "be-con-chim",
+    "name": "Bè Cồn Chim",
+    "neo4j_address": "Xã Tuy Phước Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bao-tang-quang-trung",
+    "name": "Bảo tàng Quang Trung",
+    "neo4j_address": "Xã Tây Sơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bao-tang-tinh-gia-lai",
+    "name": "Bảo tàng tỉnh Gia Lai",
+    "neo4j_address": "21 Trần Hưng Đạo, Phường Pleiku",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "bao-tang-tong-hop-binh-dinh",
+    "name": "Bảo tàng tổng hợp Bình Định",
+    "neo4j_address": "26 Nguyễn Huệ, Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cao-nguyen-la-vuong",
+    "name": "Cao nguyên La Vuông",
+    "neo4j_address": "Phường Hoài Nhơn Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chi-bo-van-duc",
+    "name": "Chi bộ Vạn Đức",
+    "neo4j_address": "Thôn Vạn Hội 2, Xã Vạn Đức",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-ba-nuoc-man",
+    "name": "Chùa Bà - Nước mặn",
+    "neo4j_address": "Thôn An Hòa, Xã Tuy Phước Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-buu-minh",
+    "name": "Chùa Bửu Minh",
+    "neo4j_address": "Xã Biển Hồ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-buu-nghiem",
+    "name": "Chùa Bửu Nghiêm",
+    "neo4j_address": "02 Lý Thái Tổ, Phường Diên Hồng",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-huong-mai",
+    "name": "Chùa Hương Mai",
+    "neo4j_address": "Xã Tuy Phước Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-long-khanh",
+    "name": "Chùa Long Khánh",
+    "neo4j_address": "141 Trần Cao Vân, Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-long-phuoc",
+    "name": "Chùa Long Phước",
+    "neo4j_address": "Xã Tuy Phước",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-minh-thanh",
+    "name": "Chùa Minh Thành",
+    "neo4j_address": "14A Nguyễn Viết Xuân, Phường Hội Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-ngu-bang-hoi-quan",
+    "name": "Chùa Ngũ Bang Hội Quán",
+    "neo4j_address": "An Thái, Phường Bình Định",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-nhan-son-chua-ong-den-ong-do",
+    "name": "Chùa Nhạn Sơn (Chùa Ông Đen, Ông Đỏ)",
+    "neo4j_address": "Thôn Nhạn Tháp, Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-quan-am-an-khe",
+    "name": "Chùa Quan Âm An Khê",
+    "neo4j_address": "Xã Cửu An",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-thap-thap",
+    "name": "Chùa Thập Tháp",
+    "neo4j_address": "Phường An Nhơn Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "chua-ong-nui-chua-linh-phong",
+    "name": "Chùa Ông Núi (Chùa Linh Phong)",
+    "neo4j_address": "Xã Cát Tiến, Bình Định",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cho-go-truong-uc",
+    "name": "Chợ Gò (Trường Úc)",
+    "neo4j_address": "Xã Tuy Phước",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cho-ca-sang-nhon-chau",
+    "name": "Chợ cá sáng Nhơn Châu",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "con-duong-da-xanh-nhon-ly",
+    "name": "Con đường Đá Xanh Nhơn Lý",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "coral-beach-cu-lao-xanh",
+    "name": "Coral Beach Cù Lao Xanh",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cap-treo-hai-giang",
+    "name": "Cáp treo Hải Giang",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cau-lac-bo-det-tho-cam-xa-bien-ho",
+    "name": "Câu lạc bộ Dệt thổ cẩm xã Biển Hồ",
+    "neo4j_address": "Làng Phung 2, Xã Biển Hồ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cay-da-di-san-viet-nam",
+    "name": "Cây Đa di sản Việt Nam",
+    "neo4j_address": "Xã Ia Dơk",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cong-vien-dien-hong",
+    "name": "Công viên Diên Hồng",
+    "neo4j_address": "Phường Diên Hồng",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cong-vien-thieu-nhi",
+    "name": "Công viên Thiếu nhi",
+    "neo4j_address": "Cạnh Quảng trường Nguyễn Tất Thành, Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cong-vien-dong-xanh",
+    "name": "Công viên Đồng Xanh",
+    "neo4j_address": "Phường An Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cu-lao-xanh",
+    "name": "Cù Lao Xanh",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cang-quy-nhon",
+    "name": "Cảng Quy Nhơn",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cau-thi-nai",
+    "name": "Cầu Thị Nại",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cau-tre-binh-long",
+    "name": "Cầu Tre Bình Long",
+    "neo4j_address": "Thôn Bình Long, Xã Bình Dương",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cau-tau-cu-lao-xanh",
+    "name": "Cầu tàu Cù Lao Xanh",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cau-de-gi",
+    "name": "Cầu Đề Gi",
+    "neo4j_address": "Xã Đề Gi",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cot-co-to-quoc-cu-lao-xanh",
+    "name": "Cột cờ Tổ Quốc (Cù Lao Xanh)",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "cua-khau-quoc-te-le-thanh",
+    "name": "Cửa khẩu Quốc tế Lệ Thanh",
+    "neo4j_address": "Xã Ia Nan",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-an-khe-truong",
+    "name": "Di tích An Khê Trường",
+    "neo4j_address": "Phường An Khê",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-kho-tien-nen-nha-va-ho-nuoc-ong-nhac",
+    "name": "Di tích Kho tiền - Nền nhà và Hồ nước ông Nhạc",
+    "neo4j_address": "Xã Kông Chro",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lang-khang-chien-stor",
+    "name": "Di tích Làng kháng chiến Stơr",
+    "neo4j_address": "Thôn 1, Xã Tơ Tung",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-nui-cheo",
+    "name": "Di tích Núi chéo",
+    "neo4j_address": "Xã Vạn Đức",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-chien-thang-dak-po",
+    "name": "Di tích chiến thắng Đăk Pơ",
+    "neo4j_address": "Xã Đak Pơ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-khao-co-roc-tung",
+    "name": "Di tích khảo cổ Rộc Tưng",
+    "neo4j_address": "Thôn An Xuân 1, Xã Cửu An",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-khao-co-thoi-dai-da-cu-roc-tung-go-da",
+    "name": "Di tích khảo cổ thời đại Đá cũ Rộc Tưng - Gò Đá",
+    "neo4j_address": "Thôn An Xuân 1, Phường An Khê",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-cay-so-7-tai-luong",
+    "name": "Di tích lịch sử Cây số 7 Tài Lương",
+    "neo4j_address": "Phường Hoài Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-lang-mai-xuan-thuong",
+    "name": "Di tích lịch sử Lăng Mai Xuân Thưởng",
+    "neo4j_address": "Xã Bình Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-mo-tap-the-liet-si-su-doan-3-sao-vang",
+    "name": "Di tích lịch sử mộ tập thể liệt sĩ sư đoàn 3 Sao Vàng",
+    "neo4j_address": "354 Hồng Lĩnh, Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-nha-tuong-niem-anh-hung-wuu",
+    "name": "Di tích lịch sử nhà tưởng niệm anh hùng Wừu",
+    "neo4j_address": "Xã Đak Sơmei",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-van-hoa-plei-oi",
+    "name": "Di tích lịch sử văn hóa Plei Ơi",
+    "neo4j_address": "Xã Chư A Thai",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-van-hoa-vuon-mit-canh-dong-co-hau",
+    "name": "Di tích lịch sử văn hóa Vườn mít cánh đồng cô Hầu",
+    "neo4j_address": "Xã Kông Bơ La",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-lich-su-van-hoa-can-cu-dia-cach-mang-khu-10",
+    "name": "Di tích lịch sử văn hóa căn cứ địa cách mạng Khu 10",
+    "neo4j_address": "Xã Krong",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "di-tich-noi-cap-ben-tau-khong-so-lo-dieu",
+    "name": "Di tích nơi cập bến tàu không số Lộ Diêu",
+    "neo4j_address": "Thôn Lộ Diêu, Phường Hoài Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "flc-zoo-safari-park",
+    "name": "FLC Zoo Safari Park",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "farmstay-sam-phat-ia-ly",
+    "name": "Farmstay Sâm Phát Ia Ly",
+    "neo4j_address": "Tổ 3, Xã Ia Ly",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "ghenh-rang-tien-sa",
+    "name": "Ghềnh ráng - Tiên Sa",
+    "neo4j_address": "Phường Quy Nhơn Nam",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "hon-kho",
+    "name": "Hòn Khô",
+    "neo4j_address": "Thôn Hải Đông, Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "hon-seo",
+    "name": "Hòn Sẹo",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "hai-dang-cu-lao-xanh",
+    "name": "Hải đăng Cù Lao Xanh",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "hai-dang-hon-nuoc",
+    "name": "Hải đăng Hòn Nước",
+    "neo4j_address": "Thôn Tân Phụng, Xã Phù Mỹ Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "hai-dang-phuoc-mai",
+    "name": "Hải đăng Phước Mai",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "hoc-vien-hoang-anh-gia-lai-arsenal-jmg",
+    "name": "Học viện Hoàng Anh Gia Lai – Arsenal JMG",
+    "neo4j_address": "Xã Ia Băng",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "ho-ayun-ha",
+    "name": "Hồ Ayun Hạ",
+    "neo4j_address": "Xã Chư A Thai",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "ho-nui-mot",
+    "name": "Hồ Núi Một",
+    "neo4j_address": "Thôn An Trường, Xã An Nhơn Tây",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "ho-vinh-son",
+    "name": "Hồ Vĩnh Sơn",
+    "neo4j_address": "Xã Vĩnh Sơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "ho-dinh-binh",
+    "name": "Hồ Định Bình",
+    "neo4j_address": "Xã Vĩnh Thạnh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-du-lich-cua-bien",
+    "name": "Khu Du Lịch Cửa Biển",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-biet-thu-dai-phu-gia",
+    "name": "Khu biệt thự Đại Phú Gia",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-bao-ton-thien-nhien-kon-chu-rang",
+    "name": "Khu bảo tồn thiên nhiên Kon Chư Răng",
+    "neo4j_address": "Xã Sơn Lang",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-di-tich-plei-oi",
+    "name": "Khu di tích Plei Ơi",
+    "neo4j_address": "Làng Plei Ơi, Xã Chư A Thai",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-di-tich-thang-canh-bien-ho",
+    "name": "Khu di tích Thắng cảnh Biển Hồ",
+    "neo4j_address": "Đường Tôn Đức Thắng, xã Biển Hồ, thành phố Pleiku",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-du-lich-ham-ho-rosa-alba",
+    "name": "Khu du lịch Hầm Hô Rosa Alba",
+    "neo4j_address": "Thôn Phú Lâm, Xã Bình Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-du-lich-phuong-mai",
+    "name": "Khu du lịch Phương Mai",
+    "neo4j_address": "Xã Cát Tiến",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-du-lich-thac-phu-cuong",
+    "name": "Khu du lịch Thác Phú Cường",
+    "neo4j_address": "Xã Chư Sê",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-du-lich-sinh-thai-xuan-thuy",
+    "name": "Khu du lịch sinh thái Xuân Thủy",
+    "neo4j_address": "Hẻm 479 Lý Thái Tổ, Phường Thống Nhất",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-da-ngoai-cu-lao-xanh",
+    "name": "Khu dã ngoại Cù Lao Xanh",
+    "neo4j_address": "Xã Nhơn Châu",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-da-ngoai-trung-luong",
+    "name": "Khu dã ngoại Trung Lương",
+    "neo4j_address": "Thôn Trung Lương, Xã Cát Tiến",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-nha-mo-lang-kep",
+    "name": "Khu nhà mồ làng Kép",
+    "neo4j_address": "Làng Kép, Xã Ia Ly",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-sinh-thai-con-chim",
+    "name": "Khu sinh thái Cồn Chim",
+    "neo4j_address": "Xã Tuy Phước Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "khu-tuong-niem-nguyen-sinh-sac",
+    "name": "Khu tưởng niệm Nguyễn Sinh Sắc",
+    "neo4j_address": "Xã Bình Khê",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "luy-co-phuong-mai",
+    "name": "Luỹ cổ Phương Mai",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-bi-dao-khong-lo",
+    "name": "Làng Bí Đao Khổng Lồ",
+    "neo4j_address": "Xã Phù Mỹ Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-du-lich-cong-dong-mo-hra",
+    "name": "Làng Du lịch cộng đồng Mơ Hra",
+    "neo4j_address": "Làng Mơ Hra, Xã Tơ Tung",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-k8",
+    "name": "Làng K8",
+    "neo4j_address": "Xã Vĩnh Sơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-phong-quy-hoa",
+    "name": "Làng Phong Quy Hòa",
+    "neo4j_address": "Phường Quy Nhơn Nam",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-chai-hai-minh",
+    "name": "Làng chài Hải Minh",
+    "neo4j_address": "Khu vực 9, Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-chai-nhon-hai",
+    "name": "Làng chài Nhơn Hải",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-chai-nhon-ly",
+    "name": "Làng chài Nhơn Lý",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-du-lich-kep",
+    "name": "Làng du lịch Kép",
+    "neo4j_address": "Làng Kép, Xã Ia Ly",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-banh-trang-truong-cuu",
+    "name": "Làng nghề Bánh tráng Trường Cửu",
+    "neo4j_address": "Xã An Nhơn Tây",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-gom-van-son",
+    "name": "Làng nghề Gốm Vân Sơn",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-che-bien-tham-xo-dua-tam-quan",
+    "name": "Làng nghề chế biến thảm xơ dừa Tam Quan",
+    "neo4j_address": "Phường Hoài Nhơn Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-det-chieu-coi",
+    "name": "Làng nghề dệt chiếu cói",
+    "neo4j_address": "Phường Hoài Nhơn Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-det-tho-cam-ha-ri",
+    "name": "Làng nghề dệt thổ cẩm Hà Ri",
+    "neo4j_address": "Xã Vĩnh Thịnh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-det-tho-cam-to-tung",
+    "name": "Làng nghề dệt thổ cẩm Tơ Tung",
+    "neo4j_address": "Xã Tơ Tung",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-non-ngua-phu-gia",
+    "name": "Làng nghề nón ngựa Phú Gia",
+    "neo4j_address": "Thôn Phú Gia, Xã Xuân An",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-san-xuat-tom-tre",
+    "name": "Làng nghề sản xuất Tôm tre",
+    "neo4j_address": "Phường Bình Định",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-san-xuat-nhac-cu-dan-toc",
+    "name": "Làng nghề sản xuất nhạc cụ dân tộc",
+    "neo4j_address": "Làng Choét, Phường An Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-tien-go-my-nghe",
+    "name": "Làng nghề tiện gỗ mỹ nghệ",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-truyen-thong-non-la",
+    "name": "Làng nghề truyền thống Nón lá",
+    "neo4j_address": "Phường An Nhơn Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-truyen-thong-ren-tay-phuong-danh",
+    "name": "Làng nghề truyền thống Rèn Tây Phương Danh",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-truyen-thong-ruou-bau-da",
+    "name": "Làng nghề truyền thống Rượu Bàu Đá",
+    "neo4j_address": "Thôn Cù Lâm, Xã An Nhơn Tây",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-truyen-thong-tien-go-my-nghe-nhan-thap",
+    "name": "Làng nghề truyền thống Tiện gỗ mỹ nghệ Nhạn Tháp",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-truyen-thong-banh-bun-an-thai",
+    "name": "Làng nghề truyền thống bánh - bún An Thái",
+    "neo4j_address": "Thôn An Thái, Phường Bình Định",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-nghe-duc-dong-bang-chau",
+    "name": "Làng nghề đúc đồng Bằng Châu",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-rau-thuan-nghia",
+    "name": "Làng rau Thuận Nghĩa",
+    "neo4j_address": "Xã Tây Sơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-ren-tay-phuong-danh",
+    "name": "Làng rèn Tây Phương Danh",
+    "neo4j_address": "Thị trấn Đập Đá, huyện An Nhơn, Bình Định",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-van-hoa-du-lich-stor",
+    "name": "Làng văn hóa du lịch Stơr",
+    "neo4j_address": "Làng Stơr, Xã Tơ Tung",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lo-ruou-nuoc-nong",
+    "name": "Lò rượu nước nóng",
+    "neo4j_address": "Xã Vĩnh Thạnh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "lang-ong-nam-hai-quy-nhon",
+    "name": "Lăng Ông Nam Hải (Quy Nhơn)",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "merryland-quy-nhon",
+    "name": "MerryLand Quy Nhơn",
+    "neo4j_address": "Thôn Hải Giang, Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "mui-vi-rong",
+    "name": "Mũi Vi Rồng",
+    "neo4j_address": "Thôn Tân Phụng, Xã Phù Mỹ Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "mo-dao-tan",
+    "name": "Mộ Đào Tấn",
+    "neo4j_address": "Thôn Huỳnh Mai, Xã Tuy Phước",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nha-lao-pleiku",
+    "name": "Nhà Lao Pleiku",
+    "neo4j_address": "Đường Yết Kiêu, Phường Diên Hồng",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nha-luu-niem-chi-bo-de-po-dieu-tri",
+    "name": "Nhà lưu niệm Chi bộ Đề pô Diêu Trì",
+    "neo4j_address": "Xã Tuy Phước",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nha-luu-niem-nha-tho-xuan-dieu",
+    "name": "Nhà lưu niệm nhà thơ Xuân Diệu",
+    "neo4j_address": "Thôn Tùng Giản, Xã Tuy Phước Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nha-tho-chanh-toa-nha-tho-nhon",
+    "name": "Nhà thờ Chánh Tòa (Nhà thờ Nhọn)",
+    "neo4j_address": "122 Trần Hưng Đạo, Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nha-tho-co-hbau",
+    "name": "Nhà thờ cổ H'Bầu",
+    "neo4j_address": "Làng Xõa, Xã Biển Hồ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nha-tho-da-ghenh-rang",
+    "name": "Nhà thờ Đá Ghềnh Ráng",
+    "neo4j_address": "Phường Quy Nhơn Nam",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nui-chu-nam",
+    "name": "Núi Chư Nâm",
+    "neo4j_address": "Huyện Chư Păh, tỉnh Gia Lai",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "nui-lua-chu-dang-ya",
+    "name": "Núi lửa Chư Đăng Ya",
+    "neo4j_address": "Xã Biển Hồ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quang-truong-chien-thang",
+    "name": "Quảng trường Chiến thắng",
+    "neo4j_address": "Đường Xuân Diệu, Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quang-truong-nguyen-tat-thanh",
+    "name": "Quảng trường Nguyễn Tất Thành",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quang-truong-quy-nhon",
+    "name": "Quảng trường Quy Nhơn",
+    "neo4j_address": "Quảng trường Quy Nhơn, Phường Lê Lợi",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quang-truong-tuong-dai-chien-thang-quy-nhon",
+    "name": "Quảng trường Tượng đài Chiến Thắng Quy Nhơn",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quang-truong-trung-tam-an-lao",
+    "name": "Quảng trường trung tâm An Lão",
+    "neo4j_address": "Xã An Lão",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quang-truong-dai-doan-ket",
+    "name": "Quảng trường Đại Đoàn Kết",
+    "neo4j_address": "Phường Pleiku",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quan-the-di-tich-tay-son-thuong-dao",
+    "name": "Quần thể di tích Tây Sơn Thượng Đạo",
+    "neo4j_address": "Phường An Khê",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "quan-the-du-lich-sinh-thai-va-tam-linh-linh-phong",
+    "name": "Quần thể du lịch sinh thái và tâm linh Linh Phong",
+    "neo4j_address": "Xã Cát Tiến",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "suoi-ka-te",
+    "name": "Suối Kà Te",
+    "neo4j_address": "Làng Hà Văn Trên, Xã Vân Canh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "suoi-nuoc-nong-hoi-van",
+    "name": "Suối Nước Nóng Hội Vân",
+    "neo4j_address": "Thôn Hội Vân, Xã Hòa Hội",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "suoi-ta-ma",
+    "name": "Suối Tà Má",
+    "neo4j_address": "Xã Vĩnh Thịnh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "suoi-nuoc-khoang-vinh-thanh",
+    "name": "Suối nước khoáng Vĩnh Thạnh",
+    "neo4j_address": "Xã Vĩnh Thạnh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "suoi-da-dia-co-gia-lai",
+    "name": "Suối đá đĩa cổ Gia Lai",
+    "neo4j_address": "Xã Ia Rbol",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thien-hung-tu",
+    "name": "Thiên Hưng Tự",
+    "neo4j_address": "Phường An Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thung-lung-an-toan",
+    "name": "Thung lũng An Toàn",
+    "neo4j_address": "Xã An Toàn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thanh-hoang-de",
+    "name": "Thành Hoàng Đế",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thac-ba",
+    "name": "Thác Bà",
+    "neo4j_address": "Thôn 3, Xã Chư Păh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thac-bau-can-thac-doi-3",
+    "name": "Thác Bàu Cạn (Thác Đội 3)",
+    "neo4j_address": "Xã Bàu Cạn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thac-hang-en-thac-k50",
+    "name": "Thác Hang Én (Thác K50)",
+    "neo4j_address": "Khu bảo tồn thiên nhiên Kon Chư Răng, Xã Sơn Lang",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thac-mo",
+    "name": "Thác Mơ",
+    "neo4j_address": "Xã Ia Krái",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thac-phu-cuong",
+    "name": "Thác Phú Cường",
+    "neo4j_address": "Xã Chư Sê",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thac-da-ghe",
+    "name": "Thác Đá Ghe",
+    "neo4j_address": "Thôn 2, Xã An Lão",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-banh-it-thap-bac",
+    "name": "Tháp Bánh Ít (Tháp Bạc)",
+    "neo4j_address": "Thôn Đại Lễ, Xã Tuy Phước Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-binh-lam",
+    "name": "Tháp Bình Lâm",
+    "neo4j_address": "Thôn Bình Lâm, Xã Tuy Phước Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-canh-tien-thap-dong",
+    "name": "Tháp Cánh Tiên (Tháp Đồng)",
+    "neo4j_address": "Phường An Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-duong-long-thap-nga",
+    "name": "Tháp Dương Long (Tháp Ngà)",
+    "neo4j_address": "Xã Bình An",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-phu-loc-thap-vang",
+    "name": "Tháp Phú Lốc (Tháp Vàng)",
+    "neo4j_address": "Thôn Châu Thành, Phường An Nhơn Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-thay-boi",
+    "name": "Tháp Thầy Bói",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-thu-thien",
+    "name": "Tháp Thủ Thiện",
+    "neo4j_address": "Thôn Thủ Thiện, Xã Tây Sơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thap-doi-thap-hung-thanh",
+    "name": "Tháp đôi (Tháp Hưng Thạnh)",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thang-canh-eo-gio",
+    "name": "Thắng cảnh Eo Gió",
+    "neo4j_address": "Thôn Lý Lương, Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "thuy-dien-ia-ly",
+    "name": "Thủy điện Ia Ly",
+    "neo4j_address": "Xã Ia Ly",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tieu-chung-vien-lang-song",
+    "name": "Tiểu chủng viện Làng Sông",
+    "neo4j_address": "Thôn Quảng Vân, Xã Tuy Phước",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tuong-tran-hung-dao",
+    "name": "Tượng Trần Hưng Đạo",
+    "neo4j_address": "Đồi Hải Minh, Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tuong-dai-nguyen-sinh-sac-nguyen-tat-thanh",
+    "name": "Tượng đài Nguyễn Sinh Sắc - Nguyễn Tất Thành",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tuong-dai-tran-hung-dao",
+    "name": "Tượng đài Trần Hưng Đạo",
+    "neo4j_address": "Làng chài Hải Minh, Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tuong-dai-khoi-nghia-vinh-thanh",
+    "name": "Tượng đài khởi nghĩa Vĩnh Thạnh",
+    "neo4j_address": "Xã Vĩnh Thạnh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tinh-xa-ngoc-hoa",
+    "name": "Tịnh xá Ngọc Hòa",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "tinh-xa-ngoc-nhu",
+    "name": "Tịnh xá Ngọc Như",
+    "neo4j_address": "Xã Chư Păh",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "to-hop-khong-gian-khoa-hoc",
+    "name": "Tổ hợp không gian khoa học",
+    "neo4j_address": "Phường Quy Nhơn Nam",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "van-chi-hoai-an",
+    "name": "Văn Chỉ Hoài Ân",
+    "neo4j_address": "Thôn Hội An, Xã Vạn Đức",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "vuon-hoa-huynh-pho",
+    "name": "Vườn hoa Huỳnh Phổ",
+    "neo4j_address": "Thôn Huỳnh Mai, Xã Tuy Phước Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "vuon-hoa-huong-duong-gia-vi-nhiet-doi",
+    "name": "Vườn hoa hướng dương Gia vị nhiệt đới",
+    "neo4j_address": "Thôn Háo Lễ, Xã Tuy Phước Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "vuon-quoc-gia-kon-ka-kinh",
+    "name": "Vườn quốc gia Kon Ka Kinh",
+    "neo4j_address": "Xã Ayun",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "vu-tham-sat-nhan-dan-lang-tan-lap-nam-1947",
+    "name": "Vụ thảm sát nhân dân làng Tân Lập năm 1947",
+    "neo4j_address": "Tổ 6, Xã Kông Bơ La",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "yuragi-chaya-quy-nhon",
+    "name": "Yuragi Chaya Quy Nhơn",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dai-kinh-thien-dan-te-troi-dat",
+    "name": "Đài Kính Thiên (Đàn Tế Trời Đất)",
+    "neo4j_address": "Thôn Hòa Sơn, Xã Bình Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "duong-bo-vao-ky-co",
+    "name": "Đường bộ vào Kỳ Co",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dao-hon-dun-hon-nuoc",
+    "name": "Đảo Hòn Đụn (Hòn Nước)",
+    "neo4j_address": "Xã Phù Mỹ Đông, Bình Định",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dam-sen-binh-long",
+    "name": "Đầm Sen Bình Long",
+    "neo4j_address": "Thôn Chánh Trạch 1, Xã Phù Mỹ Đông",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dam-thi-nai",
+    "name": "Đầm Thị Nại",
+    "neo4j_address": "Phường Quy Nhơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dam-tra-o",
+    "name": "Đầm Trà Ổ",
+    "neo4j_address": "Xã Phù Mỹ Bắc",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dap-tan-son",
+    "name": "Đập Tân Sơn",
+    "neo4j_address": "Xã Biển Hồ",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "dap-dang-van-phong",
+    "name": "Đập dâng Văn Phong",
+    "neo4j_address": "Xã Bình Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-tang-bat-ho",
+    "name": "Đền Thờ Tăng Bạt Hổ",
+    "neo4j_address": "Thôn An Thường 2, Xã Vạn Đức",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-anh-hung-dan-toc-nguyen-trung-truc",
+    "name": "Đền thờ anh hùng dân tộc Nguyễn Trung Trực",
+    "neo4j_address": "Thôn Vĩnh Hội, Xã Cát Tiến",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-danh-nhan-van-hoa-dao-tan",
+    "name": "Đền thờ danh nhân văn hóa Đào Tấn",
+    "neo4j_address": "Thôn Vinh Thạnh, Xã Tuy Phước",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-than-phu-than-mau-tay-son-tam-kiet",
+    "name": "Đền thờ thân phụ, thân mẫu Tây Sơn Tam Kiệt",
+    "neo4j_address": "Thôn Phú Lạc, Xã Bình An",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-dao-duy-tu",
+    "name": "Đền thờ Đào Duy Từ",
+    "neo4j_address": "Thôn Ngọc Sơn, Phường Hoài Nhơn Tây",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-dai-tu-do-vo-van-dung",
+    "name": "Đền thờ Đại tư đồ Võ Văn Dũng",
+    "neo4j_address": "Thôn Phú Lâm, Xã Bình Phú",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "den-tho-do-doc-bui-thi-xuan",
+    "name": "Đền thờ đô đốc Bùi Thị Xuân",
+    "neo4j_address": "Xã Tây Sơn",
+    "data_source": "google_places_api"
+  },
+  {
+    "id": "doi-cat-phuong-mai",
+    "name": "Đồi Cát Phương Mai",
+    "neo4j_address": "Phường Quy Nhơn Đông",
+    "data_source": "google_places_api"
+  }
+]

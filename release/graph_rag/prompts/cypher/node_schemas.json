@@ -1,0 +1,13 @@
+{
+  "TouristAttraction": "- TouristAttraction (id, name, description, address, location, category, ticket_price, opening_hours, phone, province, enriched_rating, enriched_rating_source, embedding) — 201 nodes",
+  "Restaurant": "- Restaurant (id, name, address, location, phone, type, tags, opening_hours, province, email, enriched_rating, enriched_rating_source, embedding) — 132 nodes",
+  "Accommodation": "- Accommodation (id, name, description, address, location, phone, type, price_range, amenities, capacity, villa_segment, province, enriched_rating, enriched_rating_source, embedding) — 360 nodes. KHÔNG có email property.",
+  "Event": "- Event (id, name, address, category, month, activities, province, description, image, year, embedding) — 18 nodes. KHÔNG có location property. Dùng province hoặc address để filter.",
+  "Tour": "- Tour (id, name, description, price, duration, start_location, embedding) — 36 nodes",
+  "Dish": "- Dish (id, name, description, category, location, region_group, province, embedding) — 151 nodes. Nhiều node thiếu id/category/location (chỉ ~32%).",
+  "Specialty": "- Specialty (id, name, description, category, location, region_group, province, embedding) — 49 nodes",
+  "Location": "- Location (id, name, region_group, admin_level, admin_status, legacy_district, current_province, old_units, aliases) — 89 nodes",
+  "Category": "- Category (name) — 10 nodes. Node RIÊNG, kết nối qua BELONGS_TO.",
+  "TravelAgency": "- TravelAgency (id, name, address, phone, email, website, embedding) — 73 nodes",
+  "TravelInfo": "- TravelInfo (id, name, description, topic, location, province) — 32 nodes"
+}

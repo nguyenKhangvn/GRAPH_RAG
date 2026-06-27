@@ -1,0 +1,2399 @@
+[
+  {
+    "id": "com-lam-ga-nuong-plit",
+    "name": "Cơm lam Gà nướng Plit",
+    "address": "Hẻm 39 Đào Duy Từ, Phường Pleiku",
+    "phone": "0387135275",
+    "email": "plit@gmail.com",
+    "latitude": 14.055742,
+    "longitude": 108.02374,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nướng",
+      "đặc sản",
+      "việt nam",
+      "truyền thống",
+      "bbq"
+    ]
+  },
+  {
+    "id": "nha-hang-khach-san-khanh-linh",
+    "name": "Nhà hàng Khách sạn Khánh Linh",
+    "address": "232 Nguyễn Tất Thành, Phường Pleiku",
+    "phone": "02693735555",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.97757,
+    "longitude": 108.011608,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "pho-kho-nu",
+    "name": "Phở khô Nữ",
+    "address": "50 Nguyễn Du, Phường Diên Hồng",
+    "phone": "0934890122",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.9811618,
+    "longitude": 108.0031789,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "bun-bo-hue-ba-huong",
+    "name": "Bún bò Huế Bà Hường",
+    "address": "57A Nguyễn Du, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980699,
+    "longitude": 108.00392,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-nha-toi",
+    "name": "Quán Nhà Tôi",
+    "address": "439 Ngô Quyền, Phường Pleiku",
+    "phone": "0963954223",
+    "email": "quynhhoi.nhatoi@gmail.com",
+    "latitude": 14.009469,
+    "longitude": 108.04435,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "phu-ong-quan",
+    "name": "Phù Đổng Quán ",
+    "address": "123 Phù Đổng, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.982118,
+    "longitude": 108.012806,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-be-thui-que-huong",
+    "name": "Quán Bê thui Quê Hương",
+    "address": "249A Cách Mạng Tháng 8, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 13.9885,
+    "longitude": 108.016544,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "hải sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-sao-em",
+    "name": "Nhà hàng Sao Đêm ",
+    "address": "178 Sư Vạn Hạnh, Phường Hội Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.972671,
+    "longitude": 108.003001,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-galaxy",
+    "name": "Nhà hàng tiệc cưới Galaxy",
+    "address": "02 Đồng Tiến, Phường Ayun Pa",
+    "phone": null,
+    "email": null,
+    "latitude": 13.974981,
+    "longitude": 107.999192,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "pho-kho-ga-ngoc-linh",
+    "name": "Phở khô gà Ngọc Linh",
+    "address": "46 Phan Bội Châu, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.977283,
+    "longitude": 108.003015,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "pho-kho-ga-ngoc-son",
+    "name": "Phở khô gà Ngọc Sơn",
+    "address": "15 Nguyễn Thái Học, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.977975,
+    "longitude": 108.001966,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-cay-dua",
+    "name": "Quán Cây Dừa",
+    "address": "thôn 3, Phường An Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.987111,
+    "longitude": 108.083935,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-cay-trung-ca",
+    "name": "Quán Cây Trứng Cá",
+    "address": "thôn 3, Phường An Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.987165,
+    "longitude": 108.084196,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "hải sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-la-xanh-cong-vien-ong-xanh",
+    "name": "Nhà hàng Lá Xanh (Công viên Đồng Xanh)",
+    "address": "thôn 5, Phường An Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.983497,
+    "longitude": 108.081481,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-vuon-mai",
+    "name": "Quán Vườn Mai",
+    "address": "230 Nguyễn Viết Xuân, Phường Hội Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.971124,
+    "longitude": 108.005211,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "circle-restaurant",
+    "name": "Circle Restaurant ",
+    "address": "62 Wừu, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.974036,
+    "longitude": 107.994807,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "pho-tau-ly",
+    "name": "Phở Tàu Lý",
+    "address": "106 Trần Phú, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.978071,
+    "longitude": 107.995168,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "pho-gia-truyen-nam-inh",
+    "name": "Phở gia truyền Nam Định",
+    "address": "131 Trần Phú, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.978167,
+    "longitude": 107.992538,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "pho-bo-vien-tau-ly",
+    "name": "Phở bò viên Tàu Lý",
+    "address": "36 Trần Phú, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.979083,
+    "longitude": 107.995534,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "bo-ne-3-ngon-gia-lai",
+    "name": "Bò né 3 ngon Gia Lai",
+    "address": "59 Nguyễn Thiện Thuật, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980512,
+    "longitude": 107.996764,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "banh-xeo-ba-tam",
+    "name": "Bánh xèo Bà Tám",
+    "address": "5 Trần Bình Trọng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.976617,
+    "longitude": 107.9927,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "com-lam-ga-nuong-ksor-hnhao",
+    "name": "Cơm lam Gà nướng Ksor Hnhao",
+    "address": "Số 49/18 Trần Nguyên Hãn, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.017427,
+    "longitude": 107.987231,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nướng",
+      "đặc sản",
+      "việt nam",
+      "truyền thống",
+      "bbq"
+    ]
+  },
+  {
+    "id": "thuy-moc-quan",
+    "name": "Thuỷ Mộc Quán",
+    "address": "51 Vạn Kiếp, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.001314,
+    "longitude": 107.990304,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-be-thui-quyen",
+    "name": "Quán Bê thui Quyền",
+    "address": "952 Lê Duẩn, Phường An Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980397,
+    "longitude": 108.066153,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-cao-nguyen-xanh",
+    "name": "Nhà hàng Cao Nguyên Xanh",
+    "address": "Khu quy hoạch ven hồ, Xã Chư Prông",
+    "phone": null,
+    "email": null,
+    "latitude": 13.755397,
+    "longitude": 107.896232,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-ai-phuc",
+    "name": "Nhà hàng Đại Phúc",
+    "address": "Đường Trần Hưng Đạo, Xã Chư Prông",
+    "phone": null,
+    "email": null,
+    "latitude": 13.756231,
+    "longitude": 107.889176,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-duy-nhat",
+    "name": "Nhà hàng tiệc cưới Duy Nhất",
+    "address": "thôn Hợp Hoà, Xã Chư Prông",
+    "phone": null,
+    "email": null,
+    "latitude": 13.745113,
+    "longitude": 107.855019,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-my-hue",
+    "name": "Nhà hàng Mỹ Huệ",
+    "address": "Xã Chư Prông",
+    "phone": null,
+    "email": null,
+    "latitude": 13.745097,
+    "longitude": 107.851857,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-thanh-tri",
+    "name": "Nhà hàng Thành Trí",
+    "address": "Xã Bàu Cạn",
+    "phone": null,
+    "email": null,
+    "latitude": 13.857861,
+    "longitude": 107.940007,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-cheo-reo",
+    "name": "Nhà hàng Cheo Reo",
+    "address": "04 Hoàng Quốc Việt, Xã Chư Sê",
+    "phone": null,
+    "email": null,
+    "latitude": 13.693136,
+    "longitude": 108.075387,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-kim-oanh",
+    "name": "Nhà hàng Kim Oanh",
+    "address": "669 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.022299,
+    "longitude": 107.989685,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-chi-thanh",
+    "name": "Nhà hàng Chí Thành ",
+    "address": "299 Tôn Đức Thắng, Xã Biển Hồ",
+    "phone": null,
+    "email": null,
+    "latitude": 14.036689,
+    "longitude": 108.009561,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "am-thuc-san-vuon-an-quyen",
+    "name": "Ẩm thực sân vườn An Quyên",
+    "address": "Hẻm 45 Nguyễn Trung Trực, Phường Hội Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.95936,
+    "longitude": 108.000129,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "mi-quang-huong",
+    "name": "Mì quảng Hường",
+    "address": "24 Nguyễn Du, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980716,
+    "longitude": 108.003879,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-chay-khai-tam",
+    "name": "Quán Chay Khai Tâm",
+    "address": "29 Lý Tự Trọng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.985312,
+    "longitude": 108.002436,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-pleiku-xanh",
+    "name": "Quán Pleiku Xanh",
+    "address": "tổ 12, hẻm Bùi Dự, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.986906,
+    "longitude": 108.018253,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "com-chay-thanh-thao",
+    "name": "Cơm chay Thanh Thảo",
+    "address": "32 Tăng Bạt Hổ, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.981221,
+    "longitude": 107.990777,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-anh-vu",
+    "name": "Nhà hàng Anh Vũ",
+    "address": "Đường Võ Thị Sáu, Xã Kông Chro",
+    "phone": null,
+    "email": null,
+    "latitude": 13.774272,
+    "longitude": 108.525519,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-uc-co",
+    "name": "Nhà hàng Đức Cơ",
+    "address": "tổ 4, Xã Đức Cơ",
+    "phone": null,
+    "email": null,
+    "latitude": 13.8019,
+    "longitude": 107.691979,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-khanh-ly",
+    "name": "Nhà hàng tiệc cưới Khánh Ly",
+    "address": "Xã Mang Yang",
+    "phone": null,
+    "email": null,
+    "latitude": 14.043951,
+    "longitude": 108.263623,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-tiec-cuoi-cat-phuong",
+    "name": "Nhà hàng tiệc cưới Cát Phượng",
+    "address": "54 Lê Quý Đôn, Xã Mang Yang",
+    "phone": null,
+    "email": null,
+    "latitude": 14.045858,
+    "longitude": 108.256822,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "nha-hang-ngoc-toan",
+    "name": "Nhà hàng Ngọc Toàn",
+    "address": "167 Trần Hưng Đạo, Xã Mang Yang",
+    "phone": null,
+    "email": null,
+    "latitude": 14.045102,
+    "longitude": 108.260085,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "com-ga-my-tam-1",
+    "name": "Cơm gà Mỹ Tâm 1",
+    "address": "03 Quang Trung, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.97819,
+    "longitude": 108.003751,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-centery",
+    "name": "Nhà hàng Centery ",
+    "address": "170-172 Wừu, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.975265,
+    "longitude": 108.00141,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-truc-vang",
+    "name": "Quán Trúc Vàng ",
+    "address": "tổ 6, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980699,
+    "longitude": 108.00539,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "bun-chi",
+    "name": "Bún Chi",
+    "address": "11 Phùng Hưng, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980766,
+    "longitude": 108.005032,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-pleiku-s-ngon",
+    "name": "Quán Pleiku's ngon",
+    "address": "33 Lê Hồng Phong, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.977065,
+    "longitude": 107.994193,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-thu-huong",
+    "name": "Nhà hàng Thu Hương",
+    "address": "01 Trần Quốc Toản, Phường Ayun Pa",
+    "phone": null,
+    "email": null,
+    "latitude": 13.401111,
+    "longitude": 108.443474,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "nem-ninh-hoa",
+    "name": "Nem Ninh Hòa",
+    "address": "06 Cù Chính lan, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.977766,
+    "longitude": 107.993354,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-jolibi",
+    "name": "Nhà hàng Jolibi",
+    "address": "101 Hai Bà Trưng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980165,
+    "longitude": 107.991227,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-hoang-anh",
+    "name": "Nhà hàng Hoàng Ánh ",
+    "address": "206/10 Phù Đổng, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.985391,
+    "longitude": 108.01328,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "pho-kho-hong",
+    "name": "Phở khô Hồng",
+    "address": "24 Nguyễn Văn Trỗi, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.97882,
+    "longitude": 108.001139,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "paris-nha-hang-phap",
+    "name": "Paris - nhà hàng Pháp ",
+    "address": "59 Wừu, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.973914,
+    "longitude": 107.994621,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "ngoi-nau-restaurant",
+    "name": "Ngói Nâu Restaurant",
+    "address": "120 Nguyễn Thái Học, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.974441,
+    "longitude": 108.002252,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-ngoc-lam",
+    "name": "Nhà hàng Ngọc Lâm",
+    "address": "297 Phan Đình Phùng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.981984,
+    "longitude": 107.993242,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-minh-tuan",
+    "name": "Nhà hàng Minh Tuấn",
+    "address": "930A Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.037059,
+    "longitude": 107.986711,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-thuan-chau-2",
+    "name": "Quán Thuận Châu 2",
+    "address": "139 Phù Đổng, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.982646,
+    "longitude": 108.01276,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "lotteria",
+    "name": "Lotteria",
+    "address": "01 Phan Bội Châu, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.978505,
+    "longitude": 108.003108,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-thanh-tam",
+    "name": "Nhà hàng Thành Tâm",
+    "address": "20 Quang Trung, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.979247,
+    "longitude": 108.003298,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "com-ga-hai-nam",
+    "name": "Cơm gà Hải Nam",
+    "address": "73 Hai Bà Trưng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980434,
+    "longitude": 107.992446,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "loc-vung-restaurant",
+    "name": "Lộc Vừng Restaurant",
+    "address": "3 Bùi Dự, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.991002,
+    "longitude": 108.020228,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-san-vuon-thien-thanh",
+    "name": "Nhà hàng sân vườn Thiên Thanh",
+    "address": "Hẻm 58 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 13.993046,
+    "longitude": 108.004676,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "bun-cua",
+    "name": "Bún Cua",
+    "address": "19 Phùng Hưng, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980713,
+    "longitude": 108.005281,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "hải sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-thien-uong-xanh",
+    "name": "Nhà hàng Thiên Đường Xanh ",
+    "address": "163 Thống Nhất, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 13.96934,
+    "longitude": 107.997619,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-cao-nguyen",
+    "name": "Nhà hàng Cao Nguyên",
+    "address": "96 Phan Đình Phùng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.985458,
+    "longitude": 107.999643,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "pho-tau-ly",
+    "name": "Phở Tàu Lý",
+    "address": "05 Đoàn Thị Điểm, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.978071,
+    "longitude": 107.995168,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-ngoc-huong",
+    "name": "Quán Ngọc Hương ",
+    "address": "76,78 Hùng Vương, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.977781,
+    "longitude": 108.000175,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-com-ngoc-huong",
+    "name": "Quán cơm Ngọc Hương",
+    "address": "12A Cù Chính Lan, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.978331,
+    "longitude": 107.99383,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "be-thui-bong-lai",
+    "name": "Bê thui Bồng Lai",
+    "address": "03 Triệu Quang Phục, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.974424,
+    "longitude": 108.02483,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-trau-cau",
+    "name": "Nhà hàng Trầu Cau",
+    "address": "548 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.019921,
+    "longitude": 107.990089,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-ca-lang",
+    "name": "Quán cá Lăng",
+    "address": "72 Trường Chinh, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.971258,
+    "longitude": 108.013271,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "hải sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-de-tuoi-cat-vang",
+    "name": "Quán Dê tươi cát Vàng ",
+    "address": "77B Đồng Tiến, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.971197,
+    "longitude": 107.999742,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "hải sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-xu-nghe",
+    "name": "Nhà hàng Xứ Nghệ",
+    "address": "566 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.020458,
+    "longitude": 107.990031,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-lua-pleiku",
+    "name": "Quán Lửa Pleiku",
+    "address": "166 Huỳnh Thúc Kháng, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.982786,
+    "longitude": 107.987916,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-se-san-xanh",
+    "name": "Quán Sê San Xanh ",
+    "address": "57 Lê Quý Đôn, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 13.969292,
+    "longitude": 108.001498,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-59-yen-o",
+    "name": "Quán 59 Yên Đỗ",
+    "address": "59 Yên Đỗ, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.982648,
+    "longitude": 107.991632,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-ngoi-nau",
+    "name": "Quán Ngói Nâu ",
+    "address": "43 Nguyễn Thái Học, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.974322,
+    "longitude": 108.002311,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "cau-ca-bay-dung",
+    "name": "Câu cá Bảy Dũng",
+    "address": "Hẻm Tạ Quang Bửu, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.98304,
+    "longitude": 108.010202,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "nha-hang-bien-ho-xanh",
+    "name": "Nhà hàng Biển Hồ Xanh",
+    "address": "662 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.02598,
+    "longitude": 107.989027,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "nha-hang-d-icil-a",
+    "name": "Nhà Hàng D'iCil'a",
+    "address": "92-96 Nguyễn Thái Học, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.975654,
+    "longitude": 108.001933,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-ong-duong",
+    "name": "Nhà hàng Đông Dương",
+    "address": "386 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.012268,
+    "longitude": 107.991871,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "sen-viet-restaurant",
+    "name": "Sen Việt Restaurant",
+    "address": "138 Lê Duẩn, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.970899,
+    "longitude": 108.018935,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-63-phan-inh-giot",
+    "name": "Quán 63 Phan Đình Giót",
+    "address": "63 Phan Đình Giót, Phường Hội Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.982646,
+    "longitude": 108.01276,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-360-o",
+    "name": "Quán 360 độ",
+    "address": "Phan Đình Giót, Phường Hội Phú",
+    "phone": null,
+    "email": null,
+    "latitude": 13.986857,
+    "longitude": 108.006559,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-ngon-3-mien",
+    "name": "Quán Ngon 3 Miền",
+    "address": "158 Hai Bà Trưng, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.980687,
+    "longitude": 107.991482,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "com-ga-my-tam-2",
+    "name": "Cơm gà Mỹ Tâm 2",
+    "address": "06 Quang Trung, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.979008,
+    "longitude": 108.00345,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "com-lam-ga-nuong-ruou-can-iagui",
+    "name": "Cơm Lam - Gà Nướng – Rượu Cần IaGui",
+    "address": "26 Phạm Ngọc Thạch, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 14.013099,
+    "longitude": 107.987307,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nướng",
+      "đặc sản",
+      "việt nam",
+      "truyền thống",
+      "bbq"
+    ]
+  },
+  {
+    "id": "nha-hang-nam-chay",
+    "name": "Nhà hàng nấm chay ",
+    "address": "26 Hoàng Văn Thụ, Phường Diên Hồng",
+    "phone": null,
+    "email": null,
+    "latitude": 13.975128,
+    "longitude": 107.996831,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-hai-san-61-nguyen-inh-chieu",
+    "name": "Quán Hải sản 61 Nguyễn Đình Chiểu",
+    "address": "61 Nguyễn Đình Chiểu, Phường Thống Nhất",
+    "phone": null,
+    "email": null,
+    "latitude": 13.98355,
+    "longitude": 108.000519,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản",
+      "Pleiku"
+    ]
+  },
+  {
+    "id": "la-restaurant",
+    "name": "Lá Restaurant",
+    "address": "248 Cách Mạng Tháng Tám, Phường Pleiku",
+    "phone": null,
+    "email": null,
+    "latitude": 13.988089,
+    "longitude": 108.015009,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "quan-de-krong-pa",
+    "name": "Quán dê Krông Pa",
+    "address": "199 Wừu, Phường Thống Nhất",
+    "phone": "0356660019",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.974925,
+    "longitude": 107.998051,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-711",
+    "name": "Nhà hàng 711",
+    "address": "711 Phạm Văn Đồng, Phường Thống Nhất",
+    "phone": "02693717711",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 14.023029,
+    "longitude": 107.988998,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-to-nung",
+    "name": "Nhà hàng Tơ Nưng",
+    "address": "220 Tôn Đức Thắng, Xã Biển Hồ",
+    "phone": "0906519099",
+    "email": "nhahangtonungbienho@gmail.com",
+    "latitude": 14.034672,
+    "longitude": 107.998594,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "quan-be-thui-quang-ngai",
+    "name": "Quán Bê thui Quãng Ngãi",
+    "address": "Hẻm Võ Văn Tần, Phường An Phú",
+    "phone": "0984177110",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.973598,
+    "longitude": 108.036581,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "khong-gian-viet-restaurant",
+    "name": "Không gian Việt Restaurant",
+    "address": "144 Tô Vĩnh Diện, Phường Pleiku",
+    "phone": "02693760777",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.990198,
+    "longitude": 108.01501,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-ly-son-ao",
+    "name": "Quán Lý Sơn Đảo ",
+    "address": "47 Nguyễn Trãi, Phường Diên Hồng",
+    "phone": "0911003750",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.985667,
+    "longitude": 107.990146,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "quan-bazan",
+    "name": "Quán BaZan",
+    "address": "480 Lê Duẩn, Phường An Phú",
+    "phone": "0935447783",
+    "email": "bazan@gmail.com",
+    "latitude": 13.971244,
+    "longitude": 108.044783,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-com-nieu-pleiku",
+    "name": "Nhà hàng cơm niêu Pleiku",
+    "address": "86 Nguyễn Văn Trỗi, Phường Pleiku",
+    "phone": "02693760333",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.9786,
+    "longitude": 108.002888,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "quan-61-yen-o",
+    "name": "Quán 61 Yên Đỗ",
+    "address": "61 Yên Đỗ, Phường Diên Hồng",
+    "phone": "02693883646",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 13.982645,
+    "longitude": 107.99138,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-le-thanh",
+    "name": "Nhà hàng Lệ Thanh",
+    "address": "Tổ 1, Xã Đức Cơ",
+    "phone": "0978879421",
+    "email": "tam.phuongnamvt2009@gmail.com",
+    "latitude": 13.812073,
+    "longitude": 107.70455,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-y-thiep",
+    "name": "Nhà hàng Ý Thiếp",
+    "address": "218 Quyết Tiến, Phường Diên Hồng",
+    "phone": "0399517688",
+    "email": "ythiep@gmail.com",
+    "latitude": 13.9729607,
+    "longitude": 108.0024482,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-plei-cong-chieng",
+    "name": "Nhà hàng Plei Cồng chiêng",
+    "address": "Làng Plei Ốp, Phường Hội Phú",
+    "phone": "0948523679",
+    "email": "quangtruc18@gmail.com",
+    "latitude": 15.0279795,
+    "longitude": 107.858133,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-ksor-hnao",
+    "name": "Quán Ksor Hnao",
+    "address": "49 Trần Nguyên Hãn, Phường Thống Nhất",
+    "phone": "0982689239",
+    "email": "KsorHnao@gmail.com",
+    "latitude": 14.016411,
+    "longitude": 107.98906,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống"
+    ]
+  },
+  {
+    "id": "nha-hang-com-nieu-xq-hoa",
+    "name": "Nhà hàng Cơm niêu XQ Hoa",
+    "address": "110-112 Nguyễn Tất Thành, Phường Pleiku",
+    "phone": "0965392279",
+    "email": "xqhoa@gmail.com",
+    "latitude": 13.9806578,
+    "longitude": 108.0105253,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-xuan",
+    "name": "Nhà hàng Xuân",
+    "address": "Lê Lợi, Xã Chư Păh",
+    "phone": "02693845561",
+    "email": "nhahangxuan@gmail.com",
+    "latitude": 14.1011546,
+    "longitude": 107.9032466,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-rok-ly",
+    "name": "Nhà hàng Rok Ly",
+    "address": "Xã Ia Ly",
+    "phone": "0976888959",
+    "email": "nhahangrokly@gmail.com",
+    "latitude": 14.204515,
+    "longitude": 107.7670525,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "quan-com-chay-an-binh",
+    "name": "Quán Cơm Chay An Bình",
+    "address": "49 Tăng Bạt Hổ, Phường Diên Hồng",
+    "phone": "0337355672",
+    "email": "thombt@gmail.com; https://www.facebook.com/profile.php?id=100095254723206",
+    "latitude": 13.98021,
+    "longitude": 107.9943261,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "com-nieu-hoi-an-quy-nhon",
+    "name": "Cơm Niêu Hội An - Quy Nhơn",
+    "address": "Đường Nguyễn Tất Thành (nối dài), Phường Pleiku",
+    "phone": "0914035334",
+    "email": "comnieuhoianquynhon@yahoo.com",
+    "latitude": 13.77861,
+    "longitude": 109.22189,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "hoang-vu-plaza",
+    "name": "Hoàng Vũ Plaza",
+    "address": "Khu Dân Cư Ngô Gia Tự, Phường Bình Định",
+    "phone": "02563836768",
+    "email": "nhvu@hoangyenhotel.com.vn",
+    "latitude": 13.889919,
+    "longitude": 109.115602,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nem-cho-huyen-olala",
+    "name": "Nem Chợ Huyện Olala",
+    "address": "thôn Hanh Quang, Xã Tuy Phước",
+    "phone": "0949539639",
+    "email": "amthuc@gmail.com",
+    "latitude": 13.84878,
+    "longitude": 109.147164,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-confetti",
+    "name": "Nhà hàng Confetti",
+    "address": "Cảng Hàng không Phù Cát, Xã Phù Cát",
+    "phone": "0938007284",
+    "email": "hcns.svpc@gmail.com",
+    "latitude": 13.954497,
+    "longitude": 109.050186,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "nha-hang-huong-viet",
+    "name": "Nhà hàng Hương Việt",
+    "address": "122 Xuân Diệu, Phường Quy Nhơn",
+    "phone": "02563894599",
+    "email": "amthuc@gmail.com",
+    "latitude": 13.77156,
+    "longitude": 109.239767,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon",
+    "tags": [
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-moc-vien",
+    "name": "Nhà hàng Mộc Viên",
+    "address": "02 Võ Nguyên Giáp, Phường Quy Nhơn",
+    "phone": "02563502468",
+    "email": "nhahangmocvienquynhon@gmail.com",
+    "latitude": 13.78705,
+    "longitude": 109.220478,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "nha-hang-moc-viet",
+    "name": "Nhà hàng Mộc Việt",
+    "address": "30 Chương Dương, Phường Quy Nhơn Nam",
+    "phone": "02563502468",
+    "email": "nhahangmocvietquynhon@gmail.com",
+    "latitude": 13.752998,
+    "longitude": 109.213563,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon",
+    "tags": [
+      "việt nam"
+    ]
+  },
+  {
+    "id": "nha-hang-sau-cao-2",
+    "name": "Nhà hàng Sáu Cao 2",
+    "address": "06 Võ Nguyên Giáp, Phường Quy Nhơn",
+    "phone": "02563792279",
+    "email": "saucao2restaurant@gmail.com",
+    "latitude": 13.787858,
+    "longitude": 109.22023,
+    "category": "Nhà hàng",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "135-coffee-pub",
+    "name": "135 Coffee & Pub",
+    "address": "27 Biên Cương, Phường Bồng Sơn",
+    "phone": "02563822231",
+    "email": "dulich@gialai.gov.vn",
+    "latitude": 14.42835,
+    "longitude": 109.011519,
+    "category": "Cafe/Đồ uống",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north",
+    "tags": [
+      "bánh ngọt",
+      "cà phê"
+    ]
+  },
+  {
+    "id": "adiuvat-coffee-roasters",
+    "name": "Adiuvat Coffee Roasters",
+    "address": "57a Đường Nguyễn Huệ, Phường Quy Nhơn",
+    "phone": "0966267722",
+    "email": "adiuvatroasters@gmail.com",
+    "latitude": 13.769724,
+    "longitude": 109.232399,
+    "category": "Cafe/Đồ uống",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon",
+    "tags": [
+      "bánh ngọt",
+      "cà phê"
+    ]
+  },
+  {
+    "id": "bookafe",
+    "name": "Bookafe",
+    "address": "86 Lê Duẩn, Phường Pleiku",
+    "phone": "02563822231",
+    "email": "bookafe@abc.com",
+    "latitude": 13.764917,
+    "longitude": 109.220489,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "nhà hàng"
+    ]
+  },
+  {
+    "id": "cascara-tea-coffee-house",
+    "name": "Cascara Tea & Coffee House",
+    "address": "65A Hoàng Diệu, Phường Diên Hồng",
+    "phone": "02563822231",
+    "email": "dulich@gialai.gov.vn",
+    "latitude": 13.768812,
+    "longitude": 109.22307,
+    "category": "Cafe/Đồ uống",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "bánh ngọt",
+      "cà phê"
+    ]
+  },
+  {
+    "id": "coffee-khong-gian-xua",
+    "name": "Coffee Không Gian Xưa",
+    "address": "Trần Đình Châu, Xã Hoài Ân",
+    "phone": null,
+    "email": null,
+    "latitude": 14.366432,
+    "longitude": 108.968738,
+    "category": "Cafe/Đồ uống",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north",
+    "tags": [
+      "bánh ngọt",
+      "cà phê"
+    ]
+  },
+  {
+    "id": "fanson-bakery-coffee",
+    "name": "FANSON Bakery & Coffee",
+    "address": "Lô 01-H5 Nguyễn Thị Định, Phường Quy Nhơn Nam",
+    "phone": "0779407999",
+    "email": "fansonbakerycoffee68@gmail.com",
+    "latitude": 13.754955,
+    "longitude": 109.212553,
+    "category": "Cafe/Đồ uống",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon",
+    "tags": [
+      "bánh ngọt",
+      "cà phê"
+    ]
+  },
+  {
+    "id": "bun-mam-cua-co-chi",
+    "name": "Bún mắm cua Cô Chi",
+    "address": "02 Phùng Hưng, Phường Hội Thương",
+    "phone": null,
+    "email": null,
+    "latitude": 13.974,
+    "longitude": 108.005,
+    "category": "Quán ăn/Đặc sản",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "đặc sản",
+      "hải sản",
+      "truyền thống",
+      "việt nam"
+    ]
+  },
+  {
+    "id": "am-thuc-ko-nia",
+    "name": "Nhà hàng Ẩm thực Kơ Nia",
+    "address": "Hẻm 151 Tôn Đức Thắng, Xã Biển Hồ",
+    "phone": null,
+    "email": null,
+    "latitude": 13.97,
+    "longitude": 107.99,
+    "category": "Nhà hàng",
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland",
+    "tags": [
+      "hải sản"
+    ]
+  },
+  {
+    "id": "hai-san-thien-an",
+    "name": "Hải sản Thiên An",
+    "address": "42 Xuân Diệu, Phường Quy Nhơn",
+    "phone": "02563841234",
+    "email": null,
+    "latitude": 13.7701,
+    "longitude": 109.2265,
+    "category": "Nhà hàng",
+    "tags": [
+      "hải sản",
+      "tươi sống",
+      "giá hợp lý",
+      "view biển"
+    ],
+    "description": "Nhà hàng hải sản tươi sống nằm trên đường Xuân Diệu, view biển Quy Nhơn. Hải sản đánh bắt trong ngày, chế biến tại chỗ. Giá cả hợp lý, phù hợp gia đình.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "quan-hai-san-a5",
+    "name": "Quán hải sản A5",
+    "address": "53 Xuân Diệu, Phường Quy Nhơn",
+    "phone": null,
+    "email": null,
+    "latitude": 13.7698,
+    "longitude": 109.2268,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "hải sản",
+      "bình dân",
+      "tươi sống",
+      "địa phương"
+    ],
+    "description": "Quán hải sản bình dân nổi tiếng trên đường Xuân Diệu. Chuyên các món hải sản tươi sống: ghẹ, tôm, mực, ốc. Giá bình dân, đông khách địa phương.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "bun-cha-ca-ngoc-lien",
+    "name": "Bún chả cá Ngọc Liên",
+    "address": "24 Nguyễn Thị Minh Khai, Phường Quy Nhơn",
+    "phone": null,
+    "email": null,
+    "latitude": 13.7685,
+    "longitude": 109.2245,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "bún chả cá",
+      "đặc sản",
+      "sáng",
+      "bình dân"
+    ],
+    "description": "Quán bún chả cá Quy Nhơn nổi tiếng, nằm trong hẻm trên đường Nguyễn Thị Minh Khai. Chả cá tự làm, nước dùng thanh. Mở cửa từ sáng sớm.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "banh-xeo-gia-vy",
+    "name": "Bánh xèo tôm nhảy Gia Vỹ",
+    "address": "14 Diên Hồng, Phường Quy Nhơn",
+    "phone": null,
+    "email": null,
+    "latitude": 13.7675,
+    "longitude": 109.2238,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "bánh xèo tôm nhảy",
+      "đặc sản",
+      "địa phương"
+    ],
+    "description": "Quán bánh xèo tôm nhảy nổi tiếng Quy Nhơn. Bánh xèo giòn, tôm tươi nhảy, rau sống đầy đủ. Nước chấm pha đặc biệt.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "hai-san-nha-le",
+    "name": "Hải sản Nhà Lê",
+    "address": "44 An Dương Vương, Phường Quy Nhơn",
+    "phone": "02563845678",
+    "email": null,
+    "latitude": 13.7665,
+    "longitude": 109.2255,
+    "category": "Nhà hàng",
+    "tags": [
+      "hải sản",
+      "tươi sống",
+      "gia đình",
+      "view biển"
+    ],
+    "description": "Nhà hàng hải sản lớn trên đường An Dương Vương, view biển. Chuyên hải sản tươi sống, giá cả phải chăng. Phù hợp gia đình và nhóm đông.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "banh-choi-long-heo-pham-hong-thai",
+    "name": "Bánh hỏi cháo lòng Phạm Hồng Thái",
+    "address": "Phạm Hồng Thái, Phường Quy Nhơn",
+    "phone": null,
+    "email": null,
+    "latitude": 13.769,
+    "longitude": 109.225,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "bánh hỏi",
+      "cháo lòng",
+      "đặc sản",
+      "sáng"
+    ],
+    "description": "Quán bánh hỏi cháo lòng nổi tiếng trên đường Phạm Hồng Thái. Mở cửa từ 5h sáng, đông khách địa phương. Bánh hỏi mềm, lòng heo sạch.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "nem-cho-huyen-goc",
+    "name": "Nem Chợ Huyện gốc",
+    "address": "Chợ Huyện, Xã Tuy Phước",
+    "phone": null,
+    "email": null,
+    "latitude": 13.8054,
+    "longitude": 109.1557,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "nem Chợ Huyện",
+      "đặc sản",
+      "mua về làm quà"
+    ],
+    "description": "Nem Chợ Huyện chính gốc tại chợ Huyện, Tuy Phước. Nem chua, nem nướng, nem lụi. Có thể mua về làm quà.",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "ruou-bau-da-cu-lam",
+    "name": "Rượu Bàu Đá Cù Lâm",
+    "address": "Thôn Cù Lâm, Xã An Nhơn Tây",
+    "phone": null,
+    "email": null,
+    "latitude": 13.8647,
+    "longitude": 109.0982,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "rượu Bàu Đá",
+      "đặc sản",
+      "mua về làm quà",
+      "làng nghề"
+    ],
+    "description": "Làng nghề truyền thống nấu rượu Bàu Đá tại Cù Lâm, An Nhơn. Rượu nấu thủ công, nồng độ cao. Du khách có thể tham quan và mua về làm quà.",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "banh-xeo-my-cang",
+    "name": "Bánh xèo Mỹ Cang",
+    "address": "Xã Phước Hiệp, Xã Tuy Phước",
+    "phone": null,
+    "email": null,
+    "latitude": 13.81,
+    "longitude": 109.16,
+    "category": "Quán ăn/Đặc sản",
+    "tags": [
+      "bánh xèo",
+      "tôm",
+      "đặc sản",
+      "địa phương"
+    ],
+    "description": "Bánh xèo Mỹ Cang nổi tiếng với tôm tươi, bánh giòn. Nằm ở Phước Hiệp, Tuy Phước. Giá rẻ, đông khách địa phương.",
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "quan-nam-thao",
+    "name": "Quán Năm Thảo",
+    "address": "127 Nguyễn Huệ, Phường Quy Nhơn",
+    "phone": null,
+    "email": null,
+    "latitude": 13.768,
+    "longitude": 109.224,
+    "category": "Nhà hàng",
+    "tags": [
+      "hải sản",
+      "tươi sống",
+      "giá hợp lý",
+      "địa phương"
+    ],
+    "description": "Nhà hàng hải sản bình dân trên đường Nguyễn Huệ. Chuyên hải sản tươi sống, giá cả hợp lý. Phù hợp khách địa phương và du khách.",
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  }
+]

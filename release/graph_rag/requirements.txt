@@ -1,0 +1,29 @@
+# --- CORE INFRASTRUCTURE (Cốt lõi) ---
+neo4j>=5.18.0            # Driver kết nối Neo4j (Bản mới hỗ trợ Vector Search tốt hơn)
+python-dotenv>=1.0.1     # Để đọc file cấu hình .env
+
+# --- LOCAL EMBEDDINGS (Quan trọng) ---
+# Bắt buộc có để chạy model 'paraphrase-multilingual-MiniLM-L12-v2' trên máy
+sentence-transformers>=2.6.0
+torch>=2.2.0             # Framework tính toán nền tảng cho model AI
+numpy>=1.26.0            # Thư viện xử lý mảng số học (Dùng để convert vector)
+
+# --- LLM PROVIDERS (Các hãng AI) ---
+# 1. Google Gemini (Dùng cho module ai_model.py của bạn)
+google-genai>=0.3.0
+
+# 2. OpenAI (Nếu bạn bật tính năng GPT)
+openai>=1.14.0
+
+# --- UTILITIES (Tiện ích bổ trợ) ---
+# Tùy chọn: Dùng để đếm token chính xác nếu bạn bật Pruner nâng cao
+tiktoken>=0.6.0
+
+# --- API RATE LIMITING ---
+slowapi>=0.1.9
+
+# --- WEB SEARCH FALLBACK ---
+duckduckgo-search>=7.0.0  # Free web search, no API key needed
+
+# --- EVALUATION ---
+deepeval>=2.0.0

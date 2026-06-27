@@ -1,0 +1,296 @@
+[
+  {
+    "id": "le-cau-mua-cua-yang-potao-apui",
+    "name": "Lễ cầu mưa của người Jrai – Yang Pơtao Apui",
+    "category": "Lễ hội văn hóa tín ngưỡng",
+    "address": "Xã Phú Thiện",
+    "month": 3,
+    "activity": [
+      "Nghi lễ cầu mưa với gươm thần",
+      "Trình diễn cồng chiêng",
+      "Âm nhạc dân tộc"
+    ],
+    "specific_venues": [
+      {
+        "id": "khu-di-tich-plei-oi",
+        "name": "Khu di tích Plei Ơi",
+        "address": "Làng Plei Ơi, xã Ayun Hạ, huyện Phú Thiện",
+        "latitude": 13.6425,
+        "longitude": 108.2486
+      }
+    ]
+  },
+  {
+    "id": "hoi-dua-thuyen-doc-moc-tren-song-po-co2",
+    "name": "Hội đua thuyền Độc Mộc trên sông Pô Cô",
+    "category": "Lễ hội văn hóa",
+    "address": "Xã Ia O",
+    "month": 11,
+    "activity": [
+      "Đua thuyền độc mộc",
+      "Văn nghệ dân tộc",
+      "Gian hàng ẩm thực",
+      "Trao giải Cúp A Sanh"
+    ],
+    "specific_venues": [
+      {
+        "id": "bai-boi-lang-dang-song-po-co",
+        "name": "Bãi bồi làng Dăng (Sông Pô Cô)",
+        "address": "Làng Dăng, Xã Ia O",
+        "latitude": 13.9833,
+        "longitude": 107.6333
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-xuan-pleiku",
+    "name": "Lễ hội Xuân Pleiku",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường Pleiku",
+    "month": 1,
+    "activity": [
+      "Trình diễn cồng chiêng Tây Nguyên",
+      "Múa khèn người Mông",
+      "Múa xòe, hát giao duyên",
+      "Trò chơi dân gian"
+    ],
+    "description": "Lễ hội Xuân ở Pleiku bao gồm các hoạt động văn hoá, văn nghệ, thể thao và ẩm thực...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250626/2_d3cf1.jpg",
+    "specific_venues": [
+      {
+        "id": "quang-truong-dai-doan-ket",
+        "name": "Quảng trường Đại Đoàn Kết",
+        "address": "Phường Tây Sơn, Thành phố Pleiku",
+        "latitude": 13.9786,
+        "longitude": 108.0028
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-hoa-da-quy-nui-lua-chu-dang-ya",
+    "name": "Lễ hội hoa dã quỳ núi lửa Chư Đăng Ya",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Xã Biển Hồ",
+    "month": 11,
+    "activity": [
+      "Ngắm hoa dã quỳ",
+      "Giao lưu cồng chiêng",
+      "Dệt thổ cẩm",
+      "Thưởng thức rượu cần"
+    ],
+    "specific_venues": [
+      {
+        "id": "nui-lua-chu-dang-ya",
+        "name": "Núi lửa Chư Đăng Ya",
+        "address": "Xã Biển Hồ",
+        "latitude": 14.128,
+        "longitude": 108.047
+      }
+    ]
+  },
+  {
+    "id": "festival-van-hoa-cong-chieng-tay-nguyen",
+    "name": "Festival Văn hóa Cồng chiêng Tây Nguyên",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường Pleiku",
+    "month": 3,
+    "activity": [
+      "Trình diễn cồng chiêng",
+      "Tái hiện nghi lễ truyền thống",
+      "Giao lưu văn hóa quốc tế"
+    ],
+    "description": "Dịp tôn vinh và gìn giữ Không gian Văn hóa Cồng chiêng Tây Nguyên - di sản UNESCO...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250626/le-hoi-o-gia-lai-1_0fd90.jpg",
+    "specific_venues": [
+      {
+        "id": "quang-truong-dai-doan-ket",
+        "name": "Quảng trường Đại Đoàn Kết",
+        "address": "Phường Tây Sơn, Thành phố Pleiku",
+        "latitude": 13.9786,
+        "longitude": 108.0028
+      }
+    ]
+  },
+  {
+    "id": "le-ky-niem-chien-thang-ngoc-hoi-dong-da",
+    "name": "Lễ kỷ niệm chiến thắng Ngọc Hồi Đống Đa",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường An Khê",
+    "month": 1,
+    "activity": [
+      "Rước kiệu",
+      "Dâng hương",
+      "Trống trận Tây Sơn"
+    ],
+    "description": "Kỷ niệm chiến thắng Ngọc Hồi - Đống Đa và hành trình khởi nghĩa Tây Sơn...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250626/le-hoi-o-gia-lai-4_afc3f.jpg",
+    "specific_venues": [
+      {
+        "id": "di-tich-an-khe-truong",
+        "name": "Di tích An Khê Trường",
+        "address": "Phường An Khê",
+        "latitude": 13.9535,
+        "longitude": 108.6588
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-dong-da-tay-son",
+    "name": "Lễ hội Đống Đa - Tây Sơn",
+    "category": "Lễ hội lịch sử",
+    "address": "Xã Tây Sơn",
+    "month": 1,
+    "activity": [
+      "Biểu diễn võ thuật Tây Sơn",
+      "Nhạc võ Tây Sơn",
+      "Thao diễn trận pháp"
+    ],
+    "description": "Lễ hội tưởng nhớ công tích phong trào Tây Sơn và chiến thắng Ngọc Hồi – Đống Đa...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250508/IMG_2711_ccf05.jpeg",
+    "specific_venues": [
+      {
+        "id": "bao-tang-quang-trung",
+        "name": "Bảo tàng Quang Trung",
+        "address": "Xã Tây Sơn",
+        "latitude": 13.9367,
+        "longitude": 108.9056
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-do-thi-nuoc-man",
+    "name": "Lễ hội Chùa Bà - Cảng thị Nước Mặn",
+    "category": "Lễ hội lịch sử",
+    "address": "Thôn An Hòa, Xã Tuy Phước Bắc",
+    "month": 2,
+    "activity": [
+      "Lễ cúng Thiên Hậu Thánh mẫu",
+      "Thắp đèn lồng",
+      "Hoạt động văn hóa"
+    ],
+    "description": "Hoài niệm về cảng thị Nước Mặn và biểu tượng giao hữu văn hóa Việt - Hoa...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250508/933679017682c4dc9d93_0203a.jpg",
+    "specific_venues": [
+      {
+        "id": "chua-ba-nuoc-man",
+        "name": "Chùa Bà Nước Mặn",
+        "address": "Thôn An Hòa, Xã Tuy Phước Bắc",
+        "latitude": 13.8206,
+        "longitude": 109.1667
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-cau-ngu-binh-dinh",
+    "name": "Lễ hội cầu ngư ở Bình Định",
+    "category": "Lễ hội văn hóa tín ngưỡng",
+    "address": "Thành phố Quy Nhơn, Bình Định",
+    "month": 1,
+    "activity": [
+      "Lễ nghinh rước hồn cá Ông",
+      "Múa hát bả trạo",
+      "Đua thuyền"
+    ],
+    "description": "Nét đẹp văn hóa tín ngưỡng ngư dân, cầu mong trời yên bể lặng...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250508/IMG_4193_97646.jpeg",
+    "specific_venues": [
+      {
+        "id": "lang-ong-nam-hai-quy-nhon",
+        "name": "Lăng Ông Nam Hải (Quy Nhơn)",
+        "address": "Phường Trần Phú, TP. Quy Nhơn, Bình Định",
+        "latitude": 13.7733,
+        "longitude": 109.2238
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-lang-ren-tay-phuong-danh",
+    "name": "Lễ hội làng rèn Tây Phương Danh",
+    "category": "Lễ hội văn hóa",
+    "address": "Phường An Nhơn",
+    "month": 2,
+    "activity": [
+      "Lễ dâng hương tổ sư nghề rèn",
+      "Hát bộ truyền thống",
+      "Đập ấm, kéo co"
+    ],
+    "description": "Nhớ ơn tổ sư nghề rèn Đào Giã Tượng và các bậc tiền hiền...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/fck/adminbinhdinh/bd%20(1).jpg",
+    "specific_venues": [
+      {
+        "id": "lang-ren-tay-phuong-danh",
+        "name": "Làng rèn Tây Phương Danh",
+        "address": "Thị trấn Đập Đá, huyện An Nhơn, Bình Định",
+        "latitude": 13.8647,
+        "longitude": 109.0982
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-do-gian-an-thai",
+    "name": "Lễ hội đổ giàn An Thái",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường Bình Định",
+    "month": 7,
+    "activity": [
+      "Thi đổ giàn tranh heo quay",
+      "Hát bội",
+      "Múa lân"
+    ],
+    "description": "Lễ hội văn hóa đặc sắc miền đất võ, nơi các võ sĩ tranh tài...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20211201/le-hoi-do-thi-nuoc-man-binh-dinh-quynhontourist_10086.jpg",
+    "specific_venues": [
+      {
+        "id": "chua-ngu-bang-hoi-quan",
+        "name": "Chùa Ngũ Bang Hội Quán",
+        "address": "An Thái, Phường Bình Định",
+        "latitude": 13.8821,
+        "longitude": 109.0435
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-dam-trau-mung-nha-rong",
+    "name": "Lễ hội đâm trâu mừng nhà rông mới",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Xã Vĩnh Sơn",
+    "month": 1,
+    "activity": [
+      "Đưa trâu vào gưng",
+      "Hát múa quanh con trâu",
+      "Nghi thức đâm trâu"
+    ],
+    "description": "Nghi thức truyền thống của đồng bào Ba Na ăn mừng khánh thành nhà rông...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20211201/grab6f164image026_1_.jpg",
+    "specific_venues": [
+      {
+        "id": "lang-k8",
+        "name": "Làng K8",
+        "address": "Xã Vĩnh Sơn, Huyện Vĩnh Thạnh, Bình Định",
+        "latitude": 14.3315,
+        "longitude": 108.7758
+      }
+    ]
+  },
+  {
+    "id": "le-hoi-xuan-cho-go",
+    "name": "Lễ hội Xuân chợ Gò",
+    "category": "Lễ hội văn hóa",
+    "address": "Xã Tuy Phước",
+    "month": 1,
+    "activity": [
+      "Mua bán trầu cau cầu lộc",
+      "Hô bài chòi",
+      "Đánh cờ người"
+    ],
+     "specific_venues": [
+      {
+        "id": "cho-go-truong-uc",
+        "name": "Chợ Gò (Trường Úc)",
+        "address": "Xã Tuy Phước",
+        "latitude": 13.8054,
+        "longitude": 109.1557
+      }
+    ]
+  }
+]

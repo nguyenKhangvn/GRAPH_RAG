@@ -1,0 +1,1780 @@
+[
+  {
+    "id": "TB200_001",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Làng Du lịch cộng đồng Mơ Hra thuộc loại hình du lịch nào?",
+    "answer": "Làng Du lịch cộng đồng Mơ Hra thuộc loại hình Làng văn hóa."
+  },
+  {
+    "id": "TB200_002",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Tháp Thầy Bói thuộc loại hình di tích nào?",
+    "answer": "Tháp Thầy Bói thuộc loại hình Di tích lịch sử - Văn hóa."
+  },
+  {
+    "id": "TB200_003",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Nhà Lao Pleiku thuộc loại hình di tích nào?",
+    "answer": "Nhà Lao Pleiku thuộc loại hình Di tích lịch sử - Văn hóa."
+  },
+  {
+    "id": "TB200_004",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Làng nghề dệt thổ cẩm Hà Ri và Vụ thảm sát nhân dân làng Tân Lập năm 1947 đều thuộc loại hình du lịch nào?",
+    "answer": "Làng nghề dệt thổ cẩm Hà Ri thuộc Làng nghề truyền thống, Vụ thảm sát nhân dân làng Tân Lập năm 1947 thuộc Di tích lịch sử - Văn hóa.",
+    "choices": [
+      "Làng nghề truyền thống và Di tích lịch sử - Văn hóa",
+      "Danh lam thắng cảnh và Di tích lịch sử - Văn hóa",
+      "Làng nghề truyền thống và Danh lam thắng cảnh",
+      "Cả hai đều là Di tích lịch sử - Văn hóa"
+    ]
+  },
+  {
+    "id": "TB200_005",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Tháp Bánh Ít (Tháp Bạc) và Hải đăng Cù Lao Xanh đều thuộc loại hình du lịch nào?",
+    "answer": "Cả hai đều thuộc Di tích lịch sử - Văn hóa",
+    "choices": [
+      "Di tích lịch sử - Văn hóa",
+      "Danh lam thắng cảnh",
+      "Cả hai đều thuộc Di tích lịch sử - Văn hóa",
+      "Cả hai đều thuộc Danh lam thắng cảnh"
+    ]
+  },
+  {
+    "id": "TB200_006",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Ngói Nâu Restaurant nằm ở địa chỉ nào?",
+    "answer": "120 Nguyễn Thái Học, Phường Pleiku."
+  },
+  {
+    "id": "TB200_007",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Nem Chợ Huyện Olala có món đặc trưng nào trong dữ liệu?",
+    "answer": "Nem Chợ Huyện Olala có món Tré Bình Định."
+  },
+  {
+    "id": "TB200_008",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán ăn nào sau đây có món Phở bò tái theo dữ liệu?",
+    "answer": "A. Phở gia truyền Nam Định.",
+    "choices": [
+      "A. Phở gia truyền Nam Định",
+      "B. Cơm Lam - Gà Nướng – Rượu Cần IaGui",
+      "C. Cả hai đều có",
+      "D. Không có quán nào"
+    ]
+  },
+  {
+    "id": "TB200_009",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán dê Krông Pa có món nào trong các lựa chọn sau?",
+    "answer": "A. Lẩu dê",
+    "choices": [
+      "A. Lẩu dê",
+      "B. Bún mắm cua",
+      "C. Cơm lam",
+      "D. Bò né"
+    ]
+  },
+  {
+    "id": "TB200_010",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": " hãy so sánh vị trí của Nhà hàng Lá Xanh (Công viên Đồng Xanh) và Nhà hàng Hương Việt dựa trên các địa điểm lân cận mà chúng có chung?",
+    "answer": "Cả hai nhà hàng đều không có địa điểm lân cận chung. Nhà hàng Lá Xanh (Công viên Đồng Xanh) gần Làng nghề sản xuất nhạc cụ dân tộc và Công viên Đồng Xanh, trong khi Nhà hàng Hương Việt gần nhiều địa điểm khác nhau như Biển Quy Nhơn, Làng chài Hải Minh, Cầu Thị Nại, Ghềnh ráng - Tiên Sa, Tượng Trần Hưng Đạo, MerryLand Quy Nhơn, Khu Du Lịch Cửa Biển, Bảo tàng tổng hợp Bình Định, Chùa Long Khánh, Nhà thờ Đá Ghềnh Ráng, Quảng trường Nguyễn Tất Thành, Quảng trường Tượng đài Chiến Thắng Quy Nhơn, Tháp Thầy Bói, Tháp đôi, Tượng đài Nguyễn Sinh Sắc - Nguyễn Tất Thành, Làng nghề sản xuất Tôm tre, Làng nghề Gốm Vân Sơn, Lăng Ông Nam Hải, Khu biệt thự Đại Phú Gia, Nhà thờ Chánh Tòa, Bãi Ngang, Cảng Quy Nhơn, Cáp treo Hải Giang. Không có địa điểm nào xuất hiện trong cả hai danh sách."
+  },
+  {
+    "id": "TB200_011",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Số điện thoại của Khách sạn Anh Thảo là gì?",
+    "answer": "Số điện thoại của Khách sạn Anh Thảo là 02563746 368."
+  },
+  {
+    "id": "TB200_012",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Nhà nghỉ Hồ Hương có số điện thoại là bao nhiêu?",
+    "answer": "Số điện thoại của Nhà nghỉ Hồ Hương là 0982781179."
+  },
+  {
+    "id": "TB200_013",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào sau đây gần Bảo tàng tỉnh Gia Lai?",
+    "answer": "A. Nhà nghỉ Hoàng Dung.",
+    "choices": [
+      "A. Nhà nghỉ Hoàng Dung",
+      "B. Khách sạn Anh Nguyên 2"
+    ]
+  },
+  {
+    "id": "TB200_014",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào sau đây gần Làng nghề sản xuất nhạc cụ dân tộc?",
+    "answer": "B. Khách sạn Mạnh Lê Gia 2.",
+    "choices": [
+      "A. Central Home(Homestay)",
+      "B. Khách sạn Mạnh Lê Gia 2"
+    ]
+  },
+  {
+    "id": "TB200_015",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh lợi thế vị trí của Homestay nhà tôi và Khách sạn Pleiku & Em đối với du khách muốn tham quan Bảo tàng tỉnh Gia Lai và Quảng trường Đại Đoàn Kết.",
+    "answer": "Cả Homestay nhà tôi và Khách sạn Pleiku & Em đều gần Bảo tàng tỉnh Gia Lai và Quảng trường Đại Đoàn Kết. Tuy nhiên, Homestay nhà tôi còn gần Làng nghề sản xuất nhạc cụ dân tộc và Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, trong khi Khách sạn Pleiku & Em gần thêm Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Do đó, Homestay nhà tôi phù hợp với khách muốn kết hợp tham quan bảo tàng, quảng trường và làng nghề, còn Khách sạn Pleiku & Em phù hợp với khách muốn khám phá nhiều điểm văn hóa, tâm linh và sinh thái hơn."
+  },
+  {
+    "id": "TB200_016",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Lễ hội Xuân Pleiku thuộc thể loại nào?",
+    "answer": "Lễ hội Xuân Pleiku thuộc thể loại Lễ hội văn hóa dân gian."
+  },
+  {
+    "id": "TB200_017",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Khu du lịch Thác Phú Cường thuộc loại hình nào?",
+    "answer": "Khu du lịch Thác Phú Cường thuộc Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_018",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Di tích nơi cập bến tàu không số Lộ Diêu thuộc loại hình di tích nào?",
+    "answer": "Di tích nơi cập bến tàu không số Lộ Diêu thuộc loại Di tích lịch sử - Văn hóa."
+  },
+  {
+    "id": "TB200_019",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Khu tưởng niệm Nguyễn Sinh Sắc và Thiên Hưng Tự đều thuộc nhóm loại hình du lịch nào?",
+    "answer": "A. Di tích lịch sử - Văn hóa.",
+    "choices": [
+      "A. Di tích lịch sử - Văn hóa",
+      "B. Danh lam thắng cảnh",
+      "C. Làng nghề truyền thống",
+      "D. Công trình tôn giáo"
+    ]
+  },
+  {
+    "id": "TB200_020",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai địa điểm sau, đâu là di tích lịch sử - văn hóa còn địa điểm kia chỉ là điểm tham quan?",
+    "answer": "A. Di tích khảo cổ Rộc Tưng.",
+    "choices": [
+      "A. Di tích khảo cổ Rộc Tưng",
+      "B. Khu Du Lịch Cửa Biển"
+    ]
+  },
+  {
+    "id": "TB200_021",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Địa điểm nào sau đây KHÔNG nằm trong tour 'Tour làng nghề Bình Định 1 ngày: Về thăm Kinh đô xưa'?",
+    "answer": "C. Bãi Nhỏ (Cù Lao Xanh).",
+    "choices": [
+      "A. Làng nghề truyền thống Rượu Bàu Đá",
+      "B. Làng nghề nón ngựa Phú Gia",
+      "C. Bãi Nhỏ (Cù Lao Xanh)",
+      "D. Chùa Thập Tháp"
+    ]
+  },
+  {
+    "id": "TB200_022",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Địa điểm nào sau đây nằm tại Phường Thống Nhất?",
+    "answer": "A. Khu du lịch sinh thái Xuân Thủy.",
+    "choices": [
+      "A. Khu du lịch sinh thái Xuân Thủy",
+      "B. Biển Quy Hòa",
+      "C. Chùa Long Khánh",
+      "D. Tháp đôi"
+    ]
+  },
+  {
+    "id": "TB200_023",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy phân tích sự khác biệt về vị trí địa lý và loại hình du lịch giữa Suối đá đĩa cổ Gia Lai và Làng nghề truyền thống Tiện gỗ mỹ nghệ Nhạn Tháp, đồng thời cho biết mỗi địa điểm có những tiện ích lưu trú hoặc dịch vụ nào gần kề?",
+    "answer": "Suối đá đĩa cổ Gia Lai nằm tại Xã Ia Rbol, thuộc loại Danh lam thắng cảnh, gần Nhà Nghỉ Hoa Hồng (Ia Khuol). Làng nghề truyền thống Tiện gỗ mỹ nghệ Nhạn Tháp nằm tại Phường An Nhơn, thuộc loại Làng nghề truyền thống, gần Khách sạn Kim Hoa 2 và được bao gồm trong Tour làng nghề Bình Định 1 ngày: Về thăm Kinh đô xưa."
+  },
+  {
+    "id": "TB200_024",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Phân tích sự tương đồng về vị trí địa lý giữa Biển Nhơn Hải và MerryLand Quy Nhơn, và giải thích vì sao cả hai đều có thể là điểm đến hấp dẫn du khách.",
+    "answer": "Cả Biển Nhơn Hải và MerryLand Quy Nhơn đều nằm tại Phường Quy Nhơn Đông, TP Quy Nhơn. Biển Nhơn Hải nằm trên dãy Phương Mai, cách trung tâm TP Quy Nhơn hơn 20 km, thuộc xã bán đảo Nhơn Hải. MerryLand Quy Nhơn tọa lạc tại bán đảo Hải Giang, Thôn Hải Giang, Phường Quy Nhơn Đông. Cả hai đều có vị trí ven biển, gần nhau, và đều được mô tả là điểm đến hấp dẫn: Biển Nhơn Hải là điểm đến du lịch biển hấp dẫn, MerryLand Quy Nhơn được ví như kỳ quan nhiệt đới với phong thủy 'tọa sơn nghinh hải'. Sự gần gũi về vị trí và cảnh quan biển tạo điều kiện cho du khách kết hợp tham quan cả hai địa điểm."
+  },
+  {
+    "id": "TB200_025",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh vị trí của Nhà nghỉ 309 Lê Thánh Tôn và Khách sạn Anna dựa trên các địa điểm lân cận. Hai cơ sở lưu trú này có những điểm tương đồng và khác biệt gì về các địa điểm gần kề?",
+    "answer": "Cả Nhà nghỉ 309 Lê Thánh Tôn và Khách sạn Anna đều nằm gần các địa điểm: Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Điểm khác biệt là Khách sạn Anna còn gần Làng nghề sản xuất nhạc cụ dân tộc, trong khi Nhà nghỉ 309 Lê Thánh Tôn không có thông tin về địa điểm này."
+  },
+  {
+    "id": "TB200_026",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày ở Quy Nhơn cho du khách lưu trú tại Khách sạn Hữu Phước, ưu tiên các điểm tham quan gần khách sạn như biển, làng chài và danh thắng. ",
+    "answer": "Có thể gợi ý lịch trình nửa ngày gồm: xuất phát từ Khách sạn Hữu Phước, tham quan Biển Quy Hòa hoặc Biển Quy Nhơn để trải nghiệm biển, sau đó ghé Làng chài Hải Minh và Ghềnh ráng - Tiên Sa. Lý do là Khách sạn Hữu Phước có quan hệ gần với các điểm này. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nên nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_027",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Một du khách lưu trú tại Khách sạn Sung Tứ Quý muốn tham quan một điểm du lịch nổi tiếng ở Quy Nhơn và một điểm văn hóa gần khách sạn. Hãy gợi ý một lịch trình kết hợp MerryLand Quy Nhơn và một điểm văn hóa gần khách sạn, dựa trên dữ liệu có sẵn.",
+    "answer": "Có thể gợi ý lịch trình: xuất phát từ Khách sạn Sung Tứ Quý, tham quan Bảo tàng tỉnh Gia Lai (gần khách sạn), sau đó di chuyển đến MerryLand Quy Nhơn. Tuy nhiên, không có dữ liệu về khoảng cách hay thời gian di chuyển giữa hai địa điểm, nên chỉ nên gợi ý thứ tự tham quan, không gán giờ cụ thể."
+  },
+  {
+    "id": "TB200_028",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình tham quan trong ngày cho du khách lưu trú tại Dankbaar Resort, muốn kết hợp trải nghiệm biển, danh lam thắng cảnh và làng nghề. ",
+    "answer": "Có thể gợi ý lịch trình: xuất phát từ Dankbaar Resort, tham quan Biển Quy Hòa (trải nghiệm biển), sau đó đến Ghềnh ráng - Tiên Sa (danh lam thắng cảnh), và cuối cùng là Làng nghề Gốm Vân Sơn (làng nghề). Dankbaar Resort có quan hệ NEAR với cả ba điểm này. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_029",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày cho du khách lưu trú tại Long Hill Bãi Xếp Resort & Spa, muốn kết hợp tham quan biển, làng chài và một điểm khoa học gần resort. Sau đó, nếu du khách muốn khám phá thêm các điểm ở Xã Vĩnh Thạnh, hãy liệt kê các điểm đó. ",
+    "answer": "Lịch trình nửa ngày: xuất phát từ Long Hill Bãi Xếp Resort & Spa, tham quan Biển Quy Hòa (biển), Làng Phong Quy Hòa (làng chài) và Tổ hợp không gian khoa học (khoa học) vì cả ba đều gần resort. Sau đó, nếu muốn khám phá Xã Vĩnh Thạnh, có thể ghé Hồ Định Bình, Tượng đài khởi nghĩa Vĩnh Thạnh, Lò rượu nước nóng và Suối nước khoáng Vĩnh Thạnh. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_030",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Một du khách muốn lưu trú tại một nhà nghỉ gần Khu du lịch sinh thái Xuân Thủy và có thể tham quan một di tích lịch sử - văn hóa trong cùng khu vực.  hãy gợi ý một lịch trình ngắn gồm nơi ở và điểm tham quan phù hợp, giải thích lý do.",
+    "answer": "Có thể gợi ý lịch trình: lưu trú tại Nhà nghỉ 230 (vì gần Khu du lịch sinh thái Xuân Thủy) và tham quan Nhà lưu niệm Chi bộ Đề pô Diêu Trì (di tích lịch sử - văn hóa). Tuy nhiên, không có dữ liệu về quan hệ gần giữa Nhà nghỉ 230 và Nhà lưu niệm Chi bộ Đề pô Diêu Trì, nên chỉ có thể gợi ý riêng lẻ. Hoặc có thể chọn Nhà nghỉ Thanh Tâm (cũng gần Khu du lịch sinh thái Xuân Thủy) nhưng cũng không có quan hệ gần với di tích. Do đó, lịch trình chỉ mang tính tham khảo, không có thông tin về thời gian di chuyển hay giờ mở cửa."
+  },
+  {
+    "id": "TB200_031",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai thực thể sau, thực thể nào có thông tin về số điện thoại?",
+    "answer": "D. Cả hai đều không có.",
+    "choices": [
+      "A. Nhà hàng Mộc Viên",
+      "B. Khánh sạn Triệu Sơn",
+      "C. Cả hai đều có",
+      "D. Cả hai đều không có"
+    ]
+  },
+  {
+    "id": "TB200_032",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai thực thể Adiuvat Coffee Roasters và Khách sạn Hữu Phước, thực thể nào có thông tin số điện thoại?",
+    "answer": "B. Khách sạn Hữu Phước.",
+    "choices": [
+      "A. Adiuvat Coffee Roasters",
+      "B. Khách sạn Hữu Phước",
+      "C. Cả hai",
+      "D. Không thực thể nào"
+    ]
+  },
+  {
+    "id": "TB200_033",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Paris - nhà hàng Pháp, Nhà hàng cơm niêu Pleiku và Thuỷ Mộc Quán dựa trên các món ăn đặc trưng và vị trí gần các điểm tham quan. Nếu khách muốn vừa thưởng thức món Bít tết vừa gần Bảo tàng tỉnh Gia Lai, nhà hàng nào phù hợp nhất?",
+    "answer": "Không có nhà hàng nào trong ba nhà hàng vừa có món Bít tết vừa gần Bảo tàng tỉnh Gia Lai. Paris - nhà hàng Pháp có món Bít tết nhưng không có thông tin về vị trí gần Bảo tàng tỉnh Gia Lai. Thuỷ Mộc Quán gần Bảo tàng tỉnh Gia Lai nhưng không có món Bít tết (món đặc trưng là đặc sản, không rõ món cụ thể). Nhà hàng cơm niêu Pleiku có món Cá kho tộ, không có Bít tết và không có thông tin gần Bảo tàng tỉnh Gia Lai."
+  },
+  {
+    "id": "TB200_034",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Cầu Tre Bình Long và Di tích khảo cổ Rộc Tưng dựa trên loại hình du lịch và các nhà nghỉ gần đó. Nếu một du khách muốn ở gần một di tích lịch sử - văn hóa, địa điểm nào phù hợp hơn và có nhà nghỉ nào gần đó không?",
+    "answer": "Di tích khảo cổ Rộc Tưng phù hợp hơn vì nó thuộc loại Di tích lịch sử - Văn hóa, trong khi Cầu Tre Bình Long thuộc loại Điểm check-in. Ngoài ra, có ba nhà nghỉ gần Di tích khảo cổ Rộc Tưng: Nhà nghỉ Thanh Bình (An Phú), Nhà nghỉ Anh Thư và Nhà nghỉ 123. Cầu Tre Bình Long không có thông tin về nhà nghỉ gần đó trong dữ liệu."
+  },
+  {
+    "id": "TB200_035",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh các quán ăn có món Thịt luộc cà pháo và Phở bò dựa trên thông tin liên hệ và các điểm tham quan gần đó. Nếu khách muốn ở gần Bảo tàng tỉnh Gia Lai, quán nào có thể phù hợp?",
+    "answer": "Dựa trên dữ liệu hiện có, không có quán ăn nào trong số này có thông tin liên hệ (số điện thoại, giờ mở cửa, website) hoặc vị trí gần Bảo tàng tỉnh Gia Lai. Cơm Niêu Hội An - Quy Nhơn có món Thịt luộc cà pháo nhưng không có thông tin về vị trí hay liên hệ. Phở khô Hồng và Nhà hàng Confetti có món Phở bò nhưng cũng thiếu các thông tin đó. The Stay Villa Pleiku là chỗ ở gần Bảo tàng tỉnh Gia Lai, nhưng không phải quán ăn. Vì vậy, không có quán ăn nào phù hợp dựa trên tiêu chí gần Bảo tàng tỉnh Gia Lai."
+  },
+  {
+    "id": "TB200_036",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Khách sạn Hầm Hô có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Khách sạn Hầm Hô."
+  },
+  {
+    "id": "TB200_037",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Số điện thoại của Bookafe là gì?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về số điện thoại của Bookafe."
+  },
+  {
+    "id": "TB200_038",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Nhà Nghỉ Sao Mai có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Nhà Nghỉ Sao Mai."
+  },
+  {
+    "id": "TB200_039",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Phở khô Gia Lai có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Phở khô Gia Lai."
+  },
+  {
+    "id": "TB200_040",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Xã Biển Hồ có số điện thoại liên hệ không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về số điện thoại của Xã Biển Hồ."
+  },
+  {
+    "id": "TB200_041",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Cầu Thị Nại nằm ở phường nào?",
+    "answer": "Cầu Thị Nại nằm ở Phường Quy Nhơn Đông."
+  },
+  {
+    "id": "TB200_042",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Bãi đá Thảo Nguyên thuộc loại hình du lịch nào?",
+    "answer": "Bãi đá Thảo Nguyên thuộc loại hình Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_043",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Làng nghề truyền thống Rượu Bàu Đá thuộc loại hình du lịch nào?",
+    "answer": "Làng nghề truyền thống Rượu Bàu Đá thuộc loại hình Làng nghề truyền thống."
+  },
+  {
+    "id": "TB200_044",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Khu di tích Plei Ơi thuộc loại hình di tích nào?",
+    "answer": "Khu di tích Plei Ơi thuộc loại hình Di tích lịch sử - văn hóa."
+  },
+  {
+    "id": "TB200_045",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Hải đăng Hòn Nước nằm ở xã nào?",
+    "answer": "Hải đăng Hòn Nước nằm ở xã Phù Mỹ Đông."
+  },
+  {
+    "id": "TB200_046",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Làng chài Hải Minh nằm ở phường nào?",
+    "answer": "Làng chài Hải Minh nằm ở Phường Quy Nhơn."
+  },
+  {
+    "id": "TB200_047",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Hải đăng Cù Lao Xanh thuộc loại hình du lịch nào?",
+    "answer": "Hải đăng Cù Lao Xanh thuộc loại hình Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_048",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Làng nghề dệt thổ cẩm Tơ Tung nằm ở xã nào?",
+    "answer": "Làng nghề dệt thổ cẩm Tơ Tung nằm ở xã Tơ Tung."
+  },
+  {
+    "id": "TB200_049",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Nhà thờ cổ H'Bầu thuộc loại hình di tích nào?",
+    "answer": "Nhà thờ cổ H'Bầu thuộc loại hình Di tích lịch sử - Văn hóa."
+  },
+  {
+    "id": "TB200_050",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Làng Bí Đao Khổng Lồ thuộc loại hình du lịch nào?",
+    "answer": "Làng Bí Đao Khổng Lồ thuộc loại hình Làng nghề - Nông nghiệp."
+  },
+  {
+    "id": "TB200_051",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Di tích lịch sử Cây số 7 Tài Lương thuộc loại hình di tích nào?",
+    "answer": "Di tích lịch sử Cây số 7 Tài Lương thuộc loại hình Di tích lịch sử - Văn hóa."
+  },
+  {
+    "id": "TB200_052",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Chợ cá sáng Nhơn Châu thuộc loại hình du lịch nào?",
+    "answer": "Chợ cá sáng Nhơn Châu thuộc loại hình Điểm tham quan."
+  },
+  {
+    "id": "TB200_053",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả hai di tích nào sau đây đều thuộc loại hình 'Di tích lịch sử - Văn hóa'?",
+    "answer": "Tượng đài khởi nghĩa Vĩnh Thạnh và Di tích lịch sử văn hóa căn cứ địa cách mạng Khu 10",
+    "choices": [
+      "Tượng đài khởi nghĩa Vĩnh Thạnh và Di tích lịch sử văn hóa căn cứ địa cách mạng Khu 10",
+      "Tượng đài khởi nghĩa Vĩnh Thạnh và Thác Phú Cường",
+      "Di tích lịch sử văn hóa căn cứ địa cách mạng Khu 10 và Bảo tàng tỉnh Gia Lai",
+      "Tượng đài khởi nghĩa Vĩnh Thạnh và Di tích Làng kháng chiến Stơr"
+    ]
+  },
+  {
+    "id": "TB200_054",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Di tích lịch sử văn hóa Plei Ơi và Thác Phú Cường cùng nằm ở địa phương nào?",
+    "answer": "Mỗi nơi một xã khác nhau: Di tích lịch sử văn hóa Plei Ơi ở Xã Chư A Thai, Thác Phú Cường ở Xã Chư Sê.",
+    "choices": [
+      "Cả hai đều ở Xã Chư A Thai",
+      "Cả hai đều ở Xã Chư Sê",
+      "Mỗi nơi một xã khác nhau",
+      "Không có thông tin"
+    ]
+  },
+  {
+    "id": "TB200_055",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Tháp Phú Lốc (Tháp Vàng) và Chùa Thập Tháp đều nằm ở phường nào?",
+    "answer": "Cả hai đều nằm ở Phường An Nhơn Bắc.",
+    "choices": [
+      "Phường An Nhơn Bắc",
+      "Phường Pleiku",
+      "Xã Nhơn Thành",
+      "Thị xã An Nhơn"
+    ]
+  },
+  {
+    "id": "TB200_056",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Bảo tàng tỉnh Gia Lai và Thủy điện Ia Ly đều thiếu thông tin nào dưới đây?",
+    "answer": "Số điện thoại",
+    "choices": [
+      "Địa chỉ",
+      "Số điện thoại",
+      "Loại hình du lịch",
+      "Tọa độ vị trí"
+    ]
+  },
+  {
+    "id": "TB200_057",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Tượng Trần Hưng Đạo và Tháp Thầy Bói đều thuộc loại hình du lịch nào?",
+    "answer": "Di tích lịch sử - Văn hóa",
+    "choices": [
+      "Danh lam thắng cảnh",
+      "Di tích lịch sử - Văn hóa",
+      "Khu du lịch sinh thái",
+      "Bảo tàng"
+    ]
+  },
+  {
+    "id": "TB200_058",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Địa chỉ của Thác Bà và Làng nghề Gốm Vân Sơn lần lượt là gì?",
+    "answer": "Thôn 3, Xã Chư Păh và Phường An Nhơn",
+    "choices": [
+      "Thôn 3, Xã Chư Păh và Phường An Nhơn",
+      "Phường An Nhơn và Thôn 3, Xã Chư Păh",
+      "Thôn 3, Xã Chư Păh và Xã Nhơn Hậu",
+      "Phường An Nhơn và Xã Chư Păh"
+    ]
+  },
+  {
+    "id": "TB200_059",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Đền Thờ Tăng Bạt Hổ và Chùa Bửu Nghiêm đều thuộc loại hình du lịch nào?",
+    "answer": "Cả hai đều thuộc loại hình Di tích lịch sử - Văn hóa.",
+    "choices": [
+      "Di tích lịch sử - Văn hóa",
+      "Danh lam thắng cảnh",
+      "Công trình tôn giáo",
+      "Bảo tàng"
+    ]
+  },
+  {
+    "id": "TB200_060",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Thung lũng An Toàn và Di tích lịch sử văn hóa Plei Ơi lần lượt thuộc loại hình du lịch nào?",
+    "answer": "Thung lũng An Toàn thuộc Danh lam thắng cảnh, Di tích lịch sử văn hóa Plei Ơi thuộc Di tích lịch sử - Văn hóa.",
+    "choices": [
+      "Danh lam thắng cảnh và Di tích lịch sử - Văn hóa",
+      "Di tích lịch sử - Văn hóa và Danh lam thắng cảnh",
+      "Cả hai đều là Danh lam thắng cảnh",
+      "Cả hai đều là Di tích lịch sử - Văn hóa"
+    ]
+  },
+  {
+    "id": "TB200_061",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Hãy so sánh các điểm du lịch Cao nguyên La Vuông, Bãi Nhỏ (Cù Lao Xanh) và Con đường Đá Xanh Nhơn Lý dựa trên thông tin về địa chỉ, loại hình và các tour du lịch có bao gồm điểm đó.",
+    "answer": "Cao nguyên La Vuông nằm tại Phường Hoài Nhơn Bắc, thuộc loại Danh lam thắng cảnh, không có tour nào bao gồm điểm này. Bãi Nhỏ (Cù Lao Xanh) nằm tại Xã Nhơn Châu, thuộc loại Danh lam thắng cảnh, được bao gồm trong ba tour: Tour 3 đảo Quy Nhơn 2 ngày 1 đêm: Cù Lao Xanh – Hòn Khô – Kỳ Co, Tour Cù Lao Xanh 2 ngày 1 đêm: Sự trải nghiệm độc đáo, và Tour Cù Lao Xanh 1 ngày: Khám phá hòn ngọc xanh Quy Nhơn. Con đường Đá Xanh Nhơn Lý nằm tại Phường Quy Nhơn Đông, thuộc loại Điểm check-in, được bao gồm trong ba tour: Tour Kỳ Co – Eo Gió 1 ngày: Trải nghiệm biển đảo Quy Nhơn hùng vĩ, Tour Yuragi Chaya Quy Nhơn – Eo Gió 1 ngày: Trải nghiệm tắm Onsen Nhật Bản ngắm Đầm Thị Nại, và Tour Kỳ Co bằng đường bộ 1 ngày: Ngắm biển đảo Quy Nhơn từ trên cao."
+  },
+  {
+    "id": "TB200_062",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Hãy so sánh đặc điểm nổi bật của Khu du lịch Phương Mai, Chợ Gò (Trường Úc) và Làng nghề đúc đồng Bằng Châu dựa trên mô tả được cung cấp.",
+    "answer": "Khu du lịch Phương Mai nổi bật với bãi biển dài 3km, bờ cát trắng mịn, nước biển trong xanh và không gian trang trí đẹp. Chợ Gò (Trường Úc) là di tích lịch sử - văn hóa, nơi diễn ra Lễ hội Xuân chợ Gò vào sáng mồng 1 Tết, người dân đến vui chơi, cầu lộc và mua bán sản vật địa phương. Làng nghề đúc đồng Bằng Châu là làng nghề truyền thống với quy trình sản xuất gồm nhiều công đoạn như nấu đồng, pha chế, chế biến nguyên liệu, chế tạo khuôn đúc, xây dựng; sản phẩm đa dạng từ mâm, nồi, chảo đến đèn thờ, chiêng cồng."
+  },
+  {
+    "id": "TB200_063",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa vào thông tin về các điểm du lịch tại Bình Định, hãy cho biết điểm nào thuộc loại hình 'Di tích lịch sử - Văn hóa' và điểm nào thuộc 'Danh lam thắng cảnh'? Ngoài ra, điểm nào là 'Làng nghề truyền thống'? Hãy liệt kê tên và loại hình tương ứng.",
+    "answer": "Luỹ cổ Phương Mai thuộc loại hình Di tích lịch sử - Văn hóa. Biển Nhơn Hải thuộc loại hình Danh lam thắng cảnh. Làng nghề chế biến thảm xơ dừa Tam Quan thuộc loại hình Làng nghề truyền thống."
+  },
+  {
+    "id": "TB200_064",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh đặc điểm văn hóa và loại hình du lịch của Khu di tích Plei Ơi và Làng Du lịch cộng đồng Mơ Hra. Điểm khác biệt chính là gì?",
+    "answer": "Khu di tích Plei Ơi là Di tích lịch sử - văn hóa, gắn với tín ngưỡng Vua Lửa của người Jrai, có nhà thờ Vua Lửa, bến nước, và là nơi diễn ra Lễ cầu mưa Yang Pơtao Apui. Làng Du lịch cộng đồng Mơ Hra là Làng văn hóa, bảo tồn kiến trúc nhà sàn, nhà rông, nghề thủ công truyền thống, cồng chiêng và lễ hội dân gian của đồng bào Ba Na. Điểm khác biệt chính: Plei Ơi thuộc loại di tích lịch sử - văn hóa với yếu tố tín ngưỡng, còn Mơ Hra thuộc làng văn hóa với du lịch cộng đồng."
+  },
+  {
+    "id": "TB200_065",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Hãy so sánh vị trí địa lý và loại hình của Lò rượu nước nóng, Suối Tà Má và Hòn Sẹo dựa trên thông tin có sẵn.",
+    "answer": "Lò rượu nước nóng thuộc Làng nghề truyền thống, tọa lạc tại Xã Vĩnh Thạnh. Suối Tà Má thuộc Danh lam thắng cảnh, tọa lạc tại Xã Vĩnh Thịnh. Hòn Sẹo thuộc Danh lam thắng cảnh, tọa lạc tại Phường Quy Nhơn Đông. Cả ba đều nằm trong tour 'Tour Quy Nhơn – Suối Tà Má 1 ngày: Ngắm mùa hoa trang rừng khoe sắc' (Lò rượu nước nóng và Suối Tà Má được tour bao gồm, Hòn Sẹo không được đề cập trong tour này)."
+  },
+  {
+    "id": "TB200_066",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Circle Restaurant nằm ở địa chỉ nào?",
+    "answer": "Circle Restaurant nằm tại 62 Wừu, Phường Diên Hồng."
+  },
+  {
+    "id": "TB200_067",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Cơm gà xối mỡ là món đặc trưng của những quán nào?",
+    "answer": "Cơm gà xối mỡ là món đặc trưng của Cơm gà Mỹ Tâm 1 và Cơm gà Mỹ Tâm 2."
+  },
+  {
+    "id": "TB200_068",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Lotteria nằm ở địa chỉ nào?",
+    "answer": "01 Phan Bội Châu, Phường Pleiku."
+  },
+  {
+    "id": "TB200_069",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Quán cà phê nào trong dữ liệu có món Cà phê sữa?",
+    "answer": "Coffee Không Gian Xưa có món Cà phê sữa."
+  },
+  {
+    "id": "TB200_070",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Quán Dê tươi cát Vàng có món gì trong dữ liệu?",
+    "answer": "Quán Dê tươi cát Vàng có món Dê hấp."
+  },
+  {
+    "id": "TB200_071",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Quán dê Krông Pa có món đặc trưng nào trong dữ liệu?",
+    "answer": "Quán dê Krông Pa có món Cà ri dê."
+  },
+  {
+    "id": "TB200_072",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Nhà hàng Cơm niêu XQ Hoa có món gì trong dữ liệu?",
+    "answer": "Nhà hàng Cơm niêu XQ Hoa có món Sườn rim."
+  },
+  {
+    "id": "TB200_073",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Mì quảng Hường có món đặc trưng nào trong dữ liệu?",
+    "answer": "Mì quảng Hường có món Mì Quảng sườn."
+  },
+  {
+    "id": "TB200_074",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Nhà hàng Thành Tâm và Cascara Tea & Coffee House có điểm gì khác biệt về loại hình?",
+    "answer": "A. Nhà hàng Thành Tâm là Nhà hàng, Cascara Tea & Coffee House là Cafe/Đồ uống.",
+    "choices": [
+      "A. Nhà hàng Thành Tâm là Nhà hàng, Cascara Tea & Coffee House là Cafe/Đồ uống",
+      "B. Cả hai đều là Nhà hàng",
+      "C. Cả hai đều là Cafe/Đồ uống",
+      "D. Nhà hàng Thành Tâm là Cafe/Đồ uống, Cascara Tea & Coffee House là Nhà hàng"
+    ]
+  },
+  {
+    "id": "TB200_075",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Nhà hàng nào trong các lựa chọn sau có món Gà chiên mắm theo dữ liệu?",
+    "answer": "A. Nhà hàng Mộc Viên.",
+    "choices": [
+      "A. Nhà hàng Mộc Viên",
+      "B. Nhà hàng cơm niêu Pleiku",
+      "C. Cả hai nhà hàng",
+      "D. Không nhà hàng nào"
+    ]
+  },
+  {
+    "id": "TB200_076",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Nhà hàng nào trong các lựa chọn sau có số điện thoại được cung cấp trong dữ liệu?",
+    "answer": "A. Hoàng Vũ Plaza",
+    "choices": [
+      "A. Hoàng Vũ Plaza",
+      "B. Nhà hàng Biển Hồ Xanh",
+      "C. Cả hai",
+      "D. Không có nhà hàng nào"
+    ]
+  },
+  {
+    "id": "TB200_077",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán ăn nào trong các lựa chọn sau có món Nem nướng theo dữ liệu?",
+    "answer": "A. Nem Ninh Hòa.",
+    "choices": [
+      "A. Nem Ninh Hòa",
+      "B. Nhà hàng Lá Xanh (Công viên Đồng Xanh)",
+      "C. Cả hai đều có",
+      "D. Không có quán nào"
+    ]
+  },
+  {
+    "id": "TB200_078",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán Lý Sơn Đảo có món đặc sản nào sau đây?",
+    "answer": "B. Tôm nướng.",
+    "choices": [
+      "A. Cơm niêu",
+      "B. Tôm nướng",
+      "C. Bò né",
+      "D. Phở khô Gia Lai"
+    ]
+  },
+  {
+    "id": "TB200_079",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán chay nào trong các lựa chọn sau có món Bún riêu chay theo dữ liệu?",
+    "answer": "B. Quán Chay Khai Tâm.",
+    "choices": [
+      "A. Bò né 3 ngon Gia Lai",
+      "B. Quán Chay Khai Tâm",
+      "C. Cả hai quán trên",
+      "D. Không quán nào"
+    ]
+  },
+  {
+    "id": "TB200_080",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán ăn nào trong các lựa chọn sau đây có món Mì Quảng gà?",
+    "answer": "A. Mì quảng Hường.",
+    "choices": [
+      "A. Mì quảng Hường",
+      "B. Nhà hàng Lá Xanh (Công viên Đồng Xanh)",
+      "C. Cả hai đều có",
+      "D. Không có quán nào"
+    ]
+  },
+  {
+    "id": "TB200_081",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán nào sau đây có món Cơm lam theo dữ liệu?",
+    "answer": "B. Cơm lam Gà nướng Plit.",
+    "choices": [
+      "A. Nhà hàng Rok Ly",
+      "B. Cơm lam Gà nướng Plit",
+      "C. Cả hai đều có",
+      "D. Không quán nào có"
+    ]
+  },
+  {
+    "id": "TB200_082",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán 63 Phan Đình Giót thuộc loại hình nào?",
+    "answer": "A. Quán ăn/Đặc sản.",
+    "choices": [
+      "A. Quán ăn/Đặc sản",
+      "B. Nhà hàng",
+      "C. Quán cà phê",
+      "D. Quán ăn nhanh"
+    ]
+  },
+  {
+    "id": "TB200_083",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Quán Cây Trứng Cá nằm gần địa điểm nào trong các lựa chọn sau?",
+    "answer": "D. Cả A và C.",
+    "choices": [
+      "A. Làng nghề sản xuất nhạc cụ dân tộc",
+      "B. Bánh xèo Bà Tám",
+      "C. Công viên Đồng Xanh",
+      "D. Cả A và C"
+    ]
+  },
+  {
+    "id": "TB200_084",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": " hãy so sánh các nhà hàng và quán ăn ở Xã Mang Yang có món Lẩu dê. Những quán nào có món này? Các nhà hàng tiệc cưới ở Xã Mang Yang có thông tin gì về địa chỉ và loại hình? Có thông tin nào về số điện thoại, giờ mở cửa, giá vé hoặc website cho các địa điểm này không?",
+    "answer": "Các quán có món Lẩu dê là Quán Dê tươi cát Vàng và Quán dê Krông Pa. Nhà hàng tiệc cưới Khánh Ly có địa chỉ Xã Mang Yang, loại Nhà hàng; Nhà hàng tiệc cưới Cát Phượng có địa chỉ 54 Lê Quý Đôn, Xã Mang Yang, loại Nhà hàng. Không có thông tin về số điện thoại, giờ mở cửa, giá vé hoặc website cho bất kỳ địa điểm nào trong dữ liệu."
+  },
+  {
+    "id": "TB200_085",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh các nhà hàng có món Thịt hun khói và Mì Quảng sườn về thông tin liên lạc và địa điểm?",
+    "answer": "Nhà hàng Plei Cồng chiêng có món Thịt hun khói nhưng không có số điện thoại, giờ mở cửa, giá vé, website. Mì quảng Hường có món Mì Quảng sườn nhưng cũng không có số điện thoại, giờ mở cửa, giá vé, website. Cascara Tea & Coffee House có địa chỉ 65A Hoàng Diệu, Phường Diên Hồng, số điện thoại 02563822231, loại Cafe/Đồ uống, gần nhiều địa điểm như Biển Quy Nhơn, Làng chài Hải Minh, Cầu Thị Nại, Ghềnh ráng - Tiên Sa, Tượng Trần Hưng Đạo, Bảo tàng tổng hợp Bình Định, Chùa Long Khánh, Nhà thờ Đá Ghềnh Ráng, Quảng trường Nguyễn Tất Thành, Quảng trường Tượng đài Chiến Thắng Quy Nhơn, Tháp Thầy Bói, Tháp đôi, Tượng đài Nguyễn Sinh Sắc - Nguyễn Tất Thành, Làng nghề sản xuất Tôm tre, Làng nghề Gốm Vân Sơn, Lăng Ông Nam Hải, Khu biệt thự Đại Phú Gia, Nhà thờ Chánh Tòa, Bãi Ngang, Cảng Quy Nhơn, Cáp treo Hải Giang, nhưng không có giờ mở cửa, giá vé, website."
+  },
+  {
+    "id": "TB200_086",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": " hãy so sánh vị trí của Quán Pleiku Xanh và Nhà hàng Jolibi: chúng cùng nằm gần những địa điểm du lịch nào?",
+    "answer": "Cả Quán Pleiku Xanh và Nhà hàng Jolibi đều nằm gần Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku."
+  },
+  {
+    "id": "TB200_087",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh các nhà hàng có món Cá hồi áp chảo, Cà ri dê và Câu cá Bảy Dũng về các món ăn đặc trưng và địa điểm gần đó. Nhà hàng nào có nhiều địa điểm tham quan gần nhất?",
+    "answer": "Nhà hàng Câu cá Bảy Dũng có món Gà nướng, Cá lóc nướng trui, Cháo gà và gần nhiều địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Làng nghề sản xuất nhạc cụ dân tộc, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku. Nhà Hàng D'iCil'a có món Cá hồi áp chảo nhưng không có thông tin về địa điểm gần. Quán dê Krông Pa có món Cà ri dê nhưng cũng không có thông tin về địa điểm gần. Vậy Câu cá Bảy Dũng có nhiều địa điểm tham quan gần nhất."
+  },
+  {
+    "id": "TB200_088",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": " hãy so sánh vị trí và các món ăn của Nhà hàng Ngọc Toàn và Phở gia truyền Nam Định. Nhà hàng nào có nhiều món hơn và nằm gần nhiều địa điểm tham quan hơn?",
+    "answer": "Nhà hàng Ngọc Toàn nằm tại 167 Trần Hưng Đạo, Xã Mang Yang, là nhà hàng, nhưng không có thông tin về món ăn. Phở gia truyền Nam Định nằm tại 131 Trần Phú, Phường Diên Hồng, là quán ăn/đặc sản, có hai món: Phở bò tái và Phở bò chín, và gần nhiều địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku. Vậy Phở gia truyền Nam Định có nhiều món hơn (2 món so với 0) và nằm gần nhiều địa điểm tham quan hơn."
+  },
+  {
+    "id": "TB200_089",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh thông tin liên hệ và vị trí của Nhà hàng Cơm niêu XQ Hoa, Cơm gà Hải Nam và Nhà hàng Xuân. Nhà hàng nào có số điện thoại? Nhà hàng nào nằm gần Thác Bà? Nhà hàng nào thiếu thông tin giờ mở cửa?",
+    "answer": "Trong ba nhà hàng, chỉ có Nhà hàng Xuân có số điện thoại (02693845561) và nằm gần Thác Bà. Cả Nhà hàng Cơm niêu XQ Hoa và Cơm gà Hải Nam đều thiếu thông tin giờ mở cửa, số điện thoại, giá vé và website. Nhà hàng Xuân cũng thiếu thông tin giờ mở cửa, giá vé và website."
+  },
+  {
+    "id": "TB200_090",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh các nhà hàng có món Gà rán và Tôm nướng về địa chỉ, các món ăn khác và các địa điểm lân cận. Nhà hàng nào có nhiều thông tin hơn?",
+    "answer": "Trong dữ liệu, Lotteria có địa chỉ 01 Phan Bội Châu, Phường Pleiku, phục vụ Gà rán và Hamburger, gần nhiều địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku. Nhà hàng Jolibi chỉ có thông tin phục vụ Gà rán, không có địa chỉ hay thông tin khác. Quán Hải sản 61 Nguyễn Đình Chiểu và Quán Lý Sơn Đảo phục vụ Tôm nướng nhưng không có thông tin địa chỉ hay món khác. Vậy Lotteria có nhiều thông tin nhất."
+  },
+  {
+    "id": "TB200_091",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Maia Resort Quy Nhơn thuộc loại hình lưu trú nào?",
+    "answer": "Maia Resort Quy Nhơn là một Resort."
+  },
+  {
+    "id": "TB200_092",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Số điện thoại của Nhà nghỉ 777 là gì?",
+    "answer": "Số điện thoại của Nhà nghỉ 777 là 0905180965."
+  },
+  {
+    "id": "TB200_093",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Số điện thoại của Nhà nghỉ Trung Hương là gì?",
+    "answer": "Số điện thoại của Nhà nghỉ Trung Hương là 0964966689."
+  },
+  {
+    "id": "TB200_094",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Long Hill Bãi Xếp Resort & Spa là loại hình lưu trú gì?",
+    "answer": "Long Hill Bãi Xếp Resort & Spa là một Resort."
+  },
+  {
+    "id": "TB200_095",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Khách sạn Hoàng Ngọc thuộc loại hình lưu trú nào?",
+    "answer": "Khách sạn Hoàng Ngọc là Khách sạn."
+  },
+  {
+    "id": "TB200_096",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Nhà nghỉ 455 Lê Thánh Tôn có số điện thoại không?",
+    "answer": "Dữ liệu hiện tại không có thông tin về số điện thoại của Nhà nghỉ 455 Lê Thánh Tôn."
+  },
+  {
+    "id": "TB200_097",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Khách sạn Luxstay có số điện thoại là bao nhiêu?",
+    "answer": "Số điện thoại của Khách sạn Luxstay là 02693888345."
+  },
+  {
+    "id": "TB200_098",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Số điện thoại của Khách sạn Fleur De Lys Quy Nhơn là gì?",
+    "answer": "Số điện thoại của Khách sạn Fleur De Lys Quy Nhơn là 02563666888."
+  },
+  {
+    "id": "TB200_099",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào gần Bảo tàng tổng hợp Bình Định?",
+    "answer": "A. Khách sạn Hồng Diệp.",
+    "choices": [
+      "A. Khách sạn Hồng Diệp",
+      "B. Khách sạn Hoàng My",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_100",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào gần Khu bảo tồn thiên nhiên Kon Chư Răng?",
+    "answer": "B. Nhà nghỉ Thanh Khiết Xã Sơn Lang.",
+    "choices": [
+      "A. Nhà nghỉ Sơn Tâm",
+      "B. Nhà nghỉ Thanh Khiết Xã Sơn Lang",
+      "C. Cả hai",
+      "D. Không có cơ sở nào"
+    ]
+  },
+  {
+    "id": "TB200_101",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào sau đây gần Khu du lịch Thác Phú Cường?",
+    "answer": "A. Nhà nghỉ Ven Đô.",
+    "choices": [
+      "A. Nhà nghỉ Ven Đô",
+      "B. Nhà nghỉ 22",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_102",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào có số điện thoại theo dữ liệu?",
+    "answer": "A. Nhà nghỉ Cao nguyên.",
+    "choices": [
+      "A. Nhà nghỉ Cao nguyên",
+      "B. Nhà nghỉ Thu Hồng",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_103",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào gần Di tích khảo cổ thời đại Đá cũ Rộc Tưng - Gò Đá?",
+    "answer": "B. Nhà nghỉ Tường Vy.",
+    "choices": [
+      "A. Khách sạn Hồng Linh",
+      "B. Nhà nghỉ Tường Vy",
+      "C. Cả hai",
+      "D. Không có cơ sở nào"
+    ]
+  },
+  {
+    "id": "TB200_104",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Nhà nghỉ nào gần Khu du lịch Thác Phú Cường?",
+    "answer": "A. Nhà nghỉ Lan Phương.",
+    "choices": [
+      "A. Nhà nghỉ Lan Phương",
+      "B. Nhà nghỉ Hồng Hà",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_105",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào sau đây là khách sạn?",
+    "answer": "A. khách sạn For get me not.",
+    "choices": [
+      "A. khách sạn For get me not",
+      "B. Lake View Homestay"
+    ]
+  },
+  {
+    "id": "TB200_106",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào sau đây là Nhà nghỉ du lịch?",
+    "answer": "A. Nhà nghỉ Sơn Tâm.",
+    "choices": [
+      "A. Nhà nghỉ Sơn Tâm",
+      "B. Khách sạn Mỹ Tiến"
+    ]
+  },
+  {
+    "id": "TB200_107",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào gần Công viên Diên Hồng theo dữ liệu?",
+    "answer": "A. Por Get Me.",
+    "choices": [
+      "A. Por Get Me",
+      "B. Haven Vietnam",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_108",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cơ sở lưu trú nào sau đây gần Hồ Ayun Hạ?",
+    "answer": "B. Nhà nghỉ Vinh Quang.",
+    "choices": [
+      "A. Khách sạn Luxstay",
+      "B. Nhà nghỉ Vinh Quang",
+      "C. Cả hai",
+      "D. Không có cơ sở nào"
+    ]
+  },
+  {
+    "id": "TB200_109",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh vị trí của Nhà khách nội bộ Công đoàn và Nhà nghỉ Ánh Dương, chỉ ra điểm tương đồng và khác biệt về các điểm tham quan gần đó.",
+    "answer": "Cả hai đều nằm gần Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tuy nhiên, Nhà nghỉ Ánh Dương còn gần Làng nghề sản xuất nhạc cụ dân tộc, trong khi Nhà khách nội bộ Công đoàn không có điểm gần này."
+  },
+  {
+    "id": "TB200_110",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh vị trí của Nhà nghỉ 309 Lê Thánh Tôn và Khách sạn Queen dựa trên các điểm tham quan gần đó, và cho biết cơ sở nào có lợi thế hơn nếu du khách muốn tham quan nhiều điểm văn hóa và giải trí?",
+    "answer": "Cả Nhà nghỉ 309 Lê Thánh Tôn và Khách sạn Queen đều nằm gần nhiều điểm tham quan chung như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tuy nhiên, Khách sạn Queen còn gần Làng nghề sản xuất nhạc cụ dân tộc, trong khi Nhà nghỉ 309 Lê Thánh Tôn không có điểm này. Do đó, Khách sạn Queen có lợi thế hơn nếu du khách muốn tham quan nhiều điểm văn hóa và giải trí hơn."
+  },
+  {
+    "id": "TB200_111",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh lợi thế vị trí của Khách sạn Hoàng Yến Canary và Khách sạn Anh Thảo đối với du khách muốn tham quan các điểm văn hóa và làng nghề ở Quy Nhơn.",
+    "answer": "Khách sạn Hoàng Yến Canary gần nhiều điểm văn hóa và làng nghề hơn, bao gồm Tháp Thầy Bói, Tháp đôi, Làng nghề sản xuất Tôm tre, Làng nghề Gốm Vân Sơn, Lăng Ông Nam Hải, và Khu biệt thự Đại Phú Gia. Trong khi đó, Khách sạn Anh Thảo chỉ gần Tháp đôi, Làng nghề sản xuất Tôm tre, Làng nghề Gốm Vân Sơn, Lăng Ông Nam Hải, và Khu biệt thự Đại Phú Gia, nhưng không gần Tháp Thầy Bói. Do đó, Khách sạn Hoàng Yến Canary có lợi thế hơn về số lượng điểm văn hóa và làng nghề lân cận."
+  },
+  {
+    "id": "TB200_112",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh lợi thế vị trí của Khách sạn Biển Hồ Gia Lai và Nhà nghỉ Nano ý đối với du khách muốn tham quan các điểm văn hóa và sinh thái ở Gia Lai.",
+    "answer": "Khách sạn Biển Hồ Gia Lai gần Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, Chùa Bửu Minh, Khu du lịch sinh thái Xuân Thủy và Biển Hồ, phù hợp cho du khách muốn kết hợp văn hóa dệt thổ cẩm, chùa chiền và sinh thái. Nhà nghỉ Nano ý gần Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Làng nghề sản xuất nhạc cụ dân tộc, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku, phù hợp cho du khách muốn khám phá bảo tàng, chùa, làng nghề nhạc cụ và công viên. Cả hai đều gần Khu du lịch sinh thái Xuân Thủy, nhưng Khách sạn Biển Hồ Gia Lai có lợi thế về Biển Hồ và dệt thổ cẩm, trong khi Nhà nghỉ Nano ý có lợi thế về bảo tàng và làng nghề nhạc cụ."
+  },
+  {
+    "id": "TB200_113",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh lợi thế vị trí của Trắng's house và FLC Quy Nhon Beach & Golf Resort dựa trên các điểm tham quan gần đó, và cho biết cơ sở nào phù hợp hơn cho du khách muốn khám phá văn hóa địa phương?",
+    "answer": "Trắng's house nằm gần các điểm văn hóa như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Làng nghề sản xuất nhạc cụ dân tộc, Quảng trường Đại Đoàn Kết và Nhà Lao Pleiku, phù hợp cho du khách muốn khám phá văn hóa địa phương. Trong khi đó, FLC Quy Nhon Beach & Golf Resort gần các điểm biển và giải trí như Biển Kỳ Co, Hòn Sẹo, FLC Zoo Safari Park, Thắng cảnh Eo Gió, phù hợp hơn cho du khách muốn nghỉ dưỡng biển và giải trí. Do đó, Trắng's house phù hợp hơn cho du khách muốn khám phá văn hóa địa phương."
+  },
+  {
+    "id": "TB200_114",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh lợi thế vị trí của Khách sạn NineHotel và Nhà Nghỉ Mỹ Anh đối với du khách muốn tham quan các điểm văn hóa và giải trí ở Pleiku.",
+    "answer": "Cả Khách sạn NineHotel và Nhà Nghỉ Mỹ Anh đều nằm gần các điểm văn hóa và giải trí ở Pleiku. Cụ thể, cả hai đều gần Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tuy nhiên, Khách sạn NineHotel còn gần thêm Làng nghề sản xuất nhạc cụ dân tộc, trong khi Nhà Nghỉ Mỹ Anh không có điểm này. Vì vậy, Khách sạn NineHotel có lợi thế hơn về số lượng điểm tham quan văn hóa gần kề."
+  },
+  {
+    "id": "TB200_115",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh lợi thế vị trí của House coffee & Homestay, Hương Pleiku và Nhà nghỉ Thanh Bình (An Phú) dựa trên các điểm tham quan gần đó. Cơ sở nào có nhiều điểm tham quan gần nhất và thuộc loại hình lưu trú nào?",
+    "answer": "House coffee & Homestay (loại Khách sạn) có lợi thế vị trí vượt trội với 23 điểm tham quan gần, bao gồm biển, làng chài, cầu, bảo tàng, chùa, nhà thờ, quảng trường, tháp, làng nghề, lăng, khu biệt thự, bãi biển, cảng và cáp treo. Hương Pleiku (loại Khách sạn) có 7 điểm gần như bảo tàng, chùa, công viên, quảng trường, khu du lịch sinh thái và nhà lao. Nhà nghỉ Thanh Bình (An Phú) (loại Nhà nghỉ du lịch) chỉ có 2 điểm gần là di tích lịch sử và khảo cổ. Do đó, House coffee & Homestay có nhiều điểm tham quan gần nhất."
+  },
+  {
+    "id": "TB200_116",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Đầm Sen Bình Long thuộc loại hình du lịch nào?",
+    "answer": "Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_117",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Biển Hồ chè thuộc loại hình du lịch nào?",
+    "answer": "Biển Hồ chè thuộc loại hình Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_118",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "MerryLand Quy Nhơn thuộc loại hình điểm tham quan nào?",
+    "answer": "MerryLand Quy Nhơn thuộc loại hình Điểm tham quan."
+  },
+  {
+    "id": "TB200_119",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Suối Tà Má thuộc loại hình du lịch nào?",
+    "answer": "Suối Tà Má thuộc Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_120",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Thác Mơ thuộc loại hình nào?",
+    "answer": "Thác Mơ thuộc Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_121",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Thác Phú Cường thuộc loại hình danh lam thắng cảnh nào?",
+    "answer": "Thác Phú Cường thuộc Danh lam thắng cảnh."
+  },
+  {
+    "id": "TB200_122",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Địa điểm nào sau đây thuộc nhóm Điểm tham quan?",
+    "answer": "A. Tổ hợp không gian khoa học.",
+    "choices": [
+      "A. Tổ hợp không gian khoa học",
+      "B. Làng nghề dệt thổ cẩm Tơ Tung"
+    ]
+  },
+  {
+    "id": "TB200_123",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Địa điểm nào sau đây thuộc nhóm Danh lam thắng cảnh?",
+    "answer": "A. Đập Tân Sơn.",
+    "choices": [
+      "A. Đập Tân Sơn",
+      "B. Bảo tàng tổng hợp Bình Định",
+      "C. Cả A và B",
+      "D. Không có địa điểm nào"
+    ]
+  },
+  {
+    "id": "TB200_124",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Khu du lịch Thác Phú Cường và MerryLand Quy Nhơn lần lượt thuộc nhóm loại hình du lịch nào?",
+    "answer": "A. Danh lam thắng cảnh và Điểm tham quan",
+    "choices": [
+      "A. Danh lam thắng cảnh và Điểm tham quan",
+      "B. Điểm tham quan và Danh lam thắng cảnh",
+      "C. Cả hai đều thuộc Danh lam thắng cảnh",
+      "D. Cả hai đều thuộc Điểm tham quan"
+    ]
+  },
+  {
+    "id": "TB200_125",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Lễ hội cầu ngư ở Bình Định được tổ chức tại địa điểm nào?",
+    "answer": "B. Lăng Ông Nam Hải.",
+    "choices": [
+      "A. Bảo tàng Quang Trung",
+      "B. Lăng Ông Nam Hải",
+      "C. Thác Phú Cường",
+      "D. Chùa Minh Thành"
+    ]
+  },
+  {
+    "id": "TB200_126",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Làng nghề truyền thống nào có địa chỉ tại Phường An Nhơn?",
+    "answer": "A. Làng nghề truyền thống Rèn Tây Phương Danh.",
+    "choices": [
+      "A. Làng nghề truyền thống Rèn Tây Phương Danh",
+      "B. Làng nghề truyền thống Nón lá",
+      "C. Cả hai làng nghề trên",
+      "D. Không có làng nghề nào"
+    ]
+  },
+  {
+    "id": "TB200_127",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Chùa Bà - Nước mặn thuộc nhóm di tích nào?",
+    "answer": "A. Di tích lịch sử - Văn hóa.",
+    "choices": [
+      "A. Di tích lịch sử - Văn hóa",
+      "B. Làng nghề truyền thống",
+      "C. Danh lam thắng cảnh",
+      "D. Khu sinh thái"
+    ]
+  },
+  {
+    "id": "TB200_128",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh đặc điểm của Đầm Trà Ổ, Công viên Diên Hồng và Câu lạc bộ Dệt thổ cẩm xã Biển Hồ về loại hình, vị trí và các tiện ích lân cận.",
+    "answer": "Đầm Trà Ổ thuộc loại Danh lam thắng cảnh, tọa lạc tại Xã Phù Mỹ Bắc, có chu vi khoảng 20 km và được mô tả với cảnh quan thiên nhiên. Công viên Diên Hồng cũng thuộc Danh lam thắng cảnh, nằm tại Phường Diên Hồng, gần nhiều nhà hàng, khách sạn và quán ăn. Câu lạc bộ Dệt thổ cẩm xã Biển Hồ thuộc Làng nghề truyền thống, đặt tại Làng Phung 2, Xã Biển Hồ, gần các nhà hàng và khách sạn. Cả ba đều không có thông tin về số điện thoại, giờ mở cửa, giá vé hay website."
+  },
+  {
+    "id": "TB200_129",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh sự khác biệt về loại hình và địa điểm của Làng nghề tiện gỗ mỹ nghệ, Nhà thờ Chánh Tòa (Nhà thờ Nhọn) và Bãi Ngang. Đồng thời, cho biết điểm chung nào về vị trí địa lý của ba địa điểm này?",
+    "answer": "Làng nghề tiện gỗ mỹ nghệ thuộc loại hình Làng nghề truyền thống, tọa lạc tại Phường An Nhơn. Nhà thờ Chánh Tòa (Nhà thờ Nhọn) thuộc loại hình Di tích lịch sử - Văn hóa, tọa lạc tại 122 Trần Hưng Đạo, Phường Quy Nhơn. Bãi Ngang thuộc loại hình Danh lam thắng cảnh, tọa lạc tại Phường Quy Nhơn. Điểm chung: cả ba đều nằm trong khu vực tỉnh Bình Định (cụ thể là Quy Nhơn và An Nhơn)."
+  },
+  {
+    "id": "TB200_130",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": " hãy phân tích mối liên hệ giữa Tháp Cánh Tiên và Làng nghề truyền thống Tiện gỗ mỹ nghệ Nhạn Tháp về mặt địa lý và văn hóa, đồng thời cho biết các địa điểm lưu trú hoặc dịch vụ gần đó?",
+    "answer": "Tháp Cánh Tiên và Làng nghề truyền thống Tiện gỗ mỹ nghệ Nhạn Tháp đều nằm tại Phường An Nhơn, thị xã An Nhơn, Bình Định. Tháp Cánh Tiên là di tích lịch sử - văn hóa từ thế kỷ XII, gắn với vua Chế Mân và Huyền Trân công chúa, thuộc quần thể thành Đồ Bàn. Làng nghề Nhạn Tháp là làng nghề truyền thống chuyên tiện gỗ mỹ nghệ, sản phẩm xuất khẩu sang Trung Quốc, Đài Loan, Nhật Bản. Cả hai đều nằm gần Khách sạn Kim Hoa 2. Ngoài ra, gần Tháp Cánh Tiên còn có Nhà hàng Confetti."
+  },
+  {
+    "id": "TB200_131",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Làng nghề Gốm Vân Sơn thuộc loại hình nào?",
+    "answer": "Làng nghề Gốm Vân Sơn thuộc loại hình làng nghề truyền thống."
+  },
+  {
+    "id": "TB200_132",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Địa điểm nào nằm tại Xã Kông Chro?",
+    "answer": "Di tích Kho tiền - Nền nhà và Hồ nước ông Nhạc và Nhà hàng Anh Vũ nằm tại Xã Kông Chro."
+  },
+  {
+    "id": "TB200_133",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Bãi biển Lộ Diêu thuộc huyện nào?",
+    "answer": "Bãi biển Lộ Diêu thuộc huyện Hoài Nhơn."
+  },
+  {
+    "id": "TB200_134",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Di tích khảo cổ Rộc Tưng thuộc loại hình di tích nào?",
+    "answer": "Di tích lịch sử - Văn hóa."
+  },
+  {
+    "id": "TB200_135",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Tour 2 đảo Hòn Khô – Cù Lao Xanh 1 ngày: Ngắm hoàng hôn tại Eo Gió có bao gồm thắng cảnh Eo Gió không?",
+    "answer": "Có, tour bao gồm Thắng cảnh Eo Gió."
+  },
+  {
+    "id": "TB200_136",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Tour hành hương du xuân Bình Định 1 ngày: Những ngôi chùa cổ nổi tiếng có bao gồm Chùa Long Khánh không?",
+    "answer": "Có, tour bao gồm Chùa Long Khánh."
+  },
+  {
+    "id": "TB200_137",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cửa khẩu Quốc tế Lệ Thanh nằm ở đâu?",
+    "answer": "A. Xã Ia Nan.",
+    "choices": [
+      "A. Xã Ia Nan",
+      "B. Phường Diên Hồng",
+      "C. Xã Cửu An",
+      "D. Biển Hồ"
+    ]
+  },
+  {
+    "id": "TB200_138",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Khách sạn Khải Yến gần địa điểm nào sau đây?",
+    "answer": "C. Bảo tàng tỉnh Gia Lai.",
+    "choices": [
+      "A. Di tích khảo cổ Rộc Tưng",
+      "B. Vụ thảm sát nhân dân làng Tân Lập năm 1947",
+      "C. Bảo tàng tỉnh Gia Lai",
+      "D. Nhà nghỉ Anh Thư"
+    ]
+  },
+  {
+    "id": "TB200_139",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Nhà nghỉ Thu Hồng gần địa điểm nào sau đây?",
+    "answer": "A. Bảo tàng tỉnh Gia Lai.",
+    "choices": [
+      "A. Bảo tàng tỉnh Gia Lai",
+      "B. Thác Bà",
+      "C. Tịnh xá Ngọc Như",
+      "D. Nhà hàng Xuân"
+    ]
+  },
+  {
+    "id": "TB200_140",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Bãi Nhỏ (Cù Lao Xanh) thuộc loại địa điểm nào?",
+    "answer": "A. Danh lam thắng cảnh.",
+    "choices": [
+      "A. Danh lam thắng cảnh",
+      "B. Bãi tắm",
+      "C. Tour du lịch",
+      "D. Xã Nhơn Châu"
+    ]
+  },
+  {
+    "id": "TB200_141",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Khách sạn nào gần Bảo tàng tỉnh Gia Lai?",
+    "answer": "A. Khách sạn Hải Yến.",
+    "choices": [
+      "A. Khách sạn Hải Yến",
+      "B. Khách sạn Hữu Phước",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_142",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Địa điểm nào sau đây nằm tại Xã Bình Dương?",
+    "answer": "B. Cầu Tre Bình Long.",
+    "choices": [
+      "A. Văn Chỉ Hoài Ân",
+      "B. Cầu Tre Bình Long",
+      "C. 135 Coffee & Pub",
+      "D. Xã Vạn Đức"
+    ]
+  },
+  {
+    "id": "TB200_143",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Công ty Cổ phần Quy Nhơn Tourist có địa chỉ tại đâu?",
+    "answer": "A. 51/1 Hà Huy Tập, Phường Trần Phú, Thành phố Quy Nhơn, Tỉnh Bình Định, Việt Nam.",
+    "choices": [
+      "A. 51/1 Hà Huy Tập, Phường Trần Phú, Thành phố Quy Nhơn, Tỉnh Bình Định, Việt Nam",
+      "B. Gần Bảo tàng tỉnh Gia Lai",
+      "C. Gần Chùa Minh Thành",
+      "D. Gần Quảng trường Đại Đoàn Kết"
+    ]
+  },
+  {
+    "id": "TB200_144",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Avani Quy Nhon Resort và Khách sạn Anna đều nằm gần địa điểm nào?",
+    "answer": "C. Không có địa điểm chung.",
+    "choices": [
+      "A. Biển Quy Hòa",
+      "B. Bảo tàng tỉnh Gia Lai",
+      "C. Không có địa điểm chung",
+      "D. Làng Phong Quy Hòa"
+    ]
+  },
+  {
+    "id": "TB200_145",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cầu Đề Gi thuộc huyện nào?",
+    "answer": "A. Phù Cát.",
+    "choices": [
+      "A. Phù Cát",
+      "B. Phù Mỹ",
+      "C. Quy Nhơn",
+      "D. Vĩnh Lợi"
+    ]
+  },
+  {
+    "id": "TB200_146",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Tour Hòn Khô – Kỳ Co (bằng đường bộ) – Eo Gió 1 ngày bao gồm địa điểm nào sau đây?",
+    "answer": "B. Cầu Thị Nại.",
+    "choices": [
+      "A. Học viện Hoàng Anh Gia Lai – Arsenal JMG",
+      "B. Cầu Thị Nại",
+      "C. Xã Ia Băng",
+      "D. Bảo tàng tỉnh Gia Lai"
+    ]
+  },
+  {
+    "id": "TB200_147",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh các điểm đến được bao gồm trong Tour Yuragi Chaya Quy Nhơn – Eo Gió 1 ngày và Tour Kỳ Co – Eo Gió 1 ngày, từ đó phân tích sự khác biệt về trải nghiệm chính giữa hai tour này.",
+    "answer": "Cả hai tour đều bao gồm Cầu Thị Nại, Thắng cảnh Eo Gió, Con đường Đá Xanh Nhơn Lý, Tịnh xá Ngọc Hòa, Làng chài Nhơn Lý và Đồi Cát Phương Mai. Tuy nhiên, Tour Yuragi Chaya bao gồm thêm Yuragi Chaya Quy Nhơn (khu nghỉ dưỡng kiểu Nhật có tắm Onsen) và không có Biển Kỳ Co và Bãi Dứa, trong khi Tour Kỳ Co bao gồm Biển Kỳ Co và Bãi Dứa (lặn ngắm san hô) nhưng không có Yuragi Chaya. Do đó, trải nghiệm chính của Tour Yuragi Chaya là tắm Onsen và ngắm Đầm Thị Nại, còn Tour Kỳ Co tập trung vào biển đảo và lặn san hô."
+  },
+  {
+    "id": "TB200_148",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh vị trí của Nhà nghỉ Tân Thanh và Khách sạn Khải Hoàn dựa trên các địa điểm gần đó. Hai cơ sở lưu trú này có những điểm tương đồng và khác biệt gì về mặt không gian?",
+    "answer": "Cả Nhà nghỉ Tân Thanh và Khách sạn Khải Hoàn đều nằm gần Bảo tàng tỉnh Gia Lai, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tuy nhiên, Nhà nghỉ Tân Thanh còn gần Câu lạc bộ Dệt thổ cẩm xã Biển Hồ và Biển Hồ, trong khi Khách sạn Khải Hoàn gần Chùa Minh Thành và Làng nghề sản xuất nhạc cụ dân tộc. Như vậy, cả hai đều có vị trí trung tâm, nhưng Nhà nghỉ Tân Thanh gần các điểm liên quan đến văn hóa dệt thổ cẩm và hồ nước, còn Khách sạn Khải Hoàn gần chùa và làng nghề nhạc cụ."
+  },
+  {
+    "id": "TB200_149",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Phân tích khả năng kết nối giữa Nhà khách nội bộ Công đoàn và Tượng đài khởi nghĩa Vĩnh Thạnh dựa trên dữ liệu có sẵn.",
+    "answer": "Dữ liệu hiện tại không cung cấp thông tin về khoảng cách hoặc thời gian di chuyển giữa Nhà khách nội bộ Công đoàn và Tượng đài khởi nghĩa Vĩnh Thạnh. Nhà khách nội bộ Công đoàn nằm gần các địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tượng đài khởi nghĩa Vĩnh Thạnh nằm tại Xã Vĩnh Thạnh và thuộc Di tích lịch sử - Văn hóa. Không có quan hệ NEAR hoặc LOCATED_IN chung nào giữa hai thực thể này, do đó không thể xác định khả năng kết nối trực tiếp."
+  },
+  {
+    "id": "TB200_150",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy phân tích mối quan hệ không gian giữa Làng nghề truyền thống Nón lá, Hương Biển hotel và Mũi Vi Rồng, đồng thời xác định xem có thể xây dựng một tuyến tham quan kết nối các địa điểm này hay không?",
+    "answer": "Làng nghề truyền thống Nón lá nằm tại Phường An Nhơn Bắc (tọa độ 109.0937318, 13.948841), Hương Biển hotel nằm gần nhiều địa điểm như Biển Quy Hòa, Biển Quy Nhơn, Làng chài Hải Minh, Ghềnh ráng - Tiên Sa, v.v. (tọa độ 109.2237003, 13.7646715), Mũi Vi Rồng nằm tại Thôn Tân Phụng, Xã Phù Mỹ Đông (tọa độ 109.195462, 14.232897). Tuy nhiên, dữ liệu không cung cấp thông tin về khoảng cách hoặc thời gian di chuyển giữa các địa điểm, cũng như không có quan hệ NEAR trực tiếp nào giữa chúng. Do đó, không thể khẳng định có thể xây dựng tuyến tham quan kết nối các địa điểm này chỉ dựa trên dữ liệu hiện có."
+  },
+  {
+    "id": "TB200_151",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": " hãy phân tích sự khác biệt về vị trí địa lý và các điểm tham quan lân cận giữa Khách sạn Phú Vang (Hoa Lư) và Khách sạn Kings, đồng thời cho biết tour du lịch Phù Mỹ 1 ngày có liên quan gì đến các khách sạn này không?",
+    "answer": "Khách sạn Phú Vang (Hoa Lư) có tọa độ (108.02685, 13.98301) và gần các địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Làng nghề sản xuất nhạc cụ dân tộc, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku. Khách sạn Kings có tọa độ (107.98825, 14.02413) và gần Bảo tàng tỉnh Gia Lai, Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Biển Hồ. Tour du lịch Phù Mỹ 1 ngày do Công ty Cổ phần Quy Nhơn Tourist tổ chức, bao gồm các điểm Mũi Vi Rồng, Đầm Trà Ổ, Cầu Tre Bình Long, Đảo Hòn Đụn, Làng Bí Đao Khổng Lồ, Bãi Ngang, và nằm ở huyện Phù Mỹ, tỉnh Bình Định. Không có mối liên hệ trực tiếp nào giữa tour này và hai khách sạn trên vì tour ở Bình Định còn khách sạn ở Gia Lai."
+  },
+  {
+    "id": "TB200_152",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy so sánh vị trí của Nhà nghỉ Nguyên Thành Phú và Nhà nghỉ Hồ Xuân, đồng thời cho biết điểm tham quan nào nằm xa nhất so với cả hai nhà nghỉ này?",
+    "answer": "Cả Nhà nghỉ Nguyên Thành Phú và Nhà nghỉ Hồ Xuân đều nằm gần các địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tuy nhiên, Nhà nghỉ Nguyên Thành Phú còn gần Làng nghề sản xuất nhạc cụ dân tộc, trong khi Nhà nghỉ Hồ Xuân không có mối quan hệ NEAR với địa điểm này. Điểm tham quan Thác Hang Én (Thác K50) nằm tại Xã Sơn Lang, cách xa cả hai nhà nghỉ vì không có quan hệ NEAR nào với chúng."
+  },
+  {
+    "id": "TB200_153",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Dựa trên dữ liệu, hãy phân tích tiềm năng kết nối giữa Di tích lịch sử nhà tưởng niệm anh hùng Wừu và Làng nghề Bánh tráng Trường Cửu thông qua các mối quan hệ không gian và loại hình du lịch.",
+    "answer": "Di tích lịch sử nhà tưởng niệm anh hùng Wừu thuộc loại Di tích lịch sử - Văn hóa, nằm tại Xã Đak Sơmei. Làng nghề Bánh tráng Trường Cửu thuộc loại Làng nghề truyền thống, nằm tại Xã An Nhơn Tây. Cả hai đều là điểm đến du lịch văn hóa, có thể kết hợp thành tuyến tham quan văn hóa - lịch sử. Tuy nhiên, dữ liệu không cung cấp thông tin về khoảng cách hay thời gian di chuyển giữa hai địa điểm, cũng như không có mối quan hệ NEAR trực tiếp nào giữa chúng. Ngoài ra, Nhà Nghỉ Cát Hạ (loại Nhà nghỉ) nằm gần nhiều điểm tham quan ở Pleiku như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku, nhưng không có mối quan hệ NEAR với hai điểm trên."
+  },
+  {
+    "id": "TB200_154",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Phân tích mối quan hệ không gian giữa Cửa khẩu Quốc tế Lệ Thanh và Nhà nghỉ 172 dựa trên dữ liệu có sẵn.",
+    "answer": "Dữ liệu hiện tại không cung cấp thông tin về mối quan hệ không gian trực tiếp giữa Cửa khẩu Quốc tế Lệ Thanh và Nhà nghỉ 172. Cửa khẩu Quốc tế Lệ Thanh nằm tại Xã Ia Nan với tọa độ [107.498808, 13.769811], trong khi Nhà nghỉ 172 có tọa độ [108.0143597, 13.9715982] và nằm gần các địa điểm như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Làng nghề sản xuất nhạc cụ dân tộc, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Tuy nhiên, không có quan hệ NEAR, LOCATED_IN hay bất kỳ quan hệ nào khác giữa hai thực thể này trong dữ liệu."
+  },
+  {
+    "id": "TB200_155",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Phân tích tiềm năng xây dựng tuyến tham quan kết hợp giữa các nhà nghỉ và di tích lịch sử - khảo cổ dựa trên dữ liệu.",
+    "answer": "Dựa trên dữ liệu, có thể xây dựng tuyến tham quan kết hợp giữa Nhà nghỉ Thanh Bình (An Phú) và Nhà nghỉ Thư Giao với các di tích lịch sử - khảo cổ lân cận. Nhà nghỉ Thanh Bình (An Phú) gần Vụ thảm sát nhân dân làng Tân Lập năm 1947 và Di tích khảo cổ Rộc Tưng. Nhà nghỉ Thư Giao gần Di tích khảo cổ thời đại Đá cũ Rộc Tưng - Gò Đá, Quần thể di tích Tây Sơn Thượng Đạo và Di tích An Khê Trường. Cả hai nhà nghỉ đều là nhà nghỉ du lịch, phù hợp làm điểm lưu trú. Ngoài ra, Thác Đá Ghe thuộc Danh lam thắng cảnh tại Xã An Lão có thể bổ sung vào tuyến nếu du khách muốn kết hợp thiên nhiên."
+  },
+  {
+    "id": "TB200_156",
+    "question_type": "Tour-plan",
+    "difficulty": "medium",
+    "question": " hãy gợi ý một lịch trình ngắn cho du khách muốn tham quan Công viên Đồng Xanh và Suối đá đĩa cổ Gia Lai. Lưu ý ",
+    "answer": "Có thể gợi ý lịch trình: tham quan Công viên Đồng Xanh (tọa lạc tại Phường An Phú) và Suối đá đĩa cổ Gia Lai (tọa lạc tại Xã Ia Rbol). Tuy nhiên, không có dữ liệu về khoảng cách hay thời gian di chuyển giữa hai điểm, nên không thể sắp xếp thứ tự cụ thể. Du khách có thể tham quan lần lượt hai điểm này."
+  },
+  {
+    "id": "TB200_157",
+    "question_type": "Tour-plan",
+    "difficulty": "medium",
+    "question": " hãy gợi ý một lịch trình nửa ngày kết hợp giữa tour khoa học và tham quan các điểm gần nhà nghỉ Trăng Non. ",
+    "answer": "Có thể gợi ý lịch trình: buổi sáng tham gia tour 'Tour trung tâm khám phá khoa học Quy Nhơn nửa ngày: Lạc trôi giữa ngân hà vũ trụ' do CÔNG TY CỔ PHẦN QUY NHƠN TOURIST tổ chức, tour này bao gồm Tổ hợp không gian khoa học. Buổi chiều, du khách có thể tham quan các điểm gần Nhà nghỉ Trăng Non như Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, hoặc Nhà Lao Pleiku. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không thể nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_158",
+    "question_type": "Tour-plan",
+    "difficulty": "medium",
+    "question": "Nếu du khách lưu trú tại Khách sạn Hoàng Oanh và muốn tham quan một bảo tàng và một chùa gần đó, hãy gợi ý hai điểm đến phù hợp dựa trên dữ liệu.",
+    "answer": "Có thể gợi ý Bảo tàng tổng hợp Bình Định và Chùa Long Khánh vì Khách sạn Hoàng Oanh có quan hệ gần cả hai điểm này."
+  },
+  {
+    "id": "TB200_159",
+    "question_type": "Tour-plan",
+    "difficulty": "medium",
+    "question": "Một du khách đang lưu trú tại Khách sạn Hoàng Oanh và muốn tham gia tour Cồn Chim Chèo Sup nửa ngày. Hãy gợi ý một lịch trình nửa ngày kết hợp tham quan các điểm gần khách sạn trước khi tham gia tour. ",
+    "answer": "Có thể gợi ý lịch trình: buổi sáng tham quan Biển Quy Nhơn hoặc Biển Quy Hòa (gần khách sạn), sau đó tham gia tour Cồn Chim Chèo Sup nửa ngày do Công ty Cổ phần Quy Nhơn Tourist tổ chức. Tour bao gồm Khu sinh thái Cồn Chim và Bè Cồn Chim. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_160",
+    "question_type": "Tour-plan",
+    "difficulty": "medium",
+    "question": " hãy gợi ý một điểm lưu trú gần Đập Tân Sơn và một điểm lưu trú gần Thác Mơ. ",
+    "answer": "Gần Đập Tân Sơn có các điểm lưu trú: Nhà nghỉ Sơn Tâm và Nhà Nghỉ YALY. Gần Thác Mơ có Nhà nghỉ Ven Đô."
+  },
+  {
+    "id": "TB200_161",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình tham quan trong ngày cho du khách lưu trú tại Nhà nghỉ Tiến Đạt, muốn kết hợp tham quan di tích lịch sử và thác nước. ",
+    "answer": "Có thể gợi ý lịch trình: xuất phát từ Nhà nghỉ Tiến Đạt, tham quan Di tích lịch sử mộ tập thể liệt sĩ sư đoàn 3 Sao Vàng (địa chỉ 354 Hồng Lĩnh, Phường An Nhơn) và Khu du lịch Thác Phú Cường. Tuy nhiên, lưu ý rằng Di tích lịch sử mộ tập thể liệt sĩ sư đoàn 3 Sao Vàng không có quan hệ NEAR với Nhà nghỉ Tiến Đạt, nên du khách cần di chuyển xa hơn. Khu du lịch Thác Phú Cường gần Nhà nghỉ Chư Sê, nhưng không có thông tin về khoảng cách hay thời gian di chuyển giữa các điểm. Do đó, chỉ nên gợi ý các điểm tham quan, không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_162",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Một du khách lưu trú tại FLC Quy Nhon Beach & Golf Resort muốn tham gia tour Hòn Khô – Trung Lương – Chùa Ông Núi 1 ngày. Hãy gợi ý các điểm tham quan trong tour có liên quan đến biển và gần resort, đồng thời nêu tên công ty tổ chức tour.",
+    "answer": "Tour do CÔNG TY CỔ PHẦN QUY NHƠN TOURIST tổ chức. Các điểm tham quan trong tour gồm: Hòn Khô, Cầu Thị Nại, Khu dã ngoại Trung Lương, Làng chài Nhơn Hải, Bãi San Hô Hòn Khô, Chùa Ông Núi, Đồi Cát Phương Mai. Trong đó, các điểm liên quan đến biển và gần FLC Quy Nhon Beach & Golf Resort là: Hòn Khô, Làng chài Nhơn Hải, Bãi San Hô Hòn Khô, Đồi Cát Phương Mai (vì Đồi Cát Phương Mai có quan hệ NEAR với resort)."
+  },
+  {
+    "id": "TB200_163",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Một du khách muốn lưu trú tại một khách sạn gần Khu du lịch Thác Phú Cường và cũng muốn tham quan các điểm gần đó.  hãy gợi ý một lịch trình nửa ngày cho du khách, bắt đầu từ khách sạn, tham quan Khu du lịch Thác Phú Cường và một điểm khác gần đó. ",
+    "answer": "Có thể gợi ý lịch trình: xuất phát từ Khách sạn Rồng Vàng (gần Khu du lịch Thác Phú Cường), tham quan Khu du lịch Thác Phú Cường, sau đó ghé Nhà nghỉ 149 Nguyễn Văn Cừ (cũng gần Thác Phú Cường). Tuy nhiên, lưu ý rằng Nhà nghỉ 149 Nguyễn Văn Cừ là nhà nghỉ du lịch, không phải điểm tham quan. Nếu muốn tham quan, chỉ có thể ghé Khu du lịch Thác Phú Cường. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_164",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày ở Pleiku cho du khách lưu trú tại Khách sạn Minh Lâm, ưu tiên tham quan các điểm văn hóa và giải trí gần khách sạn. ",
+    "answer": "Có thể gợi ý lịch trình nửa ngày gồm: xuất phát từ Khách sạn Minh Lâm, tham quan Bảo tàng tỉnh Gia Lai để tìm hiểu văn hóa, sau đó ghé Quảng trường Đại Đoàn Kết để giải trí. Lý do là Khách sạn Minh Lâm có quan hệ gần cả Bảo tàng tỉnh Gia Lai và Quảng trường Đại Đoàn Kết. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_165",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày ở Pleiku cho du khách lưu trú tại Nhà nghỉ 22, ưu tiên các điểm văn hóa và tâm linh gần nơi ở. ",
+    "answer": "Có thể gợi ý lịch trình nửa ngày gồm: xuất phát từ Nhà nghỉ 22, tham quan Chùa Minh Thành, Chùa Bửu Nghiêm, và Làng nghề sản xuất nhạc cụ dân tộc. Lý do là Nhà nghỉ 22 có quan hệ gần với các điểm này. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nên nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_166",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày ở Quy Nhơn cho du khách lưu trú tại Khách sạn Khang Khang 3, ưu tiên các điểm check-in và điểm biển gần nơi ở. ",
+    "answer": "Có thể gợi ý lịch trình nửa ngày gồm: xuất phát từ Khách sạn Khang Khang 3, tham quan Biển Quy Hòa hoặc Biển Quy Nhơn để trải nghiệm biển, sau đó ghé các điểm check-in gần như Con đường Đá Xanh Nhơn Lý, Cầu tàu Cù Lao Xanh hoặc Cầu Tre Bình Long. Lý do là Khách sạn Khang Khang 3 có quan hệ gần với Biển Quy Hòa và Biển Quy Nhơn, và các điểm check-in này thuộc danh mục Điểm check-in. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nên nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_167",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày cho du khách lưu trú tại Khách sạn Anya Quy Nhơn, muốn tham quan các di tích lịch sử - văn hóa gần nơi ở. ",
+    "answer": "Có thể gợi ý lịch trình: xuất phát từ Khách sạn Anya Quy Nhơn, tham quan Chùa Long Khánh (di tích lịch sử - văn hóa) và Tháp đôi (di tích lịch sử - văn hóa) vì cả hai đều gần khách sạn. Tuy nhiên, không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không thể nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_168",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Một du khách lưu trú tại Nhà nghỉ Hồ Hương ở Pleiku muốn tham quan một điểm di tích lịch sử - văn hóa gần đó, sau đó di chuyển đến Quy Nhơn để tham quan Tịnh xá Ngọc Hòa (cũng là di tích lịch sử - văn hóa) và kết thúc tại Xã Sơn Lang để khám phá thiên nhiên. Hãy gợi ý các điểm đến phù hợp dựa trên dữ liệu có sẵn.",
+    "answer": "Từ Nhà nghỉ Hồ Hương, du khách có thể tham quan Bảo tàng tỉnh Gia Lai (gần nhà nghỉ). Sau đó di chuyển đến Quy Nhơn để tham quan Tịnh xá Ngọc Hòa (di tích lịch sử - văn hóa). Cuối cùng, đến Xã Sơn Lang để tham quan Thác Hang Én (Thác K50) hoặc Khu bảo tồn thiên nhiên Kon Chư Răng. Lưu ý: không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không thể lập lịch trình chi tiết theo giờ."
+  },
+  {
+    "id": "TB200_169",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Một du khách lưu trú tại Khách sạn Blue Sea muốn tham quan Bãi biển Nhơn Lý và các điểm gần đó.  hãy gợi ý một lịch trình nửa ngày bao gồm Khách sạn Blue Sea, Bãi biển Nhơn Lý và một điểm tham quan gần Bãi biển Nhơn Lý. Giải thích lý do chọn điểm đó.",
+    "answer": "Có thể gợi ý lịch trình: xuất phát từ Khách sạn Blue Sea, đến Bãi biển Nhơn Lý, sau đó ghé Maia Resort Quy Nhơn (hoặc FLC Quy Nhon Beach & Golf Resort, Kỳ Co Quy Nhơn Resort) vì các resort này đều gần Bãi biển Nhơn Lý. Tuy nhiên, không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không thể nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_170",
+    "question_type": "Tour-plan",
+    "difficulty": "hard",
+    "question": "Gợi ý một lịch trình nửa ngày ở Pleiku cho du khách lưu trú tại Nhà nghỉ Đồng Quê, ưu tiên tham quan các điểm văn hóa và tâm linh gần nơi ở. Nếu du khách muốn đổi sang Nhà Nghỉ Hoa Đăng, hãy so sánh các điểm gần của hai nhà nghỉ và đề xuất lịch trình phù hợp. ",
+    "answer": "Với Nhà nghỉ Đồng Quê, có thể gợi ý lịch trình: tham quan Bảo tàng tỉnh Gia Lai, Chùa Bửu Nghiêm, Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Biển Hồ và Nhà Lao Pleiku (tất cả đều gần). Với Nhà Nghỉ Hoa Đăng, các điểm gần gồm Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. So sánh: Nhà nghỉ Đồng Quê gần Biển Hồ nhưng không gần Chùa Minh Thành và Công viên Diên Hồng; Nhà Nghỉ Hoa Đăng gần Chùa Minh Thành và Công viên Diên Hồng nhưng không gần Biển Hồ. Lịch trình cho Nhà Nghỉ Hoa Đăng có thể thay Biển Hồ bằng Chùa Minh Thành và Công viên Diên Hồng. Không có dữ liệu về thời gian di chuyển hay giờ mở cửa nên không nêu lịch trình theo giờ cụ thể."
+  },
+  {
+    "id": "TB200_171",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Nhà nghỉ Kim Lài và Motel Anh Duy đều là khách sạn và cùng gần những địa điểm nào sau đây?",
+    "answer": "A. Bảo tàng tỉnh Gia Lai, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku.",
+    "choices": [
+      "A. Bảo tàng tỉnh Gia Lai, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku",
+      "B. Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Làng nghề sản xuất nhạc cụ dân tộc, Biển Hồ",
+      "C. Chùa Minh Thành, Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, Biển Hồ",
+      "D. Không có địa điểm chung nào"
+    ]
+  },
+  {
+    "id": "TB200_172",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Khách sạn Sài Gòn - Quy Nhơn và Cảng Quy Nhơn, địa điểm nào có số điện thoại được cung cấp?",
+    "answer": "A. Khách sạn Sài Gòn - Quy Nhơn.",
+    "choices": [
+      "A. Khách sạn Sài Gòn - Quy Nhơn",
+      "B. Cảng Quy Nhơn",
+      "C. Cả hai",
+      "D. Không có địa điểm nào"
+    ]
+  },
+  {
+    "id": "TB200_173",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai địa điểm Luỹ cổ Phương Mai và Nhà nghỉ 47, địa điểm nào thuộc loại hình Di tích lịch sử - Văn hóa?",
+    "answer": "A. Luỹ cổ Phương Mai.",
+    "choices": [
+      "A. Luỹ cổ Phương Mai",
+      "B. Nhà nghỉ 47",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_174",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai địa điểm Quán Nhà Tôi và Cáp treo Hải Giang, địa điểm nào có số điện thoại?",
+    "answer": "A. Quán Nhà Tôi.",
+    "choices": [
+      "A. Quán Nhà Tôi",
+      "B. Cáp treo Hải Giang",
+      "C. Cả hai",
+      "D. Không có địa điểm nào"
+    ]
+  },
+  {
+    "id": "TB200_175",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Cả Khách Sạn Galaxy và Khách sạn Hoàng Oanh đều gần những địa điểm nào sau đây?",
+    "answer": "A. Biển Quy Hòa và Biển Quy Nhơn.",
+    "choices": [
+      "A. Biển Quy Hòa và Biển Quy Nhơn",
+      "B. Biển Quy Hòa và Làng chài Hải Minh",
+      "C. Biển Quy Nhơn và Ghềnh ráng - Tiên Sa",
+      "D. Tất cả các địa điểm trên"
+    ]
+  },
+  {
+    "id": "TB200_176",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai địa điểm Nhà nghỉ diên phú và Quảng trường Tượng đài Chiến Thắng Quy Nhơn, địa điểm nào thuộc loại hình 'Nhà nghỉ du lịch'?",
+    "answer": "A. Nhà nghỉ diên phú.",
+    "choices": [
+      "A. Nhà nghỉ diên phú",
+      "B. Quảng trường Tượng đài Chiến Thắng Quy Nhơn",
+      "C. Cả hai",
+      "D. Không địa điểm nào"
+    ]
+  },
+  {
+    "id": "TB200_177",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai địa điểm Khách sạn Anh Nguyên và Chùa Bửu Minh, địa điểm nào có số điện thoại?",
+    "answer": "A. Khách sạn Anh Nguyên.",
+    "choices": [
+      "A. Khách sạn Anh Nguyên",
+      "B. Chùa Bửu Minh",
+      "C. Cả hai",
+      "D. Không địa điểm nào"
+    ]
+  },
+  {
+    "id": "TB200_178",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai địa điểm Khách sạn Thiên Các 2 và Nhà hàng Đại Phúc, địa điểm nào có số điện thoại?",
+    "answer": "A. Khách sạn Thiên Các 2.",
+    "choices": [
+      "A. Khách sạn Thiên Các 2",
+      "B. Nhà hàng Đại Phúc",
+      "C. Cả hai",
+      "D. Không có địa điểm nào"
+    ]
+  },
+  {
+    "id": "TB200_179",
+    "question_type": "Multiple-Choice",
+    "difficulty": "medium",
+    "question": "Trong hai cơ sở lưu trú Nhà nghỉ Lan Phương và Khách sạn Phương Nam 2, cơ sở nào có loại hình là 'Nhà nghỉ du lịch'?",
+    "answer": "A. Nhà nghỉ Lan Phương.",
+    "choices": [
+      "A. Nhà nghỉ Lan Phương",
+      "B. Khách sạn Phương Nam 2",
+      "C. Cả hai",
+      "D. Không có"
+    ]
+  },
+  {
+    "id": "TB200_180",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Nhà nghỉ Sao Đêm và Làng nghề truyền thống Rượu Bàu Đá dựa trên các điểm du lịch gần đó và loại hình. Nếu khách muốn ở gần nhiều điểm tham quan, nên chọn cơ sở nào?",
+    "answer": "Nhà nghỉ Sao Đêm phù hợp hơn nếu khách muốn ở gần nhiều điểm tham quan, vì dữ liệu cho thấy Nhà nghỉ Sao Đêm gần 7 điểm: Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy và Nhà Lao Pleiku. Trong khi đó, Làng nghề truyền thống Rượu Bàu Đá là một điểm tham quan thuộc loại làng nghề truyền thống, không phải nơi lưu trú, và không có thông tin về các điểm gần đó."
+  },
+  {
+    "id": "TB200_181",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "Trong ba quán: Quán Sê San Xanh, Cascara Tea & Coffee House và Bê thui Bồng Lai, quán nào có món Lẩu cá sông? Hãy so sánh thông tin liên lạc (số điện thoại) và giờ mở cửa của ba quán dựa trên dữ liệu hiện có.",
+    "answer": "Chỉ có Quán Sê San Xanh có món Lẩu cá sông. Về thông tin liên lạc và giờ mở cửa, cả ba quán đều không có dữ liệu về số điện thoại và giờ mở cửa trong hệ thống."
+  },
+  {
+    "id": "TB200_182",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Bookafe, Vườn hoa Huỳnh Phổ và Nhà nghỉ Phương Nam dựa trên các điểm du lịch gần đó. Nếu khách muốn tham quan nhiều điểm du lịch ở Quy Nhơn, địa điểm nào phù hợp hơn?",
+    "answer": "Bookafe phù hợp hơn nếu khách muốn tham quan nhiều điểm du lịch ở Quy Nhơn, vì Bookafe gần nhiều điểm như Biển Quy Hòa, Biển Quy Nhơn, Làng chài Hải Minh, Ghềnh ráng - Tiên Sa, Tượng Trần Hưng Đạo, Bảo tàng tổng hợp Bình Định, Chùa Long Khánh, Nhà thờ Đá Ghềnh Ráng, Quảng trường Nguyễn Tất Thành, Quảng trường Tượng đài Chiến Thắng Quy Nhơn, Tháp Thầy Bói, Tháp đôi, Tượng đài Nguyễn Sinh Sắc - Nguyễn Tất Thành, Làng nghề sản xuất Tôm tre, Làng nghề Gốm Vân Sơn, Lăng Ông Nam Hải, Làng Phong Quy Hòa, Khu biệt thự Đại Phú Gia, Nhà thờ Chánh Tòa, Bãi Ngang, Cảng Quy Nhơn, Cáp treo Hải Giang. Vườn hoa Huỳnh Phổ gần Nem Chợ Huyện Olala và Khách sạn Hoài Thu, nhưng không có evidence gần các điểm ở Quy Nhơn. Nhà nghỉ Phương Nam gần các điểm ở Pleiku như Bảo tàng tỉnh Gia Lai, Chùa Bửu Nghiêm, Câu lạc bộ Dệt thổ cẩm xã Biển Hồ, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Biển Hồ, Nhà Lao Pleiku, không gần Quy Nhơn."
+  },
+  {
+    "id": "TB200_183",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Nhà hàng Jolibi và Phở gia truyền Nam Định dựa trên các món ăn họ có, và cho biết nếu khách muốn ở gần nhiều điểm tham quan thì nên chọn khách sạn nào gần đó?",
+    "answer": "Nhà hàng Jolibi có món Mì ý, Phở gia truyền Nam Định có món Phở bò tái. Nếu khách muốn ở gần nhiều điểm tham quan, Khách sạn Nguyên Anh gần 8 điểm: Bảo tàng tỉnh Gia Lai, Chùa Minh Thành, Chùa Bửu Nghiêm, Làng nghề sản xuất nhạc cụ dân tộc, Công viên Diên Hồng, Quảng trường Đại Đoàn Kết, Khu du lịch sinh thái Xuân Thủy, Nhà Lao Pleiku. Tuy nhiên, không có thông tin về vị trí của Nhà hàng Jolibi hay Phở gia truyền Nam Định nên không thể so sánh khoảng cách."
+  },
+  {
+    "id": "TB200_184",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Bãi Rạng và Đầm Trà Ổ dựa trên địa điểm và các tour du lịch bao gồm chúng. Địa điểm nào có tour du lịch kéo dài nửa ngày?",
+    "answer": "Bãi Rạng có tour du lịch nửa ngày (Tour khám phá Làng chài Hải Minh nửa ngày: Vẻ đẹp bí ẩn Quy Nhơn), trong khi Đầm Trà Ổ có tour du lịch 1 ngày (Tour du lịch Phù Mỹ 1 ngày: Mũi Vi Rồng – Đầm Trà Ổ – Làng Bí đao khổng lồ). Cả hai đều thuộc loại Danh lam thắng cảnh và nằm ở các xã khác nhau: Bãi Rạng ở Xã Nhơn Châu, Đầm Trà Ổ ở Xã Phù Mỹ Bắc."
+  },
+  {
+    "id": "TB200_185",
+    "question_type": "Open-Ended",
+    "difficulty": "hard",
+    "question": "So sánh Quán cá Lăng, 135 Coffee & Pub và Thác Hang Én (Thác K50) dựa trên các điểm tham quan gần đó. Nếu khách muốn kết hợp ăn uống và tham quan gần một di tích lịch sử, địa điểm nào phù hợp nhất?",
+    "answer": "135 Coffee & Pub phù hợp nhất vì nó gần Di tích Núi chéo và Văn Chỉ Hoài Ân, cả hai đều là di tích lịch sử. Quán cá Lăng gần nhiều điểm như Bảo tàng tỉnh Gia Lai, chùa, công viên nhưng không có di tích lịch sử cụ thể trong evidence. Thác Hang Én (Thác K50) không có quan hệ NEAR với bất kỳ điểm nào trong context."
+  },
+  {
+    "id": "TB200_186",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Nhà hàng Rok Ly có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Nhà hàng Rok Ly."
+  },
+  {
+    "id": "TB200_187",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Website của Por Get Me là gì?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Por Get Me."
+  },
+  {
+    "id": "TB200_188",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Lotteria có số điện thoại không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về số điện thoại của Lotteria."
+  },
+  {
+    "id": "TB200_189",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Khách sạn Mạnh Lê Gia có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Khách sạn Mạnh Lê Gia."
+  },
+  {
+    "id": "TB200_190",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Khách sạn Ngọc Bích có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Khách sạn Ngọc Bích."
+  },
+  {
+    "id": "TB200_191",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Paksong Farmstay Gia Lai có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Paksong Farmstay Gia Lai."
+  },
+  {
+    "id": "TB200_192",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Thắng cảnh Eo Gió có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Thắng cảnh Eo Gió."
+  },
+  {
+    "id": "TB200_193",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Bãi Dứa (Bãi San Hô) có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Bãi Dứa (Bãi San Hô)."
+  },
+  {
+    "id": "TB200_194",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Kỳ Co Quy Nhơn Resort có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Kỳ Co Quy Nhơn Resort."
+  },
+  {
+    "id": "TB200_195",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Thung lũng An Toàn có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Thung lũng An Toàn."
+  },
+  {
+    "id": "TB200_196",
+    "question_type": "Closed-Ended",
+    "difficulty": "easy",
+    "question": "Tour Hòn Khô – Trung Lương – Chùa Ông Núi 1 ngày có giá vé bao nhiêu?",
+    "answer": "Tour Hòn Khô – Trung Lương – Chùa Ông Núi 1 ngày có giá vé là 695.000 đồng."
+  },
+  {
+    "id": "TB200_197",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Tour khám phá Làng chài Hải Minh nửa ngày có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Tour khám phá Làng chài Hải Minh nửa ngày."
+  },
+  {
+    "id": "TB200_198",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Di tích lịch sử văn hóa căn cứ địa cách mạng Khu 10 có số điện thoại liên hệ không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về số điện thoại của Di tích lịch sử văn hóa căn cứ địa cách mạng Khu 10."
+  },
+  {
+    "id": "TB200_199",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Tiểu chủng viện Làng Sông có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Tiểu chủng viện Làng Sông."
+  },
+  {
+    "id": "TB200_200",
+    "question_type": "Negative",
+    "difficulty": "easy",
+    "question": "Nhà hàng cơm niêu Pleiku có website không?",
+    "answer": "Dữ liệu hiện tại chưa có thông tin về website của Nhà hàng cơm niêu Pleiku."
+  }
+]

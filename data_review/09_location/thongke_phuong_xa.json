@@ -1,0 +1,1449 @@
+{
+  "tong_quan": {
+    "tong_so": 359,
+    "co_phuong": 0,
+    "co_xa": 0,
+    "co_ca_hai": 0,
+    "thieu_phuong_xa": 359,
+    "ty_le_day_du": "0.00%"
+  },
+  "dia_diem_thieu_phuong_xa": [
+    {
+      "name": "COBE Homestay",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khang Hy",
+      "address": ""
+    },
+    {
+      "name": "Haven Vietnam",
+      "address": ""
+    },
+    {
+      "name": "Homestay Quỳnh Anh",
+      "address": ""
+    },
+    {
+      "name": "Hostel Hoàng Sơn",
+      "address": ""
+    },
+    {
+      "name": "Hostel An Thịnh Phú",
+      "address": ""
+    },
+    {
+      "name": "Happy House",
+      "address": ""
+    },
+    {
+      "name": "Hostel Ngọc Hương",
+      "address": ""
+    },
+    {
+      "name": "Homestay Nhà Tui",
+      "address": ""
+    },
+    {
+      "name": "House coffee & Homestay",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Anh Khoa",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Delight",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Hưng",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoài Thu",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Galaxy",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Hoàng Thanh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Lan",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hồng Diệp",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Lazada",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Kim Hoa 2",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hồng Linh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Lucky",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hồng Hạnh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hải Sơn",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Minh Khuê",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Mường Thanh Gia Lai",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Anya Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Sài Gòn - Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Fleur De Lys Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Mường Thanh Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Viet Nam Taste",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khánh Linh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Pleiku & Em",
+      "address": ""
+    },
+    {
+      "name": "KHÁCH SẠN PLEIKU",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Mê Kông",
+      "address": ""
+    },
+    {
+      "name": "Paksong Farmstay Gia Lai",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Anh Thảo",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Yến Canary",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Osaka",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Cao Nguyên",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoài Thương",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Le Centre",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Thiên Đường Xanh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Queen",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn An Sinh",
+      "address": ""
+    },
+    {
+      "name": "LA MIA LAKEVIEW HOTEL",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Kings",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng My",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Bảo Cường",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Green",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Blue Sea",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Green Park",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn SALAH",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Tân Nhật Sương",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn SeaSide",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn New Light",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Sao Biển",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Minh Nhật",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Lê Lợi",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hồng Hưng",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khang Khang 2",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Mỹ Tiến",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Sunshine",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hải Yến",
+      "address": ""
+    },
+    {
+      "name": "khách sạn For get me not",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Trang",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Phương Trinh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hùng Vương (Hội Thương)",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Âu Việt",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách Tỉnh ủy Gia Lai",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Elegant",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Dáng Xưa - Pleiku",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khánh Bình",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Thành Đạt",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hữu Phước",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Thiên Các 2",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Âu Lạc",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Tuyết Nhung",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Viễn Dương",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Nguyên Anh",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Viễn Đông",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khải Yến",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Minh Mạnh 1",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Mạnh Lê Gia",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Minh Mạnh 2",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Oanh",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Hưng Gia Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hầm Hô",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hương Giang",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Anh Nguyên 2",
+      "address": ""
+    },
+    {
+      "name": "Hương Pleiku",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phố Núi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Anh Toàn",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 777",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Vinh Quang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Quang Trung",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thiên Đường I",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Lan Anh (An Khê)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thùy Dương",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách UBND tỉnh Gia Lai",
+      "address": ""
+    },
+    {
+      "name": "XOM Organic Farm Stay – Full House",
+      "address": ""
+    },
+    {
+      "name": "Phuot Pleiku Homestay",
+      "address": ""
+    },
+    {
+      "name": "The Stay Villa Pleiku",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tiến Đạt",
+      "address": ""
+    },
+    {
+      "name": "Lake View Homestay",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Elisa",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Bình Minh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Osaka",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Anh Nguyên",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Phúc Khánh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thành Nhân",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Trung Hương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Lan",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Lan Phương",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Hoàng Yến",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Nguyên Sang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Sao Đêm",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phương Nam",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Ngoại Ô",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tân Thanh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 73",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Hoa Đăng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tiến Thành",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Cây Si",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Vân Anh",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Minh Quang",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Ngọc Uyên",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tân Bình Minh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hồ Xuân",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Uyên",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Samy",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Mai Anh",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ 91",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 999",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 149 Nguyễn Văn Cừ",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Mỹ Anh",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ 9999",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ E- Va",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Ven Đô",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 22",
+      "address": ""
+    },
+    {
+      "name": "Hotel Gia Bảo",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Sơn Tâm",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoa Mai",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phượng Hồng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thu Oanh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ PA RI",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 167",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 318",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Chip Chip",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoa Hồng",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Dũng Thoa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Sơn Nga",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Ven Hồ",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phương nga",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 230",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách UBND huyện Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Bảo Long",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách UBND huyện Krông Pa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Trần Trọng Huy",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Trường Thịnh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Khánh Uyên",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Thái Phương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoa Hồng (An Phú)",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách Ngọc Dương",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách Tuấn Vũ",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Lý Kình",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tuấn Đạt",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tuấn Dũng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thống Nhất 2",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thiên Ngân",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tiến vôi (An Phú)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tân Trang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thống Nhất",
+      "address": ""
+    },
+    {
+      "name": "Nhà Khách Công ty TNHH MTV Hữu Nghị Nam Lào - Quân Khu 5",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách nội bộ Công đoàn",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Bình (An Phú)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Sơn Thủy",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Kha Nhi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thư Giao",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách Binh đoàn 15",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thảo Ngọc",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tường Vy",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Trăng Non",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ diên phú",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thương Tính",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Ngọc Long",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thúy Vi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Anh Thư",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Lê Diễm",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Ban Mai",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Duy Trọng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 80 Phan Chu Trinh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Kiều Văn Thắng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Bùi Văn Dương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Nguyên Chi",
+      "address": ""
+    },
+    {
+      "name": "Nhà trọ Hoàng Linh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tiến Vôi (Quy Nhơn)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hiền Bảo",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Nam Phương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Ánh Dương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Nguyên Thành Phú",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Nano ý",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 369",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Bình (An Khê)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Cao nguyên",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Châu",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Bình Đào",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 172",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Cây dừa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Cường Thể",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phú Gia",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn LAMAISON de Dinh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Hải",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 289",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 123",
+      "address": ""
+    },
+    {
+      "name": "Làng Tôi 2 - Homestay & Gradena",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Hoa Hồng (Ia Khuol)",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ YALY",
+      "address": ""
+    },
+    {
+      "name": "HaNi House",
+      "address": ""
+    },
+    {
+      "name": "Trắng homestay Gia Lai",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hồng Hà",
+      "address": ""
+    },
+    {
+      "name": "Homestay nhà tôi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thu Hiền",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Hải (Hội Phú)",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Sao Mai",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Trúc My",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Xuân Hòa",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Thành Luân",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Ánh Nguyên",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Bình Chư Pưh",
+      "address": ""
+    },
+    {
+      "name": "Homestay Ngói Quê",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Khiêm",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hương Bưởi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hồ Hương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Việt",
+      "address": ""
+    },
+    {
+      "name": "Plei Homestay & Cafe",
+      "address": ""
+    },
+    {
+      "name": "Dona Homestay",
+      "address": ""
+    },
+    {
+      "name": "Homestay Nhà Muội",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Casablanca",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khang Khang 3",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Dũng 01",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Sa",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Ngọc Quý",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Ngân hàng Công thương",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khang Khang 4",
+      "address": ""
+    },
+    {
+      "name": "Tiên Sơn Pleiku Homestay",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Khiết Xã Sơn Lang",
+      "address": ""
+    },
+    {
+      "name": "A Ngưi Homestay",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Ngân",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tân Bình",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Khải Hoàn",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Xuân Hoà huyện Kbang",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Phú Vang (Hoa Lư)",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Mạnh Lê Gia 2",
+      "address": ""
+    },
+    {
+      "name": "Anantara Quy Nhon Villas",
+      "address": ""
+    },
+    {
+      "name": "Maia Resort Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Long Hill Bãi Xếp Resort & Spa",
+      "address": ""
+    },
+    {
+      "name": "FLC Quy Nhon Beach & Golf Resort",
+      "address": ""
+    },
+    {
+      "name": "Crown Retreat Quy Nhơn",
+      "address": ""
+    },
+    {
+      "name": "Kỳ Co Quy Nhơn Resort",
+      "address": ""
+    },
+    {
+      "name": "Aurora Villas & Resort",
+      "address": ""
+    },
+    {
+      "name": "Dankbaar Resort",
+      "address": ""
+    },
+    {
+      "name": "Avani Quy Nhon Resort",
+      "address": ""
+    },
+    {
+      "name": "Hương Biển hotel",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàn Vũ Biển Hồ",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Gia",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Nguyên Cường",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Gia 3",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Relax",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hạ Trắng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ For get me not",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ An Bình",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 900",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Hảo 2",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Anna",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Phú Vang",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Boston",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Hảo 1",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Dung",
+      "address": ""
+    },
+    {
+      "name": "Motel Anh Duy",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Motel King",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 47",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hùng Vương (Phú Túc)",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hương Khang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thủy Chung",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hương Thảo 2",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Anh Tú",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoa Hồng 2",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Velentine",
+      "address": ""
+    },
+    {
+      "name": "Nhà Nghỉ Cát Hạ",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Hoàng Ngọc",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Sung Tứ Quý",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Phương Nam 2",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Đồng Quê",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Nhật Dạ",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Kim Lài",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 20 Nguyễn Trung Trực",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 455 Lê Thánh Tôn",
+      "address": ""
+    },
+    {
+      "name": "Trắng's house",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 42 Lương Thạnh",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thái Trinh 2",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 61",
+      "address": ""
+    },
+    {
+      "name": "Nha nghỉ số 3",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hải Hà",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Nguyên Phước",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 309 Lê Thánh Tôn",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Phố Núi",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Thanh Linh",
+      "address": ""
+    },
+    {
+      "name": "Khách Sạn Khải Hoàn (phù Đổng)",
+      "address": ""
+    },
+    {
+      "name": "Khánh sạn Triệu Sơn",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Nhật Nam",
+      "address": ""
+    },
+    {
+      "name": "Por Get Me",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Pleiku Place",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thu Hồng",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách UBND huyện Đak Pơ",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách UBND huyện Kông Chro",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hương Gia",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Sao đêm (Hội Phú)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hương Thảo 1",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Lan Anh (Kông Chro)",
+      "address": ""
+    },
+    {
+      "name": "Sora Homestay Pleiku",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Phương Tây",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách Ngọc Dương Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà khách Tuấn Vũ Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Văn Hiến",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Vương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tuấn Dũng huyện Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tuấn Đạt huyện Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hằng Hương",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thuận Nguyệt huyện Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Huế Thương (Kông Chro)",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Lý Kình huyện Kbang",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Thanh Tâm",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Chư Sê",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ 354",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Như Ý Ayun Pa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Tường Vi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phương Thai",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phương Thảo",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phố Núi Krông Pa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Kim Ba AyunPa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phúc Khánh Ayun Pa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hương Quê AyunPa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Bằng Lăng Ayun Pa",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Phú Hải",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Rồng Vàng",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ TC group",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Kim",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Biển Hồ Gia Lai",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn NineHotel",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Luxstay",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Ngọc Bích",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Hoàng Nhi",
+      "address": ""
+    },
+    {
+      "name": "Nhà nghỉ Bình Yên",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn LuckyStar",
+      "address": ""
+    },
+    {
+      "name": "Central Home(Homestay)",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Pleiku Highlands",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Chư Sê",
+      "address": ""
+    },
+    {
+      "name": "Khách sạn Minh Lâm",
+      "address": ""
+    }
+  ],
+  "dia_diem_co_phuong_xa": []
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "pho-kho-hong",
+    "name": "Phở khô Hồng",
+    "address": "49 Lê Duẩn, Pleiku, Gia Lai",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.9833,
+    "longitude": 108.0000
+  },
+  {
+    "id": "pho-kho-ngoc",
+    "name": "Phở khô Ngọc",
+    "address": "124 Lê Lợi, Pleiku, Gia Lai",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.9810,
+    "longitude": 108.0020
+  },
+  {
+    "id": "pho-kho-ba-nam",
+    "name": "Phở khô Bà Năm",
+    "address": "56 Trần Hưng Đạo, Pleiku, Gia Lai",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.9750,
+    "longitude": 108.0100
+  },
+  {
+    "id": "pho-kho-tau-bay",
+    "name": "Phở khô Tàu Bay",
+    "address": "18 Nguyễn Văn Cừ, Pleiku, Gia Lai",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.9780,
+    "longitude": 107.9980
+  },
+  {
+    "id": "hai-san-a5",
+    "name": "Hải sản A5",
+    "address": "Đường Xuân Diệu, Quy Nhơn, Bình Định",
+    "category": "Nhà hàng",
+    "phone": "",
+    "email": "",
+    "latitude": 13.7700,
+    "longitude": 109.2200
+  },
+  {
+    "id": "quan-nam-thao",
+    "name": "Quán Năm Thảo",
+    "address": "Quy Nhơn, Bình Định",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.7650,
+    "longitude": 109.2150
+  },
+  {
+    "id": "banh-xeo-gia-vy",
+    "name": "Bánh xèo tôm nhảy Gia Vỹ",
+    "address": "Tuy Phước, Bình Định",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.8400,
+    "longitude": 109.1600
+  },
+  {
+    "id": "banh-xeo-ong-hung",
+    "name": "Bánh xèo tôm nhảy Ông Hùng",
+    "address": "Quy Nhơn, Bình Định",
+    "category": "Quán ăn/Đặc sản",
+    "phone": "",
+    "email": "",
+    "latitude": 13.7700,
+    "longitude": 109.2100
+  }
+]

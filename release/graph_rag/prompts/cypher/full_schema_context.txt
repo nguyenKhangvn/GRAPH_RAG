@@ -1,0 +1,99 @@
+## Neo4j Schema (2026-06-27 — khớp DB thực tế: 1,152 nodes)
+
+### Node Types (11 loại):
+- TouristAttraction (id, name, description, address, location, category, ticket_price, opening_hours, phone, province, enriched_rating, enriched_rating_source, embedding) — 201 nodes
+- Restaurant (id, name, address, location, phone, type, tags, opening_hours, province, email, enriched_rating, enriched_rating_source, embedding) — 132 nodes
+- Accommodation (id, name, description, address, location, phone, type, price_range, amenities, capacity, villa_segment, province, enriched_rating, enriched_rating_source, embedding) — 360 nodes. KHÔNG có email property.
+- Event (id, name, address, category, month, activities, province, description, image, year, embedding) — 18 nodes. KHÔNG có location property. Location suy ra qua HELD_AT → TouristAttraction → LOCATED_IN.
+- Tour (id, name, description, price, duration, start_location, embedding) — 36 nodes
+- Dish (id, name, description, category, location, region_group, province, embedding) — 151 nodes. Nhiều node thiếu id/category/location (chỉ ~32%).
+- Specialty (id, name, description, category, location, region_group, province, embedding) — 49 nodes
+- Location (id, name, region_group, admin_level, admin_status, legacy_district, current_province, old_units, aliases) — 89 nodes
+- Category (name) — 10 nodes. Node RIÊNG, kết nối qua BELONGS_TO.
+- TravelAgency (id, name, address, phone, email, website, embedding) — 73 nodes
+- TravelInfo (id, name, description, topic, location, province) — 32 nodes
+
+### Relationships (13 loại):
+- (TouristAttraction)-[:LOCATED_IN]->(Location)      — 511 rels
+- (Restaurant)-[:LOCATED_IN]->(Location)               — 316 rels
+- (Accommodation)-[:LOCATED_IN]->(Location)            — 868 rels
+- (Restaurant)-[:NEAR]->(TouristAttraction)            — 849 rels
+- (Accommodation)-[:NEAR]->(TouristAttraction)         — 2856 rels
+- (Restaurant)-[:HAS]->(Dish)                          — 169 rels
+- (Dish)-[:SPECIALTY_OF]->(Location)                   — 48 rels
+  (Dish/Specialty cũng có location/region_group/province properties để fallback)
+- (TouristAttraction)-[:BELONGS_TO]->(Category)        — 192 rels
+- (Tour)-[:INCLUDES]->(TouristAttraction)              — 206 rels
+- (TravelAgency)-[:OFFERS]->(Tour)                     — 36 rels
+- (Event)-[:HELD_AT]->(TouristAttraction)              — 21 rels
+  (Event location: Event→HELD_AT→TouristAttraction→LOCATED_IN→Location)
+- (TravelInfo)-[:Guide_for]->(Location)                — 32 rels
+  (TravelInfo cũng có t.location/t.province properties để fallback)
+- (Location)-[:SUPERSEDED_BY]->(Location)              — 1 rel (post-2025 merger)
+- Đã xóa: Event/TravelInfo LOCATED_IN. TravelInfo dùng Guide_for.
+
+### Location filtering — QUAN TRỌNG:
+- TouristAttraction/Restaurant/Accommodation: dùng LOCATED_IN → Location.name
+  MATCH (n)-[:LOCATED_IN]->(l:Location) WHERE l.name CONTAINS 'tên tỉnh'
+  HOẶC: WHERE n.address CONTAINS 'tên tỉnh'
+  HOẶC kết hợp: WHERE l.name CONTAINS '...' OR n.address CONTAINS '...'
+- LƯU Ý admin_level: Location có admin_level = ward (thành phố/xã) hoặc province (tỉnh)
+  * Pleiku, Quy Nhơn, An Nhơn → admin_level=ward, Location.name = 'Pleiku'
+  * Gia Lai, Bình Định → admin_level=province, Location.name = 'Gia Lai'
+  * Khi user hỏi 'Pleiku': dùng l.name CONTAINS 'Pleiku', KHÔNG dùng l.name CONTAINS 'Gia Lai'
+  * Nếu 0 rows: thử l.current_province CONTAINS 'Gia Lai' hoặc n.address CONTAINS 'Pleiku'
+- Event: location suy ra qua HELD_AT → TouristAttraction → LOCATED_IN → Location:
+  MATCH (e:Event)-[:HELD_AT]->(t:TouristAttraction)-[:LOCATED_IN]->(l:Location)
+  WHERE l.name CONTAINS 'tên tỉnh'
+  Fallback: MATCH (e:Event) WHERE e.address CONTAINS 'tên tỉnh'
+- TravelInfo: dùng Guide_for → Location (ưu tiên):
+  MATCH (t:TravelInfo)-[:Guide_for]->(l:Location) WHERE l.name CONTAINS 'tên tỉnh'
+  Fallback: MATCH (t:TravelInfo) WHERE t.location CONTAINS 'tên tỉnh' OR t.province CONTAINS 'tên tỉnh'
+- Specialty/Dish: query qua SPECIALTY_OF hoặc properties:
+  MATCH (d:Dish)-[:SPECIALTY_OF]->(l:Location) WHERE l.name CONTAINS 'tên tỉnh'
+  Fallback: MATCH (d:Dish) WHERE d.location CONTAINS 'tên tỉnh' OR d.province CONTAINS 'tên tỉnh'
+
+### Location hierarchy:
+- Location nodes represent provinces/cities AND xã/phường với: name, admin_level (ward=83, province=3, area=3)
+- Location-[:SUPERSEDED_BY]->Location links old provinces to new ones (post-2025 merger)
+- Location.name chứa tên tỉnh/thành phố (ví dụ: 'Gia Lai', 'Pleiku', 'Quy Nhơn')
+- admin_status: current (50), merged (39)
+- region_group: gia_lai_core (40), binh_dinh_legacy (39)
+
+### Rules:
+- Use CONTAINS for Vietnamese text matching (not exact match)
+- PRESERVE Vietnamese diacritics in search terms (e.g., 'Đại ngàn' not 'Dai ngan')
+- Do NOT use toLower() on search terms (it breaks Vietnamese diacritics)
+- Split long search phrases into individual words and use OR conditions
+  Example: "Lễ hội Tinh hoa Đại ngàn" →
+  WHERE e.name CONTAINS 'Tinh hoa' OR e.name CONTAINS 'Đại ngàn'
+- Always add LIMIT to prevent large result sets
+- Use OPTIONAL MATCH when relationships may not exist
+- For province-level queries: do NOT add narrow keyword filters (e.g., CONTAINS 'làng') on attraction names — this misses most results. Only use keyword filters when the user specifically asks for a category (e.g., "làng văn hóa" → filter by name/description)
+- IMPORTANT: Category là NODE RIÊNG, KHÔNG phải property. Để lọc theo category, dùng:
+  MATCH (ta:TouristAttraction)-[:BELONGS_TO]->(c:Category) WHERE c.name CONTAINS 'Thắng cảnh thiên nhiên'
+  KHÔNG dùng ta.category (không tồn tại)
+- Category names thực tế trong graph (dùng CONTAINS để match):
+  * "Thắng cảnh thiên nhiên" — địa danh tự nhiên, núi, thác, hồ, rừng
+  * "Danh lam thắng cảnh" — danh lam, thắng cảnh nổi tiếng
+  * "Di tích lịch sử - Văn hóa" / "Di tích lịch sử - văn hóa" — di tích lịch sử (LƯ Ý: viết hoa khác nhau)
+  * "Làng văn hóa" — làng văn hóa dân tộc
+  * "Làng nghề truyền thống" / "Làng nghề - Văn hóa" / "Làng nghề - Nông nghiệp" — làng nghề
+  * "Điểm tham quan" / "Điểm check-in" — điểm tham quan chung
+- IMPORTANT: Specialty là node RIÊNG, KHÔNG có address/location. Specialty kết nối qua:
+  * (Restaurant)-[:HAS]->(Specialty) — quán phục vụ đặc sản (KHÔNG tồn tại trong DB)
+  * (Dish)-[:SPECIALTY_OF]->(Location) — đặc sản của vùng
+  Dùng s.location, s.province properties để filter theo vùng.
+- IMPORTANT: Dish có thể thiếu id/category/location (chỉ ~32% có). Khi query Dish, dùng OPTIONAL MATCH cho properties.
+- Accommodation KHÔNG có email property trong DB (0% coverage).
+- Restaurant.email chỉ có 25%, phone chỉ 27% — không nên rely vào.
+- IMPORTANT: Khi dùng UNION giữa nhiều label KHÁC NHAU, TẤT CẢ sub-query PHẢI có RETURN clause với CÙNG tên cột (dùng AS alias).
+  Nếu label KHÔNG có property nào đó, dùng '' AS alias hoặc NULL AS alias. KHÔNG được đổi tên cột giữa các sub-query.
+  Ví dụ ĐÚNG:
+    MATCH (d:Dish) WHERE d.name CONTAINS 'x'
+    RETURN d.id AS id, d.name AS name, d.description AS description, d.location AS location, d.province AS province, labels(d) AS labels
+    UNION
+    MATCH (r:Restaurant)-[:HAS]->(d:Dish) WHERE d.name CONTAINS 'x'
+    RETURN r.id AS id, r.name AS name, '' AS description, r.address AS location, r.province AS province, labels(r) AS labels
+  Ví dụ SAI (KHÔNG được làm):
+    RETURN r.id AS id, r.name AS name, r.address AS address, d.name AS dish_name, labels(r) AS labels  ← tên cột khác với sub-query trên!

@@ -1,0 +1,146 @@
+{
+  "_metadata": {
+    "description": "Configurable thresholds for the GraphRAG pipeline. All numeric constants loaded from this file with env-var overrides.",
+    "version": "1.0"
+  },
+
+  "grounding": {
+    "confidence_threshold": {"env": "GROUNDING_CONFIDENCE_THRESHOLD", "default": 0.7},
+    "exact_match_score": {"env": "EXACT_MATCH_SCORE", "default": 1.0},
+    "substring_match_score": {"env": "SUBSTRING_MATCH_SCORE", "default": 0.88},
+    "contains_match_score": {"env": "CONTAINS_MATCH_SCORE", "default": 0.82}
+  },
+
+  "semantic_grounding": {
+    "threshold": {"env": "SEMANTIC_GROUNDING_THRESHOLD", "default": 0.60},
+    "top_k": {"env": "SEMANTIC_GROUNDING_TOP_K", "default": 5}
+  },
+
+  "location": {
+    "user_geo_fallback_confidence": {"env": "USER_GEO_FALLBACK_CONFIDENCE", "default": 0.6},
+    "soft_match_confidence": {"env": "SOFT_MATCH_CONFIDENCE", "default": 0.85},
+    "source_confidence": {
+      "graph": 1.0,
+      "user": 0.7,
+      "history": 0.3,
+      "global": 0.0
+    }
+  },
+
+  "distance": {
+    "tour_plan_max_hop_km": {"env": "TOUR_PLAN_MAX_HOP_KM", "default": 12.0},
+    "walking_max_hop_km": {"env": "WALKING_MAX_HOP_KM", "default": 1.8},
+    "senior_family_max_hop_km": {"env": "SENIOR_FAMILY_MAX_HOP_KM", "default": 4.5},
+    "proximity_search_max_m": {"env": "PROXIMITY_SEARCH_MAX_M", "default": 3000},
+    "location_filter_max_km": {"env": "LOCATION_FILTER_MAX_KM", "default": 35.0}
+  },
+
+  "restaurant": {
+    "min_rating": {"env": "MIN_RESTAURANT_RATING", "default": 4.0}
+  },
+
+  "tour_plan_clustering": {
+    "city_center_distance_km": {"env": "CITY_CENTER_DISTANCE_KM", "default": 7.0},
+    "city_center_fallback_distance_km": {"env": "CITY_CENTER_FALLBACK_DISTANCE_KM", "default": 8.0},
+    "near_suburban_distance_km": {"env": "NEAR_SUBURBAN_DISTANCE_KM", "default": 18.0}
+  },
+
+  "geographic_bounds": {
+    "inland": {
+      "lat_min": {"env": "INLAND_LAT_MIN", "default": 13.0},
+      "lat_max": {"env": "INLAND_LAT_MAX", "default": 15.3},
+      "lng_min": {"env": "INLAND_LNG_MIN", "default": 107.1},
+      "lng_max": {"env": "INLAND_LNG_MAX", "default": 108.9}
+    },
+    "coastal": {
+      "lat_min": {"env": "COASTAL_LAT_MIN", "default": 13.5},
+      "lat_max": {"env": "COASTAL_LAT_MAX", "default": 14.8},
+      "lng_min": {"env": "COASTAL_LNG_MIN", "default": 108.9},
+      "lng_max": {"env": "COASTAL_LNG_MAX", "default": 109.4}
+    }
+  },
+
+  "adaptive_hop_km": {
+    "DISCOVERY": 8.0,
+    "ACCOMMODATION": 15.0,
+    "FOOD": 10.0,
+    "TOUR_PLAN_5PLUS_DAYS": 100.0,
+    "TOUR_PLAN_3PLUS_DAYS": 60.0,
+    "TOUR_PLAN_DEFAULT": 25.0,
+    "DEFAULT": 12.0
+  },
+
+  "tour_plan_seed_quotas": {
+    "min_food_per_day": 2,
+    "min_attraction_1day": 2,
+    "min_attraction_multi": 2,
+    "max_attraction_multi": 6,
+    "target_attraction_1day": 3,
+    "target_attraction_multi": 8,
+    "target_attraction_per_day": 3,
+    "max_accommodation_base": 3
+  },
+
+  "context_limits": {
+    "default_max_items": {"env": "RAW_CONTEXT_DEFAULT_MAX_ITEMS", "default": 50},
+    "max_items_by_intent": {
+      "TOUR_PLAN": {"env": "RAW_CONTEXT_MAX_ITEMS_TOUR_PLAN", "default": 70},
+      "DISCOVERY_SEARCH": {"env": "RAW_CONTEXT_MAX_ITEMS_DISCOVERY", "default": 60},
+      "FOOD_RECOMMENDATION": {"env": "RAW_CONTEXT_MAX_ITEMS_FOOD", "default": 40},
+      "ACCOMMODATION_RECOMMENDATION": {"env": "RAW_CONTEXT_MAX_ITEMS_ACCOMMODATION", "default": 40},
+      "TOURISM_RECOMMENDATION": {"env": "RAW_CONTEXT_MAX_ITEMS_TOURISM", "default": 40},
+      "EVENT_RECOMMENDATION": {"env": "RAW_CONTEXT_MAX_ITEMS_EVENT", "default": 40},
+      "ENTITY_FACT_QUERY": {"env": "RAW_CONTEXT_MAX_ITEMS_ENTITY_FACT", "default": 40},
+      "DISTANCE_QUERY": {"env": "RAW_CONTEXT_MAX_ITEMS_DISTANCE", "default": 40}
+    }
+  },
+
+  "evidence_sufficiency": {
+    "confidence_bands": {
+      "HIGH": 0.85,
+      "MEDIUM": 0.65,
+      "LOW": 0.45
+    },
+    "weights": {
+      "entity_coverage": 0.25,
+      "relation_coverage": 0.20,
+      "attribute_coverage": 0.20,
+      "retrieval_confidence": 0.15,
+      "grounding_confidence": 0.15,
+      "contradiction_penalty": 0.05
+    },
+    "per_intent_minimums": {
+      "TOUR_PLAN": {"min_results": 8, "min_diversity": 3},
+      "DISCOVERY_SEARCH": {"min_results": 6, "min_diversity": 2},
+      "DEFAULT": {"min_results": 5, "min_diversity": 1}
+    }
+  },
+
+  "answer_contract": {
+    "min_context_length": {"env": "MIN_CONTEXT_LENGTH", "default": 30}
+  },
+
+  "closed_form": {
+    "option_score_threshold": {"env": "OPTION_SCORE_THRESHOLD", "default": 5}
+  },
+
+  "pipeline": {
+    "insufficient_fact_threshold": {
+      "_comment": "When raw_context facts <= this threshold, force deterministic renderer to avoid LLM hallucination.",
+      "normal": {"env": "INSUFFICIENT_FACT_THRESHOLD", "default": 8},
+      "follow_up": {"env": "INSUFFICIENT_FACT_THRESHOLD_FOLLOWUP", "default": 5}
+    },
+    "rich_context_min_facts": {
+      "_comment": "Skip deterministic food specialty renderer when expanded facts >= this count, let LLM use rich context.",
+      "env": "RICH_CONTEXT_MIN_FACTS",
+      "default": 5
+    },
+    "location_filter_exempt_intents": [
+      "DISTANCE_QUERY",
+      "EVENT_RECOMMENDATION",
+      "TOUR_PLAN",
+      "TRANSPORT_INFO",
+      "FOOD_RECOMMENDATION"
+    ]
+  }
+}

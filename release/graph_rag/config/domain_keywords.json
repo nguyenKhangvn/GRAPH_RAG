@@ -1,0 +1,1335 @@
+{
+  "_metadata": {
+    "description": "Domain-specific keywords for query analysis, intent detection, and region filtering.",
+    "version": "1.0",
+    "domain": "tourism_gia_lai_quynhon",
+    "language": "vi"
+  },
+  "intent_signals": {
+    "ACCOMMODATION_RECOMMENDATION": [
+      "nha nghi",
+      "khach san",
+      "homestay",
+      "resort",
+      "luu tru",
+      "noi o",
+      "cho nghi",
+      "nghi duong",
+      "nha khach",
+      "hotel",
+      "villa",
+      "nghi ngoi"
+    ],
+    "FOOD_RECOMMENDATION": [
+      "nha hang",
+      "quan an",
+      "mon an",
+      "dac san",
+      "am thuc",
+      "an gi",
+      "phuc vu mon",
+      "quan",
+      "cua hang"
+    ],
+    "TOURISM_RECOMMENDATION": [
+      "tham quan",
+      "diem du lich",
+      "danh lam",
+      "thang canh",
+      "choi",
+      "di dau",
+      "check in",
+      "kham pha"
+    ],
+    "EVENT_RECOMMENDATION": [
+      "su kien",
+      "le hoi",
+      "hoat dong",
+      "dien ra",
+      "van hoa",
+      "le hoi van hoa",
+      "festival"
+    ],
+    "TOUR_PLAN": [
+      "lich trinh",
+      "ke hoach",
+      "lo trinh",
+      "hanh trinh",
+      "goi y lich",
+      "tour",
+      "sap xep chuyen di",
+      "len lich trinh",
+      "goi y lich trinh",
+      "di dau trong ngay",
+      "tour 1 ngay",
+      "tour 2 ngay",
+      "trong mot ngay",
+      "trong 1 ngay",
+      "1 ngay",
+      "sap xep thoi gian",
+      "thoi gian hop ly",
+      "co kha thi khong",
+      "kha thi",
+      "nua ngay",
+      "buoi sang",
+      "buoi chieu",
+      "buoi toi",
+      "lich trinh nua ngay",
+      "di dau nua ngay"
+    ],
+    "EMERGENCY_INFO": [
+      "khan cap",
+      "cap cuu",
+      "duong day nong",
+      "su co",
+      "ho tro khan cap",
+      "cuu ho",
+      "sos",
+      "cong an",
+      "cuu hoa",
+      "113",
+      "114",
+      "115",
+      "lien he co quan",
+      "ho tro trong chuyen di"
+    ],
+    "ENTITY_FACT_QUERY": [
+      "thong tin",
+      "gioi thieu",
+      "mo ta",
+      "dia chi",
+      "gia ve",
+      "gio mo cua",
+      "so dien thoai",
+      "thuoc loai hinh",
+      "la loai hinh",
+      "thuoc loai nao",
+      "thuoc nhom nao",
+      "phan loai",
+      "the loai",
+      "loai gi",
+      "loai hinh du lich",
+      "loai hinh nao"
+    ],
+    "DISTANCE_QUERY": [
+      "bao xa",
+      "cach bao nhieu",
+      "khoang cach",
+      "di tu",
+      "mat bao lau",
+      "chi duong",
+      "lo trinh tu",
+      "duong di tu",
+      "distance",
+      "route",
+      "khoang cach giua"
+    ],
+    "DISCOVERY_SEARCH": [
+      "di dau",
+      "choi gi",
+      "kham pha",
+      "goi y",
+      "co gi hay",
+      "noi tieng",
+      "dep",
+      "hap dan"
+    ],
+    "TRANSPORT_INFO": [
+      "san bay",
+      "may bay",
+      "ve may bay",
+      "chuyen bay",
+      "ha noi",
+      "ho chi minh",
+      "tan son nhat",
+      "noi bai",
+      "phu cat",
+      "pleiku",
+      "pxu",
+      "uih",
+      "bay den",
+      "bay tu",
+      "hang hang khong"
+    ],
+    "SHOPPING_RECOMMENDATION": [
+      "mua",
+      "mua o dau",
+      "mua tai dau",
+      "ban",
+      "cho",
+      "vua",
+      "cua hang",
+      "quay",
+      "san pham"
+    ]
+  },
+  "heritage_signals": [
+    "di tich",
+    "lich su",
+    "khao co",
+    "di san",
+    "van hoa",
+    "bao tang",
+    "chua",
+    "den",
+    "dinh"
+  ],
+  "analysis_signals": [
+    "phan tich",
+    "chien luoc",
+    "moi quan he",
+    "boi canh",
+    "giai thich",
+    "tai sao",
+    "tiem nang",
+    "loi the",
+    "khao sat",
+    "vi tri chien luoc",
+    "dia lich su",
+    "thu hut du khach",
+    "gia tri"
+  ],
+  "proximity_signals": [
+    "gan",
+    "xung quanh",
+    "lan can",
+    "near",
+    "nam gan",
+    "o gan",
+    "quanh",
+    "ke ben"
+  ],
+  "relation_marker_names": [
+    "xung",
+    "xung quanh",
+    "quanh",
+    "gan",
+    "gan day",
+    "lan can",
+    "lân cận",
+    "nam gan",
+    "nằm gần",
+    "o gan",
+    "ở gần",
+    "ke ben",
+    "kề bên",
+    "co",
+    "có",
+    "khong",
+    "không",
+    "nao",
+    "nào",
+    "thi",
+    "thì",
+    "hay",
+    "hoac",
+    "hoặc"
+  ],
+  "location_route_signals": [
+    "tu day",
+    "from here",
+    "near me",
+    "gan toi",
+    "quanh day",
+    "khoang cach",
+    "bao xa",
+    "distance",
+    "route",
+    "chi duong",
+    "di chuyen tu"
+  ],
+  "category_phrases": [
+    "nha nghi",
+    "khach san",
+    "homestay",
+    "resort",
+    "luu tru",
+    "di tich",
+    "danh lam thang canh",
+    "lang nghe truyen thong",
+    "am thuc",
+    "mon an",
+    "nha hang",
+    "quan an",
+    "diem du lich",
+    "diem tham quan",
+    "su kien",
+    "le hoi",
+    "khu du lich",
+    "cong vien",
+    "bai bien"
+  ],
+  "attribute_hints": {
+    "address": [
+      "o dau",
+      "nam o dau",
+      "dia chi",
+      "cho nao",
+      "thuoc khu vuc"
+    ],
+    "phone": [
+      "so dien thoai",
+      "sdt",
+      "lien he",
+      "hotline"
+    ],
+    "price": [
+      "chi phi",
+      "bao nhieu tien",
+      "gia ve",
+      "gia phong",
+      "muc gia"
+    ],
+    "ticket_price": [
+      "gia ve",
+      "ve vao cong"
+    ],
+    "price_range": [
+      "muc gia",
+      "gia phong",
+      "gia thue",
+      "khoang gia"
+    ],
+    "opening_hours": [
+      "gio mo cua",
+      "mo cua",
+      "dong cua",
+      "thoi gian hoat dong"
+    ],
+    "description": [
+      "gioi thieu",
+      "mo ta",
+      "thong tin",
+      "dac diem"
+    ],
+    "service_features": [
+      "dua don",
+      "thu cung",
+      "an chay",
+      "hai san tuoi song",
+      "dich vu"
+    ]
+  },
+  "requested_attribute_labels": {
+    "address": [
+      "dia chi",
+      "nam tai",
+      "thuoc khu vuc"
+    ],
+    "phone": [
+      "sdt",
+      "so dien thoai"
+    ],
+    "price": [
+      "gia",
+      "chi phi"
+    ],
+    "ticket_price": [
+      "gia ve"
+    ],
+    "price_range": [
+      "muc gia"
+    ],
+    "opening_hours": [
+      "gio mo cua"
+    ],
+    "description": [
+      "thong tin"
+    ],
+    "service_features": [
+      "dich vu",
+      "tien ich",
+      "dua don",
+      "thu cung",
+      "an chay",
+      "hai san tuoi song"
+    ]
+  },
+  "requested_attribute_query_hints": {
+    "address": [
+      "o dau",
+      "nam o dau",
+      "dia chi",
+      "cho nao",
+      "thuoc khu vuc"
+    ],
+    "phone": [
+      "so dien thoai",
+      "sdt",
+      "lien he",
+      "hotline"
+    ],
+    "price": [
+      "chi phi",
+      "bao nhieu tien",
+      "gia ve",
+      "gia phong",
+      "muc gia"
+    ],
+    "ticket_price": [
+      "gia ve",
+      "ve vao cong"
+    ],
+    "price_range": [
+      "muc gia",
+      "gia phong",
+      "gia thue",
+      "khoang gia"
+    ],
+    "opening_hours": [
+      "gio mo cua",
+      "mo cua",
+      "dong cua",
+      "thoi gian hoat dong"
+    ],
+    "description": [
+      "gioi thieu",
+      "mo ta",
+      "thong tin",
+      "dac diem"
+    ],
+    "service_features": [
+      "dua don",
+      "thu cung",
+      "an chay",
+      "hai san tuoi song",
+      "dich vu"
+    ]
+  },
+  "relation_hints": {
+    "NEAR": [
+      "gan",
+      "lan can",
+      "xung quanh",
+      "near",
+      "ke ben"
+    ],
+    "LOCATED_IN": [
+      "o dau",
+      "nam o dau",
+      "dia chi",
+      "thuoc",
+      "vi tri",
+      "khu vuc"
+    ],
+    "BELONGS_TO": [
+      "thuoc loai",
+      "loai hinh",
+      "phan loai",
+      "danh muc",
+      "thuoc loai hinh",
+      "loai hinh du lich",
+      "thuoc nhom",
+      "the loai"
+    ],
+    "HAS": [
+      "mon",
+      "phuc vu",
+      "an gi",
+      "dac san"
+    ],
+    "HELD_AT": [
+      "to chuc o dau",
+      "dien ra",
+      "le hoi",
+      "su kien"
+    ],
+    "INCLUDES": [
+      "bao gom",
+      "diem den",
+      "lich trinh",
+      "tour"
+    ],
+    "OFFERS": [
+      "cong ty",
+      "cung cap tour",
+      "don vi to chuc"
+    ]
+  },
+  "entity_prefixes": [
+    "nha hang",
+    "quan",
+    "khach san",
+    "nha nghi",
+    "khu du lich",
+    "di tich",
+    "bao tang",
+    "suoi",
+    "thac",
+    "bien",
+    "lang nghe"
+  ],
+  "region": {
+    "coastal_keywords": [
+      "quy nhon",
+      "binh dinh",
+      "ky co",
+      "eo gio",
+      "nhon ly",
+      "cat tien",
+      "trung luong",
+      "bien",
+      "beach",
+      "hon kho",
+      "nui ba",
+      "thap",
+      "cha ban",
+      "phuong mai",
+      "thi nai",
+      "nhan chau",
+      "hoai huong",
+      "an nhon",
+      "tuy phuoc",
+      "vinh hao",
+      "nho xuan",
+      "cu lao xanh",
+      "ghenh rang",
+      "phu cat",
+      "phu my",
+      "hoai nhon",
+      "tay son",
+      "de gi",
+      "nhon hai",
+      "nhon hoi",
+      "quy nhon nam",
+      "quy nhon dong",
+      "hoai nhan",
+      "hoai an",
+      "bong son"
+    ],
+    "inland_keywords": [
+      "pleiku",
+      "gia lai",
+      "kon tum",
+      "buon ma thuot",
+      "dak lak",
+      "chu se",
+      "ia grai",
+      "duc co",
+      "chupah",
+      "kong chro",
+      "krong pa",
+      "phu thien",
+      "dak doa",
+      "bien ho",
+      "an khe",
+      "ayun pa",
+      "chu prong",
+      "chu puh",
+      "chu pah",
+      "mang yang",
+      "kbang",
+      "bien hồ",
+      "kon ka kinh",
+      "chu dang ya",
+      "dien hong",
+      "thong nhat",
+      "an phu",
+      "tay nguyen",
+      "cao nguyen",
+      "cong chieng",
+      "cồng chiêng",
+      "jrai",
+      "gia rai",
+      "ba na",
+      "bahnar",
+      "ede",
+      "nha rong",
+      "lang dao",
+      "buon lang",
+      "mang den"
+    ],
+    "out_of_region_terms": [
+      "ha noi",
+      "ho chi minh",
+      "da nang",
+      "nha trang",
+      "da lat",
+      "phu quoc",
+      "vung tau",
+      "can tho",
+      "hue",
+      "hai phong",
+      "paris",
+      "tokyo",
+      "bangkok",
+      "singapore"
+    ],
+    "in_scope_terms": [
+      "gia lai",
+      "pleiku",
+      "quy nhon",
+      "binh dinh",
+      "kon tum",
+      "dak lak",
+      "buon ma thuot",
+      "ky co",
+      "eo gio",
+      "bien ho"
+    ],
+    "region_address_aliases": {
+      "binh dinh": [
+        "bình định",
+        "binh dinh",
+        "quy nhơn",
+        "quy nhon",
+        "an nhơn",
+        "an nhon",
+        "tây sơn",
+        "tay son",
+        "hoài nhơn",
+        "hoai nhon",
+        "phù cát",
+        "phu cat",
+        "tam quan",
+        "phương mai",
+        "phuong mai"
+      ],
+      "gia lai": [
+        "gia lai",
+        "gia lai",
+        "pleiku",
+        "an khê",
+        "an khe",
+        "kbang",
+        "đak đoa",
+        "dak doa",
+        "xuân thủy",
+        "xuan thuy"
+      ]
+    },
+    "province_keywords": [
+      "gia lai",
+      "binh dinh",
+      "binh dinh",
+      "kon tum",
+      "dak lak",
+      "dak lak",
+      "phu yen",
+      "phu yen",
+      "quang ngai",
+      "quang ngai",
+      "da nang",
+      "da nang",
+      "ha noi",
+      "ha noi",
+      "ho chi minh",
+      "ho chi minh",
+      "hai phong",
+      "hai phong"
+    ],
+    "district_keywords": [
+      "pleiku",
+      "quy nhon",
+      "quy nhon",
+      "an nhon",
+      "an nhan",
+      "tuy phuoc",
+      "tuy phuoc",
+      "kbang",
+      "kong chro",
+      "dak doa",
+      "chu prong",
+      "chu se",
+      "ia grai",
+      "krong pa",
+      "mang yang",
+      "duc co",
+      "chu puh"
+    ],
+    "ward_keywords": [
+      "phuong",
+      "xa",
+      "thi tran",
+      "phuong",
+      "xa",
+      "thi tran"
+    ]
+  },
+  "mode_signals": {
+    "constraint": [
+      "phu hop",
+      "dap ung",
+      "dieu kien",
+      "lua chon nao",
+      "nha hang nao",
+      "quan nao"
+    ],
+    "filter": [
+      "co mon",
+      "phuc vu mon",
+      "gan",
+      "xung quanh",
+      "lan can"
+    ],
+    "comparison": [
+      "so sanh",
+      " vs ",
+      " voi ",
+      " giua "
+    ],
+    "combine": [
+      "ket hop",
+      "tuyen tham quan",
+      "xay dung tuyen",
+      "lap lich trinh",
+      "kham pha"
+    ],
+    "negative": [
+      "khong co",
+      "khong tim thay",
+      "ngoai du lieu"
+    ],
+    "fact_verification": [
+      "bao gom",
+      "co bao gom",
+      "co dung khong",
+      "dung hay sai",
+      "true or false",
+      "co phai",
+      "co chinh xac khong"
+    ],
+    "transfer_route": [
+      "doc duong",
+      "lo trinh",
+      "tren duong",
+      "ra san bay",
+      "ghe nhanh",
+      "di ngang",
+      "dung chan"
+    ]
+  },
+  "question_particles": [
+    "nào",
+    "gì",
+    "bao",
+    "sao",
+    "thế",
+    "nhỉ",
+    "vậy",
+    "chứ",
+    "à",
+    "nhưng",
+    "nếu",
+    "tuy",
+    "mặc",
+    "bởi",
+    "do"
+  ],
+  "question_bigrams": [
+    "ở đâu",
+    "bao giờ",
+    "bao xa",
+    "bao nhiêu",
+    "như thế nào",
+    "thế nào"
+  ],
+  "tourism_analysis_hints": [
+    "diem du lich",
+    "danh lam",
+    "tam quan trong",
+    "gia tri",
+    "loai hinh",
+    "moi quan he",
+    "khong gian",
+    "phat trien du lich",
+    "tiem nang du lich"
+  ],
+  "real_food_hints": [
+    "nha hang",
+    "quan an",
+    "mon an",
+    "dac san",
+    "am thuc",
+    "an gi",
+    "phuc vu mon"
+  ],
+  "admin_center_hints": [
+    "trung tam hanh chinh",
+    "trung tam tinh",
+    "co so hanh chinh",
+    "co so tinh"
+  ],
+  "location_leakage_hints": [
+    "quy nhon",
+    "pleiku",
+    "ky co",
+    "eo gio",
+    "nhon ly"
+  ],
+  "service_signals": [
+    "co wifi",
+    "wifi mien phi",
+    "cho dau xe",
+    "dau xe",
+    "phong vip",
+    "dua don",
+    "san bay",
+    "mon chay",
+    "thu cung",
+    "ho boi",
+    "gym",
+    "spa",
+    "nha hang",
+    "bar",
+    "khu vuc rieng",
+    "tre em",
+    "co cung cap",
+    "co phuc vu",
+    "co cho phep"
+  ],
+  "analytical_location_hints": [
+    "phan tich",
+    "chien luoc",
+    "tiem nang",
+    "loi the",
+    "moi quan he",
+    "khao sat",
+    "danh gia",
+    "so sanh",
+    "phat trien",
+    "dau tu",
+    "quy hoach",
+    "kinh te"
+  ],
+  "distance_tail_patterns": [
+    "la bao nhieu km",
+    "bao xa",
+    "may km",
+    "km",
+    "mat bao lau",
+    "bao nhieu phut",
+    "phut di xe",
+    "di xe may",
+    "di o to",
+    "di bo"
+  ],
+  "typo_normalization": {
+    "pleyku": "pleiku",
+    "quãng trường": "quảng trường",
+    "quang truong": "quảng trường"
+  },
+  "category_keywords": {
+    "văn hóa tâm linh": [
+      "chùa",
+      "chua",
+      "đền",
+      "den",
+      "miếu",
+      "mieu",
+      "thánh",
+      "thanh",
+      "tâm linh",
+      "tam linh",
+      "văn hóa",
+      "van hoa",
+      "bảo tàng",
+      "bao tang"
+    ],
+    "di tích lịch sử": [
+      "di tích",
+      "di tich",
+      "lịch sử",
+      "lich su",
+      "khảo cổ",
+      "khao co",
+      "quần thể",
+      "quan the",
+      "tây sơn",
+      "tay son"
+    ],
+    "điểm du lịch": [
+      "du lịch",
+      "du lich",
+      "tham quan",
+      "bãi",
+      "bai",
+      "biển",
+      "bien",
+      "thác",
+      "thac",
+      "suối",
+      "suoi"
+    ],
+    "văn hóa": [
+      "văn hóa",
+      "van hoa",
+      "bảo tàng",
+      "bao tang",
+      "làng nghề",
+      "lang nghe",
+      "dệt",
+      "det"
+    ],
+    "loại hình điểm đến": [
+      "loại hình",
+      "loai hinh",
+      "điểm đến",
+      "diem den"
+    ]
+  },
+  "category_aliases": [
+    {
+      "display": "Di tích lịch sử - Văn hóa",
+      "keys": [
+        "di tich lich su",
+        "lich su van hoa"
+      ]
+    },
+    {
+      "display": "Di tích lịch sử",
+      "keys": [
+        "di tich lich su",
+        "lich su van hoa"
+      ]
+    },
+    {
+      "display": "Danh lam thắng cảnh",
+      "keys": [
+        "danh lam thang canh",
+        "danh lam",
+        "danh thang"
+      ]
+    },
+    {
+      "display": "Làng nghề truyền thống",
+      "keys": [
+        "lang nghe truyen thong",
+        "lang nghe"
+      ]
+    }
+  ],
+  "category_markers": [
+    "di tich lich su",
+    "danh lam",
+    "lang nghe truyen thong"
+  ],
+  "classify_keywords": {
+    "heritage": [
+      "bao tang",
+      "di tich",
+      "tham sat",
+      "khao co",
+      "lich su",
+      "di san"
+    ],
+    "spiritual": [
+      "chua",
+      "tinh xa",
+      "nha tho",
+      "tu vien"
+    ],
+    "craft": [
+      "lang nghe",
+      "det",
+      "tho cam",
+      "nhac cu",
+      "dan toc",
+      "clb",
+      "cau lac bo"
+    ],
+    "public_space": [
+      "quang truong",
+      "cong vien",
+      "pho di bo"
+    ],
+    "nature": [
+      "bien",
+      "ho",
+      "thac",
+      "doi",
+      "nui",
+      "suoi",
+      "khu du lich sinh thai"
+    ]
+  },
+  "specific_entity_types": [
+    "restaurant",
+    "accommodation",
+    "touristattraction",
+    "event",
+    "dish",
+    "tour"
+  ],
+  "broad_location_names": [
+    "an khe",
+    "binh dinh",
+    "gia lai",
+    "phuong thong nhat",
+    "pleiku",
+    "quy nhon",
+    "xa vinh thanh"
+  ],
+  "lodging_labels": [
+    "Accommodation",
+    "Hotel",
+    "Homestay",
+    "GuestHouse",
+    "Resort",
+    "Villa"
+  ],
+  "heritage_labels": [
+    "TouristAttraction",
+    "HeritageSite",
+    "HistoricalSite",
+    "ArchaeologicalSite"
+  ],
+  "entity_recovery": {
+    "Kỳ Co": {
+      "canonical_name": "Kỳ Co",
+      "type": "TouristAttraction",
+      "aliases": [
+        "ky co",
+        "bai ky co",
+        "bãi kỳ co",
+        "kico"
+      ]
+    },
+    "Eo Gió": {
+      "canonical_name": "Eo Gió",
+      "type": "TouristAttraction",
+      "aliases": [
+        "eo gio",
+        "eo gio quy nhon",
+        "eogio"
+      ]
+    },
+    "Biển Hồ T'Nưng": {
+      "canonical_name": "Biển Hồ T'Nưng",
+      "type": "TouristAttraction",
+      "aliases": [
+        "bien ho t nung",
+        "bien ho t'nung",
+        "ho t nung",
+        "ho t'nung",
+        "to nung",
+        "t'nung"
+      ]
+    },
+    "Biển Hồ Chè": {
+      "canonical_name": "Biển Hồ Chè",
+      "type": "TouristAttraction",
+      "aliases": [
+        "bien ho che",
+        "ho che"
+      ]
+    },
+    "Biển Hồ": {
+      "canonical_name": "Biển Hồ",
+      "type": "TouristAttraction",
+      "aliases": [
+        "bien ho"
+      ]
+    },
+    "Hòn Khô": {
+      "canonical_name": "Hòn Khô",
+      "type": "TouristAttraction",
+      "aliases": [
+        "hon kho",
+        "dao hon kho",
+        "đảo hòn khô",
+        "bãi hòn khô"
+      ]
+    },
+    "Cù Lao Xanh": {
+      "canonical_name": "Cù Lao Xanh",
+      "type": "TouristAttraction",
+      "aliases": [
+        "cu lao xanh",
+        "đảo cù lao xanh",
+        "dao cu lao xanh",
+        "nhơn châu",
+        "nhon chau"
+      ]
+    },
+    "Ghềnh Ráng": {
+      "canonical_name": "Ghềnh Ráng",
+      "type": "TouristAttraction",
+      "aliases": [
+        "ghenh rang",
+        "ghenh rang tien sa",
+        "ghềnh ráng tiên sa",
+        "khu du lich ghenh rang"
+      ]
+    }
+  },
+  "blacklist": {
+    "greetings": [
+      "xin chào",
+      "chào bạn",
+      "hello",
+      "hi",
+      "chao ban",
+      "xin chao",
+      "chào",
+      "chao"
+    ],
+    "time_constraints": [
+      "nửa ngày",
+      "trong ngày",
+      "ngày đêm",
+      "chuyến đi",
+      "nua ngay",
+      "trong ngay",
+      "ngay dem",
+      "chuyen di",
+      "ngày",
+      "đêm",
+      "ngay",
+      "dem"
+    ],
+    "regex_patterns": [
+      "^xin chào$",
+      "^chào$",
+      "^hello$",
+      "^hi$",
+      "nửa ngày",
+      "trong ngày"
+    ]
+  },
+  "query_operator_patterns": {
+    "tour_availability": [
+      "co tour nao",
+      "co tour",
+      "tour nao",
+      "tour gi",
+      "goi tour nao",
+      "goi tour gi",
+      "ben nao cung cap tour",
+      "hien tai co tour",
+      "co goi tour",
+      "tour nao phu hop",
+      "tour nao hay",
+      "tour nao dep",
+      "tim tour"
+    ],
+    "itinerary_recommendation": [
+      "goi y mot lich trinh",
+      "goi y lich trinh",
+      "hay goi y",
+      "lap lich trinh",
+      "lich trinh nua ngay",
+      "lich trinh ngan",
+      "du khach luu tru",
+      "du khach dang luu tru",
+      "du khach muon luu tru",
+      "tham quan trong ngay",
+      "tour-plan"
+    ],
+    "choice_selection": [
+      "dia diem nao sau day",
+      "dau la",
+      "trong hai",
+      "trong cac lua chon",
+      "phuong an nao",
+      "thuc the nao",
+      "nha hang nao",
+      "quan an nao"
+    ],
+    "comparison": [
+      "so sanh",
+      "khac biet",
+      "tuong dong",
+      "diem giong nhau",
+      "diem khac nhau",
+      "phu hop hon",
+      "lua chon nao tot hon"
+    ],
+    "ticket_price": [
+      "gia ve",
+      "vé vào cổng",
+      "ve vao cong",
+      "phi tham quan",
+      "phí tham quan",
+      "bao nhieu tien",
+      "bao nhiêu tiền",
+      "mat phi khong",
+      "mất phí không",
+      "gia bao nhieu",
+      "giá bao nhiêu",
+      "gia ve vao",
+      "giá vé vào",
+      "ve vao",
+      "vé vào",
+      "gia tham quan",
+      "giá tham quan"
+    ],
+    "global_discovery": [
+      "liet ke",
+      "nhung dia diem nao",
+      "cac diem du lich",
+      "nhung khach san nao",
+      "nhung nha hang nao",
+      "co nhung",
+      "nao noi tieng",
+      "khong the bo qua",
+      "dia danh tu nhien",
+      "dia diem noi tieng",
+      "dia diem nao",
+      "diem du lich nao",
+      "nen di",
+      "nen den",
+      "nen tham quan",
+      "tim hieu ve",
+      "nhung dau"
+    ]
+  },
+  "distance_optimize_hints": [
+    "gan nhau nhat",
+    "gan nhau",
+    "near each other",
+    "nearby",
+    "nearest",
+    "optimize distance",
+    "toi uu lo trinh",
+    "toi uu duong di",
+    "it di chuyen",
+    "do di chuyen",
+    "tiet kiem di chuyen"
+  ],
+  "walking_hints": [
+    "di bo",
+    "đi bộ",
+    "walking",
+    "walk",
+    "đi bo",
+    "đi chân"
+  ],
+  "low_mobility_hints": [
+    "nguoi gia",
+    "người già",
+    "tre em",
+    "trẻ em",
+    "be nho",
+    "bé nhỏ",
+    "dau khop",
+    "đau khớp",
+    "it di bo",
+    "ít đi bộ",
+    "di cham",
+    "đi chậm",
+    "low mobility",
+    "han che van dong",
+    "hạn chế vận động"
+  ],
+  "budget_hints": [
+    "gia re",
+    "giá rẻ",
+    "tiet kiem",
+    "tiết kiệm",
+    "binh dan",
+    "bình dân",
+    "re nhat",
+    "rẻ nhất",
+    "hieu qua chi phi",
+    "hiệu quả chi phí",
+    "it ton kem",
+    "ít tốn kém"
+  ],
+  "sunset_route_terms": [
+    "hoang hon",
+    "eo gio",
+    "ky co",
+    "bien"
+  ],
+  "island_route_terms": [
+    "cu lao xanh",
+    "hon kho",
+    "ky co",
+    "dao"
+  ],
+  "constraint_terms": {
+    "beach": [
+      "bien",
+      "bai bien"
+    ],
+    "fishing_village": [
+      "lang chai"
+    ],
+    "landmark": [
+      "danh thang",
+      "danh lam",
+      "di tich",
+      "van hoa",
+      "cham pa",
+      "thap",
+      "co thanh"
+    ],
+    "science": [
+      "khoa hoc",
+      "khong gian khoa hoc"
+    ],
+    "food": [
+      "mon an",
+      "am thuc",
+      "dac san",
+      "nha hang",
+      "quan an"
+    ],
+    "accommodation": [
+      "khach san",
+      "nha nghi",
+      "resort",
+      "homestay",
+      "luu tru"
+    ]
+  },
+  "non_groundable_generic_phrases": [
+    "mon an dac san",
+    "mon dac san",
+    "dac san",
+    "am thuc",
+    "dia diem du lich",
+    "diem du lich",
+    "dia diem tham quan",
+    "diem tham quan",
+    "nha hang",
+    "quan an",
+    "le hoi",
+    "su kien",
+    "khach san",
+    "nha nghi",
+    "mon an",
+    "mon ngon",
+    "dac san dia phuong",
+    "cac khach san nao",
+    "cac khach san",
+    "nhung khach san",
+    "cac nha nghi",
+    "nhung nha nghi",
+    "cac homestay",
+    "cac resort",
+    "nhung homestay",
+    "nhung resort",
+    "cac dia diem",
+    "nhung dia diem",
+    "cac nha hang",
+    "nhung nha hang",
+    "cac quan an",
+    "nhung quan an",
+    "cac tour",
+    "nhung tour",
+    "tour nao",
+    "tour gi",
+    "le hoi nao"
+  ],
+  "non_groundable_starts": [
+    "goi y mot lich trinh",
+    "goi y lich trinh",
+    "mot du khach luu tru",
+    "mot du khach muon luu tru",
+    "dia diem nao sau day",
+    "trong hai dia diem sau",
+    "trong hai thuc the sau",
+    "nha hang nao trong",
+    "quan an nao trong",
+    "so sanh cac",
+    "dua tren du lieu"
+  ],
+  "constrained_nearby_patterns": [
+    "(?:khach san|nha nghi|homestay|resort)\\s+(?:nao|nào).*?\\bgan\\b.*?\\bco\\b",
+    "(?:khach san|nha nghi|homestay|resort).*?\\bgan\\b.*?(?:dia diem|diem).*?\\bco\\b",
+    "tour\\s+(?:nao|nào).*?\\b(?:di qua|qua)\\b.*?\\bco\\b",
+    "dia diem\\s+(?:nao|nào).*?\\bgan\\b.*?\\bco\\b"
+  ]
+}

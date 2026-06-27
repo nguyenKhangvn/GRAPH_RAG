@@ -1,0 +1,565 @@
+[
+  {
+    "id": "le-cau-mua-cua-yang-potao-apui",
+    "name": "Lễ cầu mưa của người Jrai – Yang Pơtao Apui",
+    "category": "Lễ hội văn hóa tín ngưỡng",
+    "address": "Xã Phú Thiện",
+    "month": 3,
+    "activity": [
+      "Nghi lễ cầu mưa với gươm thần",
+      "Trình diễn cồng chiêng",
+      "Âm nhạc dân tộc"
+    ],
+    "specific_venues": [
+      {
+        "id": "khu-di-tich-plei-oi",
+        "name": "Khu di tích Plei Ơi",
+        "address": "Làng Plei Ơi, xã Ayun Hạ, huyện Phú Thiện",
+        "latitude": 13.6425,
+        "longitude": 108.2486
+      }
+    ],
+    "year": null,
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "hoi-dua-thuyen-doc-moc-tren-song-po-co2",
+    "name": "Hội đua thuyền Độc Mộc trên sông Pô Cô",
+    "category": "Lễ hội văn hóa",
+    "address": "Xã Ia O",
+    "month": 11,
+    "activity": [
+      "Đua thuyền độc mộc",
+      "Văn nghệ dân tộc",
+      "Gian hàng ẩm thực",
+      "Trao giải Cúp A Sanh"
+    ],
+    "specific_venues": [
+      {
+        "id": "bai-boi-lang-dang-song-po-co",
+        "name": "Bãi bồi làng Dăng (Sông Pô Cô)",
+        "address": "Làng Dăng, Xã Ia O",
+        "latitude": 13.9833,
+        "longitude": 107.6333
+      }
+    ],
+    "year": null,
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "le-hoi-xuan-pleiku",
+    "name": "Lễ hội Xuân Pleiku",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường Pleiku",
+    "month": 1,
+    "activity": [
+      "Trình diễn cồng chiêng Tây Nguyên",
+      "Múa khèn người Mông",
+      "Múa xòe, hát giao duyên",
+      "Trò chơi dân gian"
+    ],
+    "description": "Lễ hội Xuân ở Pleiku bao gồm các hoạt động văn hoá, văn nghệ, thể thao và ẩm thực...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250626/2_d3cf1.jpg",
+    "specific_venues": [
+      {
+        "id": "quang-truong-dai-doan-ket",
+        "name": "Quảng trường Đại Đoàn Kết",
+        "address": "Phường Tây Sơn, Thành phố Pleiku",
+        "latitude": 13.9786,
+        "longitude": 108.0028
+      }
+    ],
+    "year": null,
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "le-hoi-hoa-da-quy-nui-lua-chu-dang-ya",
+    "name": "Lễ hội hoa dã quỳ núi lửa Chư Đăng Ya",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Xã Biển Hồ",
+    "month": 11,
+    "activity": [
+      "Ngắm hoa dã quỳ",
+      "Giao lưu cồng chiêng",
+      "Dệt thổ cẩm",
+      "Thưởng thức rượu cần"
+    ],
+    "specific_venues": [
+      {
+        "id": "nui-lua-chu-dang-ya",
+        "name": "Núi lửa Chư Đăng Ya",
+        "address": "Xã Biển Hồ",
+        "latitude": 14.128,
+        "longitude": 108.047
+      }
+    ],
+    "year": null,
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "festival-van-hoa-cong-chieng-tay-nguyen",
+    "name": "Festival Văn hóa Cồng chiêng Tây Nguyên",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường Pleiku",
+    "month": 3,
+    "activity": [
+      "Trình diễn cồng chiêng",
+      "Tái hiện nghi lễ truyền thống",
+      "Giao lưu văn hóa quốc tế"
+    ],
+    "description": "Dịp tôn vinh và gìn giữ Không gian Văn hóa Cồng chiêng Tây Nguyên - di sản UNESCO...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250626/le-hoi-o-gia-lai-1_0fd90.jpg",
+    "specific_venues": [
+      {
+        "id": "quang-truong-dai-doan-ket",
+        "name": "Quảng trường Đại Đoàn Kết",
+        "address": "Phường Tây Sơn, Thành phố Pleiku",
+        "latitude": 13.9786,
+        "longitude": 108.0028
+      }
+    ],
+    "year": null,
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "le-ky-niem-chien-thang-ngoc-hoi-dong-da",
+    "name": "Lễ kỷ niệm chiến thắng Ngọc Hồi Đống Đa",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường An Khê",
+    "month": 1,
+    "activity": [
+      "Rước kiệu",
+      "Dâng hương",
+      "Trống trận Tây Sơn"
+    ],
+    "description": "Kỷ niệm chiến thắng Ngọc Hồi - Đống Đa và hành trình khởi nghĩa Tây Sơn...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250626/le-hoi-o-gia-lai-4_afc3f.jpg",
+    "specific_venues": [
+      {
+        "id": "di-tich-an-khe-truong",
+        "name": "Di tích An Khê Trường",
+        "address": "Phường An Khê",
+        "latitude": 13.9535,
+        "longitude": 108.6588
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Bình Định Nội Địa",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_inland"
+  },
+  {
+    "id": "le-hoi-dong-da-tay-son",
+    "name": "Lễ hội Đống Đa - Tây Sơn",
+    "category": "Lễ hội lịch sử",
+    "address": "Xã Tây Sơn",
+    "month": 1,
+    "activity": [
+      "Biểu diễn võ thuật Tây Sơn",
+      "Nhạc võ Tây Sơn",
+      "Thao diễn trận pháp"
+    ],
+    "description": "Lễ hội tưởng nhớ công tích phong trào Tây Sơn và chiến thắng Ngọc Hồi – Đống Đa...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250508/IMG_2711_ccf05.jpeg",
+    "specific_venues": [
+      {
+        "id": "bao-tang-quang-trung",
+        "name": "Bảo tàng Quang Trung",
+        "address": "Xã Tây Sơn",
+        "latitude": 13.9367,
+        "longitude": 108.9056
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Bình Định Nội Địa",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_inland"
+  },
+  {
+    "id": "le-hoi-do-thi-nuoc-man",
+    "name": "Lễ hội Chùa Bà - Cảng thị Nước Mặn",
+    "category": "Lễ hội lịch sử",
+    "address": "Thôn An Hòa, Xã Tuy Phước Bắc",
+    "month": 2,
+    "activity": [
+      "Lễ cúng Thiên Hậu Thánh mẫu",
+      "Thắp đèn lồng",
+      "Hoạt động văn hóa"
+    ],
+    "description": "Hoài niệm về cảng thị Nước Mặn và biểu tượng giao hữu văn hóa Việt - Hoa...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250508/933679017682c4dc9d93_0203a.jpg",
+    "specific_venues": [
+      {
+        "id": "chua-ba-nuoc-man",
+        "name": "Chùa Bà Nước Mặn",
+        "address": "Thôn An Hòa, Xã Tuy Phước Bắc",
+        "latitude": 13.8206,
+        "longitude": 109.1667
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "le-hoi-cau-ngu-binh-dinh",
+    "name": "Lễ hội cầu ngư ở Bình Định",
+    "category": "Lễ hội văn hóa tín ngưỡng",
+    "address": "Thành phố Quy Nhơn, Bình Định",
+    "month": 1,
+    "activity": [
+      "Lễ nghinh rước hồn cá Ông",
+      "Múa hát bả trạo",
+      "Đua thuyền"
+    ],
+    "description": "Nét đẹp văn hóa tín ngưỡng ngư dân, cầu mong trời yên bể lặng...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20250508/IMG_4193_97646.jpeg",
+    "specific_venues": [
+      {
+        "id": "lang-ong-nam-hai-quy-nhon",
+        "name": "Lăng Ông Nam Hải (Quy Nhơn)",
+        "address": "Phường Trần Phú, TP. Quy Nhơn, Bình Định",
+        "latitude": 13.7733,
+        "longitude": 109.2238
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "le-hoi-lang-ren-tay-phuong-danh",
+    "name": "Lễ hội làng rèn Tây Phương Danh",
+    "category": "Lễ hội văn hóa",
+    "address": "Phường An Nhơn",
+    "month": 2,
+    "activity": [
+      "Lễ dâng hương tổ sư nghề rèn",
+      "Hát bộ truyền thống",
+      "Đập ấm, kéo co"
+    ],
+    "description": "Nhớ ơn tổ sư nghề rèn Đào Giã Tượng và các bậc tiền hiền...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/fck/adminbinhdinh/bd%20(1).jpg",
+    "specific_venues": [
+      {
+        "id": "lang-ren-tay-phuong-danh",
+        "name": "Làng rèn Tây Phương Danh",
+        "address": "Thị trấn Đập Đá, huyện An Nhơn, Bình Định",
+        "latitude": 13.8647,
+        "longitude": 109.0982
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "le-hoi-do-gian-an-thai",
+    "name": "Lễ hội đổ giàn An Thái",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Phường Bình Định",
+    "month": 7,
+    "activity": [
+      "Thi đổ giàn tranh heo quay",
+      "Hát bội",
+      "Múa lân",
+      "Biểu diễn võ thuật",
+      "Ẩm thực truyền thống"
+    ],
+    "description": "Lễ hội đổ giàn An Thái là lễ hội văn hóa dân gian đặc sắc của Bình Định, diễn ra hàng năm vào tháng 7 tại Phường Bình Định. Lễ hội tái hiện truyền thống võ thuật và văn hóa của miền đất võ, với các hoạt động thi đổ giàn tranh heo quay, hát bội, múa lân và biểu diễn võ thuật. Đây là dịp để du khách trải nghiệm nét văn hóa truyền thống đặc trưng của Bình Định.",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20211201/le-hoi-do-thi-nuoc-man-binh-dinh-quynhontourist_10086.jpg",
+    "specific_venues": [
+      {
+        "id": "chua-ngu-bang-hoi-quan",
+        "name": "Chùa Ngũ Bang Hội Quán",
+        "address": "An Thái, Phường Bình Định",
+        "latitude": 13.8821,
+        "longitude": 109.0435
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "le-hoi-dam-trau-mung-nha-rong",
+    "name": "Lễ hội đâm trâu mừng nhà rông mới",
+    "category": "Lễ hội văn hóa dân gian",
+    "address": "Xã Vĩnh Sơn",
+    "month": 1,
+    "activity": [
+      "Đưa trâu vào gưng",
+      "Hát múa quanh con trâu",
+      "Nghi thức đâm trâu"
+    ],
+    "description": "Nghi thức truyền thống của đồng bào Ba Na ăn mừng khánh thành nhà rông...",
+    "image": "https://gialai.gov.vn/publish/thumbnail/2005340/480x270xdefault/upload/2005340/20211201/grab6f164image026_1_.jpg",
+    "specific_venues": [
+      {
+        "id": "lang-k8",
+        "name": "Làng K8",
+        "address": "Xã Vĩnh Sơn, Huyện Vĩnh Thạnh, Bình Định",
+        "latitude": 14.3315,
+        "longitude": 108.7758
+      }
+    ],
+    "year": null,
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "le-hoi-xuan-cho-go",
+    "name": "Lễ hội Xuân chợ Gò",
+    "category": "Lễ hội văn hóa",
+    "address": "Xã Tuy Phước",
+    "month": 1,
+    "activity": [
+      "Mua bán trầu cau cầu lộc",
+      "Hô bài chòi",
+      "Đánh cờ người"
+    ],
+    "specific_venues": [
+      {
+        "id": "cho-go-truong-uc",
+        "name": "Chợ Gò (Trường Úc)",
+        "address": "Xã Tuy Phước",
+        "latitude": 13.8054,
+        "longitude": 109.1557
+      }
+    ],
+    "year": null,
+    "province": "Bình Định",
+    "region": "Bình Định Bắc",
+    "legacy_province": "Bình Định",
+    "region_focus": "binh_dinh_north"
+  },
+  {
+    "id": "le-hoi-du-lich-he-binh-dinh-2025",
+    "name": "Lễ hội Du lịch Hè Bình Định 2025",
+    "category": "Lễ hội Du lịch",
+    "address": "Thành phố Quy Nhơn",
+    "month": 6,
+    "year": 2025,
+    "activity": [
+      "Trình diễn văn hóa, nghệ thuật",
+      "Ẩm thực đường phố",
+      "Giải thể thao biển",
+      "Diễu hành carnival",
+      "Lễ khai mạc với chủ đề 'Quy Nhơn - Thiên đường biển'",
+      "Các hoạt động trải nghiệm du lịch biển"
+    ],
+    "description": "Lễ hội Du lịch Hè Bình Định 2025 với chủ đề 'Quy Nhơn - Thiên đường biển - Khát vọng vươn xa', khai mạc ngày 13/6/2025 tại bãi biển Quy Nhơn. Sự kiện mở đầu mùa du lịch hè với chuỗi hoạt động văn hóa, nghệ thuật, ẩm thực đường phố và các giải thể thao biển hấp dẫn. Đây là dịp lý tưởng để du khách khám phá vẻ đẹp biển Quy Nhơn và thưởng thức đặc sản Bình Định.",
+    "image": "",
+    "specific_venues": [
+      {
+        "id": "bien-quy-nhon",
+        "name": "Bãi biển Quy Nhơn",
+        "address": "Bãi biển Quy Nhơn, Phường Nguyễn Văn Cừ",
+        "latitude": 13.7656,
+        "longitude": 109.2235
+      }
+    ],
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "le-hoi-tinh-hoa-dai-ngan-2025",
+    "name": "Lễ hội Tinh hoa Đại ngàn - Biển xanh hội tụ 2025",
+    "category": "Lễ hội Văn hóa - Du lịch",
+    "address": "Thành phố Quy Nhơn",
+    "month": 9,
+    "year": 2025,
+    "activity": [
+      "Chuỗi sự kiện giải trí",
+      "Văn hóa, du lịch",
+      "Ẩm thực đặc sắc",
+      "Triển lãm ảnh",
+      "Diễu hành nghệ thuật",
+      "Biểu diễn âm nhạc"
+    ],
+    "description": "Lễ hội 'Tinh hoa Đại ngàn - Biển xanh hội tụ' năm 2025 diễn ra từ 29/8 đến 2/9 tại Quảng trường Quy Nhơn, chào mừng kỷ niệm 80 năm Quốc khánh. Sự kiện quy tụ chuỗi hoạt động văn hóa, du lịch, giải trí và ẩm thực đặc sắc, giới thiệu tinh hoa văn hóa Tây Nguyên và biển cả. Du khách có thể thưởng thức triển lãm ảnh, diễu hành nghệ thuật và biểu diễn âm nhạc đặc sắc.",
+    "image": "",
+    "specific_venues": [
+      {
+        "id": "quang-truong-quy-nhon",
+        "name": "Quảng trường Quy Nhơn",
+        "address": "Quảng trường Quy Nhơn, Phường Lê Lợi",
+        "latitude": 13.7681,
+        "longitude": 109.2285
+      }
+    ],
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "gia-lai-city-trail-2025",
+    "name": "Gia Lai City Trail – Giấc Mơ Đại Ngàn 2025",
+    "category": "Giải chạy địa hình",
+    "address": "Xã Biển Hồ, thành phố Pleiku",
+    "month": 11,
+    "year": 2025,
+    "activity": [
+      "Chạy trail cự ly 5km",
+      "Chạy trail cự ly 10km",
+      "Chạy trail cự ly 21km",
+      "Chạy trail cự ly 42km",
+      "Khám phá hàng thông trăm tuổi",
+      "Chạy qua đồi chè cổ Biển Hồ",
+      "Trải nghiệm cánh đồng Ngô Sơn",
+      "Chinh phục núi lửa Chư Đăng Ya"
+    ],
+    "description": "Gia Lai City Trail – Giấc Mơ Đại Ngàn 2025 là giải chạy bộ có quy mô lớn nhất nhằm khám phá các danh thắng nổi tiếng tại tỉnh Gia Lai. Giải diễn ra từ ngày 31/10 đến 02/11/2025. Ngày 31/10 - 01/11 mở cổng phát số báo danh (BIB), áo đấu và vật phẩm. Ngày chạy chính thức 02/11/2025, xuất phát từ 03:00 sáng đến 13:00. Xuất phát và về đích tại Cổng chính Khu di tích Thắng cảnh Biển Hồ (đường Tôn Đức Thắng, xã Biển Hồ, TP Pleiku). Gồm 4 cự ly: 5km, 10km, 21km, 42km. Đường chạy kết hợp road và trail, chạy xuyên qua hàng thông trăm tuổi, đồi chè cổ Biển Hồ, cánh đồng Ngô Sơn và núi lửa Chư Đăng Ya vào mùa hoa dã quỳ nở rộ.",
+    "image": "",
+    "specific_venues": [
+      {
+        "id": "khu-di-tich-thang-canh-bien-ho",
+        "name": "Khu di tích Thắng cảnh Biển Hồ",
+        "address": "Đường Tôn Đức Thắng, xã Biển Hồ, thành phố Pleiku",
+        "latitude": 13.9833,
+        "longitude": 107.9833
+      }
+    ],
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "chu-nam-legend-trail-2025",
+    "name": "Chư Nâm Legend Trail 2025",
+    "category": "Giải chạy địa hình",
+    "address": "Huyện Chư Păh",
+    "month": 8,
+    "year": 2025,
+    "activity": [
+      "Chạy trail khám phá núi Chư Nâm",
+      "Trải nghiệm đường mòn rừng Tây Nguyên"
+    ],
+    "description": "Chư Nâm Legend Trail 2025 là giải chạy địa hình tổ chức vào ngày 15-16/08/2025 tại khu vực núi Chư Nâm, huyện Chư Păh, tỉnh Gia Lai. Giải chạy khám phá cung đường trail qua vùng núi Chư Nâm với phong cảnh thiên nhiên Tây Nguyên hùng vĩ.",
+    "image": "",
+    "specific_venues": [
+      {
+        "id": "nui-chu-nam",
+        "name": "Núi Chư Nâm",
+        "address": "Huyện Chư Păh, tỉnh Gia Lai",
+        "latitude": 14.2167,
+        "longitude": 108.0167
+      }
+    ],
+    "province": "Gia Lai",
+    "region": "Pleiku",
+    "legacy_province": "Gia Lai",
+    "region_focus": "gia_lai_inland"
+  },
+  {
+    "id": "le-hoi-tinh-hoa-dai-ngan-2025",
+    "name": "Lễ hội Tinh hoa Đại ngàn – Biển xanh hội tụ 2025",
+    "category": "Lễ hội văn hóa - du lịch",
+    "address": "Thành phố Quy Nhơn",
+    "month": 8,
+    "year": 2025,
+    "activity": [
+      "Thưởng thức 5.000 suất cá ngừ đại dương miễn phí",
+      "Buffet cá ngừ đại dương do đầu bếp quốc tế chế biến",
+      "100+ gian hàng ẩm thực 'Món ngon từ đất Bazan và Biển'",
+      "Trình diễn cồng chiêng Tây Nguyên và nhạc cụ dân tộc",
+      "Giao lưu dệt thổ cẩm, nghệ thuật Tuồng, Bài Chòi",
+      "Múa võ cổ truyền Bình Định",
+      "Diễu hành xe hoa 'Sắc màu biển cả'",
+      "Xiếc đường phố, nghệ sĩ đi cà kheo",
+      "Lễ hội ánh sáng và trình diễn drone",
+      "Pháo hoa tầm thấp"
+    ],
+    "description": "Lễ hội đánh dấu bước ngoặt lịch sử khi hai vùng đất Gia Lai và Bình Định hợp nhất thành tỉnh Gia Lai mới. Chủ đề 'Khát vọng Biển xanh – Đại ngàn tỏa sáng', diễn ra 5 ngày từ 29/08 đến 02/09 tại Quy Nhơn. Điểm đặc biệt: giao thoa văn hóa Đông – Tây (cồng chiêng Tây Nguyên + biển duyên hải), sân khấu thực cảnh với công nghệ drone và pháo hoa, bánh mì cá ngừ dài 6m, tiệc buffet cá ngừ miễn phí. Địa điểm chính: Quảng trường Nguyễn Tất Thành, Công viên Thiếu nhi, Quảng trường Chiến thắng, đường Xuân Diệu.",
+    "image": "",
+    "specific_venues": [
+      {
+        "id": "quang-truong-nguyen-tat-thanh",
+        "name": "Quảng trường Nguyễn Tất Thành",
+        "address": "Thành phố Quy Nhơn, Bình Định",
+        "latitude": 13.7715,
+        "longitude": 109.2235
+      },
+      {
+        "id": "cong-vien-thieu-nhi",
+        "name": "Công viên Thiếu nhi",
+        "address": "Cạnh Quảng trường Nguyễn Tất Thành, Quy Nhơn",
+        "latitude": 13.772,
+        "longitude": 109.224
+      },
+      {
+        "id": "quang-truong-chien-thang",
+        "name": "Quảng trường Chiến thắng",
+        "address": "Đường Xuân Diệu, Quy Nhơn",
+        "latitude": 13.77,
+        "longitude": 109.225
+      }
+    ],
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  },
+  {
+    "id": "vnexpress-marathon-quy-nhon-2025",
+    "name": "Giải Marathon VnExpress Quy Nhơn 2025",
+    "category": "Giải chạy marathon",
+    "address": "Thành phố Quy Nhơn",
+    "month": 6,
+    "year": 2025,
+    "activity": [
+      "Chạy marathon cự ly 42km",
+      "Chạy half-marathon 21km",
+      "Chạy 10km",
+      "Chạy 5km",
+      "Chạy qua cầu vượt biển Thị Nại",
+      "Ngắm bình minh trên biển"
+    ],
+    "description": "Giải Marathon VnExpress Quy Nhơn là giải chạy marathon thường niên lớn nhất tại Bình Định, thu hút hàng vạn vận động viên trong nước và quốc tế. Đường chạy nổi tiếng đi qua cầu vượt biển Thị Nại - cầu vượt biển dài nhất Việt Nam (2.477m). Giải gồm 4 cự ly: 42km, 21km, 10km, 5km, phù hợp cả runner chuyên nghiệp và người mới bắt đầu. Thời gian tổ chức thường vào tháng 6, kết hợp với mùa du lịch hè Quy Nhơn.",
+    "image": "",
+    "specific_venues": [
+      {
+        "id": "cau-thi-nai",
+        "name": "Cầu Thị Nại",
+        "address": "Cầu Thị Nại, nối TP. Quy Nhơn và Khu kinh tế Nhơn Hội",
+        "latitude": 13.8335,
+        "longitude": 109.2404
+      }
+    ],
+    "province": "Bình Định",
+    "region": "Quy Nhơn",
+    "legacy_province": "Bình Định",
+    "region_focus": "coastal_quy_nhon"
+  }
+]

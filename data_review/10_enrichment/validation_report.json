@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-10T20:04:46Z",
+  "sources": {
+    "restaurant": {
+      "google": {
+        "total": 132,
+        "valid": 132,
+        "issues": 0
+      },
+      "serpapi": {
+        "total": 132,
+        "valid": 132,
+        "issues": 0
+      },
+      "ai_mode": {
+        "total": 20
+      }
+    },
+    "accommodation": {
+      "google": {
+        "total": 361,
+        "valid": 361,
+        "issues": 0
+      },
+      "serpapi": {
+        "total": 361,
+        "valid": 361,
+        "issues": 0
+      },
+      "ai_mode": {
+        "total": 261
+      }
+    },
+    "attraction": {
+      "google": {
+        "total": 198,
+        "valid": 198,
+        "issues": 0
+      },
+      "serpapi": {
+        "total": 198,
+        "valid": 198,
+        "issues": 0
+      },
+      "ai_mode": {
+        "total": 0
+      }
+    }
+  },
+  "cross_validation": {
+    "restaurant": {
+      "total": 132,
+      "google_rating": 0,
+      "serpapi_rating": 121,
+      "ai_mode_rating": 0,
+      "enriched_rating": 121,
+      "enriched_hours": 98,
+      "enriched_phone": 0,
+      "enriched_email": 0,
+      "cross_validation_issues": 0,
+      "cross_validation_details": []
+    },
+    "accommodation": {
+      "total": 361,
+      "google_rating": 0,
+      "serpapi_rating": 235,
+      "ai_mode_rating": 53,
+      "enriched_rating": 254,
+      "enriched_hours": 7,
+      "enriched_phone": 46,
+      "enriched_email": 9,
+      "cross_validation_issues": 0,
+      "cross_validation_details": []
+    },
+    "attraction": {
+      "total": 198,
+      "google_rating": 0,
+      "serpapi_rating": 0,
+      "ai_mode_rating": 0,
+      "enriched_rating": 0,
+      "enriched_hours": 0,
+      "enriched_phone": 0,
+      "enriched_email": 0,
+      "cross_validation_issues": 0,
+      "cross_validation_details": []
+    }
+  }
+}

@@ -1,0 +1,1708 @@
+{
+  "_metadata": {
+    "version": "2.0.0",
+    "source": "admin_mapping_old_to_new_10_25.xlsx",
+    "admin_structure": "2 levels: Province -> Ward (post-2025 merger)"
+  },
+  "provinces": {
+    "ha_noi": {
+      "display_name": "TP. Hà Nội",
+      "aliases": [
+        "Ha Noi",
+        "Hà Nội",
+        "Hanoi",
+        "Thủ đô Hà Nội"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "urban",
+      "bounding_box": {
+        "lat_min": 20.8,
+        "lat_max": 21.2,
+        "lng_min": 105.5,
+        "lng_max": 106.0
+      },
+      "keywords": [
+        "ha noi",
+        "hanoi",
+        "ho chi minh mau",
+        "ho guom",
+        "van mieu",
+        "pho co",
+        "ba dinh",
+        "hoan kiem",
+        "dong da",
+        "hai ba trung",
+        "thanh xuan",
+        "cau giay",
+        "long bien",
+        "ha dong",
+        "tay ho"
+      ],
+      "ward_count": 126,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "ho_chi_minh": {
+      "display_name": "TP. Hồ Chí Minh",
+      "aliases": [
+        "Ho Chi Minh",
+        "TP HCM",
+        "Sai Gon",
+        "TP. Hồ Chí Minh",
+        "Thành phố Hồ Chí Minh"
+      ],
+      "region_group": "dong_nam_bo",
+      "region_focus": "urban",
+      "bounding_box": {
+        "lat_min": 10.5,
+        "lat_max": 11.0,
+        "lng_min": 106.3,
+        "lng_max": 107.0
+      },
+      "keywords": [
+        "ho chi minh",
+        "sai gon",
+        "tp hcm",
+        "ben thanh",
+        "nha tho duc ba",
+        "cu chi",
+        "binh thanh",
+        "quận 1",
+        "quận 3",
+        "thu duc",
+        "go vap",
+        "tan binh"
+      ],
+      "ward_count": 168,
+      "merged_from": [
+        "ba_ria-vung_tau",
+        "binh_duong"
+      ],
+      "admin_status": "current"
+    },
+    "hai_phong": {
+      "display_name": "TP. Hải Phòng",
+      "aliases": [
+        "Hai Phong",
+        "Hải Phòng",
+        "Thành phố Hải Phòng"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 20.6,
+        "lat_max": 21.1,
+        "lng_min": 106.5,
+        "lng_max": 107.1
+      },
+      "keywords": [
+        "hai phong",
+        "do son",
+        "cat ba",
+        "ha long lan can"
+      ],
+      "ward_count": 114,
+      "merged_from": [
+        "hai_duong"
+      ],
+      "admin_status": "current"
+    },
+    "da_nang": {
+      "display_name": "TP. Đà Nẵng",
+      "aliases": [
+        "Da Nang",
+        "Đà Nẵng",
+        "Da Nang City",
+        "TP. Đà Nẵng",
+        "TP Đà Nẵng"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 15.9,
+        "lat_max": 16.2,
+        "lng_min": 108.1,
+        "lng_max": 108.3
+      },
+      "keywords": [
+        "da nang",
+        "my khe",
+        "ba na",
+        "son tra",
+        "ngu hanh son",
+        "hai van",
+        "hoi an",
+        "marble mountain",
+        "non nuoc",
+        "thanh khe",
+        "hai chau",
+        "lien chieu",
+        "cam le",
+        "hoa vang"
+      ],
+      "ward_count": 56,
+      "merged_from": [
+        "quang_nam"
+      ],
+      "admin_status": "current"
+    },
+    "can_tho": {
+      "display_name": "TP. Cần Thơ",
+      "aliases": [
+        "Can Tho",
+        "Cần Thơ",
+        "Thành phố Cần Thơ"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "urban",
+      "bounding_box": {
+        "lat_min": 9.9,
+        "lat_max": 10.4,
+        "lng_min": 105.3,
+        "lng_max": 105.9
+      },
+      "keywords": [
+        "can tho",
+        "cai rang",
+        "ninh kieu",
+        "floating market"
+      ],
+      "ward_count": 103,
+      "merged_from": [
+        "hau_giang",
+        "soc_trang"
+      ],
+      "admin_status": "current"
+    },
+    "an_giang": {
+      "display_name": "An Giang",
+      "aliases": [
+        "An Giang",
+        "Tỉnh An Giang"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "bounding_box": {
+        "lat_min": 10.2,
+        "lat_max": 11.0,
+        "lng_min": 104.8,
+        "lng_max": 105.5
+      },
+      "keywords": [
+        "an giang",
+        "chau doc",
+        "sam mountain",
+        "tra su"
+      ],
+      "ward_count": 102,
+      "merged_from": [
+        "kien_giang"
+      ],
+      "admin_status": "current"
+    },
+    "bac_ninh": {
+      "display_name": "Bắc Ninh",
+      "aliases": [
+        "Bac Ninh",
+        "Bắc Ninh",
+        "Tỉnh Bắc Ninh"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "bounding_box": {
+        "lat_min": 21.0,
+        "lat_max": 21.3,
+        "lng_min": 105.9,
+        "lng_max": 106.4
+      },
+      "keywords": [
+        "bac ninh",
+        "dinh bang",
+        "but thap",
+        "quan ho"
+      ],
+      "ward_count": 99,
+      "merged_from": [
+        "bac_giang"
+      ],
+      "admin_status": "current"
+    },
+    "ca_mau": {
+      "display_name": "Cà Mau",
+      "aliases": [
+        "Ca Mau",
+        "Cà Mau",
+        "Tỉnh Cà Mau"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 8.3,
+        "lat_max": 9.3,
+        "lng_min": 104.5,
+        "lng_max": 105.5
+      },
+      "keywords": [
+        "ca mau",
+        "mui ca mau",
+        "dat mui",
+        "u minh"
+      ],
+      "ward_count": 64,
+      "merged_from": [
+        "bac_lieu"
+      ],
+      "admin_status": "current"
+    },
+    "cao_bang": {
+      "display_name": "Cao Bằng",
+      "aliases": [
+        "Cao Bang",
+        "Cao Bằng",
+        "Tỉnh Cao Bằng"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 22.3,
+        "lat_max": 23.1,
+        "lng_min": 105.3,
+        "lng_max": 107.0
+      },
+      "keywords": [
+        "cao bang",
+        "ban gioc",
+        "nguom ngao",
+        "pac bo"
+      ],
+      "ward_count": 56,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "dak_lak": {
+      "display_name": "Đắk Lắk",
+      "aliases": [
+        "Đắk Lắk"
+      ],
+      "region_group": "tay_nguyen",
+      "region_focus": "highland",
+      "bounding_box": {},
+      "keywords": [
+        "dak lak",
+        "buon ma thuot",
+        "lak lake",
+        "dray nur",
+        "yok don",
+        "ban don"
+      ],
+      "ward_count": 102,
+      "merged_from": [
+        "phu_yen"
+      ],
+      "admin_status": "current"
+    },
+    "dien_bien": {
+      "display_name": "Điện Biên",
+      "aliases": [
+        "Điện Biên"
+      ],
+      "region_group": "tay_bac",
+      "region_focus": "highland",
+      "bounding_box": {},
+      "keywords": [
+        "dien bien",
+        "dien bien phu",
+        "muong lay",
+        "pa khoang"
+      ],
+      "ward_count": 45,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "dong_nai": {
+      "display_name": "Đồng Nai",
+      "aliases": [
+        "Đồng Nai"
+      ],
+      "region_group": "dong_nam_bo",
+      "region_focus": "coastal",
+      "bounding_box": {},
+      "keywords": [
+        "dong nai",
+        "bien hoa",
+        "vinh cuu",
+        "trang bom",
+        "long thanh",
+        "cat tien"
+      ],
+      "ward_count": 95,
+      "merged_from": [
+        "binh_phuoc"
+      ],
+      "admin_status": "current"
+    },
+    "dong_thap": {
+      "display_name": "Đồng Tháp",
+      "aliases": [
+        "Đồng Tháp"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "coastal",
+      "bounding_box": {},
+      "keywords": [
+        "dong thap",
+        "sa dec",
+        "cao lanh",
+        "tram chim",
+        "huynh thuy le",
+        "lap vo"
+      ],
+      "ward_count": 102,
+      "merged_from": [
+        "tien_giang"
+      ],
+      "admin_status": "current"
+    },
+    "gia_lai": {
+      "display_name": "Gia Lai",
+      "aliases": [
+        "Gia Lai",
+        "Tỉnh Gia Lai",
+        "Gia Lai Province"
+      ],
+      "region_group": "tay_nguyen",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 13.5,
+        "lat_max": 14.8,
+        "lng_min": 107.5,
+        "lng_max": 108.5
+      },
+      "keywords": [
+        "pleiku",
+        "gia lai",
+        "chu se",
+        "ia grai",
+        "duc co",
+        "tay nguyen",
+        "bien ho",
+        "an khe",
+        "kbang",
+        "chu pah",
+        "dak doa",
+        "phu thien",
+        "kong chro",
+        "ayun pa",
+        "dak po"
+      ],
+      "ward_count": 135,
+      "merged_from": [
+        "binh_dinh"
+      ],
+      "admin_status": "current"
+    },
+    "ha_tinh": {
+      "display_name": "Hà Tĩnh",
+      "aliases": [
+        "Ha Tinh",
+        "Hà Tĩnh",
+        "Tỉnh Hà Tĩnh"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 18.0,
+        "lat_max": 18.8,
+        "lng_min": 105.5,
+        "lng_max": 106.4
+      },
+      "keywords": [
+        "ha tinh",
+        "vu quang",
+        "thach ha",
+        "ky anh"
+      ],
+      "ward_count": 69,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "hung_yen": {
+      "display_name": "Hưng Yên",
+      "aliases": [
+        "Hung Yen",
+        "Hưng Yên",
+        "Tỉnh Hưng Yên"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "bounding_box": {
+        "lat_min": 20.6,
+        "lat_max": 21.0,
+        "lng_min": 105.8,
+        "lng_max": 106.3
+      },
+      "keywords": [
+        "hung yen",
+        "pho hien",
+        "chuong my"
+      ],
+      "ward_count": 104,
+      "merged_from": [
+        "thai_binh"
+      ],
+      "admin_status": "current"
+    },
+    "khanh_hoa": {
+      "display_name": "Khánh Hòa",
+      "aliases": [
+        "Khanh Hoa",
+        "Khánh Hòa",
+        "Tỉnh Khánh Hòa",
+        "Nha Trang"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 11.5,
+        "lat_max": 12.7,
+        "lng_min": 108.5,
+        "lng_max": 109.5
+      },
+      "keywords": [
+        "nha trang",
+        "khanh hoa",
+        "cam ranh",
+        "ninh hoa",
+        "vinh phuoc",
+        "binh ba",
+        "binh hung",
+        "doc let"
+      ],
+      "ward_count": 65,
+      "merged_from": [
+        "ninh_thuan"
+      ],
+      "admin_status": "current"
+    },
+    "lai_chau": {
+      "display_name": "Lai Châu",
+      "aliases": [
+        "Lai Chau",
+        "Lai Châu"
+      ],
+      "region_group": "tay_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 21.5,
+        "lat_max": 22.7,
+        "lng_min": 102.5,
+        "lng_max": 104.0
+      },
+      "keywords": [
+        "lai chau",
+        "sin ho",
+        "tam duong",
+        "pha dinh"
+      ],
+      "ward_count": 38,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "lam_dong": {
+      "display_name": "Lâm Đồng",
+      "aliases": [
+        "Lâm Đồng"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "highland",
+      "bounding_box": {},
+      "keywords": [
+        "lam dong",
+        "da lat",
+        "bao loc",
+        "duc trong",
+        "don duong",
+        "lac duong"
+      ],
+      "ward_count": 124,
+      "merged_from": [
+        "binh_thuan",
+        "dak_nong"
+      ],
+      "admin_status": "current"
+    },
+    "lang_son": {
+      "display_name": "Lạng Sơn",
+      "aliases": [
+        "Lang Son",
+        "Lạng Sơn",
+        "Tỉnh Lạng Sơn"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 21.5,
+        "lat_max": 22.5,
+        "lng_min": 106.0,
+        "lng_max": 107.5
+      },
+      "keywords": [
+        "lang son",
+        "bac son",
+        "dong dang",
+        "huu lung"
+      ],
+      "ward_count": 65,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "lao_cai": {
+      "display_name": "Lào Cai",
+      "aliases": [
+        "Lao Cai",
+        "Lào Cai",
+        "Tỉnh Lào Cai"
+      ],
+      "region_group": "tay_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 22.0,
+        "lat_max": 23.0,
+        "lng_min": 103.5,
+        "lng_max": 105.0
+      },
+      "keywords": [
+        "lao cai",
+        "sapa",
+        "fansipan",
+        "bac ha",
+        "muong hum"
+      ],
+      "ward_count": 99,
+      "merged_from": [
+        "yen_bai"
+      ],
+      "admin_status": "current"
+    },
+    "nghe_an": {
+      "display_name": "Nghệ An",
+      "aliases": [
+        "Nghe An",
+        "Nghệ An",
+        "Tỉnh Nghệ An"
+      ],
+      "region_group": "bac_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 18.5,
+        "lat_max": 20.0,
+        "lng_min": 103.5,
+        "lng_max": 105.8
+      },
+      "keywords": [
+        "nghe an",
+        "vinh",
+        "cua lo",
+        "ho chi minh que",
+        "kim lien"
+      ],
+      "ward_count": 130,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "ninh_binh": {
+      "display_name": "Ninh Bình",
+      "aliases": [
+        "Ninh Binh",
+        "Ninh Bình",
+        "Tỉnh Ninh Bình"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "bounding_box": {
+        "lat_min": 19.7,
+        "lat_max": 20.4,
+        "lng_min": 105.5,
+        "lng_max": 106.2
+      },
+      "keywords": [
+        "ninh binh",
+        "tam coc",
+        "trang an",
+        "bai dinh",
+        "mua cave",
+        "van long"
+      ],
+      "ward_count": 129,
+      "merged_from": [
+        "ha_nam",
+        "nam_dinh"
+      ],
+      "admin_status": "current"
+    },
+    "phu_tho": {
+      "display_name": "Phú Thọ",
+      "aliases": [
+        "Phu Tho",
+        "Phú Thọ",
+        "Tỉnh Phú Thọ"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 21.0,
+        "lat_max": 21.7,
+        "lng_min": 104.8,
+        "lng_max": 105.5
+      },
+      "keywords": [
+        "phu tho",
+        "hung temple",
+        "den hung",
+        "xa hai"
+      ],
+      "ward_count": 148,
+      "merged_from": [
+        "hoa_binh",
+        "vinh_phuc"
+      ],
+      "admin_status": "current"
+    },
+    "quang_ngai": {
+      "display_name": "Quảng Ngãi",
+      "aliases": [
+        "Quang Ngai",
+        "Quảng Ngãi",
+        "Tỉnh Quảng Ngãi"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 14.5,
+        "lat_max": 15.5,
+        "lng_min": 108.3,
+        "lng_max": 109.2
+      },
+      "keywords": [
+        "quang ngai",
+        "ly son",
+        "my khe",
+        "sa ky",
+        "binh son",
+        "duc pho"
+      ],
+      "ward_count": 96,
+      "merged_from": [
+        "kon_tum"
+      ],
+      "admin_status": "current"
+    },
+    "quang_ninh": {
+      "display_name": "Quảng Ninh",
+      "aliases": [
+        "Quang Ninh",
+        "Quảng Ninh",
+        "Tỉnh Quảng Ninh",
+        "Ha Long",
+        "Hạ Long",
+        "Vịnh Hạ Long"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 20.6,
+        "lat_max": 21.5,
+        "lng_min": 106.3,
+        "lng_max": 108.2
+      },
+      "keywords": [
+        "ha long",
+        "quang ninh",
+        "halong bay",
+        "tuan chau",
+        "co to",
+        "van don",
+        "mong cai"
+      ],
+      "ward_count": 54,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "quang_tri": {
+      "display_name": "Quảng Trị",
+      "aliases": [
+        "Quảng Trị"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {},
+      "keywords": [
+        "quang tri",
+        "dong ha",
+        "cua tung",
+        "khe sanh",
+        "vietnam veterans"
+      ],
+      "ward_count": 78,
+      "merged_from": [
+        "quang_binh"
+      ],
+      "admin_status": "current"
+    },
+    "son_la": {
+      "display_name": "Sơn La",
+      "aliases": [
+        "Son La",
+        "Sơn La",
+        "Tỉnh Sơn La"
+      ],
+      "region_group": "tay_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 20.5,
+        "lat_max": 22.0,
+        "lng_min": 103.0,
+        "lng_max": 105.0
+      },
+      "keywords": [
+        "son la",
+        "moc chau",
+        "moc chau plateau",
+        "dien bien"
+      ],
+      "ward_count": 74,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "tay_ninh": {
+      "display_name": "Tây Ninh",
+      "aliases": [
+        "Tay Ninh",
+        "Tây Ninh",
+        "Tỉnh Tây Ninh"
+      ],
+      "region_group": "dong_nam_bo",
+      "region_focus": "inland",
+      "bounding_box": {
+        "lat_min": 11.0,
+        "lat_max": 11.8,
+        "lng_min": 105.8,
+        "lng_max": 106.5
+      },
+      "keywords": [
+        "tay ninh",
+        "ba den",
+        "nui ba",
+        "cao dai"
+      ],
+      "ward_count": 96,
+      "merged_from": [
+        "long_an"
+      ],
+      "admin_status": "current"
+    },
+    "thai_nguyen": {
+      "display_name": "Thái Nguyên",
+      "aliases": [
+        "Thai Nguyen",
+        "Thái Nguyên",
+        "Tỉnh Thái Nguyên"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 21.3,
+        "lat_max": 22.0,
+        "lng_min": 105.5,
+        "lng_max": 106.3
+      },
+      "keywords": [
+        "thai nguyen",
+        "nui coc",
+        "dai tu"
+      ],
+      "ward_count": 92,
+      "merged_from": [
+        "bac_kan"
+      ],
+      "admin_status": "current"
+    },
+    "thanh_hoa": {
+      "display_name": "Thanh Hóa",
+      "aliases": [
+        "Thanh Hoa",
+        "Thanh Hóa",
+        "Tỉnh Thanh Hóa"
+      ],
+      "region_group": "bac_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 19.3,
+        "lat_max": 20.6,
+        "lng_min": 104.8,
+        "lng_max": 106.0
+      },
+      "keywords": [
+        "thanh hoa",
+        "sam son",
+        "bai dong",
+        "ho dynasty"
+      ],
+      "ward_count": 166,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "hue": {
+      "display_name": "TP. Huế",
+      "aliases": [
+        "Thua Thien Hue",
+        "Thừa Thiên Huế",
+        "Hue",
+        "Huế",
+        "Tỉnh Thừa Thiên Huế"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "bounding_box": {
+        "lat_min": 16.0,
+        "lat_max": 16.7,
+        "lng_min": 107.2,
+        "lng_max": 108.0
+      },
+      "keywords": [
+        "hue",
+        "huế",
+        "dai noi",
+        "kinh thanh",
+        "thien mu",
+        "dong ba",
+        "lang co",
+        "phong nha"
+      ],
+      "ward_count": 40,
+      "merged_from": [],
+      "admin_status": "current"
+    },
+    "tuyen_quang": {
+      "display_name": "Tuyên Quang",
+      "aliases": [
+        "Tuyen Quang",
+        "Tuyên Quang",
+        "Tỉnh Tuyên Quang"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "bounding_box": {
+        "lat_min": 21.5,
+        "lat_max": 22.5,
+        "lng_min": 104.8,
+        "lng_max": 106.0
+      },
+      "keywords": [
+        "tuyen quang",
+        "tan trao",
+        "na hang"
+      ],
+      "ward_count": 124,
+      "merged_from": [
+        "ha_giang"
+      ],
+      "admin_status": "current"
+    },
+    "vinh_long": {
+      "display_name": "Vĩnh Long",
+      "aliases": [
+        "Vinh Long",
+        "Vĩnh Long",
+        "Tỉnh Vĩnh Long"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "bounding_box": {
+        "lat_min": 9.9,
+        "lat_max": 10.4,
+        "lng_min": 105.7,
+        "lng_max": 106.2
+      },
+      "keywords": [
+        "vinh long",
+        "tra on",
+        "binh minh"
+      ],
+      "ward_count": 124,
+      "merged_from": [
+        "ben_tre",
+        "tra_vinh"
+      ],
+      "admin_status": "current"
+    },
+    "binh_dinh": {
+      "display_name": "Bình Định",
+      "aliases": [
+        "Binh Dinh",
+        "Bình Định",
+        "Tỉnh Bình Định",
+        "Quy Nhon",
+        "Quy Nhơn"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "quy nhon",
+        "binh dinh",
+        "ky co",
+        "eo gio",
+        "nhon ly",
+        "phu cat",
+        "hoai nhon"
+      ],
+      "merged_into": "gia_lai",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "kon_tum": {
+      "display_name": "Kon Tum",
+      "aliases": [
+        "Kon Tum",
+        "Tỉnh Kon Tum"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "kon tum",
+        "kon plong",
+        "mang den"
+      ],
+      "merged_into": "quang_ngai",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "hai_duong": {
+      "display_name": "Hải Dương",
+      "aliases": [
+        "Hai Duong",
+        "Hải Dương"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "keywords": [
+        "hai duong",
+        "chi linh"
+      ],
+      "merged_into": "hai_phong",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "quang_nam": {
+      "display_name": "Quảng Nam",
+      "aliases": [
+        "Quang Nam",
+        "Quảng Nam"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "hoi an",
+        "quang nam",
+        "my son"
+      ],
+      "merged_into": "da_nang",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "bac_giang": {
+      "display_name": "Bắc Giang",
+      "aliases": [
+        "Bac Giang",
+        "Bắc Giang"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "keywords": [
+        "bac giang",
+        "yen tu"
+      ],
+      "merged_into": "bac_ninh",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "ha_giang": {
+      "display_name": "Hà Giang",
+      "aliases": [
+        "Ha Giang",
+        "Hà Giang"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "keywords": [
+        "ha giang",
+        "dong van",
+        "mao pi leng"
+      ],
+      "merged_into": "tuyen_quang",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "vinh_phuc": {
+      "display_name": "Vĩnh Phúc",
+      "aliases": [
+        "Vinh Phuc",
+        "Vĩnh Phúc"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "keywords": [
+        "vinh phuc",
+        "tam dao"
+      ],
+      "merged_into": "phu_tho",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "hoa_binh": {
+      "display_name": "Hòa Bình",
+      "aliases": [
+        "Hoa Binh",
+        "Hòa Bình"
+      ],
+      "region_group": "tay_bac",
+      "region_focus": "highland",
+      "keywords": [
+        "hoa binh",
+        "mai chau"
+      ],
+      "merged_into": "phu_tho",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "yen_bai": {
+      "display_name": "Yên Bái",
+      "aliases": [
+        "Yen Bai",
+        "Yên Bái"
+      ],
+      "region_group": "tay_bac",
+      "region_focus": "highland",
+      "keywords": [
+        "yen bai",
+        "mu cang chai"
+      ],
+      "merged_into": "lao_cai",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "dak_nong": {
+      "display_name": "Đắk Nông",
+      "aliases": [
+        "Dak Nong",
+        "Đắk Nông"
+      ],
+      "region_group": "tay_nguyen",
+      "region_focus": "highland",
+      "keywords": [
+        "dak nong",
+        "gia nghia"
+      ],
+      "merged_into": "lam_dong",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "binh_thuan": {
+      "display_name": "Bình Thuận",
+      "aliases": [
+        "Binh Thuan",
+        "Bình Thuận"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "mui ne",
+        "binh thuan",
+        "phan thiet"
+      ],
+      "merged_into": "lam_dong",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "ninh_thuan": {
+      "display_name": "Ninh Thuận",
+      "aliases": [
+        "Ninh Thuan",
+        "Ninh Thuận"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "ninh thuan",
+        "phan rang",
+        "vinh hy"
+      ],
+      "merged_into": "khanh_hoa",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "phu_yen": {
+      "display_name": "Phú Yên",
+      "aliases": [
+        "Phu Yen",
+        "Phú Yên"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "phu yen",
+        "tuy hoa",
+        "ganh da"
+      ],
+      "merged_into": "dak_lak",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "quang_binh": {
+      "display_name": "Quảng Bình",
+      "aliases": [
+        "Quang Binh",
+        "Quảng Bình"
+      ],
+      "region_group": "duyen_hai_nam_trung_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "quang binh",
+        "dong hoi",
+        "phong nha",
+        "son doong"
+      ],
+      "merged_into": "quang_tri",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "thai_binh": {
+      "display_name": "Thái Bình",
+      "aliases": [
+        "Thai Binh",
+        "Thái Bình"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "keywords": [
+        "thai binh"
+      ],
+      "merged_into": "hung_yen",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "ha_nam": {
+      "display_name": "Hà Nam",
+      "aliases": [
+        "Ha Nam",
+        "Hà Nam"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "keywords": [
+        "ha nam",
+        "tam chuc"
+      ],
+      "merged_into": "ninh_binh",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "nam_dinh": {
+      "display_name": "Nam Định",
+      "aliases": [
+        "Nam Dinh",
+        "Nam Định"
+      ],
+      "region_group": "dong_bang_song_hong",
+      "region_focus": "inland",
+      "keywords": [
+        "nam dinh",
+        "phat diem"
+      ],
+      "merged_into": "ninh_binh",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "ben_tre": {
+      "display_name": "Bến Tre",
+      "aliases": [
+        "Ben Tre",
+        "Bến Tre"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "ben tre"
+      ],
+      "merged_into": "vinh_long",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "tra_vinh": {
+      "display_name": "Trà Vinh",
+      "aliases": [
+        "Tra Vinh",
+        "Trà Vinh"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "tra vinh"
+      ],
+      "merged_into": "vinh_long",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "tien_giang": {
+      "display_name": "Tiền Giang",
+      "aliases": [
+        "Tien Giang",
+        "Tiền Giang"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "tien giang",
+        "my tho"
+      ],
+      "merged_into": "dong_thap",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "long_an": {
+      "display_name": "Long An",
+      "aliases": [
+        "Long An"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "long an",
+        "tan an"
+      ],
+      "merged_into": "tay_ninh",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "kien_giang": {
+      "display_name": "Kiên Giang",
+      "aliases": [
+        "Kien Giang",
+        "Kiên Giang",
+        "Phu Quoc",
+        "Phú Quốc"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "coastal",
+      "keywords": [
+        "phu quoc",
+        "kien giang",
+        "rach gia",
+        "ha tien",
+        "nam du"
+      ],
+      "merged_into": "an_giang",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "soc_trang": {
+      "display_name": "Sóc Trăng",
+      "aliases": [
+        "Soc Trang",
+        "Sóc Trăng"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "soc trang"
+      ],
+      "merged_into": "can_tho",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "hau_giang": {
+      "display_name": "Hậu Giang",
+      "aliases": [
+        "Hau Giang",
+        "Hậu Giang"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "hau giang"
+      ],
+      "merged_into": "can_tho",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "bac_lieu": {
+      "display_name": "Bạc Liêu",
+      "aliases": [
+        "Bac Lieu",
+        "Bạc Liêu"
+      ],
+      "region_group": "dong_bang_song_cuu_long",
+      "region_focus": "inland",
+      "keywords": [
+        "bac lieu"
+      ],
+      "merged_into": "ca_mau",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "bac_kan": {
+      "display_name": "Bắc Kạn",
+      "aliases": [
+        "Bac Kan",
+        "Bắc Kạn"
+      ],
+      "region_group": "dong_bac",
+      "region_focus": "highland",
+      "keywords": [
+        "bac kan",
+        "ba be"
+      ],
+      "merged_into": "thai_nguyen",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "binh_duong": {
+      "display_name": "Bình Dương",
+      "aliases": [
+        "Binh Duong",
+        "Bình Dương"
+      ],
+      "region_group": "dong_nam_bo",
+      "region_focus": "inland",
+      "keywords": [
+        "binh duong",
+        "thu dau mot"
+      ],
+      "merged_into": "ho_chi_minh",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "binh_phuoc": {
+      "display_name": "Bình Phước",
+      "aliases": [
+        "Binh Phuoc",
+        "Bình Phước"
+      ],
+      "region_group": "dong_nam_bo",
+      "region_focus": "inland",
+      "keywords": [
+        "binh phuoc",
+        "dong xoai"
+      ],
+      "merged_into": "dong_nai",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    },
+    "vung_tau": {
+      "display_name": "Bà Rịa - Vũng Tàu",
+      "aliases": [
+        "Vung Tau",
+        "Bà Rịa - Vũng Tàu",
+        "Vũng Tàu",
+        "Ba Ria"
+      ],
+      "region_group": "dong_nam_bo",
+      "region_focus": "coastal",
+      "keywords": [
+        "vung tau",
+        "ba ria",
+        "con dao",
+        "ho tram"
+      ],
+      "merged_into": "ho_chi_minh",
+      "admin_status": "merged",
+      "bounding_box": {},
+      "ward_count": 0,
+      "merged_from": []
+    }
+  },
+  "region_groups": {
+    "dong_bang_song_hong": {
+      "display": "Dong Bang Song Hong",
+      "provinces": [
+        "ha_noi",
+        "hai_phong",
+        "bac_ninh",
+        "hung_yen",
+        "ninh_binh",
+        "quang_ninh",
+        "hai_duong",
+        "vinh_phuc",
+        "thai_binh",
+        "ha_nam",
+        "nam_dinh"
+      ]
+    },
+    "dong_nam_bo": {
+      "display": "Dong Nam Bo",
+      "provinces": [
+        "ho_chi_minh",
+        "tay_ninh",
+        "binh_duong",
+        "binh_phuoc",
+        "vung_tau"
+      ]
+    },
+    "unknown": {
+      "display": "Unknown",
+      "provinces": [
+        "da_nang",
+        "dak_lak",
+        "dien_bien",
+        "dong_nai",
+        "dong_thap",
+        "lam_dong",
+        "quang_tri"
+      ]
+    },
+    "dong_bang_song_cuu_long": {
+      "display": "Dong Bang Song Cuu Long",
+      "provinces": [
+        "can_tho",
+        "an_giang",
+        "ca_mau",
+        "vinh_long",
+        "ben_tre",
+        "tra_vinh",
+        "tien_giang",
+        "long_an",
+        "kien_giang",
+        "soc_trang",
+        "hau_giang",
+        "bac_lieu"
+      ]
+    },
+    "dong_bac": {
+      "display": "Dong Bac",
+      "provinces": [
+        "cao_bang",
+        "lang_son",
+        "phu_tho",
+        "thai_nguyen",
+        "tuyen_quang",
+        "bac_giang",
+        "ha_giang",
+        "bac_kan"
+      ]
+    },
+    "tay_nguyen": {
+      "display": "Tay Nguyen",
+      "provinces": [
+        "gia_lai",
+        "dak_nong"
+      ]
+    },
+    "duyen_hai_nam_trung_bo": {
+      "display": "Duyen Hai Nam Trung Bo",
+      "provinces": [
+        "ha_tinh",
+        "khanh_hoa",
+        "quang_ngai",
+        "hue",
+        "binh_dinh",
+        "kon_tum",
+        "quang_nam",
+        "binh_thuan",
+        "ninh_thuan",
+        "phu_yen",
+        "quang_binh"
+      ]
+    },
+    "tay_bac": {
+      "display": "Tay Bac",
+      "provinces": [
+        "lai_chau",
+        "lao_cai",
+        "son_la",
+        "hoa_binh",
+        "yen_bai"
+      ]
+    },
+    "bac_trung_bo": {
+      "display": "Bac Trung Bo",
+      "provinces": [
+        "nghe_an",
+        "thanh_hoa"
+      ]
+    }
+  },
+  "merge_mappings": {
+    "ba_ria-vung_tau": {
+      "into": "ho_chi_minh",
+      "year": 2025
+    },
+    "bac_lieu": {
+      "into": "ca_mau",
+      "year": 2025
+    },
+    "bac_giang": {
+      "into": "bac_ninh",
+      "year": 2025
+    },
+    "bac_kan": {
+      "into": "thai_nguyen",
+      "year": 2025
+    },
+    "ben_tre": {
+      "into": "vinh_long",
+      "year": 2025
+    },
+    "binh_duong": {
+      "into": "ho_chi_minh",
+      "year": 2025
+    },
+    "binh_dinh": {
+      "into": "gia_lai",
+      "year": 2025
+    },
+    "binh_phuoc": {
+      "into": "dong_nai",
+      "year": 2025
+    },
+    "binh_thuan": {
+      "into": "lam_dong",
+      "year": 2025
+    },
+    "dak_nong": {
+      "into": "lam_dong",
+      "year": 2025
+    },
+    "ha_giang": {
+      "into": "tuyen_quang",
+      "year": 2025
+    },
+    "ha_nam": {
+      "into": "ninh_binh",
+      "year": 2025
+    },
+    "hai_duong": {
+      "into": "hai_phong",
+      "year": 2025
+    },
+    "hau_giang": {
+      "into": "can_tho",
+      "year": 2025
+    },
+    "hoa_binh": {
+      "into": "phu_tho",
+      "year": 2025
+    },
+    "kien_giang": {
+      "into": "an_giang",
+      "year": 2025
+    },
+    "kon_tum": {
+      "into": "quang_ngai",
+      "year": 2025
+    },
+    "long_an": {
+      "into": "tay_ninh",
+      "year": 2025
+    },
+    "nam_dinh": {
+      "into": "ninh_binh",
+      "year": 2025
+    },
+    "ninh_thuan": {
+      "into": "khanh_hoa",
+      "year": 2025
+    },
+    "phu_yen": {
+      "into": "dak_lak",
+      "year": 2025
+    },
+    "quang_binh": {
+      "into": "quang_tri",
+      "year": 2025
+    },
+    "quang_nam": {
+      "into": "da_nang",
+      "year": 2025
+    },
+    "soc_trang": {
+      "into": "can_tho",
+      "year": 2025
+    },
+    "thai_binh": {
+      "into": "hung_yen",
+      "year": 2025
+    },
+    "tien_giang": {
+      "into": "dong_thap",
+      "year": 2025
+    },
+    "tra_vinh": {
+      "into": "vinh_long",
+      "year": 2025
+    },
+    "vinh_phuc": {
+      "into": "phu_tho",
+      "year": 2025
+    },
+    "yen_bai": {
+      "into": "lao_cai",
+      "year": 2025
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "TouristAttraction_LOCATED_IN_Location": "- (TouristAttraction)-[:LOCATED_IN]->(Location)      — 511 rels",
+  "Restaurant_LOCATED_IN_Location": "- (Restaurant)-[:LOCATED_IN]->(Location)               — 316 rels",
+  "Accommodation_LOCATED_IN_Location": "- (Accommodation)-[:LOCATED_IN]->(Location)            — 868 rels",
+  "Restaurant_NEAR_TouristAttraction": "- (Restaurant)-[:NEAR]->(TouristAttraction)            — 849 rels",
+  "Accommodation_NEAR_TouristAttraction": "- (Accommodation)-[:NEAR]->(TouristAttraction)         — 2856 rels",
+  "Restaurant_HAS_Dish": "- (Restaurant)-[:HAS]->(Dish)                          — 132 rels",
+  "Restaurant_HAS_Specialty": "- (Restaurant)-[:HAS]->(Specialty)                     — 37 rels\n  (Specialty cũng có label Dish. Dùng s.location/s.province để filter theo vùng)",
+  "TouristAttraction_BELONGS_TO_Category": "- (TouristAttraction)-[:BELONGS_TO]->(Category)        — 192 rels",
+  "Tour_INCLUDES_TouristAttraction": "- (Tour)-[:INCLUDES]->(TouristAttraction)              — 206 rels",
+  "TravelAgency_OFFERS_Tour": "- (TravelAgency)-[:OFFERS]->(Tour)                     — 36 rels",
+  "Event_HELD_AT_TouristAttraction": "- (Event)-[:HELD_AT]->(TouristAttraction)              — 21 rels\n  (Event location được suy ra qua: Event→HELD_AT→TouristAttraction→LOCATED_IN→Location)",
+  "TravelInfo_Guide_for_Location": "- (TravelInfo)-[:Guide_for]->(Location)                — 32 rels\n  (Hướng dẫn du lịch cho địa điểm. TravelInfo cũng có t.location/t.province properties để fallback.)",
+  "Location_SUPERSEDED_BY_Location": "- (Location)-[:SUPERSEDED_BY]->(Location)              — 1 rel (post-2025 merger)"
+}

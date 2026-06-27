@@ -1,0 +1,44 @@
+{
+  "_metadata": {
+    "description": "Vietnamese concept prefix mapping for dynamic entity matching. Maps category keywords to semantic roles used by GraphVocabulary to build concept-to-entity indexes at runtime.",
+    "version": "1.0",
+    "source": "static_config",
+    "language": "vi"
+  },
+
+  "concept_prefixes": {
+    "biển": "natural_feature",
+    "núi": "natural_feature",
+    "hồ": "natural_feature",
+    "suối": "natural_feature",
+    "thác": "natural_feature",
+    "đảo": "natural_feature",
+    "bãi": "natural_feature",
+    "mũi": "natural_feature",
+    "vịnh": "natural_feature",
+    "chùa": "spiritual",
+    "đền": "spiritual",
+    "đình": "spiritual",
+    "tịnh xá": "spiritual",
+    "nhà thờ": "spiritual",
+    "nhà hàng": "food_service",
+    "quán": "food_service",
+    "khách sạn": "accommodation",
+    "nhà nghỉ": "accommodation",
+    "homestay": "accommodation",
+    "resort": "accommodation",
+    "bảo tàng": "heritage",
+    "di tích": "heritage",
+    "làng": "cultural",
+    "chợ": "commercial",
+    "công viên": "public_space",
+    "quảng trường": "public_space"
+  },
+
+  "fuzzy_matching": {
+    "default_threshold": 70,
+    "token_match_threshold": 85,
+    "max_results": 10,
+    "min_token_length": 2
+  }
+}
