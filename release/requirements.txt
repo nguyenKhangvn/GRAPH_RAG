@@ -1,0 +1,23 @@
+# =============================================================================
+#  Backend Requirements
+# =============================================================================
+
+# --- CORE API & SERVER ---
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.0.0
+python-dotenv>=1.0.1
+slowapi>=0.1.9
+
+# --- DATABASE & SERVICES ---
+neo4j>=5.18.0
+google-genai>=0.3.0
+openai>=1.14.0
+tiktoken>=0.6.0
+duckduckgo-search>=7.0.0
+deepeval>=2.0.0
+
+# --- LOCAL EMBEDDINGS (Bỏ qua trên Render Free để build nhanh và tiết kiệm RAM) ---
+# sentence-transformers>=2.6.0
+# torch>=2.2.0
+numpy>=1.26.0
