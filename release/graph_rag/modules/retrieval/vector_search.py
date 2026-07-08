@@ -118,6 +118,8 @@ def search_vector_loop(driver, query_vector: List[float], k: int,
         if resolved_lp:
             legacy_province = resolved_lp
 
+    orig_legacy_province = legacy_province
+
     # Khi region_group đã có, bỏ legacy_province vì:
     # 1. DB nodes không có legacy_province property (NULL) → filter loại hết
     # 2. region_group đã đủ xác định vùng, không cần double-filter
@@ -225,8 +227,8 @@ def search_vector_loop(driver, query_vector: List[float], k: int,
                 _cypher_count = len(data)
                 if filter_city:
                     data = [row for row in data if _matches_location(row, filter_city)]
-                if region_group or legacy_province:
-                    data = [row for row in data if _matches_region(row, region_group, legacy_province)]
+                if region_group or orig_legacy_province:
+                    data = [row for row in data if _matches_region(row, region_group, orig_legacy_province)]
                 _after_filter = len(data)
                 if _cypher_count > 0 and _after_filter == 0:
                     logger.info("[DEBUG-VECTOR] index=%s cypher=%d -> after_filter=%d (ALL FILTERED OUT! region_group=%s legacy_province=%s)",

@@ -536,13 +536,14 @@ class AgenticRetriever:
                     item = NodeItem(
                         id=str(node_id),
                         content=name,
+                        score=1.0,
+                        source_type=f"graph_traverse_{label.lower()}",
                         metadata={
                             "labels": [node_label],
                             "type": node_label,
                             "address": address,
                             "description": description,
                             "category": category,
-                            "source_type": f"graph_traverse_{label.lower()}",
                         },
                     )
                     items.append(item)

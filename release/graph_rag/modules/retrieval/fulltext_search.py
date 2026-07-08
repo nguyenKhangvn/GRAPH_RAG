@@ -183,6 +183,8 @@ def search_fulltext_loop(driver, search_text: str, k: int,
     if filter_city and not (region_group or legacy_province):
         legacy_province = _resolve_legacy_province(filter_city.strip())
 
+    orig_legacy_province = legacy_province
+
     # Khi region_group đã có, bỏ legacy_province (nodes có NULL legacy_province)
     if region_group and legacy_province:
         legacy_province = None
@@ -298,8 +300,8 @@ def search_fulltext_loop(driver, search_text: str, k: int,
                 _cypher_count = len(data)
                 if filter_city:
                     data = [row for row in data if _matches_location(row, filter_city)]
-                if region_group or legacy_province:
-                    data = [row for row in data if _matches_region(row, region_group, legacy_province)]
+                if region_group or orig_legacy_province:
+                    data = [row for row in data if _matches_region(row, region_group, orig_legacy_province)]
                 _after_filter = len(data)
                 if _cypher_count > 0 and _after_filter == 0:
                     logger.info("[DEBUG-FULLTEXT] index=%s cypher=%d -> after_filter=%d (ALL FILTERED OUT! region_group=%s legacy_province=%s)",
@@ -333,8 +335,8 @@ def search_fulltext_loop(driver, search_text: str, k: int,
                     data = [record.data() for record in result]
                     if filter_city:
                         data = [row for row in data if _matches_location(row, filter_city)]
-                    if region_group or legacy_province:
-                        data = [row for row in data if _matches_region(row, region_group, legacy_province)]
+                    if region_group or orig_legacy_province:
+                        data = [row for row in data if _matches_region(row, region_group, orig_legacy_province)]
                     # Deduplicate against existing results
                     existing_ids = {r.get("id") for r in all_results}
                     new_data = [r for r in data if r.get("id") not in existing_ids]

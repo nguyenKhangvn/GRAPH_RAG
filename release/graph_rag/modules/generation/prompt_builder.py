@@ -17,7 +17,6 @@ _PROMPTS_DIR = Path(__file__).resolve().parent.parent.parent / "prompts"
 logger = logging.getLogger(__name__)
 
 
-@lru_cache(maxsize=4)
 def load_prompt(name: str) -> str:
     return (_PROMPTS_DIR / name).read_text(encoding="utf-8")
 
@@ -329,53 +328,53 @@ class PromptBuilder:
         skeleton_block = ""
         if skeleton:
             skeleton_block = f"""
-
-        --------------------------------------------------
-        PHÂN BỔ ĐIỂM THEO NGÀY (từ route optimizer — tuân theo phân bổ này):
-        {skeleton}
-
-        Viết lịch trình đầy đủ cho từng ngày với các điểm trên. Thêm giờ giấc, mô tả trải nghiệm, cảm xúc.
-        """
+            <route_skeleton_distribution>
+            {skeleton}
+            </route_skeleton_distribution>
+            """
 
         return f"""
-        Câu hỏi của người dùng:
-        {query}
-
-        Dữ liệu từ knowledge graph:
-        {context}
+        <input_data>
+            <user_query>{query}</user_query>
+            <knowledge_graph_context>
+            {context}
+            </knowledge_graph_context>
+            <allowed_points>
+            {allowed_route_block}
+            </allowed_points>
+            <dropped_points>
+            {dropped_route_block}
+            </dropped_points>
+            <daily_cluster_plan>
+            {cluster_block}
+            </daily_cluster_plan>
+            <lodging_suggestions>
+            {lodging_block}
+            </lodging_suggestions>
+            <hard_constraints>
+            {hard_constraint_block}
+            </hard_constraints>
+            {skeleton_block}
+            {retry_block}
+        </input_data>
 
         --------------------------------------------------
         NHIỆM VỤ:
-        Tạo lịch trình du lịch {days} ngày {nights} đêm tại {target_location}.
-        Viết theo phong cách blogger du lịch: tự nhiên, có cảm xúc, có trải nghiệm cụ thể.
+        Dựa trên thông tin được cung cấp trong thẻ <input_data>, hãy tạo lịch trình du lịch {days} ngày {nights} đêm tại {target_location}.
+        Viết theo phong cách blogger du lịch: tự nhiên, có cảm xúc, có trải nghiệm cụ thể cho mỗi địa điểm.
 
-        {skeleton_block}
-
-        --------------------------------------------------
-        ĐIỂM ĐƯỢC PHÉP (chỉ dùng các điểm này):
-        {allowed_route_block}
-
-        ĐIỂM BỊ CẤM (KHÔNG đưa vào lịch trình):
-        {dropped_route_block}
-
-        PHÂN CỤM THEO NGÀY (tuân theo):
-        {cluster_block}
-
-        GỢI Ý LƯU TRÚ (dùng cho section "Gợi ý nghỉ đêm", KHÔNG đưa vào lịch trình tham quan):
-        {lodging_block}
-
-        --------------------------------------------------
-        RÀNG BUỘC CỨNG:
-        {hard_constraint_block}
-
-        --------------------------------------------------
-        YÊU CẦU OUTPUT:
-        - Markdown với heading và emoji
-        - Mỗi ngày phải có mô tả TRẢI NGHIỆM cho mỗi điểm (không chỉ liệt kê tên + giờ)
-        - Giữ nguyên cấu trúc ngày từ skeleton nếu có
-        - Nếu thiếu dữ liệu → ghi rõ trong "Lưu ý thực tế", KHÔNG tự bịa
-        - Tour 2+ ngày: section "Gợi ý nghỉ đêm" RIÊNG, không inline trong lịch trình
-        {retry_block}
+        YÊU CẦU BẮT BUỘC:
+        1. **Mỗi ngày bắt buộc phải có ít nhất 1-2 điểm tham quan (TouristAttraction)** từ danh sách `<allowed_points>` hoặc `<daily_cluster_plan>`. 
+           TUYỆT ĐỐI không được tạo một ngày chỉ bao gồm hoạt động ăn uống (Restaurant/Dish) hoặc nghỉ ngơi/lưu trú (Accommodation) mà không có điểm tham quan nào.
+           *Mẹo giải quyết xung đột:* Nếu phân bổ ngày từ `<daily_cluster_plan>` hoặc `<route_skeleton_distribution>` không có điểm tham quan nào cho ngày đó, bạn ĐƯỢC PHÉP tự động chọn bổ sung 1 điểm tham quan nổi bật trong danh sách `<allowed_points>` của khu vực đó để đưa vào buổi sáng hoặc buổi chiều của ngày hôm đó nhằm đảm bảo chất lượng lịch trình.
+        2. Format output dạng Markdown với heading và emoji.
+        3. Mỗi ngày phải có mô tả TRẢI NGHIỆM chi tiết cho từng điểm (không chỉ ghi tên và giờ).
+        4. Giữ nguyên cấu trúc ngày từ `<route_skeleton_distribution>` nếu có (ngoại trừ trường hợp cần bổ sung điểm tham quan như đã nêu ở mục 1).
+        5. Nếu thiếu thông tin cần thiết → hãy ghi nhận rõ ràng vào phần "Lưu ý thực tế", TUYỆT ĐỐI không được tự ý bịa thêm dữ liệu.
+        6. Đối với tour từ 2 ngày trở lên: phần "Gợi ý nghỉ đêm" phải tách biệt thành một mục riêng ở cuối bài viết, KHÔNG lồng chi tiết (inline) vào lịch trình chi tiết hàng ngày.
+        7. Mốc thời gian và tên địa điểm (ví dụ: `- **07:30 - 10:00** 📍 **[Tên điểm]**`) BẮT BUỘC phải viết trên cùng 1 dòng, không được xuống dòng ở giữa chúng.
+        8. Trong phần "⚠️ Ràng buộc đã tuân thủ", chỉ ghi nhận các gạch đầu dòng ngắn gọn, thân thiện (ví dụ: "✅ Không dùng cano", "✅ Giữ lịch trình nhịp độ chậm"). 
+           TUYỆT ĐỐI KHÔNG ghi các câu lệnh chỉ dẫn kỹ thuật hoặc ghi chú hệ thống (như "riêng, không inline", "XML", v.v.) vào mục này.
         """
 
     @classmethod

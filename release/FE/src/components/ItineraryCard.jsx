@@ -31,14 +31,26 @@ function parseItineraryDays(text) {
     const end = i + 1 < positions.length ? positions[i + 1].index : text.length;
     const chunk = text.slice(start, end).trim();
 
-    // Parse time slots: lines starting with time pattern "08:00", "HH:MM"
+    // Parse time slots: support both same-line and next-line place names
     const slots = [];
-    const timeLinePattern = /[\*\-]?\s*(\d{1,2}:\d{2}(?:\s*[-–—]\s*\d{1,2}:\d{2})?):?\s*(.+)/g;
-    let slotMatch;
-    while ((slotMatch = timeLinePattern.exec(chunk)) !== null) {
-      const time = slotMatch[1].trim();
-      const place = slotMatch[2].replace(/^\*+|\*+$/g, "").trim(); // strip bold markers
-      if (place) slots.push({ time, place });
+    const lines = chunk.split("\n");
+    for (let j = 0; j < lines.length; j++) {
+      const line = lines[j].trim();
+      const timeMatch = line.match(/^[-*\s]*(\d{1,2}:\d{2}(?:\s*[-–—]\s*\d{1,2}:\d{2})?)[-*\s]*:?\s*(.*)$/);
+      if (timeMatch) {
+        const time = timeMatch[1].trim();
+        let place = timeMatch[2].replace(/^\*+|\*+$/g, "").trim();
+        if (!place && j + 1 < lines.length) {
+          const nextLine = lines[j + 1].trim();
+          if (!nextLine.match(/^[-*\s]*\d{1,2}:\d{2}/)) {
+            place = nextLine.replace(/^\*+|\*+$/g, "").trim();
+            j++; // Consume next line
+          }
+        }
+        if (place) {
+          slots.push({ time, place });
+        }
+      }
     }
 
     // If no time-based slots, try bullet points as places
