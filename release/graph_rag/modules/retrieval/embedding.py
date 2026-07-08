@@ -7,8 +7,8 @@ logger = logging.getLogger(__name__)
 class LocalEmbeddingService:
     def __init__(self):
         self.use_api = os.getenv("USE_HF_INFERENCE_API", "false").lower() == "true"
-        self.hf_token = os.getenv("HF_TOKEN", "")
-        self.model_name = os.getenv("EMBEDDING_MODEL_NAME", "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+        self.hf_token = os.getenv("HF_TOKEN", "").strip().strip('"').strip("'")
+        self.model_name = os.getenv("EMBEDDING_MODEL_NAME", "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2").strip().strip('"').strip("'")
         
         if self.use_api:
             logger.info("Using Hugging Face Inference API for embeddings (Model: %s)", self.model_name)
