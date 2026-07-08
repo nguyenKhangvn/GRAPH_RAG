@@ -13,6 +13,7 @@ slowapi>=0.1.9
 neo4j>=5.18.0
 google-genai>=0.3.0
 openai>=1.14.0
+groq>=0.5.0
 tiktoken>=0.6.0
 duckduckgo-search>=7.0.0
 deepeval>=2.0.0
