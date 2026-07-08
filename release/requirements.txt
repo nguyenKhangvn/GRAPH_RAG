@@ -17,6 +17,8 @@ groq>=0.5.0
 tiktoken>=0.6.0
 duckduckgo-search>=7.0.0
 deepeval>=2.0.0
+huggingface-hub>=0.20.0
+
 
 # --- LOCAL EMBEDDINGS (Bỏ qua trên Render Free để build nhanh và tiết kiệm RAM) ---
 # sentence-transformers>=2.6.0
