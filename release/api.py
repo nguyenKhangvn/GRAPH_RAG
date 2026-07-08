@@ -67,7 +67,7 @@ MAPBOX_RATE_LIMIT_PER_MINUTE = int(os.getenv("MAPBOX_RATE_LIMIT_PER_MINUTE", "10
 MAPBOX_CACHE_TTL_SECONDS = int(os.getenv("MAPBOX_CACHE_TTL_SECONDS", "3600"))
 
 CORS_ORIGINS = [
-    o.strip() for o in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:8000").split(",")
+    o.strip().rstrip("/") for o in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:8000").split(",")
     if o.strip()
 ]
 ROUTE_CACHE_MAX_SIZE = int(os.getenv("ROUTE_CACHE_MAX_SIZE", "500"))
