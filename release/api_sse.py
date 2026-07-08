@@ -1,8 +1,21 @@
 import time
 import json
 import asyncio
+import socket
 from typing import List, Dict, Any, Optional
 from fastapi import FastAPI, Request
+from fastapi.responses import StreamingResponse
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+
+# Monkey-patch socket.getaddrinfo to force IPv4 and prevent Errno -5 DNS resolution issues on Render
+_orig_getaddrinfo = socket.getaddrinfo
+def _ipv4_only_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    if family == socket.AF_UNSPEC or family == 0:
+        family = socket.AF_INET
+    return _orig_getaddrinfo(host, port, family, type, proto, flags)
+socket.getaddrinfo = _ipv4_only_getaddrinfo
+
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel

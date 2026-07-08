@@ -11,7 +11,17 @@ import urllib.parse
 import urllib.request
 import queue
 import threading
+import socket
 from collections import OrderedDict, defaultdict, deque
+
+# Monkey-patch socket.getaddrinfo to force IPv4 and prevent Errno -5 DNS resolution issues on Render
+_orig_getaddrinfo = socket.getaddrinfo
+def _ipv4_only_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    if family == socket.AF_UNSPEC or family == 0:
+        family = socket.AF_INET
+    return _orig_getaddrinfo(host, port, family, type, proto, flags)
+socket.getaddrinfo = _ipv4_only_getaddrinfo
+
 from datetime import date
 from typing import List, AsyncGenerator
 
