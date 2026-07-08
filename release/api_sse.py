@@ -137,6 +137,11 @@ async def real_graphrag_engine(query: str, chat_history: List[MessageRole]):
 
 
 # ── 4. ENDPOINT API QUAN TRỌNG NHẤT ───────────────────────────────────────────
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
+
 @app.post("/api/chat")
 async def chat_streaming_endpoint(request: ChatRequest):
     """

@@ -668,6 +668,11 @@ def _reverse_geocode(coords_str: str) -> str:
     return "Vị trí không xác định"
 
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
+
 @app.post("/api/chat")
 @limiter.limit("5/minute")
 async def chat_endpoint(request: Request, payload: ChatRequest):
