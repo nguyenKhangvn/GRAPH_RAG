@@ -541,11 +541,19 @@
     ],
     "out_of_region_terms": [
       "ha noi",
+      "hà nội",
       "ho chi minh",
+      "hồ chí minh",
+      "tp hcm",
+      "sai gon",
+      "sài gòn",
       "da nang",
+      "đà nẵng",
       "nha trang",
       "da lat",
+      "đà lạt",
       "phu quoc",
+      "phú quốc",
       "vung tau",
       "can tho",
       "hue",
@@ -559,7 +567,13 @@
       "gia lai",
       "pleiku",
       "quy nhon",
+      "quy nhơn",
       "binh dinh",
+      "bình định",
+      "an khe",
+      "an khê",
+      "chu se",
+      "chư sê",
       "kon tum",
       "dak lak",
       "buon ma thuot",
@@ -1331,5 +1345,47 @@
     "(?:khach san|nha nghi|homestay|resort).*?\\bgan\\b.*?(?:dia diem|diem).*?\\bco\\b",
     "tour\\s+(?:nao|nào).*?\\b(?:di qua|qua)\\b.*?\\bco\\b",
     "dia diem\\s+(?:nao|nào).*?\\bgan\\b.*?\\bco\\b"
+  ],
+  "query_context_tourism_signals": [
+    "diem tham quan",
+    "tham quan",
+    "diem du lich",
+    "du lich",
+    "danh lam",
+    "thang canh",
+    "gia ve",
+    "ve vao",
+    "phi tham quan",
+    "phi vao cong",
+    "mat phi",
+    "vao cong"
+  ],
+  "generic_anchor_terms": [
+    "bien ho",
+    "ho",
+    "nui",
+    "thac",
+    "bien",
+    "chua",
+    "thap",
+    "lang"
+  ],
+  "groundable_short_names": [
+    "eo gio",
+    "ba be"
+  ],
+  "additional_category_tokens": [
+    "khu",
+    "cong",
+    "truyen",
+    "thong",
+    "lich",
+    "su",
+    "khao",
+    "co"
+  ],
+  "distance_connectors": [
+    "den",
+    "toi"
   ]
 }

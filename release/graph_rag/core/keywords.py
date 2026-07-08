@@ -140,3 +140,13 @@ TRANSPORT_NEGATIVE_SIGNALS = {
     "co the bay", "co tau", "co xe", "di bang", "di may bay",
     "di tau", "di xe",
 }
+
+# === Entity Processor Mixin Keywords ===
+ACCOMMODATION_HINT_TOKENS = _kw.get("intent_signals", {}).get(IntentType.ACCOMMODATION, [])
+HERITAGE_HINT_TOKENS = _kw.get("heritage_signals", [])
+TOURISM_HINT_TOKENS = _kw.get("intent_signals", {}).get(IntentType.TOURISM, [])
+QUERY_CONTEXT_TOURISM_SIGNALS = set(_kw.get("query_context_tourism_signals", []))
+GENERIC_ANCHOR_TERMS = set(_kw.get("generic_anchor_terms", []))
+GROUNDABLE_SHORT_NAMES = set(_kw.get("groundable_short_names", []))
+ADDITIONAL_CATEGORY_TOKENS = _kw.get("additional_category_tokens", [])
+DISTANCE_CONNECTORS = set(_kw.get("distance_connectors", []))

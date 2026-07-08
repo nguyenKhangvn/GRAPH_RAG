@@ -18,6 +18,7 @@ from graph_rag.config.region_patterns import (
 from graph_rag.utils.text import normalize_text
 from ..conversation_state_resolver import ConversationStateResolver
 from ..dto import PipelineRunState
+from graph_rag.modules.pipeline_support.distance_intent_service import DistanceQueryParser
 
 
 class Step1QueryUnderstandingMixin:
@@ -687,13 +688,41 @@ class Step1QueryUnderstandingMixin:
             )
 
         if p._intent_equals(primary_intent, IntentType.DISTANCE):
-            repaired_entities = self._repair_distance_entities(state.user_query, entities)
-            if repaired_entities != entities:
+            src, dst = DistanceQueryParser.parse(state.user_query)
+            repaired_entities = []
+            if src:
+                repaired_entities.append({
+                    "name": src,
+                    "type": "Location",
+                    "role": "origin",
+                    "source": "distance_parser",
+                    "confidence": 1.0,
+                    "trusted": True
+                })
+            if dst:
+                dst_type = "Location"
+                if len(entities or []) >= 2 and isinstance(entities[1], dict):
+                    hinted = str(entities[1].get("type") or "").strip()
+                    if hinted:
+                        dst_type = hinted
+                elif len(entities or []) == 1 and isinstance(entities[0], dict):
+                    hinted = str(entities[0].get("type") or "").strip()
+                    if hinted:
+                        dst_type = hinted
+                repaired_entities.append({
+                    "name": dst,
+                    "type": dst_type,
+                    "role": "destination",
+                    "source": "distance_parser",
+                    "confidence": 1.0,
+                    "trusted": True
+                })
+            if repaired_entities:
                 logger.info(
-                    "   -> Distance entity repair applied: "
+                    "   -> Distance query parsing applied (preserves raw case): "
                     f"{entities} -> {repaired_entities}"
                 )
-            entities = repaired_entities
+                entities = repaired_entities
 
         # ── Example Detection (MUST run BEFORE V3 router) ──
         # Mark example entities so V3 router doesn't use them as anchors

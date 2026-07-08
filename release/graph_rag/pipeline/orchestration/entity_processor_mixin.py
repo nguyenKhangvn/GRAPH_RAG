@@ -31,6 +31,7 @@ from graph_rag.config.deictic_patterns import (
 
 
 from .dto import PipelineRunState
+from graph_rag.modules.pipeline_support.distance_intent_service import DistanceQueryParser
 
 
 class EntityProcessorMixin:
@@ -39,46 +40,13 @@ class EntityProcessorMixin:
     # Re-export shared constant for subclass access via self.NON_GROUNDABLE_ENTITY_TYPES
     NON_GROUNDABLE_ENTITY_TYPES = NON_GROUNDABLE_ENTITY_TYPES
 
-    OUT_OF_REGION_TERMS = [
-        "da nang",
-        "đà nẵng",
-        "ha noi",
-        "hà nội",
-        "tp hcm",
-        "ho chi minh",
-        "hồ chí minh",
-        "sai gon",
-        "sài gòn",
-        "nha trang",
-        "da lat",
-        "đà lạt",
-        "phu quoc",
-        "phú quốc",
-        "paris",
-    ]
+    OUT_OF_REGION_TERMS = list(keywords.OUT_OF_REGION_TERMS)
 
-    IN_SCOPE_REGION_TERMS = [
-        "gia lai",
-        "pleiku",
-        "quy nhon",
-        "quy nhơn",
-        "binh dinh",
-        "bình định",
-        "an khe",
-        "an khê",
-        "chu se",
-        "chư sê",
-    ]
+    IN_SCOPE_REGION_TERMS = list(keywords.IN_SCOPE_REGION_TERMS)
 
-    _ACCOMMODATION_HINT_TOKENS = [
-        "nha nghi", "khach san", "homestay", "resort", "luu tru", "noi o", "cho nghi", "nghi duong",
-    ]
-    _HERITAGE_HINT_TOKENS = [
-        "di tich", "lich su", "khao co", "di san", "van hoa", "bao tang", "chua", "den", "dinh",
-    ]
-    _TOURISM_HINT_TOKENS = [
-        "tham quan", "diem du lich", "danh lam", "thang canh", "choi", "di dau",
-    ]
+    _ACCOMMODATION_HINT_TOKENS = keywords.ACCOMMODATION_HINT_TOKENS
+    _HERITAGE_HINT_TOKENS = keywords.HERITAGE_HINT_TOKENS
+    _TOURISM_HINT_TOKENS = keywords.TOURISM_HINT_TOKENS
     _CATEGORY_LABEL_MAP = {
         "Accommodation": None,  # filled from _ACCOMMODATION_HINT_TOKENS
         "TouristAttraction": None,  # filled from _HERITAGE_HINT_TOKENS + _TOURISM_HINT_TOKENS
@@ -170,16 +138,7 @@ class EntityProcessorMixin:
         if len(cleaned) < 2:
             return cleaned
 
-        generic_terms = {
-            "bien ho",
-            "ho",
-            "nui",
-            "thac",
-            "bien",
-            "chua",
-            "thap",
-            "lang",
-        }
+        generic_terms = keywords.GENERIC_ANCHOR_TERMS
         norms = {anchor: normalize_text(anchor, strip_punct=True) for anchor in cleaned}
         kept: List[str] = []
         for anchor in cleaned:
@@ -216,20 +175,7 @@ class EntityProcessorMixin:
         if not q_norm:
             return entities or []
 
-        tourism_signals = [
-            "diem tham quan",
-            "tham quan",
-            "diem du lich",
-            "du lich",
-            "danh lam",
-            "thang canh",
-            "gia ve",
-            "ve vao",
-            "phi tham quan",
-            "phi vao cong",
-            "mat phi",
-            "vao cong",
-        ]
+        tourism_signals = keywords.QUERY_CONTEXT_TOURISM_SIGNALS
         if not any(signal in q_norm for signal in tourism_signals):
             return entities or []
 
@@ -363,7 +309,7 @@ class EntityProcessorMixin:
         if e_norm in keywords.RELATION_MARKER_NAMES:
             return False
         # Reject very short tokens that are likely function words (e.g., "Xung")
-        if len(e_norm) <= 3 and e_norm not in {"eo gio", "ba be"}:
+        if len(e_norm) <= 3 and e_norm not in keywords.GROUNDABLE_SHORT_NAMES:
             return False
         return True
 
@@ -384,89 +330,48 @@ class EntityProcessorMixin:
         if any(re.search(pattern, norm) for pattern in generic_patterns):
             return True
         # Exact-match generic category phrases (synced with frame_extractor.NON_GROUNDABLE_GENERIC_PHRASES)
-        _GENERIC_PHRASES = {
-            "mon an dac san", "mon dac san", "dac san", "am thuc",
-            "dia diem du lich", "diem du lich", "dia diem tham quan",
-            "diem tham quan", "nha hang", "quan an",
-            "le hoi", "su kien", "khach san", "nha nghi",
-            "mon an", "mon ngon", "dac san dia phuong",
-            "cac khach san nao", "cac khach san", "nhung khach san",
-            "cac nha nghi", "nhung nha nghi", "cac homestay", "cac resort",
-            "nhung homestay", "nhung resort", "cac dia diem", "nhung dia diem",
-            "cac nha hang", "nhung nha hang", "cac quan an", "nhung quan an",
-            "cac tour", "nhung tour", "tour nao", "tour gi", "le hoi nao",
-        }
-        return norm in _GENERIC_PHRASES
+        return norm in keywords.NON_GROUNDABLE_GENERIC_PHRASES
 
     def _repair_distance_entities(self, user_query: str, entities: List[Dict[str, Any]] | None) -> List[Dict[str, Any]]:
         original = list(entities or [])
-        text = str(user_query or "").strip()
-        if not text:
-            return original
-
-        lowered = normalize_text(text, strip_punct=True)
-        if not lowered:
-            return original
-
-        # Remove common distance suffixes so destination extraction is cleaner.
-        normalized_for_parse = lowered
-        for pattern in self.DISTANCE_TAIL_PATTERNS:
-            normalized_for_parse = re.sub(pattern, "", normalized_for_parse, flags=re.IGNORECASE)
-        normalized_for_parse = normalized_for_parse.strip(" .?!")
-
-        src = ""
-        dst = ""
-
-        m = re.search(r"(?:^|\s)(?:tu|từ)\s+(.+?)\s+(?:den|đến|toi|tới)\s+(.+)$", normalized_for_parse, flags=re.IGNORECASE)
-        if m:
-            src = m.group(1).strip()
-            dst = m.group(2).strip()
-        else:
-            m2 = re.search(r"^(.+?)\s+(?:den|đến|toi|tới)\s+(.+)$", normalized_for_parse, flags=re.IGNORECASE)
-            if m2:
-                src = m2.group(1).strip()
-                dst = m2.group(2).strip()
-
-        if not src or not dst:
-            return original
-
-        for pattern in self.DISTANCE_TAIL_PATTERNS:
-            dst = re.sub(pattern, "", dst, flags=re.IGNORECASE).strip()
-
-        # Drop leading intent phrase fragments from source if present.
-        src = re.sub(r"^(khoang\s+cach|khoảng\s+cách)\s+", "", src, flags=re.IGNORECASE).strip()
-
-        # Reject source that is just a travel-intent verb phrase, not a real location.
-        _INTENT_PHRASES = {
-            "duong di", "duong dan", "di toi", "di den", "dan den",
-            "dan toi", "chi duong", "chi dan", "tim duong",
-        }
-        if src in _INTENT_PHRASES or len(src) < 3:
-            return original
-
-        if len(dst) < 3:
-            return original
-
-        # Keep destination type hint from analyzer when available.
-        dst_type = "Location"
-        if len(original) >= 2 and isinstance(original[1], dict):
-            hinted = str(original[1].get("type") or "").strip()
-            if hinted:
-                dst_type = hinted
-
-        repaired = [
-            {"name": src, "type": "Location"},
-            {"name": dst, "type": dst_type},
-        ]
-
-        # Prefer repaired entities if analyzer output is malformed.
+        src, dst = DistanceQueryParser.parse(user_query)
+        repaired = []
+        if src:
+            repaired.append({
+                "name": src,
+                "type": "Location",
+                "role": "origin",
+                "source": "distance_parser",
+                "confidence": 1.0,
+                "trusted": True
+            })
+        if dst:
+            dst_type = "Location"
+            if len(original) >= 2 and isinstance(original[1], dict):
+                hinted = str(original[1].get("type") or "").strip()
+                if hinted:
+                    dst_type = hinted
+            elif len(original) == 1 and isinstance(original[0], dict):
+                hinted = str(original[0].get("type") or "").strip()
+                if hinted:
+                    dst_type = hinted
+            repaired.append({
+                "name": dst,
+                "type": dst_type,
+                "role": "destination",
+                "source": "distance_parser",
+                "confidence": 1.0,
+                "trusted": True
+            })
+        
         malformed = False
         if len(original) >= 1 and isinstance(original[0], dict):
             first = normalize_text(str(original[0].get("name") or ""), strip_punct=True)
-            malformed = (" den " in first) or (" đến " in first) or (" toi " in first) or (" tới " in first)
-        if malformed or len(original) < 2:
+            malformed = any(f" {conn} " in first for conn in keywords.DISTANCE_CONNECTORS)
+            
+        if (malformed or len(original) < 2) and repaired:
             return repaired
-
+            
         return original
 
     def _select_entities_for_grounding(self, state: PipelineRunState) -> List[Dict[str, Any]]:
@@ -534,7 +439,7 @@ class EntityProcessorMixin:
         # Determine if name has a proper-name component
         all_category_tokens = set(
             self._ACCOMMODATION_HINT_TOKENS + self._HERITAGE_HINT_TOKENS + self._TOURISM_HINT_TOKENS
-            + ["khu", "cong", "truyen", "thong", "lich", "su", "khao", "co"]
+            + keywords.ADDITIONAL_CATEGORY_TOKENS
         )
         tokens = name_norm.split()
         has_proper_name = any(tok not in all_category_tokens for tok in tokens)
