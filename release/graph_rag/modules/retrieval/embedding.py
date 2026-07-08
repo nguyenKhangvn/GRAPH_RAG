@@ -99,8 +99,8 @@ class LocalEmbeddingService:
                     return res
             except Exception as e:
                 if attempt == 4:
-                    logger.error("Hugging Face Inference API error: %s", e)
-                    raise e
+                    logger.error("Hugging Face Inference API error on URL %s: %s", self.api_url, e)
+                    raise RuntimeError(f"Hugging Face Inference API failed for URL {self.api_url}. Error: {e}") from e
                 time.sleep(2)
         raise RuntimeError("Failed to get response from HF Inference API after retries.")
 
