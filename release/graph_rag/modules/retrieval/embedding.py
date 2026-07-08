@@ -68,19 +68,78 @@ class LocalEmbeddingService:
                     ) from local_err
             raise
 
+    def _resolve_ip(self, hostname: str):
+        import urllib.request
+        import json
+        import ssl
+        
+        # Gọi DoH trực tiếp qua IP 1.1.1.1 (không cần qua DNS nội bộ của Render)
+        url = f"https://1.1.1.1/dns-query?name={hostname}&type=A"
+        req = urllib.request.Request(url, headers={"Accept": "application/dns-json"})
+        ctx = ssl._create_unverified_context()
+        try:
+            with urllib.request.urlopen(req, context=ctx, timeout=3) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                answers = data.get("Answer", [])
+                for ans in answers:
+                    if ans.get("type") == 1: # A record
+                        ip = ans.get("data")
+                        logger.info("DoH resolved %s -> %s via 1.1.1.1", hostname, ip)
+                        return ip
+        except Exception as e:
+            logger.warning("Cloudflare DoH on 1.1.1.1 failed: %s", e)
+            
+        # Dự phòng bằng Google DoH qua 8.8.8.8
+        url = f"https://8.8.8.8/resolve?name={hostname}&type=A"
+        try:
+            with urllib.request.urlopen(url, context=ctx, timeout=3) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                answers = data.get("Answer", [])
+                for ans in answers:
+                    if ans.get("type") == 1: # A record
+                        ip = ans.get("data")
+                        logger.info("Google DoH resolved %s -> %s via 8.8.8.8", hostname, ip)
+                        return ip
+        except Exception as e:
+            logger.warning("Google DoH on 8.8.8.8 failed: %s", e)
+            
+        return None
+
     def _call_api(self, inputs):
         import urllib.request
         import json
         import time
+        import ssl
 
-        headers = {
-            "Content-Type": "application/json",
-        }
+        api_host = "api-inference.huggingface.co"
+        ip = None
+        
+        try:
+            import socket
+            socket.gethostbyname(api_host)
+        except Exception:
+            logger.warning("DNS resolution failed normally for %s, trying DNS over HTTPS...", api_host)
+            ip = self._resolve_ip(api_host)
+
+        if ip:
+            target_url = self.api_url.replace(api_host, ip)
+            headers = {
+                "Content-Type": "application/json",
+                "Host": api_host,
+            }
+            ctx = ssl._create_unverified_context()
+        else:
+            target_url = self.api_url
+            headers = {
+                "Content-Type": "application/json",
+            }
+            ctx = None
+
         if self.hf_token:
             headers["Authorization"] = f"Bearer {self.hf_token}"
             
         req = urllib.request.Request(
-            self.api_url,
+            target_url,
             data=json.dumps({"inputs": inputs}).encode("utf-8"),
             headers=headers,
             method="POST"
@@ -89,7 +148,8 @@ class LocalEmbeddingService:
         # Thử lại tối đa 5 lần (đề phòng mô hình đang khởi động trên HF)
         for attempt in range(5):
             try:
-                with urllib.request.urlopen(req, timeout=15) as response:
+                response_obj = urllib.request.urlopen(req, context=ctx, timeout=15) if ctx else urllib.request.urlopen(req, timeout=15)
+                with response_obj as response:
                     res = json.loads(response.read().decode("utf-8"))
                     if isinstance(res, dict) and "estimated_time" in res:
                         wait_time = min(res.get("estimated_time", 10), 15)
@@ -99,8 +159,8 @@ class LocalEmbeddingService:
                     return res
             except Exception as e:
                 if attempt == 4:
-                    logger.error("Hugging Face Inference API error on URL %s: %s", self.api_url, e)
-                    raise RuntimeError(f"Hugging Face Inference API failed for URL {self.api_url}. Error: {e}") from e
+                    logger.error("Hugging Face Inference API error on URL %s: %s", target_url, e)
+                    raise RuntimeError(f"Hugging Face Inference API failed for URL {target_url}. Error: {e}") from e
                 time.sleep(2)
         raise RuntimeError("Failed to get response from HF Inference API after retries.")
 
