@@ -11,8 +11,9 @@ class LocalEmbeddingService:
         self.model_name = os.getenv("EMBEDDING_MODEL_NAME", "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2").strip().strip('"').strip("'")
         
         if self.use_api:
-            logger.info("Using Hugging Face Inference API for embeddings (Model: %s)", self.model_name)
-            self.api_url = f"https://api-inference.huggingface.co/models/{self.model_name}"
+            logger.info("Using Hugging Face Inference API via InferenceClient (Model: %s)", self.model_name)
+            from huggingface_hub import InferenceClient
+            self.client = InferenceClient(api_key=self.hf_token)
         else:
             logger.info("Loading embedding model local: %s...", self.model_name)
             self.model = self._load_model(self.model_name)
@@ -68,101 +69,36 @@ class LocalEmbeddingService:
                     ) from local_err
             raise
 
-    def _resolve_ip(self, hostname: str):
-        import urllib.request
-        import json
-        import ssl
-        
-        # Gọi DoH trực tiếp qua IP 1.1.1.1 (không cần qua DNS nội bộ của Render)
-        url = f"https://1.1.1.1/dns-query?name={hostname}&type=A"
-        req = urllib.request.Request(url, headers={"Accept": "application/dns-json"})
-        ctx = ssl._create_unverified_context()
-        try:
-            with urllib.request.urlopen(req, context=ctx, timeout=3) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                answers = data.get("Answer", [])
-                for ans in answers:
-                    if ans.get("type") == 1: # A record
-                        ip = ans.get("data")
-                        logger.info("DoH resolved %s -> %s via 1.1.1.1", hostname, ip)
-                        return ip
-        except Exception as e:
-            logger.warning("Cloudflare DoH on 1.1.1.1 failed: %s", e)
-            
-        # Dự phòng bằng Google DoH qua 8.8.8.8
-        url = f"https://8.8.8.8/resolve?name={hostname}&type=A"
-        try:
-            with urllib.request.urlopen(url, context=ctx, timeout=3) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                answers = data.get("Answer", [])
-                for ans in answers:
-                    if ans.get("type") == 1: # A record
-                        ip = ans.get("data")
-                        logger.info("Google DoH resolved %s -> %s via 8.8.8.8", hostname, ip)
-                        return ip
-        except Exception as e:
-            logger.warning("Google DoH on 8.8.8.8 failed: %s", e)
-            
-        return None
-
     def _call_api(self, inputs):
-        import urllib.request
-        import json
+        """Call Hugging Face Inference API via InferenceClient with retries."""
         import time
-        import ssl
-
-        api_host = "api-inference.huggingface.co"
-        ip = None
         
-        try:
-            import socket
-            socket.gethostbyname(api_host)
-        except Exception:
-            logger.warning("DNS resolution failed normally for %s, trying DNS over HTTPS...", api_host)
-            ip = self._resolve_ip(api_host)
-
-        if ip:
-            target_url = self.api_url.replace(api_host, ip)
-            headers = {
-                "Content-Type": "application/json",
-                "Host": api_host,
-            }
-            ctx = ssl._create_unverified_context()
-        else:
-            target_url = self.api_url
-            headers = {
-                "Content-Type": "application/json",
-            }
-            ctx = None
-
-        if self.hf_token:
-            headers["Authorization"] = f"Bearer {self.hf_token}"
-            
-        req = urllib.request.Request(
-            target_url,
-            data=json.dumps({"inputs": inputs}).encode("utf-8"),
-            headers=headers,
-            method="POST"
-        )
-        
-        # Thử lại tối đa 5 lần (đề phòng mô hình đang khởi động trên HF)
+        last_error = None
         for attempt in range(5):
             try:
-                response_obj = urllib.request.urlopen(req, context=ctx, timeout=15) if ctx else urllib.request.urlopen(req, timeout=15)
-                with response_obj as response:
-                    res = json.loads(response.read().decode("utf-8"))
-                    if isinstance(res, dict) and "estimated_time" in res:
-                        wait_time = min(res.get("estimated_time", 10), 15)
-                        logger.info("Model is loading on HF. Waiting %ss...", wait_time)
-                        time.sleep(wait_time)
-                        continue
-                    return res
+                res = self.client.feature_extraction(inputs, model=self.model_name)
+                
+                # Convert numpy array to list if needed
+                if hasattr(res, "tolist"):
+                    res = res.tolist()
+                
+                # Normalize output structure
+                if isinstance(inputs, str):
+                    if res and isinstance(res, list) and isinstance(res[0], list):
+                        res = res[0]
+                else:
+                    if res and isinstance(res, list) and not isinstance(res[0], list):
+                        res = [res]
+                        
+                return res
             except Exception as e:
-                if attempt == 4:
-                    logger.error("Hugging Face Inference API error on URL %s: %s", target_url, e)
-                    raise RuntimeError(f"Hugging Face Inference API failed for URL {target_url}. Error: {e}") from e
+                last_error = e
+                logger.warning("Hugging Face Inference API error on attempt %d: %s", attempt + 1, e)
+                # Exponential backoff or constant sleep before retrying
                 time.sleep(2)
-        raise RuntimeError("Failed to get response from HF Inference API after retries.")
+        
+        logger.error("Hugging Face Inference API failed after all retries. Last error: %s", last_error)
+        raise RuntimeError(f"Hugging Face Inference API failed. Error: {last_error}") from last_error
 
     def embed_query(self, text: str) -> list:
         """Chuyển text thành vector (list of floats)."""

@@ -52,20 +52,20 @@ if current_dir not in sys.path:
     sys.path.append(current_dir)
 
 from dotenv import load_dotenv
-load_dotenv(os.path.join(current_dir, "graph_rag", ".env"))
-load_dotenv(os.path.join(current_dir, ".env"))
+load_dotenv(os.path.join(current_dir, ".env"), override=True)
+load_dotenv(os.path.join(current_dir, "graph_rag", ".env"), override=False)
 
 from graph_rag.pipeline.graph_rag_pipeline import RAGPipeline
 from graph_rag.modules.retrieval.embedding import LocalEmbeddingService
 from graph_rag.services.database import Neo4jService
 
-print("📥 Khởi tạo Embedding service và RAG Pipeline...")
+print("[INFO] Khoi tao Embedding service va RAG Pipeline...")
 try:
     embedder = LocalEmbeddingService()
     # Let pipeline pick provider/key by model from environment.
     pipeline = RAGPipeline(embedding_service=embedder)
 except Exception as e:
-    print(f"❌ Lỗi khởi tạo Pipeline: {e}")
+    print(f"[ERROR] Loi khoi tao Pipeline: {e}")
     sys.exit(1)
 
 
@@ -89,9 +89,9 @@ async def real_graphrag_engine(query: str, chat_history: List[MessageRole]):
         result = await loop.run_in_executor(None, pipeline.run, query, history_dicts, "")
         answer = result["answer"]
         raw_meta = result["metadata"]
-        print(f"✅ RAGPipeline hoàn thành trong {time.time() - start_time:.2f}s")
+        print(f"[SUCCESS] RAGPipeline hoan thanh trong {time.time() - start_time:.2f}s")
     except Exception as e:
-         print(f"❌ Lỗi gọi RAGPipeline: {e}")
+         print(f"[ERROR] Loi goi RAGPipeline: {e}")
          answer = "Xin lỗi, hệ thống AI đang gặp sự cố khi truy vấn cơ sở dữ liệu."
          raw_meta = {}
 

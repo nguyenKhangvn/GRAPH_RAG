@@ -27,8 +27,13 @@ cfg = ConfigLoader()
 
 from dotenv import load_dotenv
 
-# 1. Load .env
-load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=True)
+# 1. Load root .env (primary configuration)
+root_env = Path(__file__).resolve().parent.parent.parent / ".env"
+if root_env.exists():
+    load_dotenv(root_env, override=True)
+
+# 2. Load graph_rag/.env as fallback defaults (do NOT override)
+load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=False)
 
 # =============================================================================
 #  SECTION 1: DATABASE CONFIGURATION (NEO4J)

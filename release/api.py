@@ -32,8 +32,8 @@ sys.path.append(parent_dir)
 from dotenv import load_dotenv
 GRAPH_RAG_DOTENV_PATH = os.path.join(current_dir, "graph_rag", ".env")
 ROOT_DOTENV_PATH = os.path.join(current_dir, ".env")
-load_dotenv(GRAPH_RAG_DOTENV_PATH)
-load_dotenv(ROOT_DOTENV_PATH)
+load_dotenv(ROOT_DOTENV_PATH, override=True)
+load_dotenv(GRAPH_RAG_DOTENV_PATH, override=False)
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
