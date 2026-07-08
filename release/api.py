@@ -393,7 +393,11 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
             yield f"event: message\ndata: {payload}\n\n"
 
         # --- Build map locations ---
-        source_nodes = metadata.get("route_seed_nodes") or metadata.get("seed_nodes", [])
+        source_nodes = (
+            metadata.get("answered_route_nodes")
+            or metadata.get("route_seed_nodes")
+            or metadata.get("seed_nodes", [])
+        )
         locations = []
         for node in source_nodes:
             lat = node.get("lat")

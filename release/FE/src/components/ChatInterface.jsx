@@ -55,21 +55,10 @@ const isItineraryMessage = (text) => {
  */
 const extractNonItineraryText = (text) => {
   if (!text) return "";
-  // Find the last occurrence of a day header
-  const dayPattern = /(?:^|\n).{0,10}?(?:Ngày|Day|NGÀY)\s*\d+[^\n]*/gi;
-  let lastIndex = 0;
-  let m;
-  while ((m = dayPattern.exec(text)) !== null) {
-    lastIndex = m.index + m[0].length;
-  }
-  // Everything after the last day header's first line
-  const rest = text.slice(lastIndex).trim();
-  // Remove time-slot lines from rest (they are rendered in ItineraryCard)
-  return rest
-    .split("\n")
-    .filter((line) => !/^\s*[\*\-]?\s*\d{1,2}:\d{2}/.test(line))
-    .join("\n")
-    .trim();
+  const footerPattern = /(?:🏨|💰|💡|⚠️|Gợi\s+ý\s+nghỉ\s+đêm|Ước\s+tính\s+chi\s+phí|Lưu\s+ý\s+thực\s+tế|Ràng\s+buộc\s+đã\s+tuân\s+thủ)/i;
+  const footerMatch = text.match(footerPattern);
+  if (!footerMatch) return "";
+  return text.slice(footerMatch.index).trim();
 };
 
 

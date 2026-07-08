@@ -86,14 +86,17 @@ async def real_graphrag_engine(query: str, chat_history: List[MessageRole]):
     current_intent = str(raw_meta.get("intent", "DISCOVERY"))
     
     locations = []
-    # Quét qua các node tìm được, lấy lat/lng nếu có (giả sử node có properties latitude và longitude)
-    # Tuỳ thuộc schema Neo4j của bạn có lưu toạ độ dưới dạng gì, ở đây parse mẫu lat/lng hoặc latitude/longitude
-    for node in raw_meta.get("seed_nodes", []):
+    source_nodes = (
+        raw_meta.get("answered_route_nodes")
+        or raw_meta.get("route_seed_nodes")
+        or raw_meta.get("seed_nodes", [])
+    )
+    for node in source_nodes:
         attrs = node.get("attributes", {})
         
-        # Thử lấy lat/lng từ các keyword thông dụng trong db
-        lat = attrs.get("latitude") or attrs.get("lat")
-        lng = attrs.get("longitude") or attrs.get("lng")
+        # Thử lấy lat/lng từ các keyword thông dụng trong db (hỗ trợ cả cấp gốc hoặc attributes)
+        lat = node.get("lat") or attrs.get("latitude") or attrs.get("lat")
+        lng = node.get("lng") or attrs.get("longitude") or attrs.get("lng")
         
         # Nếu node đó thoả mãn có toạ độ -> Đẩy vào list pin
         if lat is not None and lng is not None:

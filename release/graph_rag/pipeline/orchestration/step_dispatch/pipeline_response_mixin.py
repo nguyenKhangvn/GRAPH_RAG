@@ -269,9 +269,110 @@ class PipelineResponseMixin:
         # Regex patterns for flexible matching: "con <word> nao khac", "khac nua khong"
         if re.search(r"con\s+\w+\s+nao\s+khac", q):
             return True
-        if re.search(r"khac\s+nua\s+khong", q):
-            return True
-        return False
+    def _select_answered_route_nodes(self, answer: str, seeds: List[Any]) -> List[Dict[str, Any]]:
+        """Select map points that are explicitly mentioned in the LLM answer, sorted strictly by their order of appearance, resolved to Neo4j IDs.
+        Uses exact normalized match first, then token-overlap fallback for partial/variant names.
+        """
+        if not seeds or not answer:
+            return []
+
+        norm_answer = normalize_text(answer, strip_punct=True)
+        if not norm_answer:
+            return []
+
+        matched = []
+        seen_ids: set = set()
+        for seed in seeds:
+            name = seed.metadata.get("name") or seed.content
+            lat = seed.metadata.get("lat")
+            lng = seed.metadata.get("lng")
+            if not name or lat is None or lng is None:
+                continue
+
+            norm_name = normalize_text(name, strip_punct=True)
+            if len(norm_name) < 4:
+                continue
+
+            # Pass 1: exact substring match
+            idx = norm_answer.find(norm_name)
+
+            # Pass 2: token-overlap fallback (≥0.7 of name tokens found in answer)
+            if idx < 0:
+                name_tokens = [t for t in norm_name.split() if len(t) >= 3]
+                if name_tokens:
+                    found_tokens = [t for t in name_tokens if t in norm_answer]
+                    overlap = len(found_tokens) / len(name_tokens)
+                    if overlap >= 0.7:
+                        # Find approx position by first matching token
+                        idx = norm_answer.find(found_tokens[0]) if found_tokens else -1
+
+            if idx >= 0 and str(seed.id) not in seen_ids:
+                seen_ids.add(str(seed.id))
+                matched.append(
+                    {
+                        "id": seed.id,
+                        "name": name,
+                        "labels": seed.metadata.get("labels", []),
+                        "attributes": seed.metadata,
+                        "lat": lat,
+                        "lng": lng,
+                        "order": idx,
+                    }
+                )
+
+        # Sort strictly by index of appearance in the LLM answer
+        matched.sort(key=lambda item: item["order"])
+        result = [{k: v for k, v in item.items() if k != "order"} for item in matched]
+        logger.info("   -> [answered_route_nodes] matched %d/%d seeds in LLM answer", len(result), len(seeds))
+        return result
+
+    def _select_answered_route_nodes_from_dicts(self, answer: str, route_nodes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Same logic as _select_answered_route_nodes but input is plain dicts (route_seed_nodes format).
+
+        This is used when route_seed_nodes is already populated by the optimizer (expanded Location/Tour
+        nodes into real map-points), so we filter *that* expanded list rather than raw NodeItems.
+        """
+        if not route_nodes or not answer:
+            return []
+
+        norm_answer = normalize_text(answer, strip_punct=True)
+        if not norm_answer:
+            return []
+
+        matched = []
+        seen_ids: set = set()
+        for node in route_nodes:
+            name = node.get("name") or ""
+            lat = node.get("lat")
+            lng = node.get("lng")
+            if not name or lat is None or lng is None:
+                continue
+
+            norm_name = normalize_text(name, strip_punct=True)
+            if len(norm_name) < 4:
+                continue
+
+            # Pass 1: exact substring match
+            idx = norm_answer.find(norm_name)
+
+            # Pass 2: token-overlap fallback (≥0.7 of name tokens found in answer)
+            if idx < 0:
+                name_tokens = [t for t in norm_name.split() if len(t) >= 3]
+                if name_tokens:
+                    found_tokens = [t for t in name_tokens if t in norm_answer]
+                    overlap = len(found_tokens) / len(name_tokens)
+                    if overlap >= 0.7:
+                        idx = norm_answer.find(found_tokens[0]) if found_tokens else -1
+
+            nid = str(node.get("id", ""))
+            if idx >= 0 and nid not in seen_ids:
+                seen_ids.add(nid)
+                matched.append({**node, "order": idx})
+
+        matched.sort(key=lambda item: item["order"])
+        result = [{k: v for k, v in item.items() if k != "order"} for item in matched]
+        logger.info("   -> [answered_route_nodes/dicts] matched %d/%d route candidates", len(result), len(route_nodes))
+        return result
 
     def _finalize_pipeline_response(self, state: PipelineRunState) -> Dict[str, Any]:
         p = self.pipeline
@@ -334,6 +435,27 @@ class PipelineResponseMixin:
                 state.all_seeds or [],
                 intent,
             )
+        # For TOUR_PLAN: filter the optimizer-expanded candidates (route_seed_nodes dicts)
+        # so we only show nodes actually mentioned by the LLM.
+        # For other intents: filter all_seeds NodeItems.
+        _source_for_filter = state.runtime.metadata.get("route_seed_nodes") or None
+        if _source_for_filter:
+            _answered = self._select_answered_route_nodes_from_dicts(
+                state.answer,
+                _source_for_filter,
+            )
+        else:
+            _answered = self._select_answered_route_nodes(
+                state.answer,
+                state.all_seeds or []
+            )
+        # Only store if we got real matches; None signals "use route_seed_nodes fallback"
+        state.runtime.metadata["answered_route_nodes"] = _answered if _answered else None
+        logger.info(
+            "   -> [answered_route_nodes] stored %s nodes (from %s)",
+            len(_answered) if _answered else 0,
+            "route_seed_nodes" if _source_for_filter else "all_seeds",
+        )
         state.runtime.metadata["graph"] = p._build_graph_payload(
             state.all_seeds,
             state.raw_context,

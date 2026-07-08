@@ -1100,6 +1100,14 @@
     font-size: 0.82rem;
     color: var(--text-dark);
     line-height: 1.4;
+    font-weight: 600;
+}
+
+.itin-slot-desc {
+    font-size: 0.76rem;
+    color: #4b5563;
+    line-height: 1.45;
+    margin-top: 4px;
 }
 
 .itin-slot-empty {

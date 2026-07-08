@@ -552,6 +552,16 @@ class AnswerGenerator:
         if len(time_hits) < min_slots:
             issues.append(f"Not enough realistic time slots (need at least {min_slots}).")
 
+        # Check that each day section has at least 4 time hits (2 slots)
+        day_sections = re.split(r"(?:^|\n).{0,10}?(?:Ngày|Day|NGÀY)\s*\d+", answer, flags=re.IGNORECASE)
+        if len(day_sections) > 1:
+            for d_idx, day_content in enumerate(day_sections[1:max(1, days) + 1], start=1):
+                day_time_hits = re.findall(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\b", day_content)
+                logger.debug("[Verifier Debug] Day %d hits (%d): %s", d_idx, len(day_time_hits), day_time_hits)
+                if len(day_time_hits) < 6:
+                    issues.append(f"Ngày {d_idx} không có đủ mốc thời gian cụ thể (cần ít nhất 6 mốc thời gian hh:mm hoặc 3 khung giờ để tạo timeline).")
+        logger.debug("[Verifier Debug] day_sections length: %d, days: %d, current issues: %s", len(day_sections), days, issues)
+
         if days >= 2:
             if "nghi dem" not in low and "nghỉ đêm" not in low and "gợi ý nghỉ đêm" not in low:
                 issues.append("Multi-day tour must include a 'Gợi ý nghỉ đêm' section.")
