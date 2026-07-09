@@ -5,8 +5,9 @@ import React, {
   useMemo,
   useRef,
   useState,
+  useCallback,
 } from "react";
-import { Search, MapPin } from "lucide-react";
+import { Search, MapPin, Loader2 } from "lucide-react";
 import CategoryFilters from "./CategoryFilters";
 import {
   createMapService,
@@ -14,7 +15,7 @@ import {
 } from "../services/map/mapServiceFactory";
 import { createRouteService } from "../services/route/routeServiceFactory";
 
-import { filterLocations } from "../utils/locationFilters";
+import { filterLocations, normalizeText } from "../utils/locationFilters";
 
 const GRAPH_VIEW_PRELOADED_KEY = "graph_view_preloaded_once";
 const MAP_PROVIDER_STORAGE_KEY = "runtime_map_provider";
@@ -71,6 +72,19 @@ const isSameLocation = (left, right) => {
 const isValidCoordinate = (loc) =>
   Number.isFinite(loc?.coordinates?.lat) &&
   Number.isFinite(loc?.coordinates?.lng);
+
+const cleanGeocodeName = (name, lat, lng) => {
+  if (!name) return "";
+  const isQuyNhonArea =
+    lat >= 13.5 && lat <= 14.1 &&
+    lng >= 109.0 && lng <= 109.5;
+  if (isQuyNhonArea) {
+    return name
+      .replace(/Gia Lai/g, "Bình Định")
+      .replace(/Tỉnh Gia Lai/g, "Tỉnh Bình Định");
+  }
+  return name;
+};
 
 const safeClearMarkers = (service) => {
   if (!service) return;
@@ -275,12 +289,28 @@ const MapInterface = ({
 }) => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchText, setSearchText] = useState("");
+  const [searchedLocation, setSearchedLocation] = useState(null);
+  const [isSearching, setIsSearching] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const [activeView, setActiveView] = useState("map");
   const [mapProvider, setMapProvider] = useState(resolveInitialProvider);
   const [routePositions, setRoutePositions] = useState([]);
   const [selectedGraphNode, setSelectedGraphNode] = useState(null);
   const [isGraphBootstrapping, setIsGraphBootstrapping] = useState(false);
+  const selectedLocation = useMemo(() => {
+    if (!selectedGraphNode || !Array.isArray(mapLocations)) return null;
+    return (
+      mapLocations.find(
+        (loc) => String(loc.id) === String(selectedGraphNode.id),
+      ) ||
+      mapLocations.find((loc) => loc.name === selectedGraphNode.name) ||
+      null
+    );
+  }, [selectedGraphNode, mapLocations]);
   const routeCacheRef = useRef(new Map());
+  const searchContainerRef = useRef(null);
+  const debounceTimeoutRef = useRef(null);
 
   const routeService = useMemo(
     () =>
@@ -350,6 +380,317 @@ const MapInterface = ({
     return filterLocations(mapLocations, activeCategory, searchText);
   }, [mapLocations, activeCategory, searchText]);
 
+  const displayedLocations = useMemo(() => {
+    if (!searchedLocation) return filteredLocations;
+
+    const exists = filteredLocations.some(
+      (loc) =>
+        loc.name === searchedLocation.name ||
+        (isValidCoordinate(loc) &&
+          Math.abs(loc.coordinates.lat - searchedLocation.coordinates.lat) < 0.0001 &&
+          Math.abs(loc.coordinates.lng - searchedLocation.coordinates.lng) < 0.0001),
+    );
+
+    return exists ? filteredLocations : [...filteredLocations, searchedLocation];
+  }, [filteredLocations, searchedLocation]);
+
+  const handleSearchTextChange = (e) => {
+    const val = e.target.value;
+    setSearchText(val);
+    if (!val.trim()) {
+      setSearchedLocation(null);
+      setSuggestions([]);
+    }
+  };
+
+  const fetchSuggestions = useCallback(async (query) => {
+    if (!query.trim()) {
+      setSuggestions([]);
+      return;
+    }
+
+    try {
+      // 1. Get local matches (normalize strings for accent-insensitive search)
+      const normalizedQuery = normalizeText(query);
+      const localMatches = (mapLocations || [])
+        .filter((loc) => {
+          const normalizedLocName = normalizeText(loc.name || "");
+          return normalizedLocName.includes(normalizedQuery);
+        })
+        .slice(0, 3)
+        .map((loc) => ({
+          id: `local-${loc.id}`,
+          name: loc.name,
+          coordinates: loc.coordinates,
+          isLocal: true,
+        }));
+
+      // 2. Get database matches from backend Neo4j
+      let dbMatches = [];
+      try {
+        const beUrl = `${API_BASE_URL}/api/places/search?q=${encodeURIComponent(query)}`;
+        const beRes = await fetch(beUrl);
+        if (beRes.ok) {
+          const beData = await beRes.json();
+          dbMatches = (beData || [])
+            .filter((item) => item.location && item.location.length >= 2)
+            .map((item) => ({
+              id: `db-${item.id}`,
+              name: item.name,
+              coordinates: { lat: item.location[1], lng: item.location[0] },
+              isLocal: false,
+              isDatabase: true,
+              type: item.type,
+              address: item.address,
+              province: item.province,
+            }));
+        }
+      } catch (beErr) {
+        console.warn("Backend database search failed:", beErr);
+      }
+
+      // 3. Get global matches
+      let globalMatches = [];
+      const geocodeSearchQuery = query
+        .replace(/ì/g, "ỳ")
+        .replace(/í/g, "ý")
+        .replace(/ỉ/g, "ỷ")
+        .replace(/ĩ/g, "ỹ")
+        .replace(/ị/g, "ỵ");
+
+      if (mapProvider === "mapbox") {
+        if (MAPBOX_ACCESS_TOKEN) {
+          const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+            geocodeSearchQuery
+          )}.json?access_token=${MAPBOX_ACCESS_TOKEN}&limit=5&language=vi&country=vn`;
+          const res = await fetch(url);
+          const data = await res.json();
+          if (data.features) {
+            globalMatches = data.features.map((feat) => {
+              const [lng, lat] = feat.center;
+              return {
+                id: `global-${feat.id}`,
+                name: cleanGeocodeName(feat.place_name || feat.text, lat, lng),
+                coordinates: { lat, lng },
+                isLocal: false,
+              };
+            });
+          }
+        }
+      } else {
+        const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
+          geocodeSearchQuery
+        )}&format=json&limit=5&accept-language=vi&countrycodes=vn`;
+        const res = await fetch(url, {
+          headers: { "User-Agent": "TravelChatbotFE/1.0" },
+        });
+        const data = await res.json();
+        if (data) {
+          globalMatches = data.map((item) => {
+            const lat = parseFloat(item.lat);
+            const lng = parseFloat(item.lon);
+            return {
+              id: `global-osm-${item.place_id}`,
+              name: cleanGeocodeName(item.display_name, lat, lng),
+              coordinates: { lat, lng },
+              isLocal: false,
+            };
+          });
+        }
+      }
+
+      // Filter out duplicate database coordinates if they match local ones
+      const filteredDb = dbMatches.filter(
+        (db) =>
+          !localMatches.some(
+            (l) =>
+              Math.abs(l.coordinates.lat - db.coordinates.lat) < 0.0005 &&
+              Math.abs(l.coordinates.lng - db.coordinates.lng) < 0.0005
+          )
+      );
+
+      // Filter out duplicate global coordinates if they match local or db ones
+      const filteredGlobal = globalMatches.filter(
+        (g) =>
+          !localMatches.some(
+            (l) =>
+              Math.abs(l.coordinates.lat - g.coordinates.lat) < 0.0005 &&
+              Math.abs(l.coordinates.lng - g.coordinates.lng) < 0.0005
+          ) &&
+          !filteredDb.some(
+            (db) =>
+              Math.abs(db.coordinates.lat - g.coordinates.lat) < 0.0005 &&
+              Math.abs(db.coordinates.lng - g.coordinates.lng) < 0.0005
+          )
+      );
+
+      setSuggestions([...localMatches, ...filteredDb, ...filteredGlobal]);
+    } catch (err) {
+      console.error("Fetch suggestions failed:", err);
+    }
+  }, [mapProvider, mapLocations]);
+
+  useEffect(() => {
+    if (debounceTimeoutRef.current) {
+      clearTimeout(debounceTimeoutRef.current);
+    }
+
+    if (!searchText.trim()) {
+      setSuggestions([]);
+      return;
+    }
+
+    const isAlreadySelected =
+      (searchedLocation && searchedLocation.name === searchText) ||
+      (selectedLocation && selectedLocation.name === searchText);
+
+    if (isAlreadySelected) {
+      setSuggestions([]);
+      return;
+    }
+
+    debounceTimeoutRef.current = setTimeout(() => {
+      fetchSuggestions(searchText);
+    }, 350);
+
+    return () => {
+      if (debounceTimeoutRef.current) {
+        clearTimeout(debounceTimeoutRef.current);
+      }
+    };
+  }, [searchText, mapProvider, mapLocations, fetchSuggestions, searchedLocation, selectedLocation]);
+
+  // Click outside to close suggestions
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        searchContainerRef.current &&
+        !searchContainerRef.current.contains(e.target)
+      ) {
+        setShowSuggestions(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleSelectSuggestion = (suggestion) => {
+    setSearchText(suggestion.name);
+    setSuggestions([]);
+    setShowSuggestions(false);
+
+    if (suggestion.isLocal) {
+      setSearchedLocation(null);
+      const matchedLocal = mapLocations?.find(
+        (loc) => loc.name === suggestion.name
+      );
+      if (matchedLocal) {
+        setSelectedGraphNode({ id: matchedLocal.id, name: matchedLocal.name });
+      }
+    } else {
+      setSearchedLocation({
+        id: suggestion.id,
+        name: suggestion.name,
+        coordinates: suggestion.coordinates,
+        isSearched: true,
+      });
+    }
+  };
+
+  const handleSearchSubmit = async (e) => {
+    if (e) e.preventDefault();
+    const query = searchText.trim();
+    if (!query) return;
+
+    setShowSuggestions(false);
+
+    // If there is suggestions list, pick the first suggestion to focus
+    if (suggestions.length > 0) {
+      handleSelectSuggestion(suggestions[0]);
+      return;
+    }
+
+    setIsSearching(true);
+    try {
+      const normalizedQuery = normalizeText(query);
+      const localMatch = mapLocations?.find(
+        (loc) => normalizeText(loc.name || "").includes(normalizedQuery)
+      );
+
+      if (localMatch) {
+        setSearchedLocation(null);
+        setSelectedGraphNode({ id: localMatch.id, name: localMatch.name });
+        setIsSearching(false);
+        return;
+      }
+
+      const geocodeSearchQuery = query
+        .replace(/ì/g, "ỳ")
+        .replace(/í/g, "ý")
+        .replace(/ỉ/g, "ỷ")
+        .replace(/ĩ/g, "ỹ")
+        .replace(/ị/g, "ỵ");
+
+      if (mapProvider === "mapbox") {
+        if (!MAPBOX_ACCESS_TOKEN) {
+          console.warn("Mapbox access token is missing.");
+          setIsSearching(false);
+          return;
+        }
+
+        const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+          geocodeSearchQuery
+        )}.json?access_token=${MAPBOX_ACCESS_TOKEN}&limit=1&language=vi&country=vn`;
+
+        const res = await fetch(url);
+        const data = await res.json();
+        if (data.features && data.features.length > 0) {
+          const feat = data.features[0];
+          const [lng, lat] = feat.center;
+          setSearchedLocation({
+            id: `searched-${feat.id}`,
+            name: cleanGeocodeName(feat.place_name || feat.text, lat, lng),
+            coordinates: { lat, lng },
+            isSearched: true,
+          });
+        } else {
+          alert("Không tìm thấy địa điểm này trên bản đồ.");
+        }
+      } else {
+        const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
+          geocodeSearchQuery
+        )}&format=json&limit=1&accept-language=vi&countrycodes=vn`;
+
+        const res = await fetch(url, {
+          headers: {
+            "User-Agent": "TravelChatbotFE/1.0",
+          },
+        });
+        const data = await res.json();
+        if (data && data.length > 0) {
+          const item = data[0];
+          const lat = parseFloat(item.lat);
+          const lng = parseFloat(item.lon);
+          setSearchedLocation({
+            id: `searched-osm-${item.place_id}`,
+            name: cleanGeocodeName(item.display_name, lat, lng),
+            coordinates: { lat, lng },
+            isSearched: true,
+          });
+        } else {
+          alert("Không tìm thấy địa điểm này trên bản đồ.");
+        }
+      }
+    } catch (err) {
+      console.error("Geocoding failed:", err);
+    } finally {
+      setIsSearching(false);
+    }
+  };
+
   const shouldDrawRoute =
     (isItineraryIntent || isDistanceIntent) &&
     filteredLocations &&
@@ -365,17 +706,6 @@ const MapInterface = ({
     }
     return { nodes: [], links: [] };
   }, [mapGraph]);
-
-  const selectedLocation = useMemo(() => {
-    if (!selectedGraphNode || !Array.isArray(mapLocations)) return null;
-    return (
-      mapLocations.find(
-        (loc) => String(loc.id) === String(selectedGraphNode.id),
-      ) ||
-      mapLocations.find((loc) => loc.name === selectedGraphNode.name) ||
-      null
-    );
-  }, [selectedGraphNode, mapLocations]);
 
   const graphLegend = useMemo(() => {
     if (!graphData?.nodes?.length) return [];
@@ -724,15 +1054,58 @@ const MapInterface = ({
           </div>
         )}
 
-        <div className="search-bar glass-panel">
-          <Search size={20} color="var(--text-muted)" />
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Tìm địa điểm..."
-            value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
-          />
+        <div ref={searchContainerRef} className="search-container-wrapper">
+          <form onSubmit={handleSearchSubmit} className="search-bar glass-panel">
+            <button type="submit" disabled={isSearching} className="search-btn">
+              {isSearching ? (
+                <Loader2 size={20} className="animate-spin" />
+              ) : (
+                <Search size={20} />
+              )}
+            </button>
+            <input
+              type="text"
+              className="search-input"
+              placeholder={isSearching ? "Đang tìm kiếm..." : "Tìm địa điểm..."}
+              value={searchText}
+              onChange={handleSearchTextChange}
+              onFocus={() => setShowSuggestions(true)}
+              disabled={isSearching}
+            />
+          </form>
+
+          {showSuggestions && suggestions.length > 0 && (
+            <div className="search-suggestions-dropdown glass-panel">
+              {suggestions.map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  className="suggestion-item"
+                  onClick={() => handleSelectSuggestion(item)}
+                >
+                  <MapPin
+                    size={16}
+                    className={
+                      item.isLocal
+                        ? "icon-local"
+                        : item.isDatabase
+                        ? "icon-database"
+                        : "icon-global"
+                    }
+                  />
+                  <div className="suggestion-text">
+                    <span className="suggestion-name">{item.name}</span>
+                    {item.isLocal && (
+                      <span className="suggestion-badge">Trong lịch trình</span>
+                    )}
+                    {item.isDatabase && (
+                      <span className="suggestion-badge-db">Trong hệ thống</span>
+                    )}
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
         <CategoryFilters
           activeCategory={activeCategory}
@@ -743,8 +1116,8 @@ const MapInterface = ({
       {activeView === "map" ? (
         <MapProviderCanvas
           mapProvider={mapProvider}
-          filteredLocations={filteredLocations}
-          selectedLocation={selectedLocation}
+          filteredLocations={displayedLocations}
+          selectedLocation={searchedLocation || selectedLocation}
           routePositions={shouldDrawRoute ? routePositions : []}
           locationColors={locationColors}
         />

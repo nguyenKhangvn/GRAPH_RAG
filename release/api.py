@@ -23,7 +23,7 @@ def _ipv4_only_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
 socket.getaddrinfo = _ipv4_only_getaddrinfo
 
 from datetime import date
-from typing import List, AsyncGenerator
+from typing import List, AsyncGenerator, Optional
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
@@ -501,6 +501,67 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
 @app.get("/")
 def read_root():
     return {"message": "GraphRAG API v2 — SSE Streaming đang chạy!"}
+
+
+class PlaceSearchResponse(BaseModel):
+    id: str
+    name: str
+    type: str
+    address: str = ""
+    location: Optional[List[float]] = None
+    province: str = ""
+
+
+@app.get("/api/places/search", response_model=List[PlaceSearchResponse])
+def search_places(q: str = ""):
+    q = (q or "").strip()
+    if not q:
+        return []
+
+    from graph_rag.services.database import Neo4jService
+    try:
+        driver = Neo4jService.get_driver()
+    except Exception as exc:
+        APP_LOGGER.error("Failed to connect to Neo4j for search: %s", exc)
+        return []
+
+    query = """
+    MATCH (n)
+    WHERE (n:TouristAttraction OR n:Restaurant OR n:Accommodation)
+      AND toLower(n.name) CONTAINS toLower($q)
+    RETURN n.id AS id, n.name AS name, labels(n) AS labels, n.location AS location, n.address AS address, n.province AS province
+    LIMIT 15
+    """
+
+    results = []
+    try:
+        with driver.session() as session:
+            res = session.run(query, q=q)
+            for record in res:
+                labels = record["labels"] or []
+                primary_label = labels[0] if labels else "Location"
+                location = record["location"]
+                
+                coords = None
+                if isinstance(location, list) and len(location) >= 2:
+                    try:
+                        coords = [float(location[0]), float(location[1])]
+                    except (ValueError, TypeError):
+                        pass
+                
+                results.append({
+                    "id": str(record["id"] or ""),
+                    "name": str(record["name"] or ""),
+                    "type": str(primary_label),
+                    "address": str(record["address"] or ""),
+                    "location": coords,
+                    "province": str(record["province"] or ""),
+                })
+    except Exception as exc:
+        APP_LOGGER.error("Neo4j place search query error: %s", exc)
+        raise HTTPException(status_code=500, detail=f"Database search failed: {exc}")
+
+    return results
 
 
 @app.post("/api/mapbox/directions")
