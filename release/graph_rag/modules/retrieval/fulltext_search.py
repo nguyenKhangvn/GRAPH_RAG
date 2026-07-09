@@ -103,6 +103,11 @@ def _region_group_for_cypher(region_group):
         return None
     if region_group and not isinstance(region_group, str):
         logger.warning("[DEBUG-CYPHER-PARAM] unexpected region_group type: %s = %s", type(region_group).__name__, region_group)
+    # Map registry region groups to DB region groups
+    if region_group == "tay_nguyen":
+        return "gia_lai_core"
+    if region_group == "duyen_hai_nam_trung_bo":
+        return "binh_dinh_legacy"
     return region_group
 
 
@@ -141,6 +146,11 @@ def _matches_region(record: Dict, region_group, legacy_province: Optional[str]) 
                 expected_groups.add(region_group)  # include the group itself
             else:
                 expected_groups = {region_group}
+        # Add database-specific region_group mapped values for hybrid matching
+        if "tay_nguyen" in expected_groups:
+            expected_groups.add("gia_lai_core")
+        if "duyen_hai_nam_trung_bo" in expected_groups:
+            expected_groups.add("binh_dinh_legacy")
         record_rg = str(record.get("region_group") or "").strip()
         record_rf = str(record.get("entity_region_focus") or "").strip()
         if record_rg in expected_groups:
@@ -224,7 +234,7 @@ def search_fulltext_loop(driver, search_text: str, k: int,
          coalesce(node.legacy_province, '') as entity_legacy_province,
          CASE WHEN node.location IS NOT NULL THEN toString(node.location) ELSE '' END as entity_location,
          coalesce(loc.region_focus, '') as loc_region_focus,
-         coalesce(loc.legacy_province, '') as loc_legacy_province,
+         coalesce(loc.legacy_province, loc.current_province, '') as loc_legacy_province,
          coalesce(loc.admin_status, '') as admin_status
     WHERE
         // 1. LỌC THEO LABEL
@@ -254,7 +264,7 @@ def search_fulltext_loop(driver, search_text: str, k: int,
         // Thêm check node.location TEXT cho Dish nodes (e.g. "Tỉnh Bình Định")
         ($legacy_province IS NULL OR
          (loc IS NULL AND entity_region_focus = '' AND entity_legacy_province = '' AND entity_location = '') OR
-         coalesce(loc.legacy_province, '') = $legacy_province OR
+         loc_legacy_province = $legacy_province OR
          toLower(entity_legacy_province) = toLower($legacy_province) OR
          toLower(entity_location) CONTAINS toLower($legacy_province)
         )
@@ -271,7 +281,7 @@ def search_fulltext_loop(driver, search_text: str, k: int,
         coalesce(node.price_range, '') as price_range,
         coalesce(loc.name, '') as commune_name,
         coalesce(loc.region_group, '') as region_group,
-        coalesce(loc.legacy_province, '') as legacy_province,
+        coalesce(loc_legacy_province, '') as legacy_province,
         coalesce(loc.admin_status, '') as admin_status,
         coalesce(entity_legacy_province, '') as entity_legacy_province,
         coalesce(entity_location, '') as entity_location,

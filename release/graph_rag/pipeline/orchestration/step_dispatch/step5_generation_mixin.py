@@ -549,10 +549,34 @@ class Step5GenerationMixin:
             _guard_context = state.raw_context or []
             if state.clean_context:
                 _guard_context = [line for line in state.clean_context.splitlines() if line.strip()] or _guard_context
+            
+            import re
+            q_norm_local = normalize_text(state.user_query)
+            context_text = state.clean_context or " ".join(str(item or "") for item in state.raw_context or [])
+            context_norm_local = normalize_text(context_text)
+            
+            # Check if query asks about rating/star but context has no rating evidence
+            query_asks_rating = any(kw in q_norm_local for kw in ["sao", "star", "rating", "danh gia"])
+            context_has_rating = False
+            if "rating" in context_norm_local or "sao" in context_norm_local or "star" in context_norm_local:
+                if re.search(r"\b[0-5](\.\d)?\s*(sao|star)\b", context_norm_local) or re.search(r"rating\s*[:\-\s]\s*[0-5](\.\d)?", context_norm_local):
+                    context_has_rating = True
+            is_rating_apology = query_asks_rating and not context_has_rating
+
+            # Check if query asks about reviews but context has no review evidence
+            query_asks_review = any(kw in q_norm_local for kw in ["review", "nhan xet"])
+            context_has_review = False
+            if "review" in context_norm_local or "danh gia" in context_norm_local:
+                if re.search(r"\b\d+\s*(luot\s*)?(danh\s*gia|review|nhan\s*xet)\b", context_norm_local) or "review_count" in context_norm_local:
+                    context_has_review = True
+            is_review_apology = query_asks_review and not context_has_review
+
             if (
                 self._is_apology_answer(answer)
                 and self._context_has_facts(_guard_context)
                 and not self._is_service_availability_query(state.user_query)
+                and not is_rating_apology
+                and not is_review_apology
             ):
                 target_entity = self._primary_specific_entity_name(state)
                 context_entity_matches = True

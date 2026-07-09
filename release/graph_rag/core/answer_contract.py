@@ -161,41 +161,104 @@ class AnswerValidator:
 
         # 1. Rating/Review Hallucination Guard
         if not contract.context_has_rating_evidence:
-            # Check for rating numeric patterns
-            has_numeric_rating = (
-                re.search(r"\b([0-5]\.\d|[0-5])\s*(\/\s*5)?\s*(sao|star)\b", answer_norm) or 
-                re.search(r"\brating\s*(la|dat)?\s*([0-5]\.\d|[0-5])\b", answer_norm)
-            )
-            # Check for qualitative rating statements
             qualitative_rating_keywords = [
                 "danh gia cao", "rating tot", "danh gia tot", "rating cao", 
                 "danh gia tich cuc", "rating tuyet voi", "nhieu sao"
             ]
+            has_numeric_rating = (
+                re.search(r"\b([0-5]\.\d|[0-5])\s*(\/\s*5)?\s*(sao|star)\b", answer_norm) or 
+                re.search(r"\brating\s*(la|dat)?\s*([0-5]\.\d|[0-5])\b", answer_norm)
+            )
             has_qualitative_rating = any(kw in answer_norm for kw in qualitative_rating_keywords)
             
             if has_numeric_rating or has_qualitative_rating:
-                issues.append(
-                    ValidationIssue(
-                        code="rating_hallucination",
-                        severity="error",
-                        message="Câu trả lời bịa đặt điểm đánh giá (rating) hoặc mức độ đánh giá cao khi dữ liệu context không có.",
+                is_hallucination = False
+                sentences = re.split(r'[.\n?!]', answer)
+                for sentence in sentences:
+                    s_norm = normalize_text(sentence)
+                    s_has_num = (
+                        re.search(r"\b([0-5]\.\d|[0-5])\s*(\/\s*5)?\s*(sao|star)\b", s_norm) or 
+                        re.search(r"\brating\s*(la|dat)?\s*([0-5]\.\d|[0-5])\b", s_norm)
                     )
-                )
+                    s_has_qual = any(kw in s_norm for kw in qualitative_rating_keywords)
+                    if s_has_num or s_has_qual:
+                        neg_words = [
+                            "khong co", "chua co", "khong tim thay", "chua ro", "khong ro",
+                            "chua cap nhat", "khong duoc cung cap", "khong de cap", "chua de cap",
+                            "khong thay", "chua tim thay", "chua biet", "khong biet", "khong dat",
+                            "khong hien thi"
+                        ]
+                        is_neg = any(neg in s_norm for neg in neg_words)
+                        if is_neg:
+                            continue
+                        
+                        # Check if the sentence mentions any specific entity from context
+                        mentions_entity = False
+                        for ent in contract.context_entity_names:
+                            ent_norm = normalize_text(ent)
+                            if ent_norm and ent_norm in s_norm:
+                                mentions_entity = True
+                                break
+                        
+                        if not mentions_entity:
+                            continue
+                        
+                        is_hallucination = True
+                        break
+                
+                if is_hallucination:
+                    issues.append(
+                        ValidationIssue(
+                            code="rating_hallucination",
+                            severity="error",
+                            message="Câu trả lời bịa đặt điểm đánh giá (rating) hoặc mức độ đánh giá cao khi dữ liệu context không có.",
+                        )
+                    )
 
         if not contract.context_has_review_evidence:
-            has_numeric_review = re.search(r"\b\d+\s*(luot\s*)?(danh\s*gia|review|nhan\s*xet)\b", answer_norm)
             qualitative_review_keywords = ["nhieu review", "nhieu luot review", "nhieu nhan xet", "nhieu danh gia"]
+            has_numeric_review = re.search(r"\b\d+\s*(luot\s*)?(danh\s*gia|review|nhan\s*xet)\b", answer_norm)
             has_qualitative_review = any(kw in answer_norm for kw in qualitative_review_keywords)
             
             if has_numeric_review or has_qualitative_review:
-                # Distinguish from qualitative rating if already flagged, but review counts must be flagged
-                issues.append(
-                    ValidationIssue(
-                        code="review_hallucination",
-                        severity="error",
-                        message="Câu trả lời bịa đặt số lượng đánh giá/review khi dữ liệu context không có.",
+                is_hallucination = False
+                sentences = re.split(r'[.\n?!]', answer)
+                for sentence in sentences:
+                    s_norm = normalize_text(sentence)
+                    s_has_num = re.search(r"\b\d+\s*(luot\s*)?(danh\s*gia|review|nhan\s*xet)\b", s_norm)
+                    s_has_qual = any(kw in s_norm for kw in qualitative_review_keywords)
+                    if s_has_num or s_has_qual:
+                        neg_words = [
+                            "khong co", "chua co", "khong tim thay", "chua ro", "khong ro",
+                            "chua cap nhat", "khong duoc cung cap", "khong de cap", "chua de cap",
+                            "khong thay", "chua tim thay", "chua biet", "khong biet", "khong dat",
+                            "khong hien thi"
+                        ]
+                        is_neg = any(neg in s_norm for neg in neg_words)
+                        if is_neg:
+                            continue
+                        
+                        mentions_entity = False
+                        for ent in contract.context_entity_names:
+                            ent_norm = normalize_text(ent)
+                            if ent_norm and ent_norm in s_norm:
+                                mentions_entity = True
+                                break
+                        
+                        if not mentions_entity:
+                            continue
+                        
+                        is_hallucination = True
+                        break
+                
+                if is_hallucination:
+                    issues.append(
+                        ValidationIssue(
+                            code="review_hallucination",
+                            severity="error",
+                            message="Câu trả lời bịa đặt số lượng đánh giá/review khi dữ liệu context không có.",
+                        )
                     )
-                )
 
         # 3. Unsupported Attribute Guard
         for attr in contract.unsupported_attributes:

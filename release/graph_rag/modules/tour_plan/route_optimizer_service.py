@@ -587,7 +587,7 @@ class TourRouteOptimizerService:
                         cypher,
                         lat=center_lat,
                         lng=center_lng,
-                        limit=1,
+                        limit=max_lodging,
                     )
                     for record in result:
                         name = record.get("name")

@@ -1,128 +1,12 @@
 from __future__ import annotations
 
 import re
-from typing import Any, Dict, List, TypedDict, Literal
-from dataclasses import dataclass
+from typing import Any, Dict, List
 
 from neo4j.exceptions import ClientError as Neo4jClientError, ServiceUnavailable
 
 from graph_rag.core.intents import IntentType
 from graph_rag.utils.text import normalize_text
-from graph_rag.config.distance_patterns import (
-    DISTANCE_TAIL_PATTERNS,
-    EXPLICIT_DISTANCE_PATTERNS,
-    DESTINATION_STOP_PATTERN,
-    INTENT_PHRASES_BLACKLIST
-)
-
-class PipelineEntity(TypedDict, total=False):
-    name: str
-    surface_name: str
-    normalized_name: str
-    type: str
-    role: str
-    source: str
-    confidence: float
-    trusted: bool
-
-
-LocationRole = Literal["origin", "destination"]
-
-
-@dataclass(frozen=True)
-class LocationCandidate:
-    surface_text: str
-    role: LocationRole
-    source: str
-    confidence: float | None = None
-
-
-@dataclass(frozen=True)
-class DistanceQuery:
-    origin: LocationCandidate | None
-    destination: LocationCandidate | None
-
-    @property
-    def is_complete(self) -> bool:
-        return self.origin is not None and self.destination is not None
-
-
-class DistanceEntityAdapter:
-    def from_pipeline_entities(self, entities: list[dict[str, Any]]) -> DistanceQuery:
-        origin = None
-        destination = None
-        for raw in (entities or []):
-            candidate = self._to_location_candidate(raw)
-            if candidate is None:
-                continue
-            if candidate.role == "origin" and origin is None:
-                origin = candidate
-            elif candidate.role == "destination" and destination is None:
-                destination = candidate
-        return DistanceQuery(origin=origin, destination=destination)
-
-    def _to_location_candidate(self, raw: dict[str, Any]) -> LocationCandidate | None:
-        name = str(raw.get("surface_name") or raw.get("name") or "").strip()
-        role = str(raw.get("role") or "").lower()
-        source = str(raw.get("source") or "legacy_pipeline")
-        if not name or role not in {"origin", "destination"}:
-            return None
-
-        confidence_raw = raw.get("confidence")
-        try:
-            confidence = float(confidence_raw) if confidence_raw is not None else None
-        except (ValueError, TypeError):
-            confidence = None
-
-        return LocationCandidate(
-            surface_text=name,
-            role=role,
-            source=source,
-            confidence=confidence
-        )
-
-
-class DistanceQueryParser:
-    @staticmethod
-    def parse(user_query: str) -> tuple[str, str]:
-        """Parse user query to extract origin and destination location candidates (surface text)."""
-        text = str(user_query or "").strip()
-        if not text:
-            return "", ""
-
-        # Normalize space characters
-        text = re.sub(r"\s+", " ", text)
-        
-        # Remove common tail/suffix question patterns (case-insensitive)
-        clean_query = text.strip(" ?.!;:")
-        for pat in DISTANCE_TAIL_PATTERNS:
-            clean_query = re.sub(pat, "", clean_query, flags=re.IGNORECASE).strip()
-
-        # Match explicit distance query patterns from configuration
-        for pattern in EXPLICIT_DISTANCE_PATTERNS:
-            m = re.search(pattern, clean_query, flags=re.IGNORECASE)
-            if m:
-                try:
-                    src = m.group("origin").strip()
-                    dst = m.group("destination").strip().strip(" ?.!;:")
-                except IndexError:
-                    src = m.group(1).strip()
-                    dst = m.group(2).strip().strip(" ?.!;:")
-                
-                # Remove leading intent fragments
-                src = re.sub(r"^(khoang\s+cach|khoảng\s+cách)\s+", "", src, flags=re.IGNORECASE).strip()
-                
-                # Verify and reject intent-only words
-                if src.lower() in INTENT_PHRASES_BLACKLIST or len(src) < 3:
-                    src = ""
-                if dst.lower() in INTENT_PHRASES_BLACKLIST or len(dst) < 3:
-                    dst = ""
-                    
-                return src, dst
-                
-        return "", ""
-            
-        return "", ""
 
 
 class DistanceIntentService:
@@ -214,34 +98,6 @@ class DistanceIntentService:
     def _repair_distance_entities(self, user_query: str, entities: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         current = list(entities or [])
         if len(current) < 2:
-            src, dst = DistanceQueryParser.parse(user_query)
-            repaired = []
-            if src:
-                repaired.append({
-                    "name": src,
-                    "type": "Location",
-                    "role": "origin",
-                    "source": "distance_parser",
-                    "confidence": 1.0,
-                    "trusted": True
-                })
-            if dst:
-                dst_type = "Location"
-                if len(current) == 1 and isinstance(current[0], dict):
-                    hinted = str(current[0].get("type") or "").strip()
-                    if hinted:
-                        dst_type = hinted
-                repaired.append({
-                    "name": dst,
-                    "type": dst_type,
-                    "role": "destination",
-                    "source": "distance_parser",
-                    "confidence": 1.0,
-                    "trusted": True
-                })
-            if len(repaired) >= 2 or (len(repaired) == 1 and len(current) == 1):
-                self.logger.info("distance_entity_local_repair applied (parser-fallback): %s", repaired)
-                return repaired
             return current
 
         def trim_tail(text: str) -> str:
@@ -273,36 +129,51 @@ class DistanceIntentService:
                 src = re.sub(r"^(khoang\s+cach|khoảng\s+cách)\s+", "", src, flags=re.IGNORECASE).strip()
                 if len(src) >= 3 and len(dst) >= 3:
                     repaired = [
-                        {"name": src, "type": "Location", "role": "origin", "trusted": True},
-                        {"name": dst, "type": (current[1] or {}).get("type") or "Location", "role": "destination", "trusted": True},
+                        {"name": src, "type": "Location"},
+                        {"name": dst, "type": (current[1] or {}).get("type") or "Location"},
                     ]
                     self.logger.info("distance_entity_local_repair applied (entity-first): %s -> %s", current[:2], repaired)
                     return repaired
 
-        # Fallback to DistanceQueryParser
-        src, dst = DistanceQueryParser.parse(user_query)
-        repaired = []
-        if src:
-            repaired.append({
-                "name": src,
-                "type": "Location",
-                "role": "origin",
-                "source": "distance_parser",
-                "confidence": 1.0,
-                "trusted": True
-            })
-        if dst:
-            repaired.append({
-                "name": dst,
-                "type": (current[1] or {}).get("type") or "Location",
-                "role": "destination",
-                "source": "distance_parser",
-                "confidence": 1.0,
-                "trusted": True
-            })
-        if len(repaired) >= 2:
-            self.logger.info("distance_entity_local_repair applied (parser-fallback): %s", repaired)
-            return repaired
+        query_norm = normalize_text(user_query or "")
+        query_norm_no_punct = normalize_text(user_query or "", strip_punct=True)
+        if any(
+            phrase in query_norm_no_punct
+            for phrase in [
+                "vi tri cua toi",
+                "cho do",
+                "den cho do",
+                "dia diem do",
+                "noi do",
+                "di nhu the nao",
+            ]
+        ):
+            self.logger.info("distance_entity_local_repair skipped deictic/constraint query: %s", query_norm_no_punct)
+            return current
+        # Match "từ X đến Y", "từ X đi Y", "X đến Y", "X đi Y"
+        # Stop destination at question keywords like "mất bao lâu", "phương tiện", etc.
+        _DEST_STOP = r"(?:\s+(?:mat|bao lau|phuong tien|thuan tien|gia|chi phi|nhu the nao|the nao|khong|ha)\b|$)"
+        m2 = re.search(r"(?:^|\s)(?:tu|từ)\s+(.+?)\s+(?:den|đến|toi|tới|di|đi)\s+(.+?)" + _DEST_STOP, query_norm, flags=re.IGNORECASE)
+        if not m2:
+            m2 = re.search(r"^(.+?)\s+(?:den|đến|toi|tới|di|đi)\s+(.+?)" + _DEST_STOP, query_norm, flags=re.IGNORECASE)
+        if m2:
+            src = trim_tail(m2.group(1))
+            dst = trim_tail(m2.group(2))
+            src = re.sub(r"^(khoang\s+cach|khoảng\s+cách)\s+", "", src, flags=re.IGNORECASE).strip()
+            # Reject source that is just a travel-intent verb phrase, not a real location.
+            _INTENT_PHRASES = {
+                "duong di", "duong dan", "di toi", "di den", "dan den",
+                "dan toi", "chi duong", "chi dan", "tim duong",
+            }
+            if src in _INTENT_PHRASES:
+                return current
+            if len(src) >= 3 and len(dst) >= 3:
+                repaired = [
+                    {"name": src, "type": "Location"},
+                    {"name": dst, "type": (current[1] or {}).get("type") or "Location"},
+                ]
+                self.logger.info("distance_entity_local_repair applied (query-fallback): %s -> %s", current[:2], repaired)
+                return repaired
 
         return current
 
@@ -390,10 +261,22 @@ class DistanceIntentService:
                 }
             )
 
+        # Minimum score threshold: reject candidates with very low name similarity.
+        # score < 20 means no meaningful overlap between entity name and candidate name,
+        # preventing false positives like "Quảng trường Nguyễn Tất Thành" → "Eo Gió" (score=11).
+        _MIN_SCORE = 20
+
         if not candidates:
             if fallback_pool:
                 fallback_pool.sort(key=lambda x: x[0], reverse=True)
-                selected = fallback_pool[0][1]
+                best_score, best_node = fallback_pool[0]
+                if best_score < _MIN_SCORE:
+                    self.logger.info(
+                        "distance_entity_resolution entity='%s' type='%s' -> fallback candidate score=%d below threshold=%d -> selected=None",
+                        entity_name, entity_type, best_score, _MIN_SCORE,
+                    )
+                    return None
+                selected = best_node
                 selected_name = selected.metadata.get("name") or selected.content or ""
                 selected_labels = selected.metadata.get("labels") or []
                 self.logger.info(
@@ -413,6 +296,13 @@ class DistanceIntentService:
             )
             return None
         candidates.sort(key=lambda x: x[0], reverse=True)
+        best_score_main = candidates[0][0]
+        if best_score_main < _MIN_SCORE:
+            self.logger.info(
+                "distance_entity_resolution entity='%s' type='%s' -> best candidate score=%d below threshold=%d -> selected=None",
+                entity_name, entity_type, best_score_main, _MIN_SCORE,
+            )
+            return None
         selected = candidates[0][1]
         selected_name = selected.metadata.get("name") or selected.content or ""
         selected_labels = selected.metadata.get("labels") or []
@@ -523,13 +413,12 @@ class DistanceIntentService:
         entities = self._repair_distance_entities(user_query, entities or [])
         metadata["intent"] = IntentType.DISTANCE
 
-        adapter = DistanceEntityAdapter()
-        distance_query = adapter.from_pipeline_entities(entities)
-
+        # When only 1 entity (destination), use detected_location as source.
         gps_source = None
-        if not distance_query.is_complete:
+        if len(entities or []) < 2:
             loc = (detected_location or "").strip()
-            if loc and distance_query.destination is not None and distance_query.origin is None:
+            if loc and len(entities) == 1:
+                # Check if loc is GPS coords (e.g. "13.9,108.0")
                 if "," in loc:
                     try:
                         parts = loc.split(",")
@@ -539,14 +428,9 @@ class DistanceIntentService:
                     except (ValueError, IndexError):
                         pass
                 if not gps_source:
-                    origin_candidate = LocationCandidate(
-                        surface_text=loc,
-                        role="origin",
-                        source="detected_location"
-                    )
-                    distance_query = DistanceQuery(origin=origin_candidate, destination=distance_query.destination)
-                    self.logger.info("distance_intent: using detected_location='%s' as origin", loc)
-            if not gps_source and not distance_query.is_complete:
+                    entities = [{"name": loc, "type": "Location"}] + list(entities)
+                    self.logger.info("distance_intent: using detected_location='%s' as source", loc)
+            if not gps_source and len(entities or []) < 2:
                 return {
                     "answer": "Mình chưa xác định đủ 2 địa điểm để tính khoảng cách. Bạn hãy nêu rõ điểm đi và điểm đến.",
                     "metadata": metadata,
@@ -554,36 +438,24 @@ class DistanceIntentService:
 
         resolved_nodes = []
         used_node_ids = set()
-        
-        candidates_to_resolve = []
-        if gps_source is None and distance_query.origin is not None:
-            candidates_to_resolve.append(distance_query.origin)
-        if distance_query.destination is not None:
-            candidates_to_resolve.append(distance_query.destination)
-
-        for candidate in candidates_to_resolve:
-            entity_dict = {
-                "name": candidate.surface_text,
-                "type": "Location",
-                "role": candidate.role,
-                "source": candidate.source
-            }
+        for entity in entities[:2]:
             available_grounded = [
                 n for n in (grounded_nodes or [])
                 if str(getattr(n, "id", "")) not in used_node_ids
             ]
-            best = self._select_best_grounded_for_entity(entity_dict, available_grounded)
+            best = self._select_best_grounded_for_entity(entity, available_grounded)
             if not best:
-                more = self.retriever.ground_entities([entity_dict])
+                more = self.retriever.ground_entities([entity])
                 available_more = [
                     n for n in (more or [])
                     if str(getattr(n, "id", "")) not in used_node_ids
                 ]
-                best = self._select_best_grounded_for_entity(entity_dict, available_more)
+                best = self._select_best_grounded_for_entity(entity, available_more)
             if best:
                 resolved_nodes.append(best)
                 used_node_ids.add(str(getattr(best, "id", "")))
 
+        # GPS source: resolve only destination, use GPS coords for source.
         if gps_source:
             if not resolved_nodes:
                 return {
@@ -641,8 +513,9 @@ class DistanceIntentService:
             return {"answer": answer, "metadata": metadata}
 
         if len(resolved_nodes) < 2:
-            source_name = distance_query.origin.surface_text if distance_query.origin else ""
-            dest_name = distance_query.destination.surface_text if distance_query.destination else ""
+            # Fallback: Try TravelInfo lookup for distance/transport information
+            source_name = str((entities or [{}])[0].get("name") or "")
+            dest_name = str((entities or [{}, {}])[1].get("name") or "") if len(entities) > 1 else ""
 
             if source_name and dest_name:
                 travel_info = self._lookup_travel_info_for_distance(source_name, dest_name)
@@ -663,8 +536,8 @@ class DistanceIntentService:
         if str(getattr(src, "id", "")) == str(getattr(dst, "id", "")):
             self.logger.warning(
                 "distance_same_node_selected entity_source='%s' entity_target='%s' node_id='%s'",
-                distance_query.origin.surface_text if distance_query.origin else "",
-                distance_query.destination.surface_text if distance_query.destination else "",
+                str((entities or [{}])[0].get("name") or ""),
+                str((entities or [{}, {}])[1].get("name") or ""),
                 str(getattr(src, "id", "")),
             )
             return {

@@ -112,6 +112,17 @@ class PipelineApplicationService(
                         op.value, forced, plan.intent, current_mode,
                     )
                     return current_mode
+            # Don't force fact_answer for DISTANCE_QUERY intent —
+            # distance calculation is handled by a dedicated short-circuit handler
+            # that requires answer_mode='distance' for correct prompt selection.
+            if forced == AnswerMode.FACT_ANSWER and plan.intent:
+                intent_upper = plan.intent.upper()
+                if "DISTANCE" in intent_upper:
+                    _logger.info(
+                        "[ConflictResolver] op=%s would force %s, but intent=%s → keeping %s for distance handler",
+                        op.value, forced, plan.intent, current_mode,
+                    )
+                    return current_mode
             _logger.info(
                 "[ConflictResolver] op=%s overriding %s -> %s",
                 op.value, current_mode, forced,

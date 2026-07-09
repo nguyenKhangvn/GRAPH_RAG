@@ -493,7 +493,11 @@ class Step2GroundingMixin:
         state.runtime.metadata["location_context"] = state.location_context
         state.runtime.metadata["detected_location"] = state.location
         admin_rf = (state.metadata.get("admin_region_match") or {}).get("region_focus")
-        if state.location and admin_rf != "gia_lai_new":
+        if admin_rf in {"binh_dinh_old", "gia_lai_core", "gia_lai_new"}:
+            from graph_rag.modules.pipeline_support.admin_region_mapping_service import AdminRegionMappingService
+            state.region_focus = AdminRegionMappingService.resolve_region_focus(admin_rf)
+            state.runtime.metadata["region_focus"] = state.region_focus
+        elif state.location:
             resolved_region = p._location_to_region_focus(state.location)
             if resolved_region != "all":
                 state.region_focus = resolved_region

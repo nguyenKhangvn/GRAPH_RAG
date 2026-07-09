@@ -918,6 +918,54 @@ class QueryAnalyzer:
             "dialog_act": "NEW_QUERY"
         }}
 
+        - User: "từ Quảng trường Nguyễn Tất Thành đến Eo Gió bao xa"
+        - Output JSON:
+        {{
+            "intents": ["DISTANCE_QUERY"],
+            "rewritten_query": "Từ Quảng trường Nguyễn Tất Thành đến Eo Gió bao xa",
+            "entities": [
+                {{"name": "Quảng trường Nguyễn Tất Thành", "type": "TouristAttraction"}},
+                {{"name": "Eo Gió", "type": "TouristAttraction"}}
+            ],
+            "resolved_entities": [
+                {{"name": "Quảng trường Nguyễn Tất Thành", "type": "TouristAttraction", "source": "query"}},
+                {{"name": "Eo Gió", "type": "TouristAttraction", "source": "query"}}
+            ],
+            "detected_location": "Quy Nhơn",
+            "search_keywords": ["Quảng trường Nguyễn Tất Thành", "Eo Gió"],
+            "requested_attributes": ["description"],
+            "requested_relations": [],
+            "constraints": {{"optimize_distance": false}},
+            "coreference_confidence": 1.0,
+            "needs_clarification": false,
+            "is_follow_up": false,
+            "dialog_act": "NEW_QUERY"
+        }}
+
+        - User: "từ khách sạn Hải Âu đến bãi biển Quy Hòa mất bao lâu"
+        - Output JSON:
+        {{
+            "intents": ["DISTANCE_QUERY"],
+            "rewritten_query": "Từ Khách sạn Hải Âu đến Bãi biển Quy Hòa mất bao lâu",
+            "entities": [
+                {{"name": "Khách sạn Hải Âu", "type": "Accommodation"}},
+                {{"name": "Bãi biển Quy Hòa", "type": "TouristAttraction"}}
+            ],
+            "resolved_entities": [
+                {{"name": "Khách sạn Hải Âu", "type": "Accommodation", "source": "query"}},
+                {{"name": "Bãi biển Quy Hòa", "type": "TouristAttraction", "source": "query"}}
+            ],
+            "detected_location": "Quy Nhơn",
+            "search_keywords": ["Khách sạn Hải Âu", "Bãi biển Quy Hòa"],
+            "requested_attributes": ["description"],
+            "requested_relations": [],
+            "constraints": {{"optimize_distance": false}},
+            "coreference_confidence": 1.0,
+            "needs_clarification": false,
+            "is_follow_up": false,
+            "dialog_act": "NEW_QUERY"
+        }}
+
         USER QUERY: "{query}"
 
         OUTPUT JSON:

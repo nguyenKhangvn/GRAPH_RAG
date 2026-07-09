@@ -314,7 +314,7 @@ class TourPlanRetriever:
                OR coalesce(loc.region_group, '') = $region_group
                OR any(alias IN $region_aliases WHERE toLower(coalesce(target.address, '')) CONTAINS alias))
           AND ($legacy_province IS NULL
-               OR coalesce(loc.legacy_province, '') = $legacy_province
+               OR coalesce(loc.legacy_province, loc.current_province, '') = $legacy_province
                OR any(alias IN $region_aliases WHERE toLower(coalesce(target.address, '')) CONTAINS alias))
           AND (loc IS NULL
                OR loc.admin_status IS NULL
@@ -333,7 +333,7 @@ class TourPlanRetriever:
                CASE WHEN target.location IS NOT NULL AND toLower(toString(target.location)) STARTS WITH 'point' AND target.location.longitude IS NOT NULL THEN target.location.longitude ELSE toFloat(target.lng) END AS lng,
                loc.name AS commune_name,
                loc.region_group AS region_group,
-               loc.legacy_province AS legacy_province,
+               coalesce(loc.legacy_province, loc.current_province, '') AS legacy_province,
                coalesce(loc.admin_level, '') AS admin_level,
                coalesce(loc.admin_status, '') AS admin_status,
                1.0 AS score
@@ -343,6 +343,10 @@ class TourPlanRetriever:
             with self.driver.session() as session:
                 region_group, legacy_province = region_filter_params
                 region_group_cypher = region_group if not isinstance(region_group, list) else None
+                if region_group_cypher == "tay_nguyen":
+                    region_group_cypher = "gia_lai_core"
+                elif region_group_cypher == "duyen_hai_nam_trung_bo":
+                    region_group_cypher = "binh_dinh_legacy"
                 region_aliases = region_address_aliases_fn(legacy_province, region_group) if region_address_aliases_fn else []
                 records = session.run(
                     cypher,
@@ -380,7 +384,7 @@ class TourPlanRetriever:
                OR coalesce(loc.region_group, '') = $region_group
                OR any(alias IN $region_aliases WHERE toLower(coalesce(target.address, '')) CONTAINS alias))
           AND ($legacy_province IS NULL
-               OR coalesce(loc.legacy_province, '') = $legacy_province
+               OR coalesce(loc.legacy_province, loc.current_province, '') = $legacy_province
                OR any(alias IN $region_aliases WHERE toLower(coalesce(target.address, '')) CONTAINS alias))
           AND (loc IS NULL OR loc.admin_status IS NULL OR loc.admin_status <> 'merged' OR $legacy_province IS NOT NULL)
           AND (any(cat_name_raw IN $category_names
@@ -391,10 +395,10 @@ class TourPlanRetriever:
                target.description AS description, target.address AS address, target.topic AS topic,
                CASE WHEN target.location IS NOT NULL AND toLower(toString(target.location)) STARTS WITH 'point' AND target.location.latitude IS NOT NULL THEN target.location.latitude ELSE toFloat(target.lat) END AS lat,
                CASE WHEN target.location IS NOT NULL AND toLower(toString(target.location)) STARTS WITH 'point' AND target.location.longitude IS NOT NULL THEN target.location.longitude ELSE toFloat(target.lng) END AS lng,
-               loc.name AS commune_name, loc.region_group AS region_group, loc.legacy_province AS legacy_province,
+               loc.name AS commune_name, loc.region_group AS region_group, coalesce(loc.legacy_province, loc.current_province, '') AS legacy_province,
                coalesce(loc.admin_level, '') AS admin_level, coalesce(loc.admin_status, '') AS admin_status,
                CASE
-                 WHEN coalesce(loc.legacy_province, '') = $legacy_province THEN 1.4
+                 WHEN coalesce(loc.legacy_province, loc.current_province, '') = $legacy_province THEN 1.4
                  WHEN any(alias IN $region_aliases WHERE toLower(coalesce(target.address, '')) CONTAINS alias) THEN 1.2
                  ELSE 1.0
                END AS score
@@ -405,6 +409,10 @@ class TourPlanRetriever:
             with self.driver.session() as session:
                 region_group, legacy_province = region_filter_params
                 region_group_cypher = region_group if not isinstance(region_group, list) else None
+                if region_group_cypher == "tay_nguyen":
+                    region_group_cypher = "gia_lai_core"
+                elif region_group_cypher == "duyen_hai_nam_trung_bo":
+                    region_group_cypher = "binh_dinh_legacy"
                 region_aliases = region_address_aliases_fn(legacy_province, region_group) if region_address_aliases_fn else []
                 records = session.run(
                     cypher,

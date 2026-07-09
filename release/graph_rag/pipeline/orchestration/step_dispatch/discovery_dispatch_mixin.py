@@ -888,7 +888,7 @@ class DiscoveryDispatchMixin:
         if not selected:
             return ""
 
-        location_label = state.location or "Bình Định/Quy Nhơn"
+        location_label = state.metadata.get("matched_admin_alias") or state.location or "Bình Định/Quy Nhơn"
         lines = [f"Một số gợi ý ăn hải sản tươi ngon, giá hợp lý ở {location_label}:"]
         for _, name, address, phone in selected[:6]:
             line = f"- **{name}**"
@@ -927,7 +927,7 @@ class DiscoveryDispatchMixin:
         if not entries:
             return ""
 
-        location = state.location or state.runtime.metadata.get("detected_location") or ""
+        location = state.metadata.get("matched_admin_alias") or state.location or state.runtime.metadata.get("detected_location") or ""
         location_str = f" tại {location}" if location else ""
         header = f"DANH SÁCH ĐỊA ĐIỂM DU LỊCH/THAM QUAN{location_str}:\n"
         body = "\n".join(f"- {e}" for e in entries)
@@ -964,7 +964,7 @@ class DiscoveryDispatchMixin:
         if not entries:
             return ""
 
-        location = state.location or state.runtime.metadata.get("detected_location") or ""
+        location = state.metadata.get("matched_admin_alias") or state.location or state.runtime.metadata.get("detected_location") or ""
         location_str = f" tại {location}" if location else ""
         header = f"DANH SÁCH ĐỊA ĐIỂM LƯU TRÚ/KHÁCH SẠN/HOMESTAY{location_str}:\n"
         body = "\n".join(f"- {e}" for e in entries)

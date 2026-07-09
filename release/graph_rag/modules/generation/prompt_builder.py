@@ -368,8 +368,8 @@ class PromptBuilder:
            TUYỆT ĐỐI không được tạo một ngày chỉ bao gồm hoạt động ăn uống (Restaurant/Dish) hoặc nghỉ ngơi/lưu trú (Accommodation) mà không có điểm tham quan nào.
            *Mẹo giải quyết xung đột:* Nếu phân bổ ngày từ `<daily_cluster_plan>` hoặc `<route_skeleton_distribution>` không có điểm tham quan nào cho ngày đó, bạn ĐƯỢC PHÉP tự động chọn bổ sung 1 điểm tham quan nổi bật trong danh sách `<allowed_points>` của khu vực đó để đưa vào buổi sáng hoặc buổi chiều của ngày hôm đó nhằm đảm bảo chất lượng lịch trình.
         2. Format output dạng Markdown với heading và emoji.
-        3. Mỗi ngày phải có mô tả TRẢI NGHIỆM chi tiết cho từng điểm (không chỉ ghi tên và giờ).
-        4. Giữ nguyên cấu trúc ngày từ `<route_skeleton_distribution>` nếu có (ngoại trừ trường hợp cần bổ sung điểm tham quan như đã nêu ở mục 1).
+        3. Mỗi ngày phải có mô tả TRẢI NGHIỆM ngắn gọn (tối đa 1-2 câu ngắn cho từng điểm) để đảm bảo toàn bộ lịch trình 10 ngày không bị quá dài và bị cắt cụt giữa chừng do vượt giới hạn token.
+        4. Giữ nguyên cấu trúc ngày và phân bổ điểm từ `<route_skeleton_distribution>` hoặc `<daily_cluster_plan>` nếu có. TUYỆT ĐỐI không tự ý gộp nhiều điểm tham quan từ các ngày khác nhau vào cùng một ngày dẫn đến các ngày sau bị trống hoặc phải dùng nội dung lấp chỗ trống ("dạo quanh trung tâm", "thư giãn tự do").
         5. Nếu thiếu thông tin cần thiết → hãy ghi nhận rõ ràng vào phần "Lưu ý thực tế", TUYỆT ĐỐI không được tự ý bịa thêm dữ liệu.
         6. Đối với tour từ 2 ngày trở lên: phần "Gợi ý nghỉ đêm" phải tách biệt thành một mục riêng ở cuối bài viết, KHÔNG lồng chi tiết (inline) vào lịch trình chi tiết hàng ngày.
         7. Mốc thời gian và tên địa điểm (ví dụ: `- **07:30 - 10:00** 📍 **[Tên điểm]**`) BẮT BUỘC phải viết trên cùng 1 dòng, không được xuống dòng ở giữa chúng.

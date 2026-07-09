@@ -1183,18 +1183,29 @@ class SeedRetriever:
 
             logger.info("       Executing MULTI-PASS RETRIEVAL for TravelPlan...")
             search_location_filter = current_location if self._should_hard_filter_location(metadata or {}) else None
+            trip_days = self._infer_trip_days(metadata or {}, user_query)
+
+            # Scale retrieval limits dynamically based on trip duration (days)
+            attraction_limit = max(10, trip_days * 2)
+            restaurant_limit = max(5, trip_days)
+            
+            label_hints = (metadata or {}).get("label_hints") or []
+            v3_data = (metadata or {}).get("v3_intent_data") or {}
+            if not label_hints:
+                label_hints = v3_data.get("label_hints") or []
+            accommodation_limit = max(5 if "Accommodation" in label_hints else 3, trip_days)
 
             phase1_q = self._rewrite_search_query_for_phase(user_query, "TouristAttraction", metadata)
-            logger.info("       Phase 1: Fetching Tourist Attractions (Limit 10)...")
+            logger.info("       Phase 1: Fetching Tourist Attractions (Limit %d)...", attraction_limit)
             attraction_seeds = self._hybrid_search(
-                phase1_q, metadata, top_k=10,
+                phase1_q, metadata, top_k=attraction_limit,
                 allowed_labels=["TouristAttraction"],
                 location_filter=search_location_filter, query_plan=query_plan,
             )
-            if len(attraction_seeds) < 5:
+            if len(attraction_seeds) < (attraction_limit // 2):
                 region_params = self._region_filter_params(metadata or {}, query_plan)
                 graph_attractions = self.entity.fetch_nodes_by_label(
-                    "TouristAttraction", limit=15,
+                    "TouristAttraction", limit=attraction_limit + 5,
                     region_group=region_params[0], legacy_province=region_params[1],
                 )
                 existing_ids = {s.id for s in attraction_seeds}
@@ -1203,9 +1214,9 @@ class SeedRetriever:
                         attraction_seeds.append(node)
 
             phase2_q = self._rewrite_search_query_for_phase(user_query, "Restaurant", metadata)
-            logger.info("       Phase 2: Fetching Restaurants/Food (Limit 5)...")
+            logger.info("       Phase 2: Fetching Restaurants/Food (Limit %d)...", restaurant_limit)
             food_seeds = self._hybrid_search(
-                phase2_q, metadata, top_k=5,
+                phase2_q, metadata, top_k=restaurant_limit,
                 allowed_labels=["Restaurant", "Dish", "Specialty"],
                 location_filter=search_location_filter, query_plan=query_plan,
             )
@@ -1220,12 +1231,7 @@ class SeedRetriever:
             )
             combined_seeds.extend(tour_seeds)
 
-            label_hints = (metadata or {}).get("label_hints") or []
-            v3_data = (metadata or {}).get("v3_intent_data") or {}
-            if not label_hints:
-                label_hints = v3_data.get("label_hints") or []
-            accommodation_limit = 5 if "Accommodation" in label_hints else 3
-            logger.info("       Phase 3: Fetching Accommodation (Limit %s)...", accommodation_limit)
+            logger.info("       Phase 3: Fetching Accommodation (Limit %d)...", accommodation_limit)
             accommodation_seeds = self._hybrid_search(
                 user_query, metadata, top_k=accommodation_limit,
                 allowed_labels=["Accommodation"],
@@ -1234,7 +1240,7 @@ class SeedRetriever:
             if len(accommodation_seeds) < 2:
                 region_params = self._region_filter_params(metadata or {}, query_plan)
                 graph_accommodations = self.entity.fetch_nodes_by_label(
-                    "Accommodation", limit=10,
+                    "Accommodation", limit=accommodation_limit + 5,
                     region_group=region_params[0], legacy_province=region_params[1],
                 )
                 existing_ids = {s.id for s in accommodation_seeds}
@@ -1244,10 +1250,9 @@ class SeedRetriever:
 
             combined_seeds.extend(accommodation_seeds)
             unique_seeds = self._deduplicate_seeds(combined_seeds)
-            trip_days = self._infer_trip_days(metadata or {}, user_query)
             unique_seeds = self.tour_plan.apply_tour_plan_semantic_quotas(
                 unique_seeds, metadata=metadata or {}, user_query=user_query,
-                top_k=top_k, exact_seeds=exact_seeds, trip_days=trip_days,
+                top_k=max(top_k, trip_days * 3), exact_seeds=exact_seeds, trip_days=trip_days,
             )
             logger.info("       Final TravelPlan Seeds: %s nodes.", len(unique_seeds))
             return unique_seeds

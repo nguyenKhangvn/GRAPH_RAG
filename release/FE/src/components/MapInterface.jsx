@@ -1008,7 +1008,7 @@ const MapInterface = ({
       className={`map-container ${activeView === "graph" ? "graph-mode" : ""}`}
       style={{ position: "relative" }}
     >
-      <div className="map-overlay-top">
+      <div className="map-overlay-top" style={{ display: "none" }}>
         <div className="provider-toolbar glass-panel">
           <span className="provider-badge" title="Map provider đang chạy">
             Lựa chọn: {providerBadge}
