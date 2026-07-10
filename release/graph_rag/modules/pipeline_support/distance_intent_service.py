@@ -9,6 +9,54 @@ from graph_rag.core.intents import IntentType
 from graph_rag.utils.text import normalize_text
 
 
+from graph_rag.config.distance_patterns import (
+    DISTANCE_TAIL_PATTERNS,
+    EXPLICIT_DISTANCE_PATTERNS,
+    INTENT_PHRASES_BLACKLIST,
+)
+
+
+class DistanceQueryParser:
+    @staticmethod
+    def parse(user_query: str) -> tuple[str, str]:
+        """Parse user query to extract origin and destination location candidates (surface text)."""
+        text = str(user_query or "").strip()
+        if not text:
+            return "", ""
+
+        # Normalize space characters
+        text = re.sub(r"\s+", " ", text)
+        
+        # Remove common tail/suffix question patterns (case-insensitive)
+        clean_query = text.strip(" ?.!;:")
+        for pat in DISTANCE_TAIL_PATTERNS:
+            clean_query = re.sub(pat, "", clean_query, flags=re.IGNORECASE).strip()
+
+        # Match explicit distance query patterns from configuration
+        for pattern in EXPLICIT_DISTANCE_PATTERNS:
+            m = re.search(pattern, clean_query, flags=re.IGNORECASE)
+            if m:
+                try:
+                    src = m.group("origin").strip()
+                    dst = m.group("destination").strip().strip(" ?.!;:")
+                except IndexError:
+                    src = m.group(1).strip()
+                    dst = m.group(2).strip().strip(" ?.!;:")
+                
+                # Remove leading intent fragments
+                src = re.sub(r"^(khoang\s+cach|khoảng\s+cách)\s+", "", src, flags=re.IGNORECASE).strip()
+                
+                # Verify and reject intent-only words
+                if src.lower() in INTENT_PHRASES_BLACKLIST or len(src) < 3:
+                    src = ""
+                if dst.lower() in INTENT_PHRASES_BLACKLIST or len(dst) < 3:
+                    dst = ""
+                    
+                return src, dst
+                
+        return "", ""
+
+
 class DistanceIntentService:
     def __init__(
         self,
