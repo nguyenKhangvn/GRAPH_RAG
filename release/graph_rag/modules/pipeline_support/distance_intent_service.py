@@ -15,6 +15,22 @@ from graph_rag.config.distance_patterns import (
     INTENT_PHRASES_BLACKLIST,
 )
 
+# Sentinel value: origin slot matched a deictic self-reference ("ở đây", etc.)
+_USER_LOCATION_SELF = "__USER_LOCATION_SELF__"
+
+# Normalised (no-accent) aliases that mean "my current location".
+# Checked against the normalised origin string extracted by DistanceQueryParser.
+_USER_LOCATION_ALIASES: frozenset[str] = frozenset([
+    # Vietnamese with accents
+    "ở đây", "đây", "chỗ này", "nơi này", "vị trí của tôi",
+    "vị trí hiện tại", "vị trí tôi", "chỗ tôi đang", "tôi đang ở đây",
+    # Common normalised (no-accent) equivalents
+    "o day", "day", "cho nay", "noi nay", "vi tri cua toi",
+    "vi tri hien tai", "vi tri toi", "cho toi dang", "toi dang o day",
+    # Short shorthands
+    "here", "my location", "current location",
+])
+
 
 class DistanceQueryParser:
     @staticmethod
@@ -45,9 +61,17 @@ class DistanceQueryParser:
                 
                 # Remove leading intent fragments
                 src = re.sub(r"^(khoang\s+cach|khoảng\s+cách)\s+", "", src, flags=re.IGNORECASE).strip()
-                
-                # Verify and reject intent-only words
-                if src.lower() in INTENT_PHRASES_BLACKLIST or len(src) < 3:
+
+                # Detect deictic self-references for the origin slot
+                # ("ở đây", "đây", "vị trí của tôi", etc.) and replace with
+                # the sentinel so callers can substitute GPS coords.
+                if src.lower() in _USER_LOCATION_ALIASES:
+                    src = _USER_LOCATION_SELF
+
+                # Verify and reject intent-only words (only when not the sentinel)
+                if src != _USER_LOCATION_SELF and (
+                    src.lower() in INTENT_PHRASES_BLACKLIST or len(src) < 3
+                ):
                     src = ""
                 if dst.lower() in INTENT_PHRASES_BLACKLIST or len(dst) < 3:
                     dst = ""
@@ -146,6 +170,11 @@ class DistanceIntentService:
     def _repair_distance_entities(self, user_query: str, entities: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         current = list(entities or [])
         if len(current) < 2:
+            return current
+
+        # Don't repair when the first entity is the USER_LOCATION_SELF sentinel —
+        # it must survive intact so run_distance_intent() can swap it for GPS coords.
+        if (current[0] or {}).get("name") == _USER_LOCATION_SELF:
             return current
 
         def trim_tail(text: str) -> str:
@@ -461,24 +490,72 @@ class DistanceIntentService:
         entities = self._repair_distance_entities(user_query, entities or [])
         metadata["intent"] = IntentType.DISTANCE
 
-        # When only 1 entity (destination), use detected_location as source.
+        # ── Resolve USER_LOCATION_SELF sentinel ────────────────────────────────
+        # DistanceQueryParser marks origin as _USER_LOCATION_SELF when the user
+        # says "ở đây", "đây", "vị trí của tôi", etc.  Convert that sentinel to
+        # a GPS-based source dict so we never pass it to the graph retriever.
         gps_source = None
-        if len(entities or []) < 2:
+
+        def _try_parse_gps(loc_str: str) -> dict | None:
+            """Return {lat, lng, name} if loc_str is a 'lat,lng' pair, else None."""
+            if loc_str and "," in loc_str:
+                try:
+                    parts = loc_str.split(",")
+                    lat, lng = float(parts[0].strip()), float(parts[1].strip())
+                    # Sanity-check plausible lat/lng ranges
+                    if -90 <= lat <= 90 and -180 <= lng <= 180:
+                        return {
+                            "lat": lat,
+                            "lng": lng,
+                            "name": f"Vị trí hiện tại ({lat:.5f}, {lng:.5f})",
+                        }
+                except (ValueError, IndexError):
+                    pass
+            return None
+
+        # If the first entity is the USER_LOCATION_SELF sentinel, pop it and
+        # try to resolve to GPS coords from metadata / detected_location.
+        if entities and (entities[0] or {}).get("name") == _USER_LOCATION_SELF:
+            entities = list(entities[1:])  # drop sentinel entity
+            # Priority: user_gps in metadata → detected_location string
+            raw_gps = (
+                str(metadata.get("user_gps") or "").strip()
+                or str(detected_location or "").strip()
+            )
+            gps_source = _try_parse_gps(raw_gps)
+            if gps_source:
+                self.logger.info(
+                    "distance_intent: origin='ở đây' resolved to GPS %s", gps_source
+                )
+            else:
+                # GPS unavailable — ask the user to share location
+                dest_hint = str((entities[0] or {}).get("name") or "") if entities else ""
+                dest_label = f" đến **{dest_hint}**" if dest_hint else ""
+                return {
+                    "answer": (
+                        f"Để chỉ đường từ vị trí của bạn{dest_label}, "
+                        "mình cần biết tọa độ hiện tại của bạn. "
+                        "Bạn vui lòng chia sẻ vị trí (GPS) qua ứng dụng nhé!"
+                    ),
+                    "metadata": {
+                        **metadata,
+                        "clarification_needed": True,
+                        "clarification_reason": "missing_user_gps",
+                    },
+                }
+
+        # When only 1 entity (destination) and no sentinel, try detected_location as source.
+        if gps_source is None and len(entities or []) < 2:
             loc = (detected_location or "").strip()
             if loc and len(entities) == 1:
                 # Check if loc is GPS coords (e.g. "13.9,108.0")
-                if "," in loc:
-                    try:
-                        parts = loc.split(",")
-                        lat, lng = float(parts[0].strip()), float(parts[1].strip())
-                        gps_source = {"lat": lat, "lng": lng, "name": f"Vị trí hiện tại ({lat:.4f}, {lng:.4f})"}
-                        self.logger.info("distance_intent: using GPS coords as source: %s", gps_source)
-                    except (ValueError, IndexError):
-                        pass
-                if not gps_source:
+                gps_source = _try_parse_gps(loc)
+                if gps_source:
+                    self.logger.info("distance_intent: using GPS coords as source: %s", gps_source)
+                else:
                     entities = [{"name": loc, "type": "Location"}] + list(entities)
                     self.logger.info("distance_intent: using detected_location='%s' as source", loc)
-            if not gps_source and len(entities or []) < 2:
+            if gps_source is None and len(entities or []) < 2:
                 return {
                     "answer": "Mình chưa xác định đủ 2 địa điểm để tính khoảng cách. Bạn hãy nêu rõ điểm đi và điểm đến.",
                     "metadata": metadata,
@@ -515,10 +592,15 @@ class DistanceIntentService:
             dst_lat = dst_node.metadata.get("lat")
             dst_lng = dst_node.metadata.get("lng")
             if dst_lat is None or dst_lng is None:
-                return {
-                    "answer": f"Mình đã xác định '{dst_name}' nhưng thiếu tọa độ để tính khoảng cách.",
-                    "metadata": metadata,
-                }
+                # No coords for destination — try a name-based Google Maps link
+                name_map_url = self.directions_service.build_external_map_url_flexible(
+                    origin_coords=gps_source,
+                    destination_name=dst_name,
+                )
+                answer = f"Mình đã xác định '{dst_name}' nhưng thiếu tọa độ chính xác."
+                if name_map_url:
+                    answer = f"{answer} Bạn có thể mở Google Maps để xem đường đi:\n\n📍 {name_map_url}"
+                return {"answer": answer, "metadata": {**metadata, "map_url": name_map_url}}
             src_name = gps_source["name"]
             src_lat, src_lng = gps_source["lat"], gps_source["lng"]
             straight_km = round(self._haversine_km(src_lat, src_lng, float(dst_lat), float(dst_lng)), 2)
@@ -530,6 +612,10 @@ class DistanceIntentService:
             )
             road_km = directions_data.get("road_distance_km")
             duration_min = directions_data.get("duration_min")
+            map_url = directions_data.get("map_url") or self.directions_service.build_external_map_url(
+                {"lat": src_lat, "lng": src_lng},
+                {"lat": float(dst_lat), "lng": float(dst_lng)},
+            )
             if road_km is not None and duration_min is not None:
                 answer = (
                     f"Từ {src_name} đến {dst_name}: khoảng cách đường chim bay khoảng {straight_km} km. "
@@ -540,6 +626,8 @@ class DistanceIntentService:
                     f"Từ {src_name} đến {dst_name}: khoảng cách đường chim bay khoảng {straight_km} km. "
                     "Hiện chưa lấy được lộ trình đường đi thời gian thực."
                 )
+            if map_url:
+                answer = f"{answer}\n\n📍 Xem đường đi trên Google Maps: {map_url}"
             metadata["seed_nodes"] = [
                 {"id": "", "name": src_name, "labels": [], "lat": src_lat, "lng": src_lng},
                 {
@@ -557,6 +645,7 @@ class DistanceIntentService:
                 "road_distance_km": road_km,
                 "duration_min": duration_min,
                 "route_polyline": directions_data.get("route_polyline", []),
+                "map_url": map_url,
             }
             return {"answer": answer, "metadata": metadata}
 
@@ -565,18 +654,35 @@ class DistanceIntentService:
             source_name = str((entities or [{}])[0].get("name") or "")
             dest_name = str((entities or [{}, {}])[1].get("name") or "") if len(entities) > 1 else ""
 
+            # Build a Google Maps link for the fallback even without full coord resolution.
+            # If we have GPS for origin and a destination name, use place-based URL.
+            fallback_map_url = self.directions_service.build_external_map_url_flexible(
+                origin_coords=gps_source,
+                origin_name=source_name if not gps_source else None,
+                destination_node=resolved_nodes[0] if resolved_nodes else None,
+                destination_name=dest_name,
+            )
+
             if source_name and dest_name:
                 travel_info = self._lookup_travel_info_for_distance(source_name, dest_name)
                 if travel_info:
                     self.logger.info("distance_travel_info_fallback: found TravelInfo for '%s' -> '%s'", source_name, dest_name)
+                    answer = travel_info
+                    if fallback_map_url:
+                        answer = f"{answer}\n\n📍 Xem đường đi trên Google Maps: {fallback_map_url}"
                     return {
-                        "answer": travel_info,
-                        "metadata": metadata,
+                        "answer": answer,
+                        "metadata": {**metadata, "map_url": fallback_map_url},
                     }
 
+            fallback_answer = "Dữ liệu hiện chưa có thông tin khoảng cách hoặc tuyến xe cụ thể giữa hai địa điểm này."
+            if fallback_map_url:
+                fallback_answer = f"{fallback_answer}\n\n📍 Bạn có thể xem đường đi trên Google Maps: {fallback_map_url}"
+            else:
+                fallback_answer = f"{fallback_answer} Bạn vui lòng tham khảo bản đồ trực tiếp hoặc các gợi ý di chuyển công cộng khác."
             return {
-                "answer": "Dữ liệu hiện chưa có thông tin khoảng cách hoặc tuyến xe cụ thể giữa hai địa điểm này. Bạn vui lòng tham khảo bản đồ trực tiếp hoặc các gợi ý di chuyển công cộng khác.",
-                "metadata": metadata,
+                "answer": fallback_answer,
+                "metadata": {**metadata, "map_url": fallback_map_url},
             }
 
         src = resolved_nodes[0]
@@ -648,7 +754,7 @@ class DistanceIntentService:
                 "Hiện chưa lấy được lộ trình đường đi thời gian thực, nên mình tạm trả về khoảng cách ước tính theo tọa độ."
             )
         if map_url:
-            answer = f"{answer} Xem đường đi: {map_url}"
+            answer = f"{answer}\n\n📍 Xem đường đi trên Google Maps: {map_url}"
 
         metadata["detected_location"] = detected_location
         metadata["intent"] = IntentType.DISTANCE

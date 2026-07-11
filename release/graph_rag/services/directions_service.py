@@ -49,6 +49,57 @@ class DirectionsService:
             "&travelmode=driving"
         )
 
+    def build_external_map_url_flexible(
+        self,
+        *,
+        origin_coords: Dict[str, Any] | None = None,
+        origin_name: str | None = None,
+        destination_node: Any | None = None,
+        destination_name: str | None = None,
+        travel_mode: str = "driving",
+    ) -> str:
+        """Build a Google Maps directions deep-link with flexible origin/destination.
+
+        Handles mixed inputs:
+        - origin: lat/lng dict (GPS) OR a place name string
+        - destination: a resolved node with lat/lng OR just a name string
+
+        Falls back gracefully when coordinates are unavailable.
+        Returns an empty string when neither origin nor destination can be determined.
+        """
+        # --- Origin ---
+        if origin_coords and "lat" in origin_coords and "lng" in origin_coords:
+            o_param = f"{float(origin_coords['lat'])},{float(origin_coords['lng'])}"
+        elif origin_name:
+            o_param = origin_name
+        else:
+            return ""
+
+        # --- Destination ---
+        dest_lat = None
+        dest_lng = None
+        if destination_node is not None:
+            meta = getattr(destination_node, "metadata", {}) or {}
+            dest_lat = meta.get("lat")
+            dest_lng = meta.get("lng")
+
+        if dest_lat is not None and dest_lng is not None:
+            d_param = f"{float(dest_lat)},{float(dest_lng)}"
+        elif destination_name:
+            d_param = destination_name
+        else:
+            return ""
+
+        mode_map = {"walking": "walking", "walk": "walking", "foot": "walking"}
+        travelmode = mode_map.get((travel_mode or "driving").strip().lower(), "driving")
+
+        return (
+            "https://www.google.com/maps/dir/?api=1"
+            f"&origin={urllib.parse.quote(o_param)}"
+            f"&destination={urllib.parse.quote(d_param)}"
+            f"&travelmode={travelmode}"
+        )
+
     def _get_osrm_directions(
         self,
         origin: Dict[str, Any],

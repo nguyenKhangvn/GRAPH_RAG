@@ -836,6 +836,7 @@ class QueryAnalyzer:
         - Extract only concrete entities from the query or resolved history. Do not extract operators, greetings, durations, or generic phrases as entities.
         - NAME EXTRACTION: When the query has pattern "X tên là Y", "X có tên là Y", "X được gọi là Y", or "X mang tên Y" — the entity name is Y (after "tên là"), NOT X. Do NOT include category words like "quán ăn", "nhà hàng", "khách sạn" as part of the entity name. Example: "quán ăn tên là Bánh xèo tôm nhảy Gia Vỹ" → entity = "Bánh xèo tôm nhảy Gia Vỹ", type = "Restaurant".
         - Ignore examples introduced by "Vi du", "VD", "chang han", or parenthesized example clauses.
+        - DEICTIC ORIGIN RULE (CRITICAL): For DISTANCE_QUERY, if user says "từ ở đây", "từ đây", "từ chỗ tôi", "từ vị trí của tôi", "từ vị trí hiện tại" — do NOT add "ở đây", "đây", "chỗ tôi", or any deictic origin phrase as an entity. The GPS is already in Current Location. Extract ONLY the destination as an entity. The system handles GPS origin automatically.
         - Map food/dish/restaurant/dining questions to FOOD_RECOMMENDATION (e.g. "món X ở đâu bán", "ăn gì ngon", "quán nào bán X", "ở đâu có X ngon"). Extract the dish/food name as entity type="Dish". buying raw seafood/specialties/souvenirs or local market shopping questions to TRAVEL_ADVICE; hotel/lodging to ACCOMMODATION_RECOMMENDATION; festival/event/race/schedule to EVENT_RECOMMENDATION; route/distance/how-to-go to DISTANCE_QUERY; address/phone/ticket/opening-hours facts to ENTITY_FACT_QUERY; itinerary/plan/schedule/lịch trình/kế hoạch/lộ trình/half-day/nửa ngày to TOUR_PLAN.
         - Use requested_attributes only for explicit facts: address, phone, ticket_price, opening_hours, price, price_range, description, service_features.
         - If pronouns like "cho do", "o do", "noi nay" cannot be resolved, set needs_clarification=true and keep entities empty.
@@ -965,6 +966,58 @@ class QueryAnalyzer:
             "is_follow_up": false,
             "dialog_act": "NEW_QUERY"
         }}
+
+        - User: "từ ở đây đến 135 Coffee & Pub đi như thế nào" (Current Location: "13.773142,109.235100")
+        - Output JSON:
+        {{
+            "intents": ["DISTANCE_QUERY"],
+            "rewritten_query": "Đường đi từ vị trí hiện tại đến 135 Coffee & Pub",
+            "entities": [
+                {{"name": "135 Coffee & Pub", "type": "Restaurant"}}
+            ],
+            "resolved_entities": [
+                {{"name": "135 Coffee & Pub", "type": "Restaurant", "source": "query"}}
+            ],
+            "detected_location": "Quy Nhơn",
+            "search_keywords": ["135 Coffee & Pub"],
+            "requested_attributes": ["address"],
+            "requested_relations": [],
+            "constraints": {{"optimize_distance": false}},
+            "coreference_confidence": 1.0,
+            "needs_clarification": false,
+            "is_follow_up": false,
+            "dialog_act": "NEW_QUERY"
+        }}
+
+        CRITICAL RULE for DISTANCE_QUERY with deictic origin:
+        - When user says "từ ở đây", "từ đây", "từ chỗ tôi", "từ vị trí của tôi", "từ vị trí hiện tại" — do NOT extract "ở đây"/"đây"/"chỗ tôi" as an entity. The GPS position is provided in Current Location above.
+        - Only extract the DESTINATION as an entity. The origin will be resolved from Current Location by the system.
+        - If Current Location is empty and user uses deictic origin, set needs_clarification=true.
+
+        - User: "từ quảng trường Nguyễn Tất Thành đến Khách sạn Mường Thanh Quy Nhơn đi như thế nào"
+        - Output JSON:
+        {{
+            "intents": ["DISTANCE_QUERY"],
+            "rewritten_query": "Đường đi từ Quảng trường Nguyễn Tất Thành đến Khách sạn Mường Thanh Quy Nhơn",
+            "entities": [
+                {{"name": "Quảng trường Nguyễn Tất Thành", "type": "TouristAttraction"}},
+                {{"name": "Khách sạn Mường Thanh Quy Nhơn", "type": "Accommodation"}}
+            ],
+            "resolved_entities": [
+                {{"name": "Quảng trường Nguyễn Tất Thành", "type": "TouristAttraction", "source": "query"}},
+                {{"name": "Khách sạn Mường Thanh Quy Nhơn", "type": "Accommodation", "source": "query"}}
+            ],
+            "detected_location": "Quy Nhơn",
+            "search_keywords": ["Quảng trường Nguyễn Tất Thành", "Khách sạn Mường Thanh Quy Nhơn"],
+            "requested_attributes": ["address"],
+            "requested_relations": [],
+            "constraints": {{"optimize_distance": false}},
+            "coreference_confidence": 1.0,
+            "needs_clarification": false,
+            "is_follow_up": false,
+            "dialog_act": "NEW_QUERY"
+        }}
+
 
         USER QUERY: "{query}"
 
