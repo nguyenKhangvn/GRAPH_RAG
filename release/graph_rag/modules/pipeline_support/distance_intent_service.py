@@ -419,58 +419,52 @@ class DistanceIntentService:
     def _lookup_travel_info_for_distance(self, source_name: str, dest_name: str) -> str:
         """Lookup TravelInfo for distance/transport information.
 
-        Searches for TravelInfo entries that mention both source and destination.
-        Returns description if found, else empty string.
+        Returns description ONLY when both source AND destination are found in
+        the same TravelInfo node's content — prevents false positives where a
+        generic term like '\u1edf \u0111\u00e2y' matches unrelated transport entries.
         """
+        # Reject degenerate inputs that will produce false positives
+        _DEICTIC_REJECTS = {"o day", "day", "o do", "cho nay", "noi nay", "vi tri cua toi",
+                            "vi tri hien tai", "\u1edf \u0111\u00e2y", "\u0111\u00e2y", "here", "current location"}
+        source_norm = normalize_text(source_name, strip_punct=True)
+        dest_norm = normalize_text(dest_name, strip_punct=True)
+
+        # If source is a deictic or very short generic term, skip lookup entirely
+        if source_norm in _DEICTIC_REJECTS or len(source_norm) < 4:
+            self.logger.info("travel_info_lookup skipped: source is deictic/generic '%s'", source_name)
+            return ""
+        if dest_norm in _DEICTIC_REJECTS or len(dest_norm) < 4:
+            self.logger.info("travel_info_lookup skipped: dest is deictic/generic '%s'", dest_name)
+            return ""
+
         try:
             with self.retriever.driver.session() as session:
-                # Search for TravelInfo entries mentioning both locations
-                source_norm = normalize_text(source_name, strip_punct=True)
-                dest_norm = normalize_text(dest_name, strip_punct=True)
-
-                # Query TravelInfo with topic 'transport' or containing location names
+                # Require BOTH source AND destination to appear in the same node.
+                # Using AND prevents returning unrelated transport info when only
+                # one name (or a generic word) happens to match.
                 result = session.run(
                     """
                     MATCH (t:TravelInfo)
                     WHERE t.topic IN ['transport', 'travel_info']
                     AND (
-                        toLower(t.name) CONTAINS toLower($source) OR
-                        toLower(t.name) CONTAINS toLower($dest) OR
-                        toLower(t.description) CONTAINS toLower($source) OR
-                        toLower(t.description) CONTAINS toLower($dest)
+                        toLower(t.name) CONTAINS toLower($source)
+                        OR toLower(t.description) CONTAINS toLower($source)
+                    )
+                    AND (
+                        toLower(t.name) CONTAINS toLower($dest)
+                        OR toLower(t.description) CONTAINS toLower($dest)
                     )
                     RETURN t.name AS name, t.description AS description, t.topic AS topic
-                    LIMIT 5
+                    LIMIT 3
                     """,
                     source=source_name,
                     dest=dest_name,
                 ).data()
 
-                if not result:
-                    # Fallback: search with normalized names
-                    result = session.run(
-                        """
-                        MATCH (t:TravelInfo)
-                        WHERE t.topic IN ['transport', 'travel_info']
-                        RETURN t.name AS name, t.description AS description, t.topic AS topic
-                        LIMIT 20
-                        """
-                    ).data()
-
-                    # Filter in Python for better matching
-                    filtered = []
-                    for row in result:
-                        name_norm = normalize_text(row.get("name", ""), strip_punct=True)
-                        desc_norm = normalize_text(row.get("description", ""), strip_punct=True)
-                        combined = f"{name_norm} {desc_norm}"
-
-                        if (source_norm in combined and dest_norm in combined):
-                            filtered.append(row)
-
-                    result = filtered[:3]
+                # NOTE: The broad fallback scan (LIMIT 20 with OR filter) is intentionally
+                # removed — it caused false positives with generic/deictic terms.
 
                 if result:
-                    # Return the most relevant entry
                     best = result[0]
                     return best.get("description", "")
 
@@ -650,15 +644,40 @@ class DistanceIntentService:
             return {"answer": answer, "metadata": metadata}
 
         if len(resolved_nodes) < 2:
-            # Fallback: Try TravelInfo lookup for distance/transport information
+            # When GPS source is available but destination not resolved in graph:
+            # Skip TravelInfo entirely (no graph node to search for) and go straight
+            # to Google Maps link — TravelInfo would only return generic/wrong content.
+            if gps_source:
+                dest_entity_name = str((entities[0] or {}).get("name") or "") if entities else ""
+                fallback_map_url = self.directions_service.build_external_map_url_flexible(
+                    origin_coords=gps_source,
+                    destination_name=dest_entity_name,
+                )
+                fallback_answer = (
+                    f"M\u00ecnh ch\u01b0a t\u00ecm th\u1ea5y '\u200b{dest_entity_name}' trong c\u01a1 s\u1edf d\u1eef li\u1ec7u \u0111\u1ecba \u0111i\u1ec3m n\u00eay."
+                    if dest_entity_name
+                    else "M\u00ecnh ch\u01b0a x\u00e1c \u0111\u1ecbnh \u0111\u01b0\u1ee3c \u0111\u1ecba \u0111i\u1ec3m \u0111\u1ebfn."
+                )
+                if fallback_map_url:
+                    fallback_answer = (
+                        f"{fallback_answer} Tuy nhi\u00ean b\u1ea1n c\u00f3 th\u1ec3 m\u1edf Google Maps \u0111\u1ec3 xem \u0111\u01b0\u1eddng \u0111i tr\u1ef1c ti\u1ebfp:\n\n"
+                        f"\ud83d\udccd {fallback_map_url}"
+                    )
+                else:
+                    fallback_answer = f"{fallback_answer} B\u1ea1n vui l\u00f2ng t\u00ecm ki\u1ebfm tr\u00ean Google Maps nh\u00e9."
+                return {
+                    "answer": fallback_answer,
+                    "metadata": {**metadata, "map_url": fallback_map_url},
+                }
+
+            # No GPS source — both endpoints are named places, try TravelInfo
             source_name = str((entities or [{}])[0].get("name") or "")
             dest_name = str((entities or [{}, {}])[1].get("name") or "") if len(entities) > 1 else ""
 
             # Build a Google Maps link for the fallback even without full coord resolution.
-            # If we have GPS for origin and a destination name, use place-based URL.
             fallback_map_url = self.directions_service.build_external_map_url_flexible(
-                origin_coords=gps_source,
-                origin_name=source_name if not gps_source else None,
+                origin_coords=None,
+                origin_name=source_name,
                 destination_node=resolved_nodes[0] if resolved_nodes else None,
                 destination_name=dest_name,
             )
@@ -669,17 +688,17 @@ class DistanceIntentService:
                     self.logger.info("distance_travel_info_fallback: found TravelInfo for '%s' -> '%s'", source_name, dest_name)
                     answer = travel_info
                     if fallback_map_url:
-                        answer = f"{answer}\n\n📍 Xem đường đi trên Google Maps: {fallback_map_url}"
+                        answer = f"{answer}\n\n\ud83d\udccd Xem \u0111\u01b0\u1eddng \u0111i tr\u00ean Google Maps: {fallback_map_url}"
                     return {
                         "answer": answer,
                         "metadata": {**metadata, "map_url": fallback_map_url},
                     }
 
-            fallback_answer = "Dữ liệu hiện chưa có thông tin khoảng cách hoặc tuyến xe cụ thể giữa hai địa điểm này."
+            fallback_answer = "D\u1eef li\u1ec7u hi\u1ec7n ch\u01b0a c\u00f3 th\u00f4ng tin kho\u1ea3ng c\u00e1ch ho\u1eb7c tuy\u1ebfn xe c\u1ee5 th\u1ec3 gi\u1eefa hai \u0111\u1ecba \u0111i\u1ec3m n\u00e0y."
             if fallback_map_url:
-                fallback_answer = f"{fallback_answer}\n\n📍 Bạn có thể xem đường đi trên Google Maps: {fallback_map_url}"
+                fallback_answer = f"{fallback_answer}\n\n\ud83d\udccd B\u1ea1n c\u00f3 th\u1ec3 xem \u0111\u01b0\u1eddng \u0111i tr\u00ean Google Maps: {fallback_map_url}"
             else:
-                fallback_answer = f"{fallback_answer} Bạn vui lòng tham khảo bản đồ trực tiếp hoặc các gợi ý di chuyển công cộng khác."
+                fallback_answer = f"{fallback_answer} B\u1ea1n vui l\u00f2ng tham kh\u1ea3o b\u1ea3n \u0111\u1ed3 tr\u1ef1c ti\u1ebfp ho\u1eb7c c\u00e1c g\u1ee3i \u00fd di chuy\u1ec3n c\u00f4ng c\u1ed9ng kh\u00e1c."
             return {
                 "answer": fallback_answer,
                 "metadata": {**metadata, "map_url": fallback_map_url},
