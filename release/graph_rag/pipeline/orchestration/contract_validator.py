@@ -364,9 +364,15 @@ class ContractValidator:
                 target_class_priority="Specialty",
             )
 
+        # Check if the query is actually a spatial routing query (from A to B)
+        # to prevent overriding specific directions queries with generic transport info contracts.
+        from graph_rag.modules.pipeline_support.distance_intent_service import DistanceQueryParser
+        src, dst = DistanceQueryParser.parse(q_clean)
+        is_spatial_routing = bool(src and dst)
+
         # Airport Transport
         airport_signals = ["san bay", "chuyen bay", "may bay"]
-        if ContractValidator._match_any_signal(q_clean, airport_signals):
+        if ContractValidator._match_any_signal(q_clean, airport_signals) and not is_spatial_routing:
             return ContractPatch(
                 contract_name="airport_transport",
                 intent=IntentType.TRANSPORT_INFO,
@@ -391,7 +397,7 @@ class ContractValidator:
             "tau cau", "phà", "pha", "canoe", "thuyen", "tau",
             "cau tau", "ben tau", "bến phà",
         ]
-        if ContractValidator._match_any_signal(q_clean, transport_signals):
+        if ContractValidator._match_any_signal(q_clean, transport_signals) and not is_spatial_routing:
             return ContractPatch(
                 contract_name="local_transport",
                 intent=IntentType.TRANSPORT_INFO,

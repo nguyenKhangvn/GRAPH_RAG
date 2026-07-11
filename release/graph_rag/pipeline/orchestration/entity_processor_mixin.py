@@ -56,6 +56,8 @@ class EntityProcessorMixin:
         text = str(name or "").strip()
         if not text:
             return ""
+        if text == "__USER_LOCATION_SELF__":
+            return text
 
         cleaned = re.sub(r"_{2,}", "", text).strip(" ,.;:!?")
         cleaned = re.sub(r"\s*\([^)]*\)\s*$", "", cleaned).strip(" ,.;:!?")

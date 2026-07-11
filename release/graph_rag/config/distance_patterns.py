@@ -22,17 +22,14 @@ DISTANCE_TAIL_PATTERNS = [
 # Highly explicit regex patterns to safely extract origin and destination location slots.
 # Enforces word boundaries and destination stop pattern constraints.
 EXPLICIT_DISTANCE_PATTERNS = [
-    # từ A đến B (với stop pattern ở sau)
-    r"\btừ\s+(?P<origin>.+?)\s+(?:đến|tới)\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
-    r"\btu\s+(?P<origin>.+?)\s+(?:den|toi)\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
+    # từ A đến B (với stop pattern ở sau) - Hỗ trợ cả có dấu và không dấu hỗn hợp
+    r"\b(?:từ|tu)\s+(?P<origin>.+?)\s+(?:đến|tới|den|toi)\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
     
     # khoảng cách giữa A và B
-    r"\bkhoảng\s+cách\s+giữa\s+(?P<origin>.+?)\s+và\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
-    r"\bkhoang\s+cach\s+giua\s+(?P<origin>.+?)\s+va\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
+    r"\b(?:khoảng|khoang)\s+(?:cách|cach)\s+(?:giữa|giua)\s+(?P<origin>.+?)\s+(?:và|va)\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
     
     # A cách B
-    r"\b(?P<origin>.+?)\s+cách\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
-    r"\b(?P<origin>.+?)\s+cach\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
+    r"\b(?P<origin>.+?)\s+(?:cách|cach)\s+(?P<destination>.+?)(?:" + DESTINATION_STOP_PATTERN + r"|$)",
 ]
 
 # Verbs/Intents that represent actions rather than actual names.

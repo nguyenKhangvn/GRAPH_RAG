@@ -42,6 +42,18 @@ class DistanceQueryParser:
 
         # Normalize space characters
         text = re.sub(r"\s+", " ", text)
+
+        # Clean leading typos/ellipses at the start of distance queries:
+        # "ừ đây đến..." -> "từ đây đến..."
+        # "u day den..." -> "tu day den..."
+        # "đây đến..." -> "từ đây đến..."
+        # "day den..." -> "tu day den..."
+        # "o day den..." -> "tu o day den..."
+        # "ở đây đến..." -> "từ ở đây đến..."
+        text = re.sub(r"^[ừu]\s+", "từ ", text, flags=re.IGNORECASE)
+        # If it starts with "đây đến" / "day den" / "ở đây đến" / "o day den" etc., prefix with "từ"
+        if re.match(r"^(?:đây|day|ở đây|o day)\s+(?:đến|toi|tới|den)\b", text, flags=re.IGNORECASE):
+            text = "từ " + text
         
         # Remove common tail/suffix question patterns (case-insensitive)
         clean_query = text.strip(" ?.!;:")
@@ -174,7 +186,7 @@ class DistanceIntentService:
 
         # Don't repair when the first entity is the USER_LOCATION_SELF sentinel —
         # it must survive intact so run_distance_intent() can swap it for GPS coords.
-        if (current[0] or {}).get("name") == _USER_LOCATION_SELF:
+        if (current[0] or {}).get("name") in (_USER_LOCATION_SELF, "USER_LOCATION_SELF"):
             return current
 
         def trim_tail(text: str) -> str:
@@ -509,7 +521,7 @@ class DistanceIntentService:
 
         # If the first entity is the USER_LOCATION_SELF sentinel, pop it and
         # try to resolve to GPS coords from metadata / detected_location.
-        if entities and (entities[0] or {}).get("name") == _USER_LOCATION_SELF:
+        if entities and (entities[0] or {}).get("name") in (_USER_LOCATION_SELF, "USER_LOCATION_SELF"):
             entities = list(entities[1:])  # drop sentinel entity
             # Priority: user_gps in metadata → detected_location string
             raw_gps = (
