@@ -284,6 +284,15 @@ class DistanceIntentService:
                 "Accommodation",
                 "Event",
             },
+            # "Place" is the generic type emitted by DistanceQueryParser for named destinations.
+            # It should resolve against any concrete POI label in the graph.
+            "Place": {
+                "Location",
+                "TouristAttraction",
+                "Restaurant",
+                "Accommodation",
+                "Event",
+            },
             "Tour": {"Tour"},
         }
         expected = mapping.get(entity_type, {entity_type})

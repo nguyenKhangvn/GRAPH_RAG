@@ -309,6 +309,10 @@ class ContractValidator:
         # Guard: do not override food or tourism recommendation intents
         if intent_str in {"FOOD_RECOMMENDATION", "TOURISM_RECOMMENDATION"}:
             has_accommodation = False
+        # Guard: do not override distance/direction queries that merely mention a hotel by name
+        # e.g. "từ vị trí của tôi đến Khách sạn Mường Thanh đi như thế nào" is DISTANCE_QUERY
+        if intent_str == "DISTANCE_QUERY":
+            has_accommodation = False
         # Guard: only activate for recommendation queries, not advice/booking queries
         _advice_booking_signals = ["kinh nghiem", "dat phong", "booking", "meo", "luu y", "gia bao nhieu", "chi phi"]
         is_advice_booking = ContractValidator._match_any_signal(q_clean, _advice_booking_signals)
