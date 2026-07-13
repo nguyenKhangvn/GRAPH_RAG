@@ -468,14 +468,29 @@ class Step5GenerationMixin:
                 anchored_context = slot_answer_ctx
                 logger.info("   -> [SlotBuilder] Using slot answer context for LLM rephrase (%d chars)", len(anchored_context))
             elif curated_food_ctx:
-                anchored_context = curated_food_ctx
-                logger.info("   -> [Curated] Using curated food context (%d chars)", len(anchored_context))
+                if len(curated_food_ctx) < 200 and state.clean_context:
+                    anchored_context = curated_food_ctx + "\n\n---\nTHÔNG TIN CHI TIẾT:\n" + state.clean_context
+                    logger.info("   -> [Curated] Enriched food context: curated=%d + graph=%d = %d chars",
+                                len(curated_food_ctx), len(state.clean_context), len(anchored_context))
+                else:
+                    anchored_context = curated_food_ctx
+                    logger.info("   -> [Curated] Using curated food context (%d chars)", len(anchored_context))
             elif curated_event_ctx:
-                anchored_context = curated_event_ctx
-                logger.info("   -> [Curated] Using curated event context (%d chars)", len(anchored_context))
+                if len(curated_event_ctx) < 200 and state.clean_context:
+                    anchored_context = curated_event_ctx + "\n\n---\nTHÔNG TIN CHI TIẾT:\n" + state.clean_context
+                    logger.info("   -> [Curated] Enriched event context: curated=%d + graph=%d = %d chars",
+                                len(curated_event_ctx), len(state.clean_context), len(anchored_context))
+                else:
+                    anchored_context = curated_event_ctx
+                    logger.info("   -> [Curated] Using curated event context (%d chars)", len(anchored_context))
             elif curated_tourism_ctx:
-                anchored_context = curated_tourism_ctx
-                logger.info("   -> [Curated] Using curated tourism context (%d chars)", len(anchored_context))
+                if len(curated_tourism_ctx) < 200 and state.clean_context:
+                    anchored_context = curated_tourism_ctx + "\n\n---\nTHÔNG TIN CHI TIẾT:\n" + state.clean_context
+                    logger.info("   -> [Curated] Enriched tourism context: curated=%d + graph=%d = %d chars",
+                                len(curated_tourism_ctx), len(state.clean_context), len(anchored_context))
+                else:
+                    anchored_context = curated_tourism_ctx
+                    logger.info("   -> [Curated] Using curated tourism context (%d chars)", len(anchored_context))
             elif curated_accommodation_ctx:
                 # Merge curated context with graph facts if curated context is too thin
                 if len(curated_accommodation_ctx) < 200 and state.clean_context:
