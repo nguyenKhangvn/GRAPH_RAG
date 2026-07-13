@@ -407,7 +407,7 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
         if not streamed_any and answer:
             payload = json.dumps({"chunk": answer}, ensure_ascii=False)
             yield f"event: message\ndata: {payload}\n\n"
-            await asyncio.sleep(0.1)  # Allow socket to flush response text
+            await asyncio.sleep(0.8)  # Allow socket to flush response text
 
         # --- Build map locations ---
         source_nodes = (
@@ -502,10 +502,10 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
             }
             ROUTE_MONITOR_LOGGER.info(json.dumps(monitoring_payload, ensure_ascii=False))
         yield f"event: metadata\ndata: {meta_payload}\n\n"
-        await asyncio.sleep(0.1)  # Allow socket to flush metadata
+        await asyncio.sleep(0.8)  # Allow socket to flush metadata
 
         yield "event: done\ndata: [DONE]\n\n"
-        await asyncio.sleep(0.2)  # Critical delay on Linux to avoid TCP RST on connection close
+        await asyncio.sleep(2.0)  # Safe delay to prevent TCP RST and ensure proxy flushes buffer
 
     except Exception as e:
         APP_LOGGER.exception("sse_generator_error")
