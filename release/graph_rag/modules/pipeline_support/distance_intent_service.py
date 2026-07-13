@@ -682,7 +682,7 @@ class DistanceIntentService:
                 if fallback_map_url:
                     fallback_answer = (
                         f"{fallback_answer} Tuy nhi\u00ean b\u1ea1n c\u00f3 th\u1ec3 m\u1edf Google Maps \u0111\u1ec3 xem \u0111\u01b0\u1eddng \u0111i tr\u1ef1c ti\u1ebfp:\n\n"
-                        f"\ud83d\udccd {fallback_map_url}"
+                        f"📍 {fallback_map_url}"
                     )
                 else:
                     fallback_answer = f"{fallback_answer} B\u1ea1n vui l\u00f2ng t\u00ecm ki\u1ebfm tr\u00ean Google Maps nh\u00e9."
@@ -709,7 +709,7 @@ class DistanceIntentService:
                     self.logger.info("distance_travel_info_fallback: found TravelInfo for '%s' -> '%s'", source_name, dest_name)
                     answer = travel_info
                     if fallback_map_url:
-                        answer = f"{answer}\n\n\ud83d\udccd Xem \u0111\u01b0\u1eddng \u0111i tr\u00ean Google Maps: {fallback_map_url}"
+                        answer = f"{answer}\n\n📍 Xem \u0111\u01b0\u1eddng \u0111i tr\u00ean Google Maps: {fallback_map_url}"
                     return {
                         "answer": answer,
                         "metadata": {**metadata, "map_url": fallback_map_url},
@@ -717,7 +717,7 @@ class DistanceIntentService:
 
             fallback_answer = "D\u1eef li\u1ec7u hi\u1ec7n ch\u01b0a c\u00f3 th\u00f4ng tin kho\u1ea3ng c\u00e1ch ho\u1eb7c tuy\u1ebfn xe c\u1ee5 th\u1ec3 gi\u1eefa hai \u0111\u1ecba \u0111i\u1ec3m n\u00e0y."
             if fallback_map_url:
-                fallback_answer = f"{fallback_answer}\n\n\ud83d\udccd B\u1ea1n c\u00f3 th\u1ec3 xem \u0111\u01b0\u1eddng \u0111i tr\u00ean Google Maps: {fallback_map_url}"
+                fallback_answer = f"{fallback_answer}\n\n📍 B\u1ea1n c\u00f3 th\u1ec3 xem \u0111\u01b0\u1eddng \u0111i tr\u00ean Google Maps: {fallback_map_url}"
             else:
                 fallback_answer = f"{fallback_answer} B\u1ea1n vui l\u00f2ng tham kh\u1ea3o b\u1ea3n \u0111\u1ed3 tr\u1ef1c ti\u1ebfp ho\u1eb7c c\u00e1c g\u1ee3i \u00fd di chuy\u1ec3n c\u00f4ng c\u1ed9ng kh\u00e1c."
             return {

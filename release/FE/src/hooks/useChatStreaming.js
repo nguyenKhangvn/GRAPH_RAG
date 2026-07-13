@@ -119,18 +119,15 @@ export const useChatStreaming = () => {
       while (true) {
         const { value, done } = await reader.read();
 
-        if (done) {
-          updateLastMessage((last) => ({ ...last, isStreaming: false }));
-          setIsTyping(false);
-          break;
+        if (value) {
+          buffer += decoder.decode(value, { stream: true });
         }
 
-        buffer += decoder.decode(value, { stream: true });
         const eventBlocks = buffer.split(/\r?\n\r?\n/);
         buffer = eventBlocks.pop() || "";
 
-        for (const block of eventBlocks) {
-          if (!block.trim()) continue;
+        const processBlock = (block) => {
+          if (!block.trim()) return;
 
           let eventName = "message";
           let dataStr = "";
@@ -143,31 +140,27 @@ export const useChatStreaming = () => {
             }
           }
 
-          if (!dataStr) continue;
+          if (!dataStr) return;
 
           if (eventName === "done" && dataStr === "[DONE]") {
-            await reader.cancel();
-            updateLastMessage((last) => ({ ...last, isStreaming: false }));
-            setIsTyping(false);
-            break;
+            return "done";
           }
 
           if (eventName === "message") {
             try {
               const { chunk } = JSON.parse(dataStr);
-              if (!chunk) continue;
-
-              updateLastMessage((last) => ({
-                ...last,
-                content: `${last.content}${chunk}`,
-                isStreaming: true,
-                isError: false,
-              }));
-              scrollToBottom();
+              if (chunk) {
+                updateLastMessage((last) => ({
+                  ...last,
+                  content: `${last.content}${chunk}`,
+                  isStreaming: true,
+                  isError: false,
+                }));
+                scrollToBottom();
+              }
             } catch (err) {
               console.error("Parse error (message):", err);
             }
-            continue;
           }
 
           if (eventName === "metadata") {
@@ -200,10 +193,8 @@ export const useChatStreaming = () => {
               } else {
                 setMapSafety(null);
               }
-              // Constraint warning: shown when coastal/sunset/island not satisfied
               if (data.constraint_warning && typeof data.constraint_warning === "object") {
                 setMapConstraintWarning(data.constraint_warning);
-                // Also attach to the AI message so ItineraryCard can render it
                 updateLastMessage((last) => ({
                   ...last,
                   constraintWarning: data.constraint_warning,
@@ -211,7 +202,6 @@ export const useChatStreaming = () => {
               } else {
                 setMapConstraintWarning(null);
               }
-              // Daily cluster plan: used to build day badges in MapInterface
               if (Array.isArray(data.daily_cluster_plan)) {
                 setMapDailyPlan(data.daily_cluster_plan);
               } else {
@@ -220,7 +210,6 @@ export const useChatStreaming = () => {
             } catch (err) {
               console.error("Parse error (metadata):", err);
             }
-            continue;
           }
 
           if (eventName === "error") {
@@ -236,6 +225,30 @@ export const useChatStreaming = () => {
               console.error("Parse error (error event):", err);
             }
           }
+        };
+
+        let shouldBreak = false;
+        for (const block of eventBlocks) {
+          if (processBlock(block) === "done") {
+            shouldBreak = true;
+            break;
+          }
+        }
+
+        if (shouldBreak) {
+          await reader.cancel();
+          updateLastMessage((last) => ({ ...last, isStreaming: false }));
+          setIsTyping(false);
+          break;
+        }
+
+        if (done) {
+          if (buffer.trim()) {
+            processBlock(buffer);
+          }
+          updateLastMessage((last) => ({ ...last, isStreaming: false }));
+          setIsTyping(false);
+          break;
         }
       }
     } catch (error) {
