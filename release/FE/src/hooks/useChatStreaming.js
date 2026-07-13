@@ -120,7 +120,7 @@ export const useChatStreaming = () => {
         const { value, done } = await reader.read();
 
         if (done) {
-          updateLastMessage({ isStreaming: false });
+          updateLastMessage((last) => ({ ...last, isStreaming: false }));
           setIsTyping(false);
           break;
         }
@@ -147,7 +147,7 @@ export const useChatStreaming = () => {
 
           if (eventName === "done" && dataStr === "[DONE]") {
             await reader.cancel();
-            updateLastMessage({ isStreaming: false });
+            updateLastMessage((last) => ({ ...last, isStreaming: false }));
             setIsTyping(false);
             break;
           }
@@ -226,11 +226,12 @@ export const useChatStreaming = () => {
           if (eventName === "error") {
             try {
               const { error } = JSON.parse(dataStr);
-              updateLastMessage({
+              updateLastMessage((last) => ({
+                ...last,
                 content: `⚠️ ${error || "Lỗi xử lý yêu cầu"}`,
                 isError: true,
                 isStreaming: false,
-              });
+              }));
             } catch (err) {
               console.error("Parse error (error event):", err);
             }
@@ -239,11 +240,12 @@ export const useChatStreaming = () => {
       }
     } catch (error) {
       console.error("Network/API Error:", error);
-      updateLastMessage({
+      updateLastMessage((last) => ({
+        ...last,
         content: "Không thể kết nối tới server. Vui lòng thử lại.",
         isError: true,
         isStreaming: false,
-      });
+      }));
       setIsTyping(false);
     }
   };

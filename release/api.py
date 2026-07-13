@@ -432,6 +432,14 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
         if metadata.get("intent") != "TOUR_PLAN" and answer:
             locations = _filter_by_answer_mentions(answer, locations)
 
+        # Rút gọn route_polyline trong metadata để tránh tràn buffer của proxy Render (max 100 points)
+        distance_data = metadata.get("distance")
+        if isinstance(distance_data, dict) and "route_polyline" in distance_data:
+            polyline = distance_data["route_polyline"]
+            if isinstance(polyline, list) and len(polyline) > 100:
+                step = len(polyline) / 100
+                distance_data["route_polyline"] = [polyline[int(i * step)] for i in range(100)]
+
         meta_payload = json.dumps({
             "intent": str(metadata.get("intent", "")),
             "detected_location": metadata.get("detected_location", ""),
@@ -778,7 +786,8 @@ async def chat_endpoint(request: Request, payload: ChatRequest):
         sse_generator(payload.query, history, current_location=current_location, user_gps=user_gps),
         media_type="text/event-stream",
         headers={
-            "Cache-Control": "no-cache",
+            "Cache-Control": "no-cache, no-transform",
+            "Connection": "keep-alive",
             "X-Accel-Buffering": "no",
         },
     )

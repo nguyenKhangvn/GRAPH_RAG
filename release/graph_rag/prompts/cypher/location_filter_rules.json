@@ -5,6 +5,5 @@
   "Event": "- Event: location suy ra qua HELD_AT → TouristAttraction → LOCATED_IN → Location:\n  MATCH (e:Event)-[:HELD_AT]->(t:TouristAttraction)-[:LOCATED_IN]->(l:Location) WHERE l.name CONTAINS 'tên tỉnh'\n  Fallback: MATCH (e:Event) WHERE e.address CONTAINS 'tên tỉnh'\n  KHÔNG còn Event LOCATED_IN relationship.",
   "TravelInfo": "- TravelInfo: dùng Guide_for → Location (ưu tiên):\n  MATCH (t:TravelInfo)-[:Guide_for]->(l:Location) WHERE l.name CONTAINS 'tên tỉnh'\n  Fallback: MATCH (t:TravelInfo) WHERE t.location CONTAINS 'tên tỉnh' OR t.province CONTAINS 'tên tỉnh'",
   "Specialty": "- Specialty: có location/region_group/province properties → query TRỰC TIẾP:\n  MATCH (s:Specialty) WHERE s.location CONTAINS 'Gia Lai' OR s.province CONTAINS 'Gia Lai'",
-  "Dish": "- Dish: có location/region_group/province properties → query TRỰC TIẾP:\n  MATCH (d:Dish) WHERE d.location CONTAINS 'tên tỉnh' OR d.province CONTAINS 'tên tỉnh'\n  (Đã xóa SPECIALTY_OF khỏi DB, dùng properties để filter.)",
-  "Specialty": "- Specialty: có location/region_group/province properties → query TRỰC TIẾP:\n  MATCH (s:Specialty) WHERE s.location CONTAINS 'Gia Lai' OR s.province CONTAINS 'Gia Lai'
+  "Dish": "- Dish: có location/region_group/province properties → query TRỰC TIẾP:\n  MATCH (d:Dish) WHERE d.location CONTAINS 'tên tỉnh' OR d.province CONTAINS 'tên tỉnh'\n  (Đã xóa SPECIALTY_OF khỏi DB, dùng properties để filter.)"
 }
