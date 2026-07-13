@@ -322,13 +322,13 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
         if pipeline is None:
             raise RuntimeError("RAG pipeline is not initialized")
 
-        token_queue: queue.Queue = queue.Queue()
+        token_queue = asyncio.Queue()
         loop = asyncio.get_event_loop()
         streamed_any = False
 
         def on_token(token: str):
             """Called from pipeline thread for each LLM token."""
-            token_queue.put(("token", token))
+            loop.call_soon_threadsafe(token_queue.put_nowait, ("token", token))
 
         def run_pipeline():
             """Runs in a background thread."""
@@ -340,10 +340,10 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
                     user_gps=user_gps,
                     on_token=on_token,
                 )
-                token_queue.put(("done", result))
+                loop.call_soon_threadsafe(token_queue.put_nowait, ("done", result))
             except Exception as e:
                 APP_LOGGER.exception("pipeline_error_in_background_thread")
-                token_queue.put(("error", str(e)))
+                loop.call_soon_threadsafe(token_queue.put_nowait, ("error", str(e)))
 
         # Start pipeline in background thread
         executor_thread = threading.Thread(target=run_pipeline, daemon=True)
@@ -356,12 +356,12 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
         result = None
         while True:
             try:
-                msg_type, payload = await loop.run_in_executor(
-                    None, lambda: token_queue.get(timeout=0.1)
-                )
-            except queue.Empty:
+                # Wait for up to 1.5 seconds without blocking the CPU
+                msg_type, payload = await asyncio.wait_for(token_queue.get(), timeout=1.5)
+            except asyncio.TimeoutError:
                 if not executor_thread.is_alive():
-                    break
+                    if token_queue.empty():
+                        break
                 # Periodically yield ping comments to keep connection active and flush proxy buffer
                 yield ": ping\n\n"
                 continue
@@ -379,6 +379,7 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
                 err_payload = json.dumps({"error": str(payload)}, ensure_ascii=False)
                 yield f"event: error\ndata: {err_payload}\n\n"
                 yield "event: done\ndata: [DONE]\n\n"
+                await asyncio.sleep(0.2)
                 return
 
         if result is None:
