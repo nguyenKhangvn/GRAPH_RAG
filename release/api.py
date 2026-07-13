@@ -349,6 +349,9 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
         executor_thread = threading.Thread(target=run_pipeline, daemon=True)
         executor_thread.start()
 
+        # Send an immediate keep-alive comment to flush proxy headers on Render
+        yield ": keepalive\n\n"
+
         # Consume tokens from queue and yield SSE events in real-time
         result = None
         while True:
@@ -359,6 +362,8 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
             except queue.Empty:
                 if not executor_thread.is_alive():
                     break
+                # Periodically yield ping comments to keep connection active and flush proxy buffer
+                yield ": ping\n\n"
                 continue
 
             if msg_type == "token":
@@ -401,6 +406,7 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
         if not streamed_any and answer:
             payload = json.dumps({"chunk": answer}, ensure_ascii=False)
             yield f"event: message\ndata: {payload}\n\n"
+            await asyncio.sleep(0.1)  # Allow socket to flush response text
 
         # --- Build map locations ---
         source_nodes = (
@@ -487,14 +493,17 @@ async def sse_generator(query: str, chat_history: list, current_location: str = 
             }
             ROUTE_MONITOR_LOGGER.info(json.dumps(monitoring_payload, ensure_ascii=False))
         yield f"event: metadata\ndata: {meta_payload}\n\n"
+        await asyncio.sleep(0.1)  # Allow socket to flush metadata
 
         yield "event: done\ndata: [DONE]\n\n"
+        await asyncio.sleep(0.2)  # Critical delay on Linux to avoid TCP RST on connection close
 
     except Exception as e:
         APP_LOGGER.exception("sse_generator_error")
         err_payload = json.dumps({"error": str(e)}, ensure_ascii=False)
         yield f"event: error\ndata: {err_payload}\n\n"
         yield "event: done\ndata: [DONE]\n\n"
+        await asyncio.sleep(0.2)
 
 
 # --- ENDPOINTS ---
