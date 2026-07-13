@@ -274,24 +274,32 @@ class DistanceIntentService:
             "Accommodation": {"Accommodation"},
             "Restaurant": {"Restaurant"},
             "Dish": {"Dish"},
-            "TouristAttraction": {"TouristAttraction"},
+            "TouristAttraction": {
+                "TouristAttraction",
+                "Dish",
+                "Specialty",
+            },
             "Event": {"Event"},
-            # In distance queries, "Location" from LLM often points to a concrete POI.
+            # In distance queries, "Location" from LLM often points to a concrete POI or Specialty.
             "Location": {
                 "Location",
                 "TouristAttraction",
                 "Restaurant",
                 "Accommodation",
                 "Event",
+                "Dish",
+                "Specialty",
             },
             # "Place" is the generic type emitted by DistanceQueryParser for named destinations.
-            # It should resolve against any concrete POI label in the graph.
+            # It should resolve against any concrete POI or Specialty label in the graph.
             "Place": {
                 "Location",
                 "TouristAttraction",
                 "Restaurant",
                 "Accommodation",
                 "Event",
+                "Dish",
+                "Specialty",
             },
             "Tour": {"Tour"},
         }

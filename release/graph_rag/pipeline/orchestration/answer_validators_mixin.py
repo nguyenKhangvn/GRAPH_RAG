@@ -437,14 +437,20 @@ class AnswerValidatorsMixin:
     def _extract_entity_from_line(line: str) -> str:
         """Extract entity name from various line formats."""
         stripped = line.strip()
-        # Format 1: "**Name**" or "**Name** — ..."
-        m = re.match(r"^\*\*(.+?)\*\*", stripped)
-        if m:
-            return m.group(1).strip()
-        # Format 2: "- **Name**" or "1. **Name**"
-        m = re.match(r"^(?:[-*]|\d+\.)\s*\*\*(.+?)\*\*", stripped)
-        if m:
-            return m.group(1).strip()
+        if not stripped:
+            return ""
+
+        time_pattern = re.compile(r"\b\d{1,2}:\d{2}\b")
+        bolds = re.findall(r"\*\*(.+?)\*\*", stripped)
+        if bolds:
+            for val in bolds:
+                val = val.strip()
+                if time_pattern.search(val):
+                    continue
+                if val.lower() in ["nghỉ trưa", "an trua", "ăn trưa", "nghi trua"]:
+                    continue
+                return val
+
         # Format 3: "Thông tin Name:" or "Thông tin của Name:"
         m = re.match(r"^Thông tin\s+(?:của\s+)?(.+?):", stripped)
         if m:
