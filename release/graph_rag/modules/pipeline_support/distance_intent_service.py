@@ -528,10 +528,17 @@ class DistanceIntentService:
                     pass
             return None
 
-        # If the first entity is the USER_LOCATION_SELF sentinel, pop it and
+        # Check if USER_LOCATION_SELF sentinel is in entities, pop it and
         # try to resolve to GPS coords from metadata / detected_location.
-        if entities and (entities[0] or {}).get("name") in (_USER_LOCATION_SELF, "USER_LOCATION_SELF"):
-            entities = list(entities[1:])  # drop sentinel entity
+        self_entity_idx = -1
+        for i, ent in enumerate(entities or []):
+            if (ent or {}).get("name") in (_USER_LOCATION_SELF, "USER_LOCATION_SELF"):
+                self_entity_idx = i
+                break
+
+        if self_entity_idx != -1:
+            entities = list(entities)
+            entities.pop(self_entity_idx)  # drop sentinel entity
             # Priority: user_gps in metadata → detected_location string
             raw_gps = (
                 str(metadata.get("user_gps") or "").strip()
