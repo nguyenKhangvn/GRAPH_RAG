@@ -126,7 +126,7 @@ export const useChatStreaming = () => {
         }
 
         buffer += decoder.decode(value, { stream: true });
-        const eventBlocks = buffer.split("\n\n");
+        const eventBlocks = buffer.split(/\r?\n\r?\n/);
         buffer = eventBlocks.pop() || "";
 
         for (const block of eventBlocks) {
@@ -135,7 +135,7 @@ export const useChatStreaming = () => {
           let eventName = "message";
           let dataStr = "";
 
-          for (const line of block.split("\n")) {
+          for (const line of block.split(/\r?\n/)) {
             if (line.startsWith("event:")) {
               eventName = line.replace("event:", "").trim();
             } else if (line.startsWith("data:")) {
