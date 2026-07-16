@@ -124,8 +124,8 @@ class ContextProcessorMixin:
             "TRUE_FALSE_VERIFIER": 8,
             "OPEN_ANALYSIS": 12,
             "TOUR_PLAN": 20,
-            "DISCOVERY_LIST": 16,
-            "TOUR_LIST": 16,
+            "DISCOVERY_LIST": 30,
+            "TOUR_LIST": 30,
         }
         base_k = _INTENT_BASE_K.get(answer_mode, 8)
         # FOOD_RECOMMENDATION / DISCOVERY_SEARCH with list answer modes need extra budget

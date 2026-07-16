@@ -49,7 +49,7 @@ class DiscoveryDispatchMixin:
                     state.runtime.metadata["curated_tourism_context"] = curated_ctx
                     state.runtime.metadata["curated_tourism_entities"] = [
                         (c.get("name") if isinstance(c, dict) else getattr(c, "content", ""))
-                        for c in candidates[:10]
+                        for c in candidates[:20]
                     ]
                     logger.info("   -> [Curated] Prepared %d tourism places for LLM curation", len(candidates))
                     return ""

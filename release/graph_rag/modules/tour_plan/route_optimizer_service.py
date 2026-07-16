@@ -864,10 +864,70 @@ class TourRouteOptimizerService:
     }
 
     def _node_region(self, node: Dict[str, Any]) -> str:
-        """Get high-level region (inland/coastal) from node's zone."""
-        lp = node.get("legacy_province") or (node.get("attributes") or {}).get("legacy_province") or node.get("province") or (node.get("attributes") or {}).get("province")
+        """Get high-level region (inland/coastal) from node's zone.
+
+        Priority:
+        1. GPS tiebreaker – actual coordinates are ground truth when they clearly
+           contradict the stored province (e.g. Hồ Định Bình has province='Gia Lai'
+           but its coordinates place it firmly in Bình Định coastal territory).
+        2. legacy_province / province field.
+        3. khu_vuc zone mapping.
+        """
+        # ── 1. Try to extract GPS coordinates for tiebreaker ──────────────────
+        raw_loc = (
+            node.get("location")
+            or (node.get("attributes") or {}).get("location")
+            or (node.get("metadata") or {}).get("location")
+        )
+        node_lng: float | None = None
+        node_lat: float | None = None
+        if isinstance(raw_loc, str) and raw_loc.startswith("POINT("):
+            # e.g. "POINT(108.762525 14.169465)"
+            try:
+                inner = raw_loc[6:-1]
+                parts = inner.split()
+                node_lng = float(parts[0])
+                node_lat = float(parts[1])
+            except (ValueError, IndexError):
+                pass
+        elif isinstance(raw_loc, dict):
+            node_lng = raw_loc.get("longitude") or raw_loc.get("lng") or raw_loc.get("x")
+            node_lat = raw_loc.get("latitude") or raw_loc.get("lat") or raw_loc.get("y")
+        elif isinstance(raw_loc, (list, tuple)) and len(raw_loc) >= 2:
+            node_lng, node_lat = float(raw_loc[0]), float(raw_loc[1])
+
+        # Also try direct lat/lng fields
+        if node_lat is None:
+            node_lat = node.get("lat") or (node.get("coordinates") or {}).get("lat")
+        if node_lng is None:
+            node_lng = node.get("lng") or (node.get("coordinates") or {}).get("lng")
+
+        if node_lat is not None and node_lng is not None:
+            try:
+                lat = float(node_lat)
+                lng = float(node_lng)
+                # Bình Định / Quy Nhơn coastal zone: longitude > 108.9 and latitude < 14.55
+                if lng > 108.9 and lat < 14.55:
+                    return "coastal"
+                # Pleiku / Gia Lai inland plateau: longitude < 108.5
+                if lng < 108.5:
+                    return "inland"
+            except (TypeError, ValueError):
+                pass
+
+        # ── 2. Fallback to province/legacy_province label ─────────────────────
+        lp = (
+            node.get("legacy_province")
+            or (node.get("attributes") or {}).get("legacy_province")
+            or node.get("province")
+            or (node.get("attributes") or {}).get("province")
+        )
         if not lp:
-            lp = node.get("entity_legacy_province") or (node.get("metadata") or {}).get("legacy_province") or (node.get("metadata") or {}).get("province")
+            lp = (
+                node.get("entity_legacy_province")
+                or (node.get("metadata") or {}).get("legacy_province")
+                or (node.get("metadata") or {}).get("province")
+            )
         if lp:
             lp_norm = normalize_text(str(lp), strip_punct=True)
             if "gia lai" in lp_norm:
@@ -875,8 +935,10 @@ class TourRouteOptimizerService:
             elif "binh dinh" in lp_norm:
                 return "coastal"
 
+        # ── 3. Zone mapping ───────────────────────────────────────────────────
         khu_vuc = node.get("khu_vuc", "")
         return self._ZONE_TO_REGION.get(khu_vuc, "unknown")
+
 
     def _build_daily_cluster_plan(
         self,

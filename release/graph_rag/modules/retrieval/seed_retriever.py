@@ -195,6 +195,10 @@ class SeedRetriever:
             region_focus = query_plan.region_focus.lower()
             if region_focus in ("all", ""):
                 if query_plan.legacy_province:
+                    svc = _get_admin_region_mapping_service()
+                    merged = svc.get_merged_region_groups_for_province(query_plan.legacy_province)
+                    if merged:
+                        return merged, None
                     return None, query_plan.legacy_province
                 return None, None
             return query_plan.region_group or None, query_plan.legacy_province or None
@@ -204,15 +208,16 @@ class SeedRetriever:
         if region_focus in ("all", ""):
             legacy_province = (metadata or {}).get("legacy_province") or None
             if legacy_province:
+                svc = _get_admin_region_mapping_service()
+                merged = svc.get_merged_region_groups_for_province(legacy_province)
+                if merged:
+                    return merged, None
                 return None, legacy_province
             return None, None
         region_group = (metadata or {}).get("region_group") or None
         legacy_province = (metadata or {}).get("legacy_province") or None
-        if legacy_province:
-            svc = _get_admin_region_mapping_service()
-            merged = svc.get_merged_region_groups_for_province(legacy_province)
-            if merged:
-                return merged, legacy_province
+        # Expansion for merged provinces only happens when region_focus=="all" (lines 207-216).
+        # For specific sub-regions (e.g., "coastal_quy_nhon"), use metadata as-is.
         return region_group, legacy_province
 
     @staticmethod
@@ -1484,11 +1489,27 @@ class SeedRetriever:
                     try:
                         _admin_svc = _get_admin_region_mapping_service()
                         _region_focus = str((metadata or {}).get("region_focus") or "").strip()
-                        if _region_focus:
+                        # Only expand merged province aliases when query is about the broad
+                        # merged region (region_focus="all" = gia_lai_new). For specific
+                        # sub-regions (e.g., "coastal_quy_nhon"), keep original location only.
+                        if _region_focus == "all":
                             _t2c_location_aliases = _admin_svc.get_merged_province_names(_region_focus)
                             if _t2c_location_aliases and len(_t2c_location_aliases) > 1:
                                 logger.info("         ⚙️ Merged province search: %s → %s",
                                              _t2c_location, _t2c_location_aliases)
+                        # Fallback: region_focus="all" but get_merged_province_names returned empty
+                        if not _t2c_location_aliases and _region_focus == "all" and legacy_province:
+                            try:
+                                _region_map = _admin_svc.resolve(legacy_province)
+                                if _region_map and _region_map.get("region_focus"):
+                                    _t2c_location_aliases = _admin_svc.get_merged_province_names(
+                                        _region_map["region_focus"]
+                                    )
+                                    if _t2c_location_aliases and len(_t2c_location_aliases) > 1:
+                                        logger.info("         ⚙️ Fallback merged province search: %s → %s",
+                                                     _t2c_location, _t2c_location_aliases)
+                            except Exception:
+                                pass
                     except (Neo4jClientError, ServiceUnavailable) as e:
                         logger.debug("         ⚙️ Admin region mapping unavailable: %s", e)
                 _t2c_is_follow_up = bool((metadata or {}).get("is_follow_up", False))

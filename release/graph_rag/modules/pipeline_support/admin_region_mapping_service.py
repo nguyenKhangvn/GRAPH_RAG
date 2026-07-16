@@ -71,12 +71,13 @@ class AdminRegionMappingService:
         "Kông Chro": ["Kong Chro"],
         "Phú Thiện": ["Phu Thien"],
         "Krông Pa": ["Krong Pa"],
+        "Gia Lai cũ": ["Gia Lai cu", "tỉnh Gia Lai cũ", "tinh Gia Lai cu"],
     }
 
     _ADMIN_REGION_TO_FOCUS = {
         "binh_dinh_old": "coastal_quy_nhon",
         "gia_lai_core": "inland_gia_lai",
-        "gia_lai_new": "all",
+        "gia_lai_new": "gia_lai_new",
     }
 
     @classmethod
@@ -96,9 +97,9 @@ class AdminRegionMappingService:
     MERGED_REGION_SEARCH = {
         "binh_dinh_old": ["binh_dinh_legacy", "gia_lai_core"],
         "coastal_quy_nhon": ["binh_dinh_legacy", "gia_lai_core"],
-        "gia_lai_core": ["gia_lai_core", "binh_dinh_legacy"],
+        "gia_lai_core": ["gia_lai_core"],
         "gia_lai_new": ["gia_lai_core", "binh_dinh_legacy"],
-        "inland_gia_lai": ["gia_lai_core", "binh_dinh_legacy"],
+        "inland_gia_lai": ["gia_lai_core"],
     }
 
     def __init__(self, mapping_path: str | Path | None = None):
@@ -163,17 +164,24 @@ class AdminRegionMappingService:
             region_group = p.get("region_group", "")
             region_focus = p.get("region_focus", "")
             admin_status = p.get("admin_status", "current")
+
+            target_region_focus = pid
+            if pid == "binh_dinh":
+                target_region_focus = 'binh_dinh_old'
+            elif pid == "gia_lai":
+                target_region_focus = "gia_lai_new"
             payload = {
                 "matched_alias": display,
                 "old_unit": display,
                 "new_unit": "",
                 "old_province": display,
                 "legacy_province": display if admin_status == "merged" else "",
-                "new_province": display,
-                "current_province": display,
-                "region_focus": pid,  # use province_id as region_focus
+                # gia lai new = bd + gl
+                "new_province": "Gia Lai" if pid in ("binh_dinh", "gia_lai") else display,
+                "current_province": "Gia Lai" if pid in ("binh_dinh", "gia_lai") else display,
+                "region_focus": target_region_focus,  # use province_id as region_focus
                 "region_group": region_group,
-                "display_region": display,
+                "display_region": self.DISPLAY_BY_REGION.get(target_region_focus, display),
                 "source": "region_registry",
                 "admin_level": "province",
                 "admin_status": admin_status,
